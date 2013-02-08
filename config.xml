@@ -1,18 +1,63 @@
 <jeu>
 		<joueur  argent_depart="1500"/>
 	<plateau>
-		<groupe couleur="vert" r="" g="" b="">
-				<terrain id="" nom=""> <!--id 0->39 -->
+		<groupe couleur="bleu" r="" g="" b="">
+			<terrain id="36" nom="Avenue des Champs-Elysées"/> 
+			<terrain id="38" nom="Rue de la Paix"/> 
 		</groupe>
-		<gare/>
-		<parc/>
-		<prison/>
-		<police/>
-		<depart/>
-		<carte/>
-		<taxe/>
-		<compagnie/>
+		<groupe couleur="vert" r="" g="" b="">
+			<terrain id="30" nom="Avenue de Breteuil"/> 
+			<terrain id="31" nom="Avenue Foch"/> 
+			<terrain id="33" nom="Boulevard des Capucines"/> 
+		</groupe>
+		<groupe couleur="jaune" r="" g="" b="">
+			<terrain id="25" nom="Faubourg Saint-Honoré"/> 
+			<terrain id="26" nom="Place de la Bourse"/> 
+			<terrain id="28" nom="Rue la Fayette"/> 
+		</groupe>
+		<groupe couleur="rouge" r="" g="" b="">
+			<terrain id="20" nom="Avenue Matignon"/> 
+			<terrain id="22" nom="Boulevard Malesherbes"/> 
+			<terrain id="23" nom="Avenue Henri-Martin"/> 
+		</groupe>
+		<groupe couleur="orange" r="" g="" b="">
+			<terrain id="15" nom="Avenue Mozart"/> 
+			<terrain id="17" nom="Boumlevard Saint-Michelle"/> 
+			<terrain id="18" nom="Place Pligalle"/> 
+		</groupe>
+		<groupe couleur="violet" r="" g="" b="">
+			<terrain id="11" nom="Boulevard de la Villette"/> 
+			<terrain id="13" nom="Avenue de Neuilly"/> 
+			<terrain id="14" nom="Rue de Paradis"/> 
+		</groupe>
+		<groupe couleur="azur" r="" g="" b="">
+			<terrain id="6" nom="Rue de Vaugirard"/> 
+			<terrain id="8" nom="Rue de Courcelles"/> 
+			<terrain id="9" nom="Avenue de la République"/> 
+		</groupe>
+		<groupe couleur="mauve" r="" g="" b="">
+			<terrain id="1" nom="Boulvard de Belleville"/> 
+			<terrain id="3" nom="Rue Lecourbe"/> 
+		</groupe>
+		<gare id="5" nom="Gare Montparnasse" prix="200"/>
+		<gare id="15" nom="Gare de Lyon" prix="200"/>
+		<gare id="25" nom="Gare du Nord" prix="200"/>
+		<gare id="35" nom="Gare Saint-Lazare" prix="200"/>
+		<parc id="20"/>
+		<prison id="10"/>
+		<police id="30"/>
+		<depart id="0"/>
+		<carte id="2" type="2"/>
+		<carte id="7" type="1"/>
+		<carte id="17" type="2"/>
+		<carte id="22" type="1"/>
+		<carte id="33" type="2"/>
+		<carte id="36" type="1"/>
+		<taxe id="4" nom="Impôt sur le revenu" prix="200"/>
+		<taxe id="38" nom="Taxe de luxe" prix="100"/>
+		<compagnie id="12" nam="Campagne de distribution d'électricité" prix="150"/>
+		<compagnie id="28" nam="Campagne de distribution des eaux" prix="150"/>
 	</plateau>
-	<carte>
-	</carte>
+	<cartes>
+	</cartes>
 </jeu>
