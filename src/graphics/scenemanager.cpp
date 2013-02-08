@@ -1,6 +1,6 @@
 #include "scenemanager.h"
 #include "graphicalengine.h"
-#include "../../core/logger.h"
+#include "../core/logger.h"
 #include "particlemanager.h"
 
 SceneManager::SceneManager()

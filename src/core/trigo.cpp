@@ -1,4 +1,5 @@
 #include "trigo.h"
+#include <cmath>
 
 namespace Trigo
 {

@@ -1,6 +1,6 @@
 #include "guicontener.h"
 #include "guiitem.h"
-#include "../../../core/logger.h"
+#include "../../core/logger.h"
 
 GuiContener::GuiContener(SceneManager* mng, SceneNode* parent): GuiNode(mng, parent),
     m_maxSize(9999,9999), m_size(0,0), m_espacement(5,5)

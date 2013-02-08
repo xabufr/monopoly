@@ -1,7 +1,7 @@
 #include "guicolorselector.h"
 #include "../graphicalengine.h"
-#include "../../../core/conversion.h"
-#include "../../../core/logger.h"
+#include "../../core/conversion.h"
+#include "../../core/logger.h"
 
 GuiColorSelector::GuiColorSelector(SceneManager* mng, SceneNode* parent): GuiContener(mng, parent)
 {

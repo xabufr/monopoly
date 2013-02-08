@@ -39,7 +39,7 @@ sf::Vector2f GuiItem::GetTextRealSize(const sf::Text& txt)
     sf::Vector2f taille(0,0);
 
     unsigned int characterSize = txt.getCharacterSize();
-    const sf::Font &font = txt.getFont();
+    const sf::Font &font = *txt.getFont();
     const sf::String &contenu = txt.getString();
     size_t tailleContenu = contenu.getSize();
 

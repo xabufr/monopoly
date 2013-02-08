@@ -1,7 +1,7 @@
 #ifndef FONTMANAGER_H
 #define FONTMANAGER_H
 
-#include "../../../core/singleton.h"
+#include "../../core/singleton.h"
 #include <string>
 #include <SFML/Graphics.hpp>
 

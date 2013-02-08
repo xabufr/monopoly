@@ -1,6 +1,6 @@
 #include "particlemanager.h"
 #include "graphicalengine.h"
-#include "../../core/trigo.h"
+#include "../core/trigo.h"
 
 ParticleManager::ParticleManager(SceneManager *parent)
 {
@@ -173,9 +173,4 @@ sf::Color ParticleManager::m_RandomColor(const ParticleParameters& param)
                          Random::Rand(param.colorMin.b,param.colorMax.b));
     }
     return sf::Color();
-}
-
-void ParticleManager::SetWorld(b2World *world)
-{
-    m_world=world;
 }

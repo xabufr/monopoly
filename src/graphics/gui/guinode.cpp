@@ -3,7 +3,7 @@
 #include "guiwindownode.h"
 #include "guimanager.h"
 #include "guicontener.h"
-#include "../../../core/logger.h"
+#include "../../core/logger.h"
 
 GuiNode::GuiNode(SceneManager* mng, SceneNode* parent): SceneNode(mng,parent)
 {

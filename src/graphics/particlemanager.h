@@ -5,8 +5,7 @@
 #include <vector>
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
-#include "../../core/random.h"
-#include <Box2D/Box2D.h>
+#include "../core/random.h"
 
 class SceneManager;
 class SceneNode;
@@ -62,7 +61,6 @@ class ParticleManager
         void Update();
         SceneNode* AddParticleSystem(const ParticleParameters&);
         void Remove(SceneNode*);
-        void SetWorld(b2World *world);
         void AddParticle(const ParticleParameters&);
 
     protected:
@@ -73,7 +71,6 @@ class ParticleManager
         std::unordered_map<SceneNodeItem*,SceneNode*> m_nodesItems;
         std::vector<Particle> m_particles;
         SceneManager *m_parent;
-        b2World *m_world;
 
         SceneNode* m_CreateNodeFromParameters(const ParticleParameters&);
 };

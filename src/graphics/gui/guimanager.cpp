@@ -1,5 +1,5 @@
 #include "guimanager.h"
-#include "../../../core/logger.h"
+#include "../../core/logger.h"
 #include "../graphicalengine.h"
 
 GuiManager::GuiManager(): SceneManager()
@@ -63,7 +63,7 @@ GuiNode* GuiManager::GetRootNode()
 sf::Vector2f GuiManager::GetMousePosition()
 {
     sf::RenderWindow *app = GraphicalEngine::GetInstance()->GetRenderWindow();
-    return app->convertCoords(sf::Mouse::getPosition(*app), m_view);
+    return app->mapPixelToCoords(sf::Mouse::getPosition(*app), m_view);
 }
 void GuiManager::RemoveNode(SceneNode* node)
 {

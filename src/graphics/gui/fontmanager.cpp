@@ -4,7 +4,8 @@ FontManager *Singleton<FontManager>::m_singleton = 0;
 
 FontManager::FontManager()
 {
-    m_font = new sf::Font(sf::Font::getDefaultFont());
+    m_font = new sf::Font();
+	m_font->loadFromFile("arial.ttf");
 }
 
 FontManager::~FontManager()

@@ -1,5 +1,5 @@
 #include "texturemanager.h"
-#include "../../core/logger.h"
+#include "../core/logger.h"
 
 template<>
 TextureManager* Singleton<TextureManager>::m_singleton=NULL;

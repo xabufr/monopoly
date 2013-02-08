@@ -1,5 +1,5 @@
 #include "cameramanager.h"
-#include "../../core/logger.h"
+#include "../core/logger.h"
 #include "graphicalengine.h"
 
 CameraManager::CameraManager()

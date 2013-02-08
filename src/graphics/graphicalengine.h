@@ -1,7 +1,7 @@
 #ifndef GRAPHICALENGINE_H
 #define GRAPHICALENGINE_H
 
-#include "../../core/singleton.h"
+#include "../core/singleton.h"
 #include <vector>
 #include <unordered_map>
 

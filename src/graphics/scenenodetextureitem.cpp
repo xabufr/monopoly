@@ -1,12 +1,12 @@
 #include "scenenodetextureitem.h"
-#include "../../core/exception.h"
-#include "../../core/logger.h"
+#include "../core/exception.h"
+#include "../core/logger.h"
+
 SceneNodeTextureItem::SceneNodeTextureItem()
 {
     m_idTexture = TextureManager::GetInstance()->Create();
     m_texture = TextureManager::GetInstance()->GetFromId(m_idTexture);
 }
-
 SceneNodeTextureItem::~SceneNodeTextureItem()
 {
     TextureManager::GetInstance()->DeleteTextureFromId(m_idTexture);
@@ -17,7 +17,6 @@ void SceneNodeTextureItem::CreateTexture(const sf::Vector2i& taille)
     m_spr.setTexture(*m_texture);
     m_img.create(taille.x, taille.y);
 }
-
 void SceneNodeTextureItem::CreateTexture(const sf::Image& img)
 {
     Assert(m_texture->loadFromImage(img));
@@ -33,7 +32,6 @@ void SceneNodeTextureItem::Draw(sf::RenderWindow* app)
     if(rect.intersects(m_spr.getGlobalBounds()))
         app->draw(m_spr);
 }
-
 void SceneNodeTextureItem::PositionChanged()
 {
     m_spr.setOrigin(-m_relative.position);

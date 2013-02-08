@@ -1,6 +1,6 @@
 #include "guitextinputitem.h"
 #include "../graphicalengine.h"
-#include "../../../core/logger.h"
+#include "../../core/logger.h"
 
 GuiTextInputItem::GuiTextInputItem(): GuiItem(), m_maxSize(100,30)
 {
@@ -9,7 +9,6 @@ GuiTextInputItem::GuiTextInputItem(): GuiItem(), m_maxSize(100,30)
     m_maxCharacters=255;
     m_text.setFont(FontManager::GetInstance()->GetFont());
 }
-
 GuiTextInputItem::~GuiTextInputItem()
 {
     //dtor
@@ -145,7 +144,7 @@ void GuiTextInputItem::SetColor(const sf::Color& col)
 unsigned int GuiTextInputItem::m_CalculerLargeurTexte(const sf::String & str)
 {
     int width = 0;
-    const sf::Font &font = sf::Font::getDefaultFont();
+    const sf::Font &font = FontManager::GetInstance()->GetFont();
     for(size_t i=0, taille = str.getSize();i<taille;++i)
     {
         width+= font.getGlyph(str[i], m_text.getCharacterSize(), m_text.getStyle()&sf::Text::Bold).advance;

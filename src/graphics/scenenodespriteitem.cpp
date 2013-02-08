@@ -1,5 +1,5 @@
 #include "scenenodespriteitem.h"
-#include "../../core/singleton.h"
+#include "../core/singleton.h"
 
 SceneNodeSpriteItem::SceneNodeSpriteItem()
 {

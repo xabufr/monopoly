@@ -1,5 +1,5 @@
 #include "graphicalengine.h"
-#include "../../core/logger.h"
+#include "../core/logger.h"
 #include "scenemanager.h"
 #include "texturemanager.h"
 
