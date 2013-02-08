@@ -20,7 +20,6 @@ GraphicalEngine::GraphicalEngine()
 
     m_tempFramerate=1000;
 }
-
 sf::RenderWindow* GraphicalEngine::CreateRenderWindow(sf::VideoMode mode, const std::string &title, sf::Uint32 style, const sf::ContextSettings &settings)
 {
     m_app = new sf::RenderWindow(mode, title, style, settings);
