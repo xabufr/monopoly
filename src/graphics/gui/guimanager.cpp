@@ -4,24 +4,21 @@
 
 GuiManager::GuiManager(): SceneManager()
 {
-    FontManager::GetInstance()->SetFont("data/times.ttf");
     delete m_rootSceneNode;
     Logger::Log()<<"Création du GuiManager"<<Logger::endl;
     m_rootSceneNode = new GuiNode(this);
+    m_nodesLevel.clear();
     m_eventLockedBy=0;
 }
-
 GuiManager::~GuiManager()
 {
     Logger::Log()<<"Destruction du GuiManager"<<Logger::endl;
 }
-
 GuiItem* GuiManager::AddItem(GuiItem* item)
 {
     m_rootSceneNode->AddItem((SceneNodeItem*)item);
     return item;
 }
-
 void GuiManager::Draw()
 {
     CalculerCamera();
@@ -34,7 +31,6 @@ void GuiManager::Draw()
     m_toRemove.clear();
     SceneManager::Draw();
 }
-
 void GuiManager::HandleEvent(const sf::Event& event)
 {
     if(event.type == sf::Event::Resized)
