@@ -1,48 +1,17 @@
 <jeu>
-	<joueur>
-		<argent value="1500"/>
-	</joueur>
+		<joueur  argent_depart="1500"/>
 	<plateau>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
-		<case x="" y="" color="" type="" cost=""/>
+		<groupe couleur="vert" r="" g="" b="">
+				<terrain id="" nom=""> <!--id 0->39 -->
+		</groupe>
+		<gare/>
+		<parc/>
+		<prison/>
+		<police/>
+		<depart/>
+		<carte/>
+		<taxe/>
+		<compagnie/>
 	</plateau>
 	<carte>
 	</carte>
