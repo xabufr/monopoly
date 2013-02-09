@@ -1,0 +1,15 @@
+Les interfaces des classes doivent rester fidèles au diagrame
+
+Tout objet doit être passé par pointeur
+
+Code const-correct, càd mettre le mot clé const dès que possible dans les
+paramètres des méthodes, et après les méthodes (voir tuto site du zéro si
+connait pas)
+
+Utiliser la norme 2011: pointeur null = nullptr. Je ne veux pas voir de (type)
+*var = NULL ou 0, mais (type) *var = nullptr;, sauf si bibliothèque tièrce.
+
+Le plateau gère les joueurs pour la prison.
+
+Si il manque des choses dans le diagramme des classes, consulter au moins une
+autre personne de l'équipe, pour rester cohérant.
