@@ -22,7 +22,6 @@ public:
 private:
 	std::string m_nom;
 	Joueur* m_propietaire;
-	std::list<Joueur*> m_joueurs;
 	size_t m_id;
 };
 

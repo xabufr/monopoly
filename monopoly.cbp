@@ -100,6 +100,14 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.cpp">
       </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.cpp">
+      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/cameramanager.cpp">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.cpp">
@@ -170,6 +178,8 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.h">
       </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.h~">
+      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/singleton.h">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.cpp~">
@@ -177,6 +187,40 @@
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.h">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.h~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/.joueur.cpp.swp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.h~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.cpp~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.h~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.cpp~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.h~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.cpp~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.h~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.cpp~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.h~">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/plateau.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/plateau.h~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/cameramanager.cpp~">
       </Unit>
@@ -187,8 +231,6 @@
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/.guimanager.cpp.swp">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.cpp~">
       </Unit>

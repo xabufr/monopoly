@@ -30,6 +30,21 @@ CMakeFiles/monopoly.dir/src/core/singleton.o: src/core/singleton.h
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.cpp
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.h
 
+CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/../../core/random.h
+CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/carte.h
+CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.cpp
+CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.h
+
+CMakeFiles/monopoly.dir/src/game/case/case.o: src/game/case/case.cpp
+CMakeFiles/monopoly.dir/src/game/case/case.o: src/game/case/case.h
+
+CMakeFiles/monopoly.dir/src/game/des.o: src/game/../core/random.h
+CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.cpp
+CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.h
+
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.cpp
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.h
+
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/exception.h
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/logger.h
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/random.h

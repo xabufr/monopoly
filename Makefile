@@ -235,6 +235,66 @@ src/core/trigo.s:
 .PHONY : src/core/trigo.s
 
 # target to build an object file
+src/game/carte/paquet.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.o
+.PHONY : src/game/carte/paquet.o
+
+# target to preprocess a source file
+src/game/carte/paquet.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.i
+.PHONY : src/game/carte/paquet.i
+
+# target to generate assembly for a file
+src/game/carte/paquet.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.s
+.PHONY : src/game/carte/paquet.s
+
+# target to build an object file
+src/game/case/case.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/case.o
+.PHONY : src/game/case/case.o
+
+# target to preprocess a source file
+src/game/case/case.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/case.i
+.PHONY : src/game/case/case.i
+
+# target to generate assembly for a file
+src/game/case/case.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/case.s
+.PHONY : src/game/case/case.s
+
+# target to build an object file
+src/game/des.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/des.o
+.PHONY : src/game/des.o
+
+# target to preprocess a source file
+src/game/des.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/des.i
+.PHONY : src/game/des.i
+
+# target to generate assembly for a file
+src/game/des.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/des.s
+.PHONY : src/game/des.s
+
+# target to build an object file
+src/game/joueur.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/joueur.o
+.PHONY : src/game/joueur.o
+
+# target to preprocess a source file
+src/game/joueur.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/joueur.i
+.PHONY : src/game/joueur.i
+
+# target to generate assembly for a file
+src/game/joueur.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/joueur.s
+.PHONY : src/game/joueur.s
+
+# target to build an object file
 src/graphics/cameramanager.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/graphics/cameramanager.o
 .PHONY : src/graphics/cameramanager.o
@@ -672,6 +732,18 @@ help:
 	@echo "... src/core/trigo.o"
 	@echo "... src/core/trigo.i"
 	@echo "... src/core/trigo.s"
+	@echo "... src/game/carte/paquet.o"
+	@echo "... src/game/carte/paquet.i"
+	@echo "... src/game/carte/paquet.s"
+	@echo "... src/game/case/case.o"
+	@echo "... src/game/case/case.i"
+	@echo "... src/game/case/case.s"
+	@echo "... src/game/des.o"
+	@echo "... src/game/des.i"
+	@echo "... src/game/des.s"
+	@echo "... src/game/joueur.o"
+	@echo "... src/game/joueur.i"
+	@echo "... src/game/joueur.s"
 	@echo "... src/graphics/cameramanager.o"
 	@echo "... src/graphics/cameramanager.i"
 	@echo "... src/graphics/cameramanager.s"
