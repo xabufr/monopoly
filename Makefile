@@ -235,6 +235,21 @@ src/core/trigo.s:
 .PHONY : src/core/trigo.s
 
 # target to build an object file
+src/game/carte/carte.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte.o
+.PHONY : src/game/carte/carte.o
+
+# target to preprocess a source file
+src/game/carte/carte.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte.i
+.PHONY : src/game/carte/carte.i
+
+# target to generate assembly for a file
+src/game/carte/carte.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte.s
+.PHONY : src/game/carte/carte.s
+
+# target to build an object file
 src/game/carte/paquet.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.o
 .PHONY : src/game/carte/paquet.o
@@ -732,6 +747,9 @@ help:
 	@echo "... src/core/trigo.o"
 	@echo "... src/core/trigo.i"
 	@echo "... src/core/trigo.s"
+	@echo "... src/game/carte/carte.o"
+	@echo "... src/game/carte/carte.i"
+	@echo "... src/game/carte/carte.s"
 	@echo "... src/game/carte/paquet.o"
 	@echo "... src/game/carte/paquet.i"
 	@echo "... src/game/carte/paquet.s"

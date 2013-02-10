@@ -100,6 +100,8 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.cpp">
       </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.cpp">
+      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.cpp">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.cpp">
@@ -164,8 +166,6 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/consolelogger.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/core/conversion.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/conversion.h">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/exception.h">
@@ -174,91 +174,43 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/logger.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.h~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/singleton.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/.joueur.cpp.swp">
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/.carte.cpp.swp">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.h~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/game/plateau.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/game/plateau.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/cameramanager.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/cameramanager.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h">
       </Unit>
@@ -266,15 +218,9 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.h~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.h">
       </Unit>
@@ -282,15 +228,9 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/particlemanager.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/positioninformations.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenemanager.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h">
       </Unit>
@@ -302,21 +242,11 @@
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.h">
       </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/texturemanager.cpp~">
-      </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h~">
-      </Unit>
-      <Unit filename="/home/thomas/Programmation/monopoly/src/main.cpp~">
       </Unit>
       <Unit filename="/home/thomas/Programmation/monopoly/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

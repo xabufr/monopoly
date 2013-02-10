@@ -12,6 +12,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/thomas/Programmation/monopoly/src/core/random.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/core/random.o"
   "/home/thomas/Programmation/monopoly/src/core/singleton.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/core/singleton.o"
   "/home/thomas/Programmation/monopoly/src/core/trigo.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/core/trigo.o"
+  "/home/thomas/Programmation/monopoly/src/game/carte/carte.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game/carte/carte.o"
   "/home/thomas/Programmation/monopoly/src/game/carte/paquet.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game/carte/paquet.o"
   "/home/thomas/Programmation/monopoly/src/game/case/case.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game/case/case.o"
   "/home/thomas/Programmation/monopoly/src/game/des.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game/des.o"

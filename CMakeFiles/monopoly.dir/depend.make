@@ -30,6 +30,9 @@ CMakeFiles/monopoly.dir/src/core/singleton.o: src/core/singleton.h
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.cpp
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/carte.cpp
+CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/carte.h
+
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/../../core/random.h
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.cpp

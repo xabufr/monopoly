@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Programmation/monopoly/src/game/joueur.cpp
-joueur.h
-/home/thomas/Programmation/monopoly/src/game/joueur.h
+/home/thomas/Programmation/monopoly/src/game/carte/carte.cpp
+carte.h
+/home/thomas/Programmation/monopoly/src/game/carte/carte.h
 
-/home/thomas/Programmation/monopoly/src/game/joueur.h
+/home/thomas/Programmation/monopoly/src/game/carte/carte.h
 string
--
-list
 -
 

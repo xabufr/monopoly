@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/monopoly.dir/src/game/des.o"
   "CMakeFiles/monopoly.dir/src/game/joueur.o"
   "CMakeFiles/monopoly.dir/src/game/case/case.o"
+  "CMakeFiles/monopoly.dir/src/game/carte/carte.o"
   "CMakeFiles/monopoly.dir/src/game/carte/paquet.o"
   "CMakeFiles/monopoly.dir/src/core/conversion.o"
   "CMakeFiles/monopoly.dir/src/core/singleton.o"
