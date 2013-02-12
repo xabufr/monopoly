@@ -24,4 +24,4 @@ private:
 	std::string m_description;
 };
 
-#endif 
+#endif

@@ -35,17 +35,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
-# Escaping for special characters.
-EQUALS = =
-
 # The program to use to edit the cache.
 CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Programmation/monopoly
+CMAKE_SOURCE_DIR = /home/bastien/Bureau/Monopoly/monopoly
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Programmation/monopoly
+CMAKE_BINARY_DIR = /home/bastien/Bureau/Monopoly/monopoly
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles /home/thomas/Programmation/monopoly/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bastien/Bureau/Monopoly/monopoly/CMakeFiles /home/bastien/Bureau/Monopoly/monopoly/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/bastien/Bureau/Monopoly/monopoly/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,6 +110,21 @@ monopoly: cmake_check_build_system
 monopoly/fast:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/build
 .PHONY : monopoly/fast
+
+# target to build an object file
+src/carte_reparation.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/carte_reparation.o
+.PHONY : src/carte_reparation.o
+
+# target to preprocess a source file
+src/carte_reparation.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/carte_reparation.i
+.PHONY : src/carte_reparation.i
+
+# target to generate assembly for a file
+src/carte_reparation.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/carte_reparation.s
+.PHONY : src/carte_reparation.s
 
 # target to build an object file
 src/core/consolelogger.o:
@@ -723,6 +735,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... monopoly"
 	@echo "... rebuild_cache"
+	@echo "... src/carte_reparation.o"
+	@echo "... src/carte_reparation.i"
+	@echo "... src/carte_reparation.s"
 	@echo "... src/core/consolelogger.o"
 	@echo "... src/core/consolelogger.i"
 	@echo "... src/core/consolelogger.s"
