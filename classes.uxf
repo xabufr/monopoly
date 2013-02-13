@@ -85,7 +85,7 @@
       <x>328</x>
       <y>224</y>
       <w>280</w>
-      <h>168</h>
+      <h>200</h>
     </coordinates>
     <panel_attributes>plateau
 --
@@ -98,6 +98,8 @@
 +void joueurTourFinit()
 +etatPlateau getEtat()
 +void setEtat(etatPlateau)
++void avancerCurrentJoueur(int)
++void placerCurrentJoueur(int, bool passerCaseDepart)
 --
 -int m_argent
 -int m_index_current_joueur</panel_attributes>
@@ -402,14 +404,14 @@ m2=0..*</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>496</x>
-      <y>368</y>
+      <y>400</y>
       <w>96</w>
-      <h>144</h>
+      <h>112</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
 m2=2..*</panel_attributes>
-    <additional_attributes>24;24;24;128;80;128</additional_attributes>
+    <additional_attributes>24;24;24;96;80;96</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Relation</type>
@@ -455,15 +457,15 @@ possède</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>336</x>
-      <y>368</y>
+      <y>400</y>
       <w>244</w>
-      <h>496</h>
+      <h>464</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
 m2=40..40
 appartient</panel_attributes>
-    <additional_attributes>24;24;24;296;224;296;224;480</additional_attributes>
+    <additional_attributes>24;24;24;264;224;264;224;448</additional_attributes>
   </element>
   <element>
     <type>com.umlet.element.Class</type>
@@ -821,13 +823,13 @@ etatCourant</panel_attributes>
     <type>com.umlet.element.Relation</type>
     <coordinates>
       <x>0</x>
-      <y>368</y>
+      <y>400</y>
       <w>352</w>
-      <h>832</h>
+      <h>800</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1..1
 m2=1..1</panel_attributes>
-    <additional_attributes>336;24;336;112;24;112;24;816;264;816</additional_attributes>
+    <additional_attributes>336;24;336;80;24;80;24;784;264;784</additional_attributes>
   </element>
 </diagram>
