@@ -15,15 +15,11 @@ public:
 	virtual void joueurPasse(Joueur*);
 	virtual bool peutAppartenir() const;
 	const std::list<Joueur*>& getJoueurs() const;
-	Joueur* proprietaire() const;
-	virtual bool peutAcheter(const Joueur*) const;
-	virtual void acheter(Joueur*);
 	size_t id() const;
 private:
 	std::string m_nom;
-	Joueur* m_propietaire;
 	std::list<Joueur*> m_joueurs;
 	size_t m_id;
 };
 
-#endif 
+#endif

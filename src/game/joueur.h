@@ -6,6 +6,7 @@
 
 class CasePropriete;
 class Case;
+class CarteLiberte;
 class Joueur
 {
 public:
@@ -22,7 +23,8 @@ public:
 	int getToursPrison() const;
 	Case* estSur() const;
 	void positinner(Case*);
-
+    void addCarteLiberte(CarteLiberte*);
+    void addPropiete(CasePropriete*);
 private:
 	int m_argent;
 	std::string m_nom;
@@ -31,7 +33,8 @@ private:
 	int m_doubles_consecutifs;
 	int m_dernier_lancer;
 	std::list<CasePropriete*> m_proprietes;
+	std::list<CarteLiberte*> m_cartes_liberte;
 	Case *m_CasePosition;
 };
 
-#endif 
+#endif
