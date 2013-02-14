@@ -1,202 +1,295 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="monopoly" />
-		<Option makefile_is_custom="1" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="all">
-				<Option type="4" />
-				<Option compiler="gcc" />
-				<MakeCommands>
-					<Build command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 all' />
-					<CompileFile command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option type="4" />
-				<Option compiler="gcc" />
-				<MakeCommands>
-					<Build command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 edit_cache' />
-					<CompileFile command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
-				</MakeCommands>
-			</Target>
-			<Target title="monopoly">
-				<Option output="/home/thomas/Programmation/monopoly/monopoly" prefix_auto="0" extension_auto="0" />
-				<Option object_output="./" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add directory="/home/thomas/Programmation/monopoly/src" />
-					<Add directory="/usr/include" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include-fixed" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/backward" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/x86_64-pc-linux-gnu" />
-					<Add directory="/usr/local/include" />
-				</Compiler>
-				<MakeCommands>
-					<Build command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 monopoly' />
-					<CompileFile command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
-				</MakeCommands>
-			</Target>
-			<Target title="monopoly/fast">
-				<Option output="/home/thomas/Programmation/monopoly/monopoly" prefix_auto="0" extension_auto="0" />
-				<Option object_output="./" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add directory="/home/thomas/Programmation/monopoly/src" />
-					<Add directory="/usr/include" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include-fixed" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/backward" />
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/x86_64-pc-linux-gnu" />
-					<Add directory="/usr/local/include" />
-				</Compiler>
-				<MakeCommands>
-					<Build command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 monopoly/fast' />
-					<CompileFile command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option type="4" />
-				<Option compiler="gcc" />
-				<MakeCommands>
-					<Build command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 rebuild_cache' />
-					<CompileFile command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;' />
-					<Clean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<DistClean command='/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean' />
-					<AskRebuildNeeded command="$make -q -f $makefile $target" />
-					<SilentBuild command="$make -f $makefile $target &gt; $(CMD_NULL)" />
-				</MakeCommands>
-			</Target>
-		</Build>
-		<Unit filename="caseallerenprison.cpp" />
-		<Unit filename="src/core/consolelogger.cpp" />
-		<Unit filename="src/core/consolelogger.h" />
-		<Unit filename="src/core/conversion.cpp" />
-		<Unit filename="src/core/conversion.h" />
-		<Unit filename="src/core/exception.cpp" />
-		<Unit filename="src/core/exception.h" />
-		<Unit filename="src/core/filelogger.cpp" />
-		<Unit filename="src/core/filelogger.h" />
-		<Unit filename="src/core/logger.cpp" />
-		<Unit filename="src/core/logger.h" />
-		<Unit filename="src/core/random.cpp" />
-		<Unit filename="src/core/random.h" />
-		<Unit filename="src/core/singleton.cpp" />
-		<Unit filename="src/core/singleton.h" />
-		<Unit filename="src/core/trigo.cpp" />
-		<Unit filename="src/core/trigo.h" />
-		<Unit filename="src/game/carte/.carte.cpp.swp" />
-		<Unit filename="src/game/carte/carte.cpp" />
-		<Unit filename="src/game/carte/carte.h" />
-		<Unit filename="src/game/carte/paquet.cpp" />
-		<Unit filename="src/game/carte/paquet.h" />
-		<Unit filename="src/game/case/case propriété/casecompagnie.h" />
-		<Unit filename="src/game/case/case propriété/casegare.h" />
-		<Unit filename="src/game/case/case propriété/casepropriete.cpp" />
-		<Unit filename="src/game/case/case propriété/casepropriete.h" />
-		<Unit filename="src/game/case/case propriété/caseterrain.h" />
-		<Unit filename="src/game/case/case propriété/groupeterrain.h" />
-		<Unit filename="src/game/case/case.cpp" />
-		<Unit filename="src/game/case/case.h" />
-		<Unit filename="src/game/case/caseallerenprison.cpp" />
-		<Unit filename="src/game/case/caseallerenprison.h" />
-		<Unit filename="src/game/case/casecarte.cpp" />
-		<Unit filename="src/game/case/casecarte.h" />
-		<Unit filename="src/game/case/casedepart.cpp" />
-		<Unit filename="src/game/case/casedepart.h" />
-		<Unit filename="src/game/case/caseparkinggratuit.cpp" />
-		<Unit filename="src/game/case/caseparkinggratuit.h" />
-		<Unit filename="src/game/case/caseprison.cpp" />
-		<Unit filename="src/game/case/caseprison.h" />
-		<Unit filename="src/game/case/casetaxe.cpp" />
-		<Unit filename="src/game/case/casetaxe.h" />
-		<Unit filename="src/game/des.cpp" />
-		<Unit filename="src/game/des.h" />
-		<Unit filename="src/game/joueur.cpp" />
-		<Unit filename="src/game/joueur.h" />
-		<Unit filename="src/game/plateau.h" />
-		<Unit filename="src/graphics/cameramanager.cpp" />
-		<Unit filename="src/graphics/cameramanager.h" />
-		<Unit filename="src/graphics/graphicalengine.cpp" />
-		<Unit filename="src/graphics/graphicalengine.h" />
-		<Unit filename="src/graphics/gui/fontmanager.cpp" />
-		<Unit filename="src/graphics/gui/fontmanager.h" />
-		<Unit filename="src/graphics/gui/guibuttonitem.cpp" />
-		<Unit filename="src/graphics/gui/guibuttonitem.h" />
-		<Unit filename="src/graphics/gui/guicolorselector.cpp" />
-		<Unit filename="src/graphics/gui/guicolorselector.h" />
-		<Unit filename="src/graphics/gui/guicontener.cpp" />
-		<Unit filename="src/graphics/gui/guicontener.h" />
-		<Unit filename="src/graphics/gui/guielement.cpp" />
-		<Unit filename="src/graphics/gui/guielement.h" />
-		<Unit filename="src/graphics/gui/guiitem.cpp" />
-		<Unit filename="src/graphics/gui/guiitem.h" />
-		<Unit filename="src/graphics/gui/guimanager.cpp" />
-		<Unit filename="src/graphics/gui/guimanager.h" />
-		<Unit filename="src/graphics/gui/guinode.cpp" />
-		<Unit filename="src/graphics/gui/guinode.h" />
-		<Unit filename="src/graphics/gui/guiprogressbaritem.cpp" />
-		<Unit filename="src/graphics/gui/guiprogressbaritem.h" />
-		<Unit filename="src/graphics/gui/guirectangleitem.cpp" />
-		<Unit filename="src/graphics/gui/guirectangleitem.h" />
-		<Unit filename="src/graphics/gui/guislidernumberitem.cpp" />
-		<Unit filename="src/graphics/gui/guislidernumberitem.h" />
-		<Unit filename="src/graphics/gui/guitextinputitem.cpp" />
-		<Unit filename="src/graphics/gui/guitextinputitem.h" />
-		<Unit filename="src/graphics/gui/guitextitem.cpp" />
-		<Unit filename="src/graphics/gui/guitextitem.h" />
-		<Unit filename="src/graphics/gui/guiwindowcontener.cpp" />
-		<Unit filename="src/graphics/gui/guiwindowcontener.h" />
-		<Unit filename="src/graphics/gui/guiwindownode.cpp" />
-		<Unit filename="src/graphics/gui/guiwindownode.h" />
-		<Unit filename="src/graphics/particlemanager.cpp" />
-		<Unit filename="src/graphics/particlemanager.h" />
-		<Unit filename="src/graphics/positioninformations.h" />
-		<Unit filename="src/graphics/scenemanager.cpp" />
-		<Unit filename="src/graphics/scenemanager.h" />
-		<Unit filename="src/graphics/scenenode.cpp" />
-		<Unit filename="src/graphics/scenenode.h" />
-		<Unit filename="src/graphics/scenenodecircleshapeitem.cpp" />
-		<Unit filename="src/graphics/scenenodecircleshapeitem.h" />
-		<Unit filename="src/graphics/scenenodeitem.cpp" />
-		<Unit filename="src/graphics/scenenodeitem.h" />
-		<Unit filename="src/graphics/scenenodeshapeitem.cpp" />
-		<Unit filename="src/graphics/scenenodeshapeitem.h" />
-		<Unit filename="src/graphics/scenenodespriteitem.cpp" />
-		<Unit filename="src/graphics/scenenodespriteitem.h" />
-		<Unit filename="src/graphics/scenenodetextureitem.cpp" />
-		<Unit filename="src/graphics/scenenodetextureitem.h" />
-		<Unit filename="src/graphics/texturemanager.cpp" />
-		<Unit filename="src/graphics/texturemanager.h" />
-		<Unit filename="src/main.cpp" />
-		<Extensions>
-			<envvars />
-			<code_completion />
-			<lib_finder disable_auto="1" />
-			<debugger />
-		</Extensions>
-	</Project>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="monopoly" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/thomas/Programmation/monopoly" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/thomas/Programmation/monopoly" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="monopoly">
+         <Option output="/home/thomas/Programmation/monopoly/monopoly" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/thomas/Programmation/monopoly/rapidxml" />
+            <Add directory="/home/thomas/Programmation/monopoly/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include-fixed" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/x86_64-pc-linux-gnu" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 monopoly" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="monopoly/fast">
+         <Option output="/home/thomas/Programmation/monopoly/monopoly" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/thomas/Programmation/monopoly/rapidxml" />
+            <Add directory="/home/thomas/Programmation/monopoly/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include-fixed" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/backward" />
+            <Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/4.6.3/include/g++-v4/x86_64-pc-linux-gnu" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 monopoly/fast" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/thomas/Programmation/monopoly" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/gmake -f &quot;/home/thomas/Programmation/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/consolelogger.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/conversion.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/exception.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/filelogger.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/logger.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/singleton.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/caseallerenprison.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casecarte.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casedepart.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/caseparkinggratuit.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/caseprison.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casepropriete/casepropriete.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casetaxe.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/plateau.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/cameramanager.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiprogressbaritem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/particlemanager.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenemanager.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenode.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodecircleshapeitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/texturemanager.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/consolelogger.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/conversion.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/exception.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/filelogger.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/logger.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/random.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/singleton.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/core/trigo.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/.plateau.cpp.swp">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/carte.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/carte/paquet.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/case.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/caseallerenprison.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casecarte.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casedepart.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/caseparkinggratuit.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/caseprison.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casepropriete/casecompagnie.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casepropriete/casegare.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casepropriete/casepropriete.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casepropriete/caseterrain.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casepropriete/groupeterrain.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/case/casetaxe.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/des.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/joueur.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/game/plateau.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/cameramanager.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiprogressbaritem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/positioninformations.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenode.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodecircleshapeitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h">
+      </Unit>
+      <Unit filename="/home/thomas/Programmation/monopoly/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
 </CodeBlocks_project_file>
