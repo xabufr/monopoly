@@ -13,6 +13,7 @@ public:
 	virtual void acheter(Joueur*);
 	virtual int valeur_hypotheque() const;
     virtual void hypothequer();
+    virtual void deshypothequer();
     virtual bool estEnHypotheque() const;
     virtual int loyer() const;
     virtual bool peutConstruire() const;
@@ -21,6 +22,7 @@ public:
 private:
     static int m_prix;
     static int m_hypotheque;
+    bool m_en_hypotheque;
     Joueur *m_propietaire;
 };
 

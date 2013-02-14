@@ -5,7 +5,8 @@
 CasePropriete::CasePropriete(size_t id, const std::string& nom, int prix, int hypotheque):Case(id, nom),
 m_prix(prix),
 m_hypotheque(hypotheque),
-m_propietaire(nullptr)
+m_propietaire(nullptr),
+m_en_hypotheque(false)
 {
 
 }
@@ -37,12 +38,24 @@ int CasePropriete::valeur_hypotheque() const
 
 void CasePropriete::hypothequer()
 {
+    m_propietaire->crediter(m_hypotheque);
+    m_en_hypotheque = true;
+}
 
+void CasePropriete::deshypothequer()
+{
+    int value = (m_hypotheque*0.01f)+m_hypotheque;
+
+    if (m_propietaire->argent() > value)
+    {
+        m_propietaire->payer(value);
+        m_en_hypotheque = false;
+    }
 }
 
 bool CasePropriete::estEnHypotheque() const
 {
-
+    return m_en_hypotheque;
 }
 
 int CasePropriete::loyer() const
