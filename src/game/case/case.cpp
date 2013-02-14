@@ -5,7 +5,7 @@ Case::Case(size_t id, const std::string& nom): m_id(id), m_nom(nom), m_propietai
 }
 const std::string& Case::nom() const
 {
-	return m_nom;	
+	return m_nom;
 }
 void Case::joueurArrive(Joueur* j)
 {
@@ -13,6 +13,7 @@ void Case::joueurArrive(Joueur* j)
 }
 void Case::joueurPart(Joueur* j_partant)
 {
+    //m_joueurs.pop_back(j); n'est pas possible?
 	for(auto it=m_joueurs.begin(); it!=m_joueurs.end();++it)
 	{
 		if((*it)==j_partant)
@@ -29,22 +30,12 @@ bool Case::peutAppartenir() const
 {
 	return false;
 }
+
 const std::list<Joueur*>& Case::getJoueurs() const
 {
 	return m_joueurs;
 }
-Joueur* Case::proprietaire() const
-{
-	return m_propietaire;
-}
-bool Case::peutAcheter(const Joueur*) const
-{
-	return false;
-}
-void Case::acheter(Joueur*)
-{
-	
-}
+
 size_t Case::id() const
 {
 	return m_id;
