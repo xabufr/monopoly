@@ -1,12 +1,12 @@
 #ifndef CARTE_REPARATION_H
 #define CARTE_REPARATION_H
-#include "src/game/carte/carte.h"
+#include "carte.h"
 #include <string>
 
 class Carte_reparation : public  Carte
 {
     public:
-        Carte_reparation(bool hotel,int maison);
+        Carte_reparation(bool hotel,int maison,const std::string& descr, PaquetCarte* paquet);
         virtual ~Carte_reparation();
     protected:
     private:
