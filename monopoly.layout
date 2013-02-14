@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
+<<<<<<< HEAD
+	<File name="src/game/carte/carte.cpp" open="0" top="0" tabpos="2">
+		<Cursor position="121" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte.h" open="0" top="0" tabpos="1">
+		<Cursor position="157" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_aller_a.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="29" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_aller_a_relatif.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="83" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_aller_a_relatif.h" open="0" top="0" tabpos="0">
+		<Cursor position="135" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_aller_prison.cpp" open="1" top="1" tabpos="1">
+		<Cursor position="153" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_aller_prison.h" open="1" top="0" tabpos="2">
+		<Cursor position="142" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_argent.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="26" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_argent_depuis_joueur.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="40" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_argent_depuis_joueur.h" open="0" top="0" tabpos="0">
+		<Cursor position="141" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_libere.cpp" open="1" top="0" tabpos="3">
+		<Cursor position="27" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_libere.h" open="1" top="0" tabpos="4">
+		<Cursor position="43" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_reparation.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="30" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_reparation.h" open="0" top="0" tabpos="0">
+		<Cursor position="106" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_retourner.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="99" topLine="0" />
+	</File>
+	<File name="src/game/carte/carte_retourner.h" open="0" top="0" tabpos="0">
+		<Cursor position="164" topLine="0" />
+	</File>
+	<File name="src/game/carte/paquet.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="71" topLine="0" />
+	</File>
+	<File name="src/game/carte/payer_ou_tirer.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="28" topLine="0" />
+	</File>
+	<File name="src/game/carte/payer_ou_tirer.h" open="0" top="0" tabpos="0">
+		<Cursor position="98" topLine="0" />
+	</File>
+	<File name="src/game/case/case.h" open="0" top="0" tabpos="0">
+		<Cursor position="0" topLine="3" />
+=======
 	<File name="src/game/plateau.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="290" topLine="9" />
@@ -100,5 +161,6 @@
 		<Cursor>
 			<Cursor1 position="398" topLine="0" />
 		</Cursor>
+>>>>>>> 423513f00e0c64d62e2f6f989402869dba766645
 	</File>
 </CodeBlocks_layout_file>
