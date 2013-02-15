@@ -46,6 +46,28 @@ int Joueur::getToursPrison() const
 {
 	return m_tours_prison;
 }
+int Joueur::getNombreGare() const
+{
+    int i=0;
+    for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
+	{
+		if(dynamic_cast<CaseGare*>(*it)!=0)
+            ++i;
+	}
+	return i;
+}
+
+int Joueur::getNombreCompagnie() const
+{
+    int i=0;
+    for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
+	{
+		if(dynamic_cast<CaseCompagnie*>(*it)!=0)
+            ++i;
+	}
+	return i;
+}
+
 Case* Joueur::estSur() const
 {
 	return m_CasePosition;
@@ -60,7 +82,7 @@ void Joueur::addCarteLiberte(CarteLiberte* c)
     m_cartes_liberte->push_back(c);
 }
 
-void Joueur::addPropiete(CasePropriete* p)
+void Joueur::addPropriete(CasePropriete* p)
 {
     m_proprietes.push_back(p);
 }

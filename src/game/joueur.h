@@ -21,10 +21,12 @@ public:
 	bool estEnPrison() const;
 	void ajouterTourPrison();
 	int getToursPrison() const;
+	int getNombreGare() const;
+	int getNombreCompagnie() const;
 	Case* estSur() const;
 	void positinner(Case*);
     void addCarteLiberte(CarteLiberte*);
-    void addPropiete(CasePropriete*);
+    void addPropriete(CasePropriete*);
 private:
 	int m_argent;
 	std::string m_nom;

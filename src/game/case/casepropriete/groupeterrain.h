@@ -2,6 +2,8 @@
 #define GROUPETERRAIN_H_INCLUDED
 
 #include <string>
+#include <list>
+#include <SFML/Graphics/Color.hpp>
 
 class Joueur;
 class CaseTerrain;
@@ -12,11 +14,12 @@ public:
     sf::Color color() const;
     std::string getNom() const;
     int prix_construction() const;
-    joueur joueurMonopole();
+    Joueur* joueurMonopole() const;
+    void addCase(CaseTerrain*);
 private:
-    static int m_prix_construction;
-    static sf::Color m_color;
-    static std::string m_nom;
-    CaseTerrain* m_case[];
+    int m_prix_construction;
+    sf::Color m_color;
+    std::string m_nom;
+    std::list<CaseTerrain*> m_case_terrain;
 };
 #endif // GROUPETERRAIN_H_INCLUDED

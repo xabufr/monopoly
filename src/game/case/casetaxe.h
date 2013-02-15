@@ -9,9 +9,10 @@ class CaseTaxe : public Case
 public:
 	CaseTaxe(size_t id, size_t value, const std::string& nom);
 	int getValue() const;
+    void setValue(int);
 	virtual void joueurArrive(Joueur*);
 private:
-	int m_value;
+    int m_value;
 };
 
 #endif // CASETAXE_H_INCLUDED

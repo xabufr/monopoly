@@ -1,29 +1,17 @@
 #ifndef CASEGARE_H_INCLUDED
 #define CASEGARE_H_INCLUDED
 
-#include "case.h"
+#include "casepropriete.h"
 
 class Joueur;
-class CasePropriete : public Case
+class CaseGare : public CasePropriete
 {
 public:
-	CasePropriete(size_t id, const std::string& nom);
+	CaseGare(size_t id, const std::string& nom);
 	virtual void joueurArrive(Joueur*);
-	virtual void joueurPart(Joueur*);
-	virtual void joueurPasse(Joueur*);
-	virtual bool peutAppartenir() const;
-	virtual bool peutAcheter(const Joueur*) const;
-	virtual void acheter(Joueur*);
-
-	virtual int prixAchat() const;
-	virtual bool estAchete() const;
-	virtual void acheter(Joueur*);
-	virtual int valeur_hypotheque() const;
-    virtual void hypothequer();
-    virtual bool estEnHypotheque() const;
+    void setLoyerParGare(int index, int value);
     virtual int loyer() const;
-    virtual bool peutConstruire() const;
 private:
-    static int m_loyer_par_gare;
-
+    int m_loyer_par_gare[4];
+};
 #endif // CASEGARE_H_INCLUDED

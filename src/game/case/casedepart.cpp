@@ -1,13 +1,17 @@
 #include "casedepart.h"
 #include "../joueur.h"
 
-CaseDepart::CaseDepart(size_t id, int value, const std::string& nom):Case(id, nom),
-m_value_credit(value)
+CaseDepart::CaseDepart(size_t id, const std::string& nom):Case(id, nom)
 {
 
 }
 
-int CaseDepart::getValueCredit() const
+void CaseDepart::setValueCredit(int v)
+{
+    m_value_credit = v;
+}
+
+int CaseDepart::getValueCredit()
 {
     return m_value_credit;
 }

@@ -1,13 +1,14 @@
 #ifndef CASEPROPRIETE_H_INCLUDED
 #define CASEPROPRIETE_H_INCLUDED
 
-#include "case.h"
+#include "../case.h"
 
 class Joueur;
 class CasePropriete : public Case
 {
 public:
-	CasePropriete(size_t id, const std::string& nom, int prix, int hypotheque);
+	CasePropriete(size_t id, const std::string& nom);
+	virtual bool peutAppartenir() const;
 	virtual int prixAchat() const;
 	virtual bool estAchete() const;
 	virtual void acheter(Joueur*);
@@ -18,12 +19,15 @@ public:
     virtual int loyer() const;
     virtual bool peutConstruire() const;
 
+    void setPrix(int);
+    void setHypotheque(int);
     Joueur* proprietaire() const;
+    void setProprietaire(Joueur*);
 private:
-    static int m_prix;
-    static int m_hypotheque;
+    int m_prix;
+    int m_hypotheque;
     bool m_en_hypotheque;
-    Joueur *m_propietaire;
+    Joueur *m_proprietaire;
 };
 
 #endif // CASEPROPRIETE_H_INCLUDED

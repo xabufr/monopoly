@@ -131,6 +131,16 @@
 		<Unit filename="src/game/case/caseparkinggratuit.h" />
 		<Unit filename="src/game/case/caseprison.cpp" />
 		<Unit filename="src/game/case/caseprison.h" />
+		<Unit filename="src/game/case/casepropriete/casecompagnie.cpp" />
+		<Unit filename="src/game/case/casepropriete/casecompagnie.h" />
+		<Unit filename="src/game/case/casepropriete/casegare.cpp" />
+		<Unit filename="src/game/case/casepropriete/casegare.h" />
+		<Unit filename="src/game/case/casepropriete/casepropriete.cpp" />
+		<Unit filename="src/game/case/casepropriete/casepropriete.h" />
+		<Unit filename="src/game/case/casepropriete/caseterrain.cpp" />
+		<Unit filename="src/game/case/casepropriete/caseterrain.h" />
+		<Unit filename="src/game/case/casepropriete/groupeterrain.cpp" />
+		<Unit filename="src/game/case/casepropriete/groupeterrain.h" />
 		<Unit filename="src/game/case/casetaxe.cpp" />
 		<Unit filename="src/game/case/casetaxe.h" />
 		<Unit filename="src/game/des.cpp" />

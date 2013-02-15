@@ -6,11 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Programmation/monopoly/src/game/carte/carte.cpp
-carte.h
-/home/thomas/Programmation/monopoly/src/game/carte/carte.h
-
-/home/thomas/Programmation/monopoly/src/game/carte/carte.h
+/home/zequiel/software/c++/monopoly/src/game/case/../carte/carte.h
 string
 -
+
+/home/zequiel/software/c++/monopoly/src/game/case/../carte/paquet.h
+list
+-
+string
+-
+
+/home/zequiel/software/c++/monopoly/src/game/case/../joueur.h
+string
+-
+list
+-
+
+/home/zequiel/software/c++/monopoly/src/game/case/case.h
+string
+-
+list
+-
+
+/home/zequiel/software/c++/monopoly/src/game/case/casecarte.cpp
+casecarte.h
+/home/zequiel/software/c++/monopoly/src/game/case/casecarte.h
+../joueur.h
+/home/zequiel/software/c++/monopoly/src/game/case/../joueur.h
+../carte/carte.h
+/home/zequiel/software/c++/monopoly/src/game/case/../carte/carte.h
+../carte/paquet.h
+/home/zequiel/software/c++/monopoly/src/game/case/../carte/paquet.h
+../carte/carteliberte.h
+/home/zequiel/software/c++/monopoly/src/game/case/../carte/carteliberte.h
+
+/home/zequiel/software/c++/monopoly/src/game/case/casecarte.h
+case.h
+/home/zequiel/software/c++/monopoly/src/game/case/case.h
 

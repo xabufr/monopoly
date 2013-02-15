@@ -2,8 +2,9 @@
 #include "../joueur.h"
 #include "../carte/carte.h"
 #include "../carte/paquet.h"
+#include "../carte/carteliberte.h"
 
-CaseCarte::CaseCarte(size_t id, const std::string& nom, PaquetCarte* paquet):Case(id, nom), m_paquet(paquet)
+CaseCarte::CaseCarte(size_t id, const std::string& nom):Case(id, nom)
 {
 
 }
@@ -11,5 +12,12 @@ CaseCarte::CaseCarte(size_t id, const std::string& nom, PaquetCarte* paquet):Cas
 void CaseCarte::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
-    Carte *carte = m_paquet->tirer(j);
+    Carte *carte = m_paquet->tirer();
+    if (dynamic_cast<CarteLiberte*>(carte) != 0)
+        j->addCarteLiberte((CarteLiberte*)carte);
+}
+
+void CaseCarte::setPaquet(PaquetCarte* p)
+{
+    m_paquet = p;
 }

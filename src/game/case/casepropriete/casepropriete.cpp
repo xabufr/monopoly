@@ -2,13 +2,16 @@
 #include "../../joueur.h"
 
 
-CasePropriete::CasePropriete(size_t id, const std::string& nom, int prix, int hypotheque):Case(id, nom),
-m_prix(prix),
-m_hypotheque(hypotheque),
-m_propietaire(nullptr),
+CasePropriete::CasePropriete(size_t id, const std::string& nom):Case(id, nom),
+m_proprietaire(nullptr),
 m_en_hypotheque(false)
 {
 
+}
+
+bool CasePropriete::peutAppartenir() const
+{
+    return true;
 }
 
 int CasePropriete::prixAchat() const
@@ -18,12 +21,12 @@ int CasePropriete::prixAchat() const
 
 bool CasePropriete::estAchete() const
 {
-    return (m_propietaire != nullptr);
+    return (m_proprietaire != nullptr);
 }
 
 void CasePropriete::acheter(Joueur* j)
 {
-    if (j->argent >= m_prix)
+    if (j->argent() >= m_prix)
     {
         j->payer(m_prix);
         j->addPropriete(this);
@@ -38,7 +41,7 @@ int CasePropriete::valeur_hypotheque() const
 
 void CasePropriete::hypothequer()
 {
-    m_propietaire->crediter(m_hypotheque);
+    m_proprietaire->crediter(m_hypotheque);
     m_en_hypotheque = true;
 }
 
@@ -46,9 +49,9 @@ void CasePropriete::deshypothequer()
 {
     int value = (m_hypotheque*0.01f)+m_hypotheque;
 
-    if (m_propietaire->argent() > value)
+    if (m_proprietaire->argent() > value)
     {
-        m_propietaire->payer(value);
+        m_proprietaire->payer(value);
         m_en_hypotheque = false;
     }
 }
@@ -60,7 +63,7 @@ bool CasePropriete::estEnHypotheque() const
 
 int CasePropriete::loyer() const
 {
-
+    return 0;
 }
 
 bool CasePropriete::peutConstruire() const
@@ -68,7 +71,22 @@ bool CasePropriete::peutConstruire() const
     return false;
 }
 
-Joueur CasePropriete::proprietaire() const
+Joueur* CasePropriete::proprietaire() const
 {
     return m_proprietaire;
+}
+
+void CasePropriete::setProprietaire(Joueur*j)
+{
+    m_proprietaire = j;
+}
+
+void CasePropriete::setPrix(int p)
+{
+    m_prix = p;
+}
+
+void CasePropriete::setHypotheque(int h)
+{
+    m_hypotheque = h;
 }
