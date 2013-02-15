@@ -1,7 +1,13 @@
 #include "plateau.h"
 #include "joueur.h"
 #include "case/case.h"
+#include "case/caseprison.h"
+#include <rapidxml.hpp>
 
+Plateau::Plateau()
+{
+	
+}
 void Plateau::addArgent(int a)
 {
 	m_argent += a;

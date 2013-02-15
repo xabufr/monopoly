@@ -250,6 +250,126 @@ src/game/carte/carte.s:
 .PHONY : src/game/carte/carte.s
 
 # target to build an object file
+src/game/carte/carte_aller_a.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o
+.PHONY : src/game/carte/carte_aller_a.o
+
+# target to preprocess a source file
+src/game/carte/carte_aller_a.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.i
+.PHONY : src/game/carte/carte_aller_a.i
+
+# target to generate assembly for a file
+src/game/carte/carte_aller_a.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.s
+.PHONY : src/game/carte/carte_aller_a.s
+
+# target to build an object file
+src/game/carte/carte_aller_a_relatif.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o
+.PHONY : src/game/carte/carte_aller_a_relatif.o
+
+# target to preprocess a source file
+src/game/carte/carte_aller_a_relatif.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.i
+.PHONY : src/game/carte/carte_aller_a_relatif.i
+
+# target to generate assembly for a file
+src/game/carte/carte_aller_a_relatif.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.s
+.PHONY : src/game/carte/carte_aller_a_relatif.s
+
+# target to build an object file
+src/game/carte/carte_aller_prison.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o
+.PHONY : src/game/carte/carte_aller_prison.o
+
+# target to preprocess a source file
+src/game/carte/carte_aller_prison.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.i
+.PHONY : src/game/carte/carte_aller_prison.i
+
+# target to generate assembly for a file
+src/game/carte/carte_aller_prison.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.s
+.PHONY : src/game/carte/carte_aller_prison.s
+
+# target to build an object file
+src/game/carte/carte_argent.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o
+.PHONY : src/game/carte/carte_argent.o
+
+# target to preprocess a source file
+src/game/carte/carte_argent.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.i
+.PHONY : src/game/carte/carte_argent.i
+
+# target to generate assembly for a file
+src/game/carte/carte_argent.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.s
+.PHONY : src/game/carte/carte_argent.s
+
+# target to build an object file
+src/game/carte/carte_argent_depuis_joueur.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o
+.PHONY : src/game/carte/carte_argent_depuis_joueur.o
+
+# target to preprocess a source file
+src/game/carte/carte_argent_depuis_joueur.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.i
+.PHONY : src/game/carte/carte_argent_depuis_joueur.i
+
+# target to generate assembly for a file
+src/game/carte/carte_argent_depuis_joueur.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.s
+.PHONY : src/game/carte/carte_argent_depuis_joueur.s
+
+# target to build an object file
+src/game/carte/carte_libere.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o
+.PHONY : src/game/carte/carte_libere.o
+
+# target to preprocess a source file
+src/game/carte/carte_libere.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.i
+.PHONY : src/game/carte/carte_libere.i
+
+# target to generate assembly for a file
+src/game/carte/carte_libere.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.s
+.PHONY : src/game/carte/carte_libere.s
+
+# target to build an object file
+src/game/carte/carte_reparation.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o
+.PHONY : src/game/carte/carte_reparation.o
+
+# target to preprocess a source file
+src/game/carte/carte_reparation.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.i
+.PHONY : src/game/carte/carte_reparation.i
+
+# target to generate assembly for a file
+src/game/carte/carte_reparation.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.s
+.PHONY : src/game/carte/carte_reparation.s
+
+# target to build an object file
+src/game/carte/carte_retourner.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o
+.PHONY : src/game/carte/carte_retourner.o
+
+# target to preprocess a source file
+src/game/carte/carte_retourner.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.i
+.PHONY : src/game/carte/carte_retourner.i
+
+# target to generate assembly for a file
+src/game/carte/carte_retourner.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.s
+.PHONY : src/game/carte/carte_retourner.s
+
+# target to build an object file
 src/game/carte/paquet.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.o
 .PHONY : src/game/carte/paquet.o
@@ -263,6 +383,21 @@ src/game/carte/paquet.i:
 src/game/carte/paquet.s:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.s
 .PHONY : src/game/carte/paquet.s
+
+# target to build an object file
+src/game/carte/payer_ou_tirer.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o
+.PHONY : src/game/carte/payer_ou_tirer.o
+
+# target to preprocess a source file
+src/game/carte/payer_ou_tirer.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.i
+.PHONY : src/game/carte/payer_ou_tirer.i
+
+# target to generate assembly for a file
+src/game/carte/payer_ou_tirer.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.s
+.PHONY : src/game/carte/payer_ou_tirer.s
 
 # target to build an object file
 src/game/case/case.o:
@@ -930,9 +1065,36 @@ help:
 	@echo "... src/game/carte/carte.o"
 	@echo "... src/game/carte/carte.i"
 	@echo "... src/game/carte/carte.s"
+	@echo "... src/game/carte/carte_aller_a.o"
+	@echo "... src/game/carte/carte_aller_a.i"
+	@echo "... src/game/carte/carte_aller_a.s"
+	@echo "... src/game/carte/carte_aller_a_relatif.o"
+	@echo "... src/game/carte/carte_aller_a_relatif.i"
+	@echo "... src/game/carte/carte_aller_a_relatif.s"
+	@echo "... src/game/carte/carte_aller_prison.o"
+	@echo "... src/game/carte/carte_aller_prison.i"
+	@echo "... src/game/carte/carte_aller_prison.s"
+	@echo "... src/game/carte/carte_argent.o"
+	@echo "... src/game/carte/carte_argent.i"
+	@echo "... src/game/carte/carte_argent.s"
+	@echo "... src/game/carte/carte_argent_depuis_joueur.o"
+	@echo "... src/game/carte/carte_argent_depuis_joueur.i"
+	@echo "... src/game/carte/carte_argent_depuis_joueur.s"
+	@echo "... src/game/carte/carte_libere.o"
+	@echo "... src/game/carte/carte_libere.i"
+	@echo "... src/game/carte/carte_libere.s"
+	@echo "... src/game/carte/carte_reparation.o"
+	@echo "... src/game/carte/carte_reparation.i"
+	@echo "... src/game/carte/carte_reparation.s"
+	@echo "... src/game/carte/carte_retourner.o"
+	@echo "... src/game/carte/carte_retourner.i"
+	@echo "... src/game/carte/carte_retourner.s"
 	@echo "... src/game/carte/paquet.o"
 	@echo "... src/game/carte/paquet.i"
 	@echo "... src/game/carte/paquet.s"
+	@echo "... src/game/carte/payer_ou_tirer.o"
+	@echo "... src/game/carte/payer_ou_tirer.i"
+	@echo "... src/game/carte/payer_ou_tirer.s"
 	@echo "... src/game/case/case.o"
 	@echo "... src/game/case/case.i"
 	@echo "... src/game/case/case.s"

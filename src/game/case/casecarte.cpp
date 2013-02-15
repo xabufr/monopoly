@@ -2,7 +2,7 @@
 #include "../joueur.h"
 #include "../carte/carte.h"
 #include "../carte/paquet.h"
-#include "../carte/carteliberte.h"
+#include "../carte/carte_libere.h"
 
 CaseCarte::CaseCarte(size_t id, const std::string& nom):Case(id, nom)
 {

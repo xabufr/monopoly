@@ -113,12 +113,7 @@
 		<Unit filename="src/game/carte/carte.h" />
 		<Unit filename="src/game/carte/paquet.cpp" />
 		<Unit filename="src/game/carte/paquet.h" />
-		<Unit filename="src/game/case/case propriété/casecompagnie.h" />
-		<Unit filename="src/game/case/case propriété/casegare.h" />
 		<Unit filename="src/game/case/case propriété/casepropriete.cpp" />
-		<Unit filename="src/game/case/case propriété/casepropriete.h" />
-		<Unit filename="src/game/case/case propriété/caseterrain.h" />
-		<Unit filename="src/game/case/case propriété/groupeterrain.h" />
 		<Unit filename="src/game/case/case.cpp" />
 		<Unit filename="src/game/case/case.h" />
 		<Unit filename="src/game/case/caseallerenprison.cpp" />

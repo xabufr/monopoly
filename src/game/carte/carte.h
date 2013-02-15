@@ -5,23 +5,24 @@
 
 class Joueur;
 class PaquetCarte;
+
 class Carte
 {
-public:
-	Carte(const std::string& descr, PaquetCarte*);
-	const std::string& description() const;
-	virtual void tirer(Joueur*) = 0;
-	virtual bool peutSeConserver() const;
-	virtual bool estEnPossession() const;
-	bool appartientA(Joueur*) const;
-	Joueur* appartient() const;
-	PaquetCarte* paquet() const;
+    public:
+        Carte(const std::string& descr, PaquetCarte*);
+        const std::string& description() const;
+        virtual void tirer(Joueur*) = 0;
+        virtual bool peutSeConserver() const;
+        virtual bool estEnPossession() const;
+        bool appartientA(Joueur*) const;
+        Joueur* appartient() const;
+        PaquetCarte* paquet() const;
 
-protected:
-	PaquetCarte* m_paquet;
+    protected:
+        PaquetCarte* m_paquet;
 
-private:
-	std::string m_description;
+    private:
+        std::string m_description;
 };
 
-#endif 
+#endif

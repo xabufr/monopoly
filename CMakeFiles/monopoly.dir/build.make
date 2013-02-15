@@ -972,9 +972,124 @@ CMakeFiles/monopoly.dir/src/game/des.o.provides: CMakeFiles/monopoly.dir/src/gam
 
 CMakeFiles/monopoly.dir/src/game/des.o.provides.build: CMakeFiles/monopoly.dir/src/game/des.o
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte_argent_depuis_joueur.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_41)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_argent_depuis_joueur.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_argent_depuis_joueur.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_argent_depuis_joueur.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte_aller_prison.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_42)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_prison.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_prison.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_prison.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte_argent.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_43)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_argent.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_argent.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_argent.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_argent.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_argent.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_argent.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_argent.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/carte_aller_a.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_44)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_a.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_a.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_a.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_libere.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_libere.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_libere.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_libere.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_libere.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_libere.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_libere.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o
+
 CMakeFiles/monopoly.dir/src/game/carte/carte.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/carte.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte.cpp
 
@@ -995,9 +1110,32 @@ CMakeFiles/monopoly.dir/src/game/carte/carte.o.provides: CMakeFiles/monopoly.dir
 
 CMakeFiles/monopoly.dir/src/game/carte/carte.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte.o
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_47)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_reparation.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_reparation.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_reparation.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o
+
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/paquet.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/paquet.o -c /home/zequiel/software/c++/monopoly/src/game/carte/paquet.cpp
 
@@ -1018,9 +1156,78 @@ CMakeFiles/monopoly.dir/src/game/carte/paquet.o.provides: CMakeFiles/monopoly.di
 
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/paquet.o
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte_retourner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_49)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_retourner.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_retourner.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_retourner.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o
+
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/payer_ou_tirer.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_50)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o -c /home/zequiel/software/c++/monopoly/src/game/carte/payer_ou_tirer.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/payer_ou_tirer.cpp > CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.i
+
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/payer_ou_tirer.cpp -o CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.s
+
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.provides: CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/carte_aller_a_relatif.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_51)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o -c /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_a_relatif.cpp
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_a_relatif.cpp > CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.i
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game/carte/carte_aller_a_relatif.cpp -o CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.s
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.requires
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.provides: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.provides
+
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.provides.build: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o
+
 CMakeFiles/monopoly.dir/src/game/joueur.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_52)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/joueur.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/joueur.o -c /home/zequiel/software/c++/monopoly/src/game/joueur.cpp
 
@@ -1043,7 +1250,7 @@ CMakeFiles/monopoly.dir/src/game/joueur.o.provides.build: CMakeFiles/monopoly.di
 
 CMakeFiles/monopoly.dir/src/game/plateau.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_53)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game/plateau.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game/plateau.o -c /home/zequiel/software/c++/monopoly/src/game/plateau.cpp
 
@@ -1066,7 +1273,7 @@ CMakeFiles/monopoly.dir/src/game/plateau.o.provides.build: CMakeFiles/monopoly.d
 
 CMakeFiles/monopoly.dir/src/core/exception.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/exception.o: src/core/exception.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_54)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/exception.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/exception.o -c /home/zequiel/software/c++/monopoly/src/core/exception.cpp
 
@@ -1089,7 +1296,7 @@ CMakeFiles/monopoly.dir/src/core/exception.o.provides.build: CMakeFiles/monopoly
 
 CMakeFiles/monopoly.dir/src/core/filelogger.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/filelogger.o: src/core/filelogger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_55)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/filelogger.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/filelogger.o -c /home/zequiel/software/c++/monopoly/src/core/filelogger.cpp
 
@@ -1112,7 +1319,7 @@ CMakeFiles/monopoly.dir/src/core/filelogger.o.provides.build: CMakeFiles/monopol
 
 CMakeFiles/monopoly.dir/src/core/trigo.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_56)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/trigo.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/trigo.o -c /home/zequiel/software/c++/monopoly/src/core/trigo.cpp
 
@@ -1135,7 +1342,7 @@ CMakeFiles/monopoly.dir/src/core/trigo.o.provides.build: CMakeFiles/monopoly.dir
 
 CMakeFiles/monopoly.dir/src/core/consolelogger.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/consolelogger.o: src/core/consolelogger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/consolelogger.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/consolelogger.o -c /home/zequiel/software/c++/monopoly/src/core/consolelogger.cpp
 
@@ -1158,7 +1365,7 @@ CMakeFiles/monopoly.dir/src/core/consolelogger.o.provides.build: CMakeFiles/mono
 
 CMakeFiles/monopoly.dir/src/core/singleton.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/singleton.o: src/core/singleton.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/singleton.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/singleton.o -c /home/zequiel/software/c++/monopoly/src/core/singleton.cpp
 
@@ -1181,7 +1388,7 @@ CMakeFiles/monopoly.dir/src/core/singleton.o.provides.build: CMakeFiles/monopoly
 
 CMakeFiles/monopoly.dir/src/core/logger.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/logger.o: src/core/logger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_50)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/logger.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/logger.o -c /home/zequiel/software/c++/monopoly/src/core/logger.cpp
 
@@ -1204,7 +1411,7 @@ CMakeFiles/monopoly.dir/src/core/logger.o.provides.build: CMakeFiles/monopoly.di
 
 CMakeFiles/monopoly.dir/src/core/conversion.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/conversion.o: src/core/conversion.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_51)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/conversion.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/conversion.o -c /home/zequiel/software/c++/monopoly/src/core/conversion.cpp
 
@@ -1227,7 +1434,7 @@ CMakeFiles/monopoly.dir/src/core/conversion.o.provides.build: CMakeFiles/monopol
 
 CMakeFiles/monopoly.dir/src/core/random.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/random.o: src/core/random.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_52)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/random.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/random.o -c /home/zequiel/software/c++/monopoly/src/core/random.cpp
 
@@ -1290,8 +1497,17 @@ monopoly_OBJECTS = \
 "CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o" \
 "CMakeFiles/monopoly.dir/src/game/case/casecarte.o" \
 "CMakeFiles/monopoly.dir/src/game/des.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o" \
 "CMakeFiles/monopoly.dir/src/game/carte/carte.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o" \
 "CMakeFiles/monopoly.dir/src/game/carte/paquet.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o" \
+"CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o" \
 "CMakeFiles/monopoly.dir/src/game/joueur.o" \
 "CMakeFiles/monopoly.dir/src/game/plateau.o" \
 "CMakeFiles/monopoly.dir/src/core/exception.o" \
@@ -1346,8 +1562,17 @@ monopoly: CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o
 monopoly: CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o
 monopoly: CMakeFiles/monopoly.dir/src/game/case/casecarte.o
 monopoly: CMakeFiles/monopoly.dir/src/game/des.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o
 monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o
 monopoly: CMakeFiles/monopoly.dir/src/game/carte/paquet.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o
+monopoly: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o
 monopoly: CMakeFiles/monopoly.dir/src/game/joueur.o
 monopoly: CMakeFiles/monopoly.dir/src/game/plateau.o
 monopoly: CMakeFiles/monopoly.dir/src/core/exception.o
@@ -1407,8 +1632,17 @@ CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/case/caseprop
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/case/casecarte.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/des.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/paquet.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/joueur.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game/plateau.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/core/exception.o.requires

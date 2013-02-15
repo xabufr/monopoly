@@ -25,4 +25,4 @@ private:
 	Plateau *m_plateau;
 };
 
-#endif 
+#endif
