@@ -69,6 +69,7 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte_r
 CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte_retourner.h
 
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/../../core/random.h
+CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.cpp
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.h
 
@@ -80,12 +81,54 @@ CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/payer_ou
 CMakeFiles/monopoly.dir/src/game/case/case.o: src/game/case/case.cpp
 CMakeFiles/monopoly.dir/src/game/case/case.o: src/game/case/case.h
 
+CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/caseallerenprison.cpp
+CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/caseallerenprison.h
+
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/carte.h
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/paquet.h
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/casecarte.cpp
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/casecarte.h
+
+CMakeFiles/monopoly.dir/src/game/case/casedepart.o: src/game/case/../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casedepart.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/case/casedepart.o: src/game/case/casedepart.cpp
+CMakeFiles/monopoly.dir/src/game/case/casedepart.o: src/game/case/casedepart.h
+
+CMakeFiles/monopoly.dir/src/game/case/caseparkinggratuit.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/case/caseparkinggratuit.o: src/game/case/caseparkinggratuit.cpp
+CMakeFiles/monopoly.dir/src/game/case/caseparkinggratuit.o: src/game/case/caseparkinggratuit.h
+
+CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/caseprison.cpp
+CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/caseprison.h
+
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/../../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/casepropriete.cpp
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/casepropriete.h
+
+CMakeFiles/monopoly.dir/src/game/case/casetaxe.o: src/game/case/../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casetaxe.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/case/casetaxe.o: src/game/case/casetaxe.cpp
+CMakeFiles/monopoly.dir/src/game/case/casetaxe.o: src/game/case/casetaxe.h
+
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/../core/random.h
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.cpp
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.h
 
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.cpp
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.h
+
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/caseprison.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/joueur.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.cpp
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: rapidxml/rapidxml.hpp
 
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/exception.h
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/logger.h

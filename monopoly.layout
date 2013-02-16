@@ -1,28 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
-	<File name="src/game/carte/carte.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="18" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte.h" open="1" top="0" tabpos="1">
-		<Cursor position="361" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_aller_prison.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="153" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_aller_prison.h" open="1" top="0" tabpos="3">
-		<Cursor position="235" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_libere.h" open="0" top="0" tabpos="0">
-		<Cursor position="281" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_reparation.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="258" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_reparation.h" open="1" top="0" tabpos="2">
-		<Cursor position="239" topLine="0" />
-	</File>
-	<File name="src/game/joueur.cpp" open="1" top="1" tabpos="7">
-		<Cursor position="751" topLine="40" />
-	</File>
 </CodeBlocks_layout_file>

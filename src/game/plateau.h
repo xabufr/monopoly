@@ -10,6 +10,7 @@ class CasePrison;
 class Plateau
 {
 public:
+	Plateau();
 	void addArgent(int);
 	void viderArgent();
 	int getArgent() const;
