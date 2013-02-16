@@ -1,166 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
-<<<<<<< HEAD
-	<File name="src/game/carte/carte.cpp" open="0" top="0" tabpos="2">
-		<Cursor position="121" topLine="0" />
+	<File name="src/game/carte/carte.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="18" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte.h" open="0" top="0" tabpos="1">
-		<Cursor position="157" topLine="0" />
+	<File name="src/game/carte/carte.h" open="1" top="0" tabpos="1">
+		<Cursor position="361" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte_aller_a.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="29" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_aller_a_relatif.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="83" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_aller_a_relatif.h" open="0" top="0" tabpos="0">
-		<Cursor position="135" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_aller_prison.cpp" open="1" top="1" tabpos="1">
+	<File name="src/game/carte/carte_aller_prison.cpp" open="1" top="0" tabpos="5">
 		<Cursor position="153" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte_aller_prison.h" open="1" top="0" tabpos="2">
-		<Cursor position="142" topLine="0" />
+	<File name="src/game/carte/carte_aller_prison.h" open="1" top="0" tabpos="3">
+		<Cursor position="235" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte_argent.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="26" topLine="0" />
+	<File name="src/game/carte/carte_libere.h" open="0" top="0" tabpos="0">
+		<Cursor position="281" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte_argent_depuis_joueur.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="40" topLine="0" />
+	<File name="src/game/carte/carte_reparation.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="258" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte_argent_depuis_joueur.h" open="0" top="0" tabpos="0">
-		<Cursor position="141" topLine="0" />
+	<File name="src/game/carte/carte_reparation.h" open="1" top="0" tabpos="2">
+		<Cursor position="239" topLine="0" />
 	</File>
-	<File name="src/game/carte/carte_libere.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="27" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_libere.h" open="1" top="0" tabpos="4">
-		<Cursor position="43" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_reparation.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="30" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_reparation.h" open="0" top="0" tabpos="0">
-		<Cursor position="106" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_retourner.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="99" topLine="0" />
-	</File>
-	<File name="src/game/carte/carte_retourner.h" open="0" top="0" tabpos="0">
-		<Cursor position="164" topLine="0" />
-	</File>
-	<File name="src/game/carte/paquet.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="71" topLine="0" />
-	</File>
-	<File name="src/game/carte/payer_ou_tirer.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="28" topLine="0" />
-	</File>
-	<File name="src/game/carte/payer_ou_tirer.h" open="0" top="0" tabpos="0">
-		<Cursor position="98" topLine="0" />
-	</File>
-	<File name="src/game/case/case.h" open="0" top="0" tabpos="0">
-		<Cursor position="0" topLine="3" />
-=======
-	<File name="src/game/plateau.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="290" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/caseparkinggratuit.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="200" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/case propriété/casepropriete.cpp" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="883" topLine="25" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/caseprison.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="416" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/casecarte.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="326" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/joueur.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="647" topLine="9" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/case propriété/casepropriete.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="220" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/case.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="472" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/caseparkinggratuit.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="119" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/casedepart.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="134" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/casecarte.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="277" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/joueur.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="981" topLine="39" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/casetaxe.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="89" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/case.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="326" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/case propriété/caseterrain.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="766" topLine="6" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/casetaxe.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="273" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/caseprison.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="78" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="caseallerenprison.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="117" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/caseallerenprison.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="217" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game/case/casedepart.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="398" topLine="0" />
-		</Cursor>
->>>>>>> 423513f00e0c64d62e2f6f989402869dba766645
+	<File name="src/game/joueur.cpp" open="1" top="1" tabpos="7">
+		<Cursor position="751" topLine="40" />
 	</File>
 </CodeBlocks_layout_file>

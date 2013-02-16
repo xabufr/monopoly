@@ -15,14 +15,6 @@ bool Carte::estEnPossession() const
 {
 	return false;
 }
-bool Carte::appartientA(Joueur*) const
-{
-	return false;
-}
-Joueur* Carte::appartient() const
-{
-	return nullptr;
-}
 PaquetCarte* Carte::paquet() const
 {
 	return m_paquet;
