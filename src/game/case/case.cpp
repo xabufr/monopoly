@@ -1,6 +1,6 @@
 #include "case.h"
 
-Case::Case(size_t id, const std::string& nom): m_id(id), m_nom(nom), m_propietaire(nullptr)
+Case::Case(size_t id, const std::string& nom): m_id(id), m_nom(nom)
 {
 }
 const std::string& Case::nom() const

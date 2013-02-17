@@ -12,7 +12,7 @@ public:
 	virtual void joueurArrive(Joueur*);
 	virtual void joueurPasse(Joueur*);
 private:
-	static int m_value_credit;
+	int m_value_credit;
 };
 
 #endif // CASEDEPART_H_INCLUDED

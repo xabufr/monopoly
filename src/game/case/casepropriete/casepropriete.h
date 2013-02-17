@@ -1,7 +1,7 @@
 #ifndef CASEPROPRIETE_H_INCLUDED
 #define CASEPROPRIETE_H_INCLUDED
 
-#include "case.h"
+#include "../case.h"
 
 class Joueur;
 class CasePropriete : public Case
@@ -19,9 +19,9 @@ public:
 
     Joueur* proprietaire() const;
 private:
-    static int m_prix;
-    static int m_hypotheque;
-    Joueur *m_propietaire;
+    int m_prix;
+    int m_hypotheque;
+    Joueur *m_proprietaire;
 };
 
 #endif // CASEPROPRIETE_H_INCLUDED

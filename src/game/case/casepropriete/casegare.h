@@ -1,7 +1,7 @@
 #ifndef CASEGARE_H_INCLUDED
 #define CASEGARE_H_INCLUDED
 
-#include "case.h"
+#include "../case.h"
 
 class Joueur;
 class CasePropriete : public Case
@@ -13,7 +13,6 @@ public:
 	virtual void joueurPasse(Joueur*);
 	virtual bool peutAppartenir() const;
 	virtual bool peutAcheter(const Joueur*) const;
-	virtual void acheter(Joueur*);
 
 	virtual int prixAchat() const;
 	virtual bool estAchete() const;
@@ -25,5 +24,5 @@ public:
     virtual bool peutConstruire() const;
 private:
     static int m_loyer_par_gare;
-
+};
 #endif // CASEGARE_H_INCLUDED

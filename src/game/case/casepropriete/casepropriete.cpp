@@ -5,7 +5,7 @@
 CasePropriete::CasePropriete(size_t id, const std::string& nom, int prix, int hypotheque):Case(id, nom),
 m_prix(prix),
 m_hypotheque(hypotheque),
-m_propietaire(nullptr)
+m_proprietaire(nullptr)
 {
 
 }
@@ -17,12 +17,12 @@ int CasePropriete::prixAchat() const
 
 bool CasePropriete::estAchete() const
 {
-    return (m_propietaire != nullptr);
+    return (m_proprietaire != nullptr);
 }
 
 void CasePropriete::acheter(Joueur* j)
 {
-    if (j->argent >= m_prix)
+    if (j->argent() >= m_prix)
     {
         j->payer(m_prix);
         j->addPropriete(this);
@@ -55,7 +55,7 @@ bool CasePropriete::peutConstruire() const
     return false;
 }
 
-Joueur CasePropriete::proprietaire() const
+Joueur* CasePropriete::proprietaire() const
 {
     return m_proprietaire;
 }
