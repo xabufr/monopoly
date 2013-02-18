@@ -1,10 +1,8 @@
 #include "casepropriete.h"
 #include "../../joueur.h"
 
-
 CasePropriete::CasePropriete(size_t id, const std::string& nom):Case(id, nom),
-m_proprietaire(nullptr),
-m_en_hypotheque(false)
+m_proprietaire(nullptr)
 {
 
 }

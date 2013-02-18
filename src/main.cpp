@@ -12,8 +12,11 @@ int main()
 	GuiManager *gui = engine->GetGuiManager();
 	GuiContener *contener = gui->GetRootNode()->AddContener();
 	GuiButtonItem *bQuitter = new GuiButtonItem;
+	GuiButtonItem *bJouer = new GuiButtonItem;
 	bQuitter->SetText("Quitter");
-	contener->AjouterItem(bQuitter, 0, 0);
+	bJouer->SetText("Jouer");
+	contener->AjouterItem(bJouer, 0, 0);
+	contener->AjouterItem(bQuitter, 0, 1);
 	while(engine->GetRenderWindow()->isOpen())
 	{
 		sf::Event event;

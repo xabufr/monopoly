@@ -5,6 +5,7 @@
 #include <cstddef>
 
 class Joueur;
+class PaquetCarte;
 class Case;
 class CasePrison;
 class Plateau
@@ -34,6 +35,7 @@ private:
 	int m_argent;
 	std::vector<Joueur*> m_joueurs;
 	Case* m_case[40];
+	PaquetCarte* m_paquets[2];
 	CasePrison *m_prison;
 	size_t m_index_current_joueur;
 };

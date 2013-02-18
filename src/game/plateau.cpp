@@ -1,12 +1,97 @@
 #include "plateau.h"
 #include "joueur.h"
+#include "carte/paquet.h"
 #include "case/case.h"
+#include "case/casepropriete/casegare.h"
 #include "case/caseprison.h"
-#include <rapidxml.hpp>
+#include "../../rapidxml/rapidxml.hpp"
+#include <fstream>
+#include <iostream>
+#include <boost/lexical_cast.hpp>
 
 Plateau::Plateau()
 {
-	
+	std::ifstream file;
+	file.open("config.xml");
+	if(!file)
+	{
+		std::cout << "Fichier config.xml manquant" << std::endl;
+		exit(0);
+	}
+	file.seekg(0, std::ios_base::end);
+	const int length = file.tellg();
+	char *buffer     = new char[length+1];
+	file.seekg(0, std::ios_base::beg);
+	file.read(buffer, length);
+	buffer[length] = 0;
+	rapidxml::xml_document<> document;
+	document.parse<0>(buffer);
+
+	rapidxml::xml_node<> *root = document.first_node("jeu");
+
+	rapidxml::xml_node<> *plateau = root->first_node("plateau");
+	/*
+	 * Chargement des cases
+	 */
+	rapidxml::xml_node<> *node;
+	for (node=plateau->first_node();node;node=node->next_sibling())
+	{
+		std::string type = node->name();
+		if (type=="groupe")
+		{
+		}
+		else
+		{
+			Case *currCase;
+			size_t id = boost::lexical_cast<size_t>(node->first_attribute("id")->value());
+			if(type=="taxe") 
+			{
+			}
+			else if(type=="compagnie") 
+			{
+				
+			}
+			else if(type=="gare") 
+			{
+				
+			}
+			else if(type=="depart") 
+			{
+				
+			}
+			else if(type=="prison") 
+			{
+				
+			}
+			else if(type=="police") 
+			{
+				
+			}
+			else if(type=="parc") 
+			{
+				
+			}
+			else if(type=="carte") 
+			{
+				
+			}
+			m_case[id] = currCase;
+		}
+	}
+	rapidxml::xml_node<> *cartes = root->first_node("cartes");
+	rapidxml::xml_node<> *paquet;
+	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
+	{
+		int type        = boost::lexical_cast<int>(paquet->first_attribute("type")->value());
+		std::string nom = paquet->first_attribute("nom")->value();
+		m_paquets[type] = new PaquetCarte(type, nom, "", this);
+		for(node=paquet->first_node("carte");node;node=node->next_sibling("carte")) 
+		{
+			Carte *carte=nullptr;
+			m_paquets[type]->ajouterCarte(carte);
+		}
+	}
+	delete buffer;
 }
 void Plateau::addArgent(int a)
 {
@@ -22,12 +107,13 @@ int Plateau::getArgent() const
 }
 void Plateau::emprisoner(Joueur* j)
 {
-	m_prison->emprisoner(j);
 	j->setPrison(true);
+	j->estSur()->joueurPart(j);
+	j->positinner(m_prison);
+	m_prison->joueurArrive(j);
 }
 void Plateau::liberer(Joueur* j)
 {
-	m_prison->liberer(j);
 	j->setPrison(true);
 }
 Joueur* Plateau::getJoueurTour() const
