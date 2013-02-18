@@ -87,7 +87,7 @@ Plateau::Plateau()
 		m_paquets[type] = new PaquetCarte(type, nom, "", this);
 		for(node=paquet->first_node("carte");node;node=node->next_sibling("carte")) 
 		{
-			Carte *carte;
+			Carte *carte=nullptr;
 			m_paquets[type]->ajouterCarte(carte);
 		}
 	}
