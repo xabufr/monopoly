@@ -1,4 +1,7 @@
 #include "joueur.h"
+#include "carte/carte_libere.h"
+#include "case/casepropriete/casegare.h"
+#include "case/casepropriete/casecompagnie.h"
 
 const std::string& Joueur::nom() const
 {
@@ -46,6 +49,28 @@ int Joueur::getToursPrison() const
 {
 	return m_tours_prison;
 }
+int Joueur::getNombreGare() const
+{
+    int i=0;
+    for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
+	{
+		if(dynamic_cast<CaseGare*>(*it)!=0)
+            ++i;
+	}
+	return i;
+}
+
+int Joueur::getNombreCompagnie() const
+{
+    int i=0;
+    for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
+	{
+		if(dynamic_cast<CaseCompagnie*>(*it)!=0)
+            ++i;
+	}
+	return i;
+}
+
 Case* Joueur::estSur() const
 {
 	return m_CasePosition;

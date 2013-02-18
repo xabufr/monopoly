@@ -14,6 +14,16 @@ public:
 	virtual void joueurPart(Joueur*);
 	virtual void joueurPasse(Joueur*);
 	virtual bool peutAppartenir() const;
+    virtual int prixAchat() const;
+	virtual bool estAchete() const;
+	virtual void acheter(Joueur*);
+	virtual int valeur_hypotheque() const;
+    virtual void hypothequer();
+    virtual void deshypothequer();
+    virtual bool estEnHypotheque() const;
+    virtual int loyer() const;
+    virtual bool peutConstruire() const;
+
 	const std::list<Joueur*>& getJoueurs() const;
 	size_t id() const;
 private:

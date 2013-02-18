@@ -21,6 +21,8 @@ public:
 	bool estEnPrison() const;
 	void ajouterTourPrison();
 	int getToursPrison() const;
+	int getNombreGare() const;
+	int getNombreCompagnie() const;
 	Case* estSur() const;
 	void positinner(Case*);
     void addCarteLiberte(Carte_Libere*);

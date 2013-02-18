@@ -138,7 +138,15 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseprison.cpp">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casecompagnie.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casegare.cpp">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/caseterrain.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/groupeterrain.cpp">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casetaxe.cpp">
       </Unit>

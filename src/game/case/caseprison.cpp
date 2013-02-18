@@ -18,6 +18,14 @@ void CasePrison::joueurPart(Joueur* j)
     Case::joueurPart(j);
     if (j->estEnPrison())
     {
-        j->setPrison(false);
+        for(auto it=m_prisonnier.begin(); it!=m_prisonnier.end();++it)
+        {
+            if((*it)==j)
+            {
+                m_prisonnier.erase(it);
+                j->setPrison(false);
+                return;
+            }
+        }
     }
 }

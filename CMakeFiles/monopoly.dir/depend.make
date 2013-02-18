@@ -50,15 +50,18 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/c
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/carte_aller_a_relatif.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/paquet.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte_aller_prison.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte_aller_prison.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/paquet.h
 
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/../joueur.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte_argent.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte_argent.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/../joueur.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte_argent.h
@@ -88,8 +91,10 @@ CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.cpp
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/paquet.h
 
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/../joueur.h
 CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/carte_argent.h
+CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/payer_ou_tirer.cpp
 CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o: src/game/carte/payer_ou_tirer.h
 
@@ -102,6 +107,7 @@ CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/caseall
 CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/caseallerenprison.h
 
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/carte.h
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/carte_libere.h
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../joueur.h
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/case.h
@@ -122,10 +128,35 @@ CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/case.h
 CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/caseprison.cpp
 CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/caseprison.h
 
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o: src/game/case/casepropriete/../../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o: src/game/case/casepropriete/casecompagnie.cpp
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o: src/game/case/casepropriete/casecompagnie.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o: src/game/case/casepropriete/casepropriete.h
+
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o: src/game/case/casepropriete/../../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o: src/game/case/casepropriete/casegare.cpp
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o: src/game/case/casepropriete/casegare.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o: src/game/case/casepropriete/casepropriete.h
+
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/../../joueur.h
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/../case.h
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/casepropriete.cpp
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/casepropriete.h
+
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/../../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/casepropriete.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/caseterrain.cpp
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/caseterrain.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/groupeterrain.h
+
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/casepropriete.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/caseterrain.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/groupeterrain.cpp
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/groupeterrain.h
 
 CMakeFiles/monopoly.dir/src/game/case/casetaxe.o: src/game/case/../joueur.h
 CMakeFiles/monopoly.dir/src/game/case/casetaxe.o: src/game/case/case.h
@@ -136,15 +167,25 @@ CMakeFiles/monopoly.dir/src/game/des.o: src/game/../core/random.h
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.cpp
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.h
 
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/carte/carte.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/carte/carte_libere.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/casecompagnie.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/casegare.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/casepropriete.h
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.cpp
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.h
 
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/../../rapidxml/rapidxml.hpp
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/case.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/caseprison.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/casegare.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/casepropriete.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/joueur.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.cpp
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.h
-CMakeFiles/monopoly.dir/src/game/plateau.o: rapidxml/rapidxml.hpp
 
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/exception.h
 CMakeFiles/monopoly.dir/src/graphics/cameramanager.o: src/graphics/../core/logger.h

@@ -487,6 +487,36 @@ src/game/case/caseprison.s:
 .PHONY : src/game/case/caseprison.s
 
 # target to build an object file
+src/game/case/casepropriete/casecompagnie.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o
+.PHONY : src/game/case/casepropriete/casecompagnie.o
+
+# target to preprocess a source file
+src/game/case/casepropriete/casecompagnie.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.i
+.PHONY : src/game/case/casepropriete/casecompagnie.i
+
+# target to generate assembly for a file
+src/game/case/casepropriete/casecompagnie.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.s
+.PHONY : src/game/case/casepropriete/casecompagnie.s
+
+# target to build an object file
+src/game/case/casepropriete/casegare.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o
+.PHONY : src/game/case/casepropriete/casegare.o
+
+# target to preprocess a source file
+src/game/case/casepropriete/casegare.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.i
+.PHONY : src/game/case/casepropriete/casegare.i
+
+# target to generate assembly for a file
+src/game/case/casepropriete/casegare.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.s
+.PHONY : src/game/case/casepropriete/casegare.s
+
+# target to build an object file
 src/game/case/casepropriete/casepropriete.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o
 .PHONY : src/game/case/casepropriete/casepropriete.o
@@ -500,6 +530,36 @@ src/game/case/casepropriete/casepropriete.i:
 src/game/case/casepropriete/casepropriete.s:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.s
 .PHONY : src/game/case/casepropriete/casepropriete.s
+
+# target to build an object file
+src/game/case/casepropriete/caseterrain.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o
+.PHONY : src/game/case/casepropriete/caseterrain.o
+
+# target to preprocess a source file
+src/game/case/casepropriete/caseterrain.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.i
+.PHONY : src/game/case/casepropriete/caseterrain.i
+
+# target to generate assembly for a file
+src/game/case/casepropriete/caseterrain.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.s
+.PHONY : src/game/case/casepropriete/caseterrain.s
+
+# target to build an object file
+src/game/case/casepropriete/groupeterrain.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o
+.PHONY : src/game/case/casepropriete/groupeterrain.o
+
+# target to preprocess a source file
+src/game/case/casepropriete/groupeterrain.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.i
+.PHONY : src/game/case/casepropriete/groupeterrain.i
+
+# target to generate assembly for a file
+src/game/case/casepropriete/groupeterrain.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.s
+.PHONY : src/game/case/casepropriete/groupeterrain.s
 
 # target to build an object file
 src/game/case/casetaxe.o:
@@ -1050,9 +1110,21 @@ help:
 	@echo "... src/game/case/caseprison.o"
 	@echo "... src/game/case/caseprison.i"
 	@echo "... src/game/case/caseprison.s"
+	@echo "... src/game/case/casepropriete/casecompagnie.o"
+	@echo "... src/game/case/casepropriete/casecompagnie.i"
+	@echo "... src/game/case/casepropriete/casecompagnie.s"
+	@echo "... src/game/case/casepropriete/casegare.o"
+	@echo "... src/game/case/casepropriete/casegare.i"
+	@echo "... src/game/case/casepropriete/casegare.s"
 	@echo "... src/game/case/casepropriete/casepropriete.o"
 	@echo "... src/game/case/casepropriete/casepropriete.i"
 	@echo "... src/game/case/casepropriete/casepropriete.s"
+	@echo "... src/game/case/casepropriete/caseterrain.o"
+	@echo "... src/game/case/casepropriete/caseterrain.i"
+	@echo "... src/game/case/casepropriete/caseterrain.s"
+	@echo "... src/game/case/casepropriete/groupeterrain.o"
+	@echo "... src/game/case/casepropriete/groupeterrain.i"
+	@echo "... src/game/case/casepropriete/groupeterrain.s"
 	@echo "... src/game/case/casetaxe.o"
 	@echo "... src/game/case/casetaxe.i"
 	@echo "... src/game/case/casetaxe.s"

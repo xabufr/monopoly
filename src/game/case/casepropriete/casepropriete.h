@@ -7,20 +7,26 @@ class Joueur;
 class CasePropriete : public Case
 {
 public:
-	CasePropriete(size_t id, const std::string& nom, int prix, int hypotheque);
+	CasePropriete(size_t id, const std::string& nom);
+	virtual bool peutAppartenir() const;
 	virtual int prixAchat() const;
 	virtual bool estAchete() const;
 	virtual void acheter(Joueur*);
 	virtual int valeur_hypotheque() const;
     virtual void hypothequer();
+    virtual void deshypothequer();
     virtual bool estEnHypotheque() const;
     virtual int loyer() const;
     virtual bool peutConstruire() const;
 
+    void setPrix(int);
+    void setHypotheque(int);
     Joueur* proprietaire() const;
+    void setProprietaire(Joueur*);
 private:
     int m_prix;
     int m_hypotheque;
+    bool m_en_hypotheque;
     Joueur *m_proprietaire;
 };
 

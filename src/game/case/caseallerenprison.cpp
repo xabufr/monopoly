@@ -5,7 +5,6 @@ CaseAllerEnPrison::CaseAllerEnPrison(size_t id, const std::string& nom):Case(id,
 {
 
 }
-
 void CaseAllerEnPrison::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
