@@ -12,6 +12,12 @@ class Carte
         Carte(const std::string& descr, PaquetCarte*);
         const std::string& description() const;
         virtual void tirer(Joueur*) = 0;
+        /**
+            tirer : la methode change en fonction de la classe : polyumorphisme
+            (+ valeur dans argent, aller à ID....)
+            Il faut influer sur le comportement du joueur en fonction du type de carte
+            sur laquelle il tombe
+        **/
         virtual bool peutSeConserver() const;
         // prison : redefinition : true
         virtual bool estEnPossession() const;

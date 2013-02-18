@@ -7,9 +7,10 @@ class Carte_argent : public  Carte
 {
     public:
         Carte_argent(int val,const std::string& descr, PaquetCarte* paquet);
+        virtual void tirer(Joueur*);
     protected:
-    private:
         int m_valeur;
+    private:
 };
 
 #endif

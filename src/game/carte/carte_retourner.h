@@ -8,6 +8,7 @@ class Carte_retourner : public  Carte_aller_a
 {
     public:
         Carte_retourner(int id,const std::string& descr, PaquetCarte* paquet);
+        virtual void tirer(Joueur*);
     protected:
     private:
         int m_id;

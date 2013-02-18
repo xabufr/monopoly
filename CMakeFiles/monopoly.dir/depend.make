@@ -30,31 +30,43 @@ CMakeFiles/monopoly.dir/src/core/singleton.o: src/core/singleton.h
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.cpp
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/../joueur.h
 CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/carte.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/carte.h
+CMakeFiles/monopoly.dir/src/game/carte/carte.o: src/game/carte/paquet.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/../joueur.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/carte_aller_a.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/carte_aller_a.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o: src/game/carte/paquet.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/../joueur.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/carte_aller_a.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/carte_aller_a_relatif.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/carte_aller_a_relatif.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o: src/game/carte/paquet.h
 
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte_aller_prison.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o: src/game/carte/carte_aller_prison.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/../joueur.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte_argent.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o: src/game/carte/carte_argent.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte_argent.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte_argent_depuis_joueur.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/carte_argent_depuis_joueur.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o: src/game/carte/paquet.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/../joueur.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.h
@@ -63,10 +75,13 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte.
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/../joueur.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte_aller_a.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte_retourner.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/carte_retourner.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o: src/game/carte/paquet.h
 
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/../../core/random.h
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o: src/game/carte/carte.h
@@ -108,6 +123,7 @@ CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/caseprison.cpp
 CMakeFiles/monopoly.dir/src/game/case/caseprison.o: src/game/case/caseprison.h
 
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/../../joueur.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/../case.h
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/casepropriete.cpp
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o: src/game/case/casepropriete/casepropriete.h
 

@@ -31,31 +31,43 @@ CMakeFiles/monopoly.dir/src/core/trigo.o
  /home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h
 CMakeFiles/monopoly.dir/src/game/carte/carte.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a_relatif.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a_relatif.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_prison.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_prison.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent_depuis_joueur.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent_depuis_joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.h
@@ -64,10 +76,13 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_retourner.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_retourner.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/carte/paquet.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../../core/random.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
@@ -109,6 +124,7 @@ CMakeFiles/monopoly.dir/src/game/case/caseprison.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseprison.h
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/../../joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/../case.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.h
 CMakeFiles/monopoly.dir/src/game/case/casetaxe.o

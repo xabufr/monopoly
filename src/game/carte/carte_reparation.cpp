@@ -11,3 +11,8 @@ Carte_reparation::~Carte_reparation()
 {
     delete this;
 }
+
+void Carte_reparation::tirer(Joueur* j)
+{
+
+}

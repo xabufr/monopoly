@@ -55,7 +55,7 @@ void Joueur::positinner(Case* pos)
 	m_CasePosition=pos;
 }
 
-void Joueur::addCarteLiberte(CarteLiberte* c)
+void Joueur::addCarteLiberte(Carte_Libere* c)
 {
     m_cartes_liberte.push_back(c);
 }
