@@ -1,43 +1,341 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_project_file>
-	<FileVersion major="1" minor="6" />
-	<Project>
-		<Option title="monopoly" />
-		<Option pch_mode="2" />
-		<Option compiler="gcc" />
-		<Build>
-			<Target title="Debug">
-				<Option output="bin/Debug/monopoly" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Debug/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-g" />
-				</Compiler>
-			</Target>
-			<Target title="Release">
-				<Option output="bin/Release/monopoly" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/Release/" />
-				<Option type="1" />
-				<Option compiler="gcc" />
-				<Compiler>
-					<Add option="-O2" />
-				</Compiler>
-				<Linker>
-					<Add option="-s" />
-				</Linker>
-			</Target>
-		</Build>
-		<Compiler>
-			<Add option="-Wall" />
-			<Add option="-fexceptions" />
-		</Compiler>
-		<Unit filename="main.cpp" />
-		<Extensions>
-			<envvars />
-			<code_completion />
-			<lib_finder disable_auto="1" />
-			<debugger />
-		</Extensions>
-	</Project>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="monopoly" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/bastien/Bureau/Monopoly/monopoly" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/bastien/Bureau/Monopoly/monopoly" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="monopoly">
+         <Option output="/home/bastien/Bureau/Monopoly/monopoly/monopoly" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bastien/Bureau/Monopoly/monopoly/rapidxml" />
+            <Add directory="/home/bastien/Bureau/Monopoly/monopoly/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.6" />
+            <Add directory="/usr/include/c++/4.6/backward" />
+            <Add directory="/usr/include/c++/4.6/x86_64-linux-gnu/." />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.6/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 monopoly" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="monopoly/fast">
+         <Option output="/home/bastien/Bureau/Monopoly/monopoly/monopoly" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/bastien/Bureau/Monopoly/monopoly/rapidxml" />
+            <Add directory="/home/bastien/Bureau/Monopoly/monopoly/src" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/4.6" />
+            <Add directory="/usr/include/c++/4.6/backward" />
+            <Add directory="/usr/include/c++/4.6/x86_64-linux-gnu/." />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.6/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 monopoly/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/bastien/Bureau/Monopoly/monopoly" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/bastien/Bureau/Monopoly/monopoly/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/consolelogger.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/conversion.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/exception.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/filelogger.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/random.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/singleton.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a_relatif.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_prison.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent_depuis_joueur.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_retourner.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/payer_ou_tirer.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/case.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseallerenprison.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casecarte.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casedepart.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseparkinggratuit.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseprison.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casecompagnie.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casegare.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/caseterrain.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/groupeterrain.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casetaxe.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/des.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/joueur.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/plateau.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicolorselector.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiprogressbaritem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guirectangleitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guislidernumberitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextinputitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodecircleshapeitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeshapeitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodespriteitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodetextureitem.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/main.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/consolelogger.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/conversion.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/exception.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/filelogger.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/random.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/singleton.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a_relatif.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_prison.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent_depuis_joueur.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_retourner.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/payer_ou_tirer.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/.caseprison.h.swp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/case.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseallerenprison.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casecarte.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casedepart.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseparkinggratuit.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseprison.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casecompagnie.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casegare.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/caseterrain.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/groupeterrain.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casetaxe.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/des.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/joueur.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/plateau.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicolorselector.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiprogressbaritem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guirectangleitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guislidernumberitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextinputitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/positioninformations.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodecircleshapeitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeshapeitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodespriteitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodetextureitem.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+   </Project>
 </CodeBlocks_project_file>

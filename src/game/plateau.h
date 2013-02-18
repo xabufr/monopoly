@@ -14,6 +14,7 @@ public:
 	Plateau();
 	void addArgent(int);
 	void viderArgent();
+	std::vector<Joueur*> GetJoueurs();
 	int getArgent() const;
 	void emprisoner(Joueur*);
 	void liberer(Joueur*);
@@ -40,4 +41,4 @@ private:
 	size_t m_index_current_joueur;
 };
 
-#endif 
+#endif

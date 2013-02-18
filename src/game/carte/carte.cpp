@@ -1,5 +1,6 @@
 #include "carte.h"
-
+#include "../joueur.h"
+#include "paquet.h"
 Carte::Carte(const std::string& descr, PaquetCarte* paquet): m_description(descr), m_paquet(paquet)
 {
 }
@@ -19,4 +20,6 @@ PaquetCarte* Carte::paquet() const
 {
 	return m_paquet;
 }
-
+void Carte::tirer(Joueur * j)
+{
+}

@@ -170,3 +170,7 @@ void Plateau::placerCurrentJoueur(int id, bool passerDepart)
 	}
 }
 
+std::vector<Joueur*> Plateau::GetJoueurs()
+{
+    return m_joueurs;
+}

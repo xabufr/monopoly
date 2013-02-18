@@ -8,6 +8,7 @@ class Carte_aller_en_prison : public Carte
 
     public:
         Carte_aller_en_prison(const std::string& descr, PaquetCarte* paquet);
+        virtual void tirer(Joueur*);
 
     private:
 

@@ -8,6 +8,7 @@ class Carte_reparation : public  Carte
     public:
         Carte_reparation(bool hotel,int maison,const std::string& descr, PaquetCarte* paquet);
         virtual ~Carte_reparation();
+        virtual void tirer(Joueur*);
     protected:
     private:
         bool m_hotel;
