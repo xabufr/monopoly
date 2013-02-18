@@ -35,6 +35,7 @@ public:
     }
     */
     void addPropriete(CasePropriete*);
+	const std::list<CasePropriete*>& proprietes() const;
 private:
 	int m_argent;
 	std::string m_nom;
