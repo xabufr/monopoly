@@ -57,10 +57,10 @@ void Joueur::positinner(Case* pos)
 
 void Joueur::addCarteLiberte(CarteLiberte* c)
 {
-    m_cartes_liberte->push_back(c);
+    m_cartes_liberte.push_back(c);
 }
 
-void Joueur::addPropiete(CasePropriete* p)
+void Joueur::addPropriete(CasePropriete* p)
 {
     m_proprietes.push_back(p);
 }

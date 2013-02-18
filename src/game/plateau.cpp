@@ -6,7 +6,7 @@
 
 Plateau::Plateau()
 {
-	
+
 }
 void Plateau::addArgent(int a)
 {
@@ -22,12 +22,10 @@ int Plateau::getArgent() const
 }
 void Plateau::emprisoner(Joueur* j)
 {
-	m_prison->emprisoner(j);
 	j->setPrison(true);
 }
 void Plateau::liberer(Joueur* j)
 {
-	m_prison->liberer(j);
 	j->setPrison(true);
 }
 Joueur* Plateau::getJoueurTour() const

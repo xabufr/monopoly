@@ -24,7 +24,7 @@ public:
 	Case* estSur() const;
 	void positinner(Case*);
     void addCarteLiberte(CarteLiberte*);
-    void addPropiete(CasePropriete*);
+    void addPropriete(CasePropriete*);
 private:
 	int m_argent;
 	std::string m_nom;

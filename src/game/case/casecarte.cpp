@@ -11,5 +11,5 @@ CaseCarte::CaseCarte(size_t id, const std::string& nom, PaquetCarte* paquet):Cas
 void CaseCarte::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
-    Carte *carte = m_paquet->tirer(j);
+    Carte *carte = m_paquet->tirer();
 }
