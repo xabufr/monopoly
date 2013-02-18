@@ -89,3 +89,7 @@ void Joueur::addPropriete(CasePropriete* p)
 {
     m_proprietes.push_back(p);
 }
+const std::list<CasePropriete*>& Joueur::proprietes() const
+{
+	return m_proprietes;
+}
