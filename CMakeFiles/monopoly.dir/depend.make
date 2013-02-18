@@ -87,6 +87,7 @@ CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/caseall
 CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o: src/game/case/caseallerenprison.h
 
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/carte.h
+CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/carte_libere.h
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/../joueur.h
 CMakeFiles/monopoly.dir/src/game/case/casecarte.o: src/game/case/case.h
@@ -131,6 +132,9 @@ CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/caseterrain.h
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o: src/game/case/casepropriete/groupeterrain.h
 
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/casepropriete.h
+CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/caseterrain.h
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/groupeterrain.cpp
 CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o: src/game/case/casepropriete/groupeterrain.h
 
@@ -143,6 +147,12 @@ CMakeFiles/monopoly.dir/src/game/des.o: src/game/../core/random.h
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.cpp
 CMakeFiles/monopoly.dir/src/game/des.o: src/game/des.h
 
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/carte/carte.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/carte/carte_libere.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/casecompagnie.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/casegare.h
+CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/case/casepropriete/casepropriete.h
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.cpp
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.h
 

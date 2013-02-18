@@ -1,4 +1,5 @@
 #include "groupeterrain.h"
+#include "caseterrain.h"
 
 
 GroupeTerrain::GroupeTerrain(const sf::Color color, const std::string& nom, const int prix):
@@ -24,8 +25,21 @@ int GroupeTerrain::prix_construction() const
 
 Joueur* GroupeTerrain::joueurMonopole() const
 {
+    CaseTerrain* current=(*m_case_terrain.begin());
 
+    for (auto it=m_case_terrain.begin(); it!=m_case_terrain.end(); ++it)
+    {
+        if (current->proprietaire() == nullptr || current->proprietaire() != ((CaseTerrain*)(*it))->proprietaire())
+            return nullptr;
+    }
+    return current->proprietaire();
 }
+
+std::list<CaseTerrain*> GroupeTerrain::getCasesTerrain() const
+{
+    return m_case_terrain;
+}
+
 
 void GroupeTerrain::addCase(CaseTerrain* c)
 {

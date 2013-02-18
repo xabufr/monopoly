@@ -38,10 +38,24 @@ void CaseTerrain::acheter(Joueur* j)
 
 bool CaseTerrain::peutConstruire() const
 {
-    return (CasePropriete::proprietaire() == m_groupe->joueurMonopole());
+    bool work=true;
+    for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
+    {
+        if (m_nombre_maison > ((CaseTerrain*)(*it))->maisons() && m_nombre_maison == 5)
+            return false;
+    }
+    return (CasePropriete::proprietaire() == m_groupe->joueurMonopole() && work);
+}
+
+int CaseTerrain::maisons() const
+{
+    return m_nombre_maison;
 }
 
 int CaseTerrain::tarif() const
 {
-
+    if (m_nombre_maison <= 4)
+        return m_groupe->prix_construction();
+    else
+        return m_groupe->prix_construction()*5;
 }

@@ -15,6 +15,7 @@ public:
     std::string getNom() const;
     int prix_construction() const;
     Joueur* joueurMonopole() const;
+    std::list<CaseTerrain*> getCasesTerrain() const;
     void addCase(CaseTerrain*);
 private:
     int m_prix_construction;

@@ -91,7 +91,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="caseallerenprison.cpp" />
 		<Unit filename="src/core/consolelogger.cpp" />
 		<Unit filename="src/core/consolelogger.h" />
 		<Unit filename="src/core/conversion.cpp" />
@@ -111,8 +110,26 @@
 		<Unit filename="src/game/carte/.carte.cpp.swp" />
 		<Unit filename="src/game/carte/carte.cpp" />
 		<Unit filename="src/game/carte/carte.h" />
+		<Unit filename="src/game/carte/carte_aller_a.cpp" />
+		<Unit filename="src/game/carte/carte_aller_a.h" />
+		<Unit filename="src/game/carte/carte_aller_a_relatif.cpp" />
+		<Unit filename="src/game/carte/carte_aller_a_relatif.h" />
+		<Unit filename="src/game/carte/carte_aller_prison.cpp" />
+		<Unit filename="src/game/carte/carte_aller_prison.h" />
+		<Unit filename="src/game/carte/carte_argent.cpp" />
+		<Unit filename="src/game/carte/carte_argent.h" />
+		<Unit filename="src/game/carte/carte_argent_depuis_joueur.cpp" />
+		<Unit filename="src/game/carte/carte_argent_depuis_joueur.h" />
+		<Unit filename="src/game/carte/carte_libere.cpp" />
+		<Unit filename="src/game/carte/carte_libere.h" />
+		<Unit filename="src/game/carte/carte_reparation.cpp" />
+		<Unit filename="src/game/carte/carte_reparation.h" />
+		<Unit filename="src/game/carte/carte_retourner.cpp" />
+		<Unit filename="src/game/carte/carte_retourner.h" />
 		<Unit filename="src/game/carte/paquet.cpp" />
 		<Unit filename="src/game/carte/paquet.h" />
+		<Unit filename="src/game/carte/payer_ou_tirer.cpp" />
+		<Unit filename="src/game/carte/payer_ou_tirer.h" />
 		<Unit filename="src/game/case/case propriété/casepropriete.cpp" />
 		<Unit filename="src/game/case/case.cpp" />
 		<Unit filename="src/game/case/case.h" />

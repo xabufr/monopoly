@@ -13,8 +13,8 @@ void CaseCarte::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
     Carte *carte = m_paquet->tirer();
-    if (dynamic_cast<CarteLiberte*>(carte) != 0)
-        j->addCarteLiberte((CarteLiberte*)carte);
+    if (dynamic_cast<Carte_Libere*>(carte) != 0)
+        j->addCarteLiberte((Carte_Libere*)carte);
 }
 
 void CaseCarte::setPaquet(PaquetCarte* p)
