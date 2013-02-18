@@ -13,9 +13,9 @@ class Carte
         const std::string& description() const;
         virtual void tirer(Joueur*) = 0;
         virtual bool peutSeConserver() const;
+        // prison : redefinition : true
         virtual bool estEnPossession() const;
-        bool appartientA(Joueur*) const;
-        Joueur* appartient() const;
+        // sortir de prison => 1 par paquet
         PaquetCarte* paquet() const;
 
     protected:
