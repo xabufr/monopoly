@@ -59,7 +59,6 @@ int Joueur::getNombreGare() const
 	}
 	return i;
 }
-
 int Joueur::getNombreCompagnie() const
 {
     int i=0;
@@ -70,7 +69,6 @@ int Joueur::getNombreCompagnie() const
 	}
 	return i;
 }
-
 Case* Joueur::estSur() const
 {
 	return m_CasePosition;
@@ -79,12 +77,10 @@ void Joueur::positinner(Case* pos)
 {
 	m_CasePosition=pos;
 }
-
 void Joueur::addCarteLiberte(Carte_Libere* c)
 {
     m_cartes_liberte.push_back(c);
 }
-
 void Joueur::addPropriete(CasePropriete* p)
 {
     m_proprietes.push_back(p);

@@ -231,14 +231,6 @@ void Plateau::joueurTourFinit()
 	if(j->estEnPrison())
 		j->ajouterTourPrison();
 }
-Plateau::EtatPlateau Plateau::etatPlateau() const
-{
-	return m_etat;
-}
-void Plateau::setEtatPlateau(EtatPlateau e)
-{
-	m_etat = e;
-}
 void Plateau::avancerCurrentJoueur(int dep)
 {
 	Joueur *j = getJoueurTour();
@@ -275,4 +267,9 @@ void Plateau::placerCurrentJoueur(int id, bool passerDepart)
 std::vector<Joueur*> Plateau::GetJoueurs()
 {
     return m_joueurs;
+}
+void Plateau::addJoueur(Joueur *j)
+{
+	m_joueurs.push_back(j);
+	j->positinner(m_case[0]);
 }
