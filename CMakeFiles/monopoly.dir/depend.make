@@ -184,7 +184,22 @@ CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.cpp
 CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.h
 
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/../../rapidxml/rapidxml.hpp
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/../case/case.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/../case/casecarte.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/../case/casepropriete/caseterrain.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/../joueur.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/../plateau.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_aller_a.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_aller_a_relatif.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_aller_prison.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_argent.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_argent_depuis_joueur.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_libere.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_reparation.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/carte_retourner.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/paquet.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/payer_ou_tirer.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/case.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/caseallerenprison.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casecarte.h

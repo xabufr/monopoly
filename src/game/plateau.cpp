@@ -1,6 +1,17 @@
 #include "plateau.h"
 #include "joueur.h"
+//include cartes
 #include "carte/paquet.h"
+#include "carte/carte_argent.h"
+#include "carte/carte_argent_depuis_joueur.h"
+#include "carte/carte_reparation.h"
+#include "carte/carte_aller_a.h"
+#include "carte/carte_aller_a_relatif.h"
+#include "carte/carte_aller_prison.h"
+#include "carte/payer_ou_tirer.h"
+#include "carte/carte_libere.h"
+#include "carte/carte_retourner.h"
+//Inclues cases
 #include "case/case.h"
 #include "case/casepropriete/casegare.h"
 #include "case/casepropriete/casecompagnie.h"
@@ -12,6 +23,7 @@
 #include "case/caseallerenprison.h"
 #include "case/caseparkinggratuit.h"
 #include "case/casecarte.h"
+//end include cases
 #include "../../rapidxml/rapidxml.hpp"
 #include <fstream>
 #include <iostream>
@@ -52,11 +64,55 @@ Plateau::Plateau()
 	{
 		int type        = boost::lexical_cast<int>(paquet->first_attribute("type")->value());
 		std::string nom = paquet->first_attribute("nom")->value();
-		m_paquets[type] = new PaquetCarte(type, nom, "", this);
+		PaquetCarte *curPaq = m_paquets[type] = new PaquetCarte(type, nom, "", this);
+		std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 		for(node=paquet->first_node("carte");node;node=node->next_sibling("carte")) 
 		{
 			Carte *carte=nullptr;
-			m_paquets[type]->ajouterCarte(carte);
+			std::string type = node->first_attribute("type")->value();
+			std::string description = node->first_attribute("lib")->value();
+			if(type=="aller_prison")
+			{
+				carte = new Carte_aller_en_prison(description, curPaq);
+			}
+			else if(type=="retourner") 
+			{
+				carte = new Carte_retourner(boost::lexical_cast<int>(node->first_attribute("id")->value()), description, curPaq);
+			}
+			else if(type=="aller_a") 
+			{
+				carte = new Carte_aller_a(boost::lexical_cast<int>(node->first_attribute("id")->value()),
+						description, curPaq);
+			}
+			else if(type=="libere") 
+			{
+				carte = new Carte_Libere(description, curPaq);
+			}
+			else if(type=="argent") 
+			{
+				carte = new Carte_argent(boost::lexical_cast<int>(node->first_attribute("valeur")->value()),
+						description, curPaq);
+			}
+			else if(type=="reparation") 
+			{
+				carte = new Carte_reparation(boost::lexical_cast<int>(node->first_attribute("hotel")->value()),
+						boost::lexical_cast<int>(node->first_attribute("maison")->value()),
+						description, curPaq);
+			}
+			else if(type=="aller_relatif") 
+			{
+				carte = new Carte_aller_a_relatif(boost::lexical_cast<int>(node->first_attribute("dep")->value()),
+						description, curPaq);
+			}
+			else if(type=="argent_tirer") 
+			{
+			}
+			else if(type=="argent_depuis_joueurs") 
+			{
+				carte = new Carte_argent_depuis_joueur(boost::lexical_cast<int>(node->first_attribute("valeur")->value()),
+						description, curPaq);
+			}
+			curPaq->ajouterCarte(carte);
 		}
 	}
 	for (node=plateau->first_node();node;node=node->next_sibling())

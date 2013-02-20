@@ -185,7 +185,22 @@ CMakeFiles/monopoly.dir/src/game/joueur.o
  /home/thomas/Programmation/monopoly/src/game/joueur.h
 CMakeFiles/monopoly.dir/src/game/plateau.o
  /home/thomas/Programmation/monopoly/src/game/../../rapidxml/rapidxml.hpp
+ /home/thomas/Programmation/monopoly/src/game/carte/../case/case.h
+ /home/thomas/Programmation/monopoly/src/game/carte/../case/casecarte.h
+ /home/thomas/Programmation/monopoly/src/game/carte/../case/casepropriete/caseterrain.h
+ /home/thomas/Programmation/monopoly/src/game/carte/../joueur.h
+ /home/thomas/Programmation/monopoly/src/game/carte/../plateau.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_aller_a.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_aller_a_relatif.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_aller_prison.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_argent.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_argent_depuis_joueur.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_libere.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_reparation.h
+ /home/thomas/Programmation/monopoly/src/game/carte/carte_retourner.h
  /home/thomas/Programmation/monopoly/src/game/carte/paquet.h
+ /home/thomas/Programmation/monopoly/src/game/carte/payer_ou_tirer.h
  /home/thomas/Programmation/monopoly/src/game/case/case.h
  /home/thomas/Programmation/monopoly/src/game/case/caseallerenprison.h
  /home/thomas/Programmation/monopoly/src/game/case/casecarte.h
