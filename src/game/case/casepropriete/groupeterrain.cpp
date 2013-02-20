@@ -2,7 +2,7 @@
 #include "caseterrain.h"
 
 
-GroupeTerrain::GroupeTerrain(const sf::Color color, const std::string& nom, const int prix):
+GroupeTerrain::GroupeTerrain(const sf::Color& color, const std::string& nom, int prix):
 m_color(color), m_nom(nom), m_prix_construction(prix)
 {
 

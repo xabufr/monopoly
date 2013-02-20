@@ -10,7 +10,7 @@ class CaseTerrain;
 class GroupeTerrain
 {
 public:
-    GroupeTerrain(const sf::Color color, const std::string& nom, const int prix);
+    GroupeTerrain(const sf::Color& color, const std::string& nom, int prix);
     sf::Color color() const;
     std::string getNom() const;
     int prix_construction() const;

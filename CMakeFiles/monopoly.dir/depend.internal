@@ -187,12 +187,17 @@ CMakeFiles/monopoly.dir/src/game/plateau.o
  /home/thomas/Programmation/monopoly/src/game/../../rapidxml/rapidxml.hpp
  /home/thomas/Programmation/monopoly/src/game/carte/paquet.h
  /home/thomas/Programmation/monopoly/src/game/case/case.h
+ /home/thomas/Programmation/monopoly/src/game/case/caseallerenprison.h
+ /home/thomas/Programmation/monopoly/src/game/case/casecarte.h
  /home/thomas/Programmation/monopoly/src/game/case/casedepart.h
+ /home/thomas/Programmation/monopoly/src/game/case/caseparkinggratuit.h
  /home/thomas/Programmation/monopoly/src/game/case/caseprison.h
  /home/thomas/Programmation/monopoly/src/game/case/casepropriete/../case.h
  /home/thomas/Programmation/monopoly/src/game/case/casepropriete/casecompagnie.h
  /home/thomas/Programmation/monopoly/src/game/case/casepropriete/casegare.h
  /home/thomas/Programmation/monopoly/src/game/case/casepropriete/casepropriete.h
+ /home/thomas/Programmation/monopoly/src/game/case/casepropriete/caseterrain.h
+ /home/thomas/Programmation/monopoly/src/game/case/casepropriete/groupeterrain.h
  /home/thomas/Programmation/monopoly/src/game/case/casetaxe.h
  /home/thomas/Programmation/monopoly/src/game/joueur.h
  /home/thomas/Programmation/monopoly/src/game/plateau.cpp

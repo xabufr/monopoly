@@ -6,24 +6,20 @@ CaseTerrain::CaseTerrain(size_t id, const std::string& nom):CasePropriete(id, no
 {
 
 }
-
 void CaseTerrain::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
     if (CasePropriete::proprietaire() != j)
         j->payer(m_loyer[m_nombre_maison]);
 }
-
 int CaseTerrain::loyer() const
 {
     return m_loyer[m_nombre_maison];
 }
-
 void CaseTerrain::setGroupe(GroupeTerrain* g)
 {
     m_groupe = g;
 }
-
 void CaseTerrain::acheter(Joueur* j)
 {
     if (CasePropriete::proprietaire() == nullptr)
@@ -35,7 +31,6 @@ void CaseTerrain::acheter(Joueur* j)
         CasePropriete::proprietaire()->payer(m_groupe->prix_construction()*(++m_nombre_maison));
 
 }
-
 bool CaseTerrain::peutConstruire() const
 {
     bool work=true;
@@ -46,16 +41,18 @@ bool CaseTerrain::peutConstruire() const
     }
     return (CasePropriete::proprietaire() == m_groupe->joueurMonopole() && work);
 }
-
 int CaseTerrain::maisons() const
 {
     return m_nombre_maison;
 }
-
 int CaseTerrain::tarif() const
 {
     if (m_nombre_maison <= 4)
         return m_groupe->prix_construction();
     else
         return m_groupe->prix_construction()*5;
+}
+void CaseTerrain::setLoyer(int index, int value)
+{
+	m_loyer[index] = value;
 }

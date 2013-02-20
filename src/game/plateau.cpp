@@ -4,6 +4,8 @@
 #include "case/case.h"
 #include "case/casepropriete/casegare.h"
 #include "case/casepropriete/casecompagnie.h"
+#include "case/casepropriete/caseterrain.h"
+#include "case/casepropriete/groupeterrain.h"
 #include "case/caseprison.h"
 #include "case/casetaxe.h"
 #include "case/casedepart.h"
@@ -36,18 +38,51 @@ Plateau::Plateau()
 	rapidxml::xml_node<> *root = document.first_node("jeu");
 
 	rapidxml::xml_node<> *plateau = root->first_node("plateau");
-	/*
-	 * Chargement des cases
-	 */
+	rapidxml::xml_node<> *cartes = root->first_node("cartes");
 	rapidxml::xml_node<> *node;
+	rapidxml::xml_node<> *paquet;
+
 	int multiplicateurs_compagnies[2];
 	int loyers_gare[4];
 	int credit_tour;
+	int prix_gare, prix_compagnie;
+	int hyp_gare, hyp_compagnie;
+
+	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
+	{
+		int type        = boost::lexical_cast<int>(paquet->first_attribute("type")->value());
+		std::string nom = paquet->first_attribute("nom")->value();
+		m_paquets[type] = new PaquetCarte(type, nom, "", this);
+		for(node=paquet->first_node("carte");node;node=node->next_sibling("carte")) 
+		{
+			Carte *carte=nullptr;
+			m_paquets[type]->ajouterCarte(carte);
+		}
+	}
 	for (node=plateau->first_node();node;node=node->next_sibling())
 	{
 		std::string type = node->name();
 		if (type=="groupe")
 		{
+			sf::Color color;
+			GroupeTerrain *groupe = new GroupeTerrain(color, node->first_attribute("couleur")->value(),
+					boost::lexical_cast<int>(node->first_attribute("maison")->value()));
+			rapidxml::xml_node<>* nodeTerrain;
+			for(nodeTerrain=node->first_node("terrain");nodeTerrain;nodeTerrain=nodeTerrain->next_sibling("terrain")) 
+			{
+				int id = boost::lexical_cast<int>(nodeTerrain->first_attribute("id")->value());
+				CaseTerrain *terrain = new CaseTerrain(id, nodeTerrain->first_attribute("nom")->value());
+				terrain->setPrix(boost::lexical_cast<int>(nodeTerrain->first_attribute("prix")->value()));
+				terrain->setHypotheque(boost::lexical_cast<int>(nodeTerrain->first_attribute("hyp")->value()));
+				terrain->setGroupe(groupe);
+				for (size_t i = 0; i < 6; ++i)
+				{
+					terrain->setLoyer(i, 
+							boost::lexical_cast<int>(
+								nodeTerrain->first_attribute(("t"+boost::lexical_cast<std::string>(i)).c_str())->value())
+							);
+				}
+			}
 		}
 		else
 		{
@@ -65,6 +100,8 @@ Plateau::Plateau()
 						node->first_attribute("nom")->value());
 				for(int i=0;i<2;++i)
 					((CaseCompagnie*)currCase)->setMultiplicateur(i, multiplicateurs_compagnies[i]);
+				((CaseCompagnie*)currCase)->setPrix(prix_compagnie);
+				((CaseCompagnie*)currCase)->setHypotheque(hyp_compagnie);
 			}
 			else if(type=="gare") 
 			{
@@ -74,6 +111,8 @@ Plateau::Plateau()
 				{
 					((CaseGare*)currCase)->setLoyerParGare(i, loyers_gare[i]);
 				}
+				((CaseGare*)currCase)->setPrix(prix_gare);
+				((CaseGare*)currCase)->setHypotheque(hyp_gare);
 			}
 			else if(type=="depart") 
 			{
@@ -97,19 +136,6 @@ Plateau::Plateau()
 				currCase = new CaseCarte(id, m_paquets[id_paquet]);
 			}
 			m_case[id] = currCase;
-		}
-	}
-	rapidxml::xml_node<> *cartes = root->first_node("cartes");
-	rapidxml::xml_node<> *paquet;
-	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
-	{
-		int type        = boost::lexical_cast<int>(paquet->first_attribute("type")->value());
-		std::string nom = paquet->first_attribute("nom")->value();
-		m_paquets[type] = new PaquetCarte(type, nom, "", this);
-		for(node=paquet->first_node("carte");node;node=node->next_sibling("carte")) 
-		{
-			Carte *carte=nullptr;
-			m_paquets[type]->ajouterCarte(carte);
 		}
 	}
 	delete buffer;
@@ -190,7 +216,6 @@ void Plateau::placerCurrentJoueur(int id, bool passerDepart)
 		j->positinner(m_case[id]);
 	}
 }
-
 std::vector<Joueur*> Plateau::GetJoueurs()
 {
     return m_joueurs;
