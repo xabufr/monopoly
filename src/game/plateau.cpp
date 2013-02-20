@@ -3,7 +3,13 @@
 #include "carte/paquet.h"
 #include "case/case.h"
 #include "case/casepropriete/casegare.h"
+#include "case/casepropriete/casecompagnie.h"
 #include "case/caseprison.h"
+#include "case/casetaxe.h"
+#include "case/casedepart.h"
+#include "case/caseallerenprison.h"
+#include "case/caseparkinggratuit.h"
+#include "case/casecarte.h"
 #include "../../rapidxml/rapidxml.hpp"
 #include <fstream>
 #include <iostream>
@@ -34,6 +40,9 @@ Plateau::Plateau()
 	 * Chargement des cases
 	 */
 	rapidxml::xml_node<> *node;
+	int multiplicateurs_compagnies[2];
+	int loyers_gare[4];
+	int credit_tour;
 	for (node=plateau->first_node();node;node=node->next_sibling())
 	{
 		std::string type = node->name();
@@ -46,34 +55,46 @@ Plateau::Plateau()
 			size_t id = boost::lexical_cast<size_t>(node->first_attribute("id")->value());
 			if(type=="taxe") 
 			{
+				currCase = new CaseTaxe(id, 
+						boost::lexical_cast<int>(node->first_attribute("prix")->value()),
+						node->first_attribute("nom")->value());
 			}
 			else if(type=="compagnie") 
 			{
-				
+				currCase = new CaseCompagnie(id,
+						node->first_attribute("nom")->value());
+				for(int i=0;i<2;++i)
+					((CaseCompagnie*)currCase)->setMultiplicateur(i, multiplicateurs_compagnies[i]);
 			}
 			else if(type=="gare") 
 			{
-				
+				currCase = new CaseGare(id,
+						node->first_attribute("nom")->value());
+				for(int i=0;i<4;++i) 
+				{
+					((CaseGare*)currCase)->setLoyerParGare(i, loyers_gare[i]);
+				}
 			}
 			else if(type=="depart") 
 			{
-				
+				currCase = new CaseDepart(id, credit_tour);
 			}
 			else if(type=="prison") 
 			{
-				
+				currCase = m_prison = new CasePrison(id);
 			}
 			else if(type=="police") 
 			{
-				
+				currCase = new CaseAllerEnPrison(id);
 			}
 			else if(type=="parc") 
 			{
-				
+				currCase = new CaseParkingGratuit(id);
 			}
 			else if(type=="carte") 
 			{
-				
+				int id_paquet = boost::lexical_cast<int>(node->first_attribute("type")->value());
+				currCase = new CaseCarte(id, m_paquets[id_paquet]);
 			}
 			m_case[id] = currCase;
 		}

@@ -3,6 +3,7 @@
 #include "graphics/graphicalengine.h" 
 #include "graphics/gui/guicontener.h"
 #include "graphics/gui/guibuttonitem.h"
+#include "game/plateau.h"
 
 int main()
 {
@@ -17,6 +18,7 @@ int main()
 	bJouer->SetText("Jouer");
 	contener->AjouterItem(bJouer, 0, 0);
 	contener->AjouterItem(bQuitter, 0, 1);
+	Plateau plateau;
 	while(engine->GetRenderWindow()->isOpen())
 	{
 		sf::Event event;

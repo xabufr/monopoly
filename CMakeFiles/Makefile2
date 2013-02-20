@@ -43,14 +43,17 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bastien/Bureau/Monopoly/monopoly
+CMAKE_SOURCE_DIR = /home/thomas/Programmation/monopoly
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bastien/Bureau/Monopoly/monopoly
+CMAKE_BINARY_DIR = /home/thomas/Programmation/monopoly
 
 #=============================================================================
 # Target rules for target CMakeFiles/monopoly.dir
@@ -59,7 +62,7 @@ CMAKE_BINARY_DIR = /home/bastien/Bureau/Monopoly/monopoly
 CMakeFiles/monopoly.dir/all:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/depend
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/bastien/Bureau/Monopoly/monopoly/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/thomas/Programmation/monopoly/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61
 	@echo "Built target monopoly"
 .PHONY : CMakeFiles/monopoly.dir/all
 
@@ -69,9 +72,9 @@ all: CMakeFiles/monopoly.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/monopoly.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bastien/Bureau/Monopoly/monopoly/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles 61
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/monopoly.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/bastien/Bureau/Monopoly/monopoly/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles 0
 .PHONY : CMakeFiles/monopoly.dir/rule
 
 # Convenience name for target.

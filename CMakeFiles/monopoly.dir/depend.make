@@ -74,6 +74,13 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/case.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casecarte.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casepropriete/casepropriete.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casepropriete/caseterrain.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../joueur.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.h
@@ -179,10 +186,13 @@ CMakeFiles/monopoly.dir/src/game/joueur.o: src/game/joueur.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/../../rapidxml/rapidxml.hpp
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/carte/paquet.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/case.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casedepart.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/caseprison.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/casecompagnie.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/casegare.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casepropriete/casepropriete.h
+CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/case/casetaxe.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/joueur.h
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.cpp
 CMakeFiles/monopoly.dir/src/game/plateau.o: src/game/plateau.h
@@ -674,6 +684,7 @@ CMakeFiles/monopoly.dir/src/graphics/texturemanager.o: src/graphics/texturemanag
 CMakeFiles/monopoly.dir/src/main.o: src/core/consolelogger.h
 CMakeFiles/monopoly.dir/src/main.o: src/core/exception.h
 CMakeFiles/monopoly.dir/src/main.o: src/core/logger.h
+CMakeFiles/monopoly.dir/src/main.o: src/game/plateau.h
 CMakeFiles/monopoly.dir/src/main.o: src/graphics/../core/random.h
 CMakeFiles/monopoly.dir/src/main.o: src/graphics/../core/singleton.h
 CMakeFiles/monopoly.dir/src/main.o: src/graphics/cameramanager.h

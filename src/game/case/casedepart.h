@@ -7,8 +7,7 @@ class Joueur;
 class CaseDepart : public Case
 {
 public:
-	CaseDepart(size_t id, const std::string& nom);
-    void setValueCredit(int);
+	CaseDepart(size_t id, int credit);
 	int getValueCredit();
 	virtual void joueurArrive(Joueur*);
 	virtual void joueurPasse(Joueur*);
