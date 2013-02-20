@@ -235,394 +235,409 @@ src/core/trigo.s:
 .PHONY : src/core/trigo.s
 
 # target to build an object file
-src/game/carte/carte.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte.o
-.PHONY : src/game/carte/carte.o
+src/game_graph/jeu.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/jeu.o
+.PHONY : src/game_graph/jeu.o
 
 # target to preprocess a source file
-src/game/carte/carte.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte.i
-.PHONY : src/game/carte/carte.i
+src/game_graph/jeu.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/jeu.i
+.PHONY : src/game_graph/jeu.i
 
 # target to generate assembly for a file
-src/game/carte/carte.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte.s
-.PHONY : src/game/carte/carte.s
+src/game_graph/jeu.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/jeu.s
+.PHONY : src/game_graph/jeu.s
 
 # target to build an object file
-src/game/carte/carte_aller_a.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.o
-.PHONY : src/game/carte/carte_aller_a.o
+src/game_log/carte/carte.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte.o
+.PHONY : src/game_log/carte/carte.o
 
 # target to preprocess a source file
-src/game/carte/carte_aller_a.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.i
-.PHONY : src/game/carte/carte_aller_a.i
+src/game_log/carte/carte.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte.i
+.PHONY : src/game_log/carte/carte.i
 
 # target to generate assembly for a file
-src/game/carte/carte_aller_a.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a.s
-.PHONY : src/game/carte/carte_aller_a.s
+src/game_log/carte/carte.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte.s
+.PHONY : src/game_log/carte/carte.s
 
 # target to build an object file
-src/game/carte/carte_aller_a_relatif.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.o
-.PHONY : src/game/carte/carte_aller_a_relatif.o
+src/game_log/carte/carte_aller_a.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a.o
+.PHONY : src/game_log/carte/carte_aller_a.o
 
 # target to preprocess a source file
-src/game/carte/carte_aller_a_relatif.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.i
-.PHONY : src/game/carte/carte_aller_a_relatif.i
+src/game_log/carte/carte_aller_a.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a.i
+.PHONY : src/game_log/carte/carte_aller_a.i
 
 # target to generate assembly for a file
-src/game/carte/carte_aller_a_relatif.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_a_relatif.s
-.PHONY : src/game/carte/carte_aller_a_relatif.s
+src/game_log/carte/carte_aller_a.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a.s
+.PHONY : src/game_log/carte/carte_aller_a.s
 
 # target to build an object file
-src/game/carte/carte_aller_prison.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.o
-.PHONY : src/game/carte/carte_aller_prison.o
+src/game_log/carte/carte_aller_a_relatif.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a_relatif.o
+.PHONY : src/game_log/carte/carte_aller_a_relatif.o
 
 # target to preprocess a source file
-src/game/carte/carte_aller_prison.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.i
-.PHONY : src/game/carte/carte_aller_prison.i
+src/game_log/carte/carte_aller_a_relatif.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a_relatif.i
+.PHONY : src/game_log/carte/carte_aller_a_relatif.i
 
 # target to generate assembly for a file
-src/game/carte/carte_aller_prison.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_aller_prison.s
-.PHONY : src/game/carte/carte_aller_prison.s
+src/game_log/carte/carte_aller_a_relatif.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a_relatif.s
+.PHONY : src/game_log/carte/carte_aller_a_relatif.s
 
 # target to build an object file
-src/game/carte/carte_argent.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.o
-.PHONY : src/game/carte/carte_argent.o
+src/game_log/carte/carte_aller_prison.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_prison.o
+.PHONY : src/game_log/carte/carte_aller_prison.o
 
 # target to preprocess a source file
-src/game/carte/carte_argent.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.i
-.PHONY : src/game/carte/carte_argent.i
+src/game_log/carte/carte_aller_prison.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_prison.i
+.PHONY : src/game_log/carte/carte_aller_prison.i
 
 # target to generate assembly for a file
-src/game/carte/carte_argent.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent.s
-.PHONY : src/game/carte/carte_argent.s
+src/game_log/carte/carte_aller_prison.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_prison.s
+.PHONY : src/game_log/carte/carte_aller_prison.s
 
 # target to build an object file
-src/game/carte/carte_argent_depuis_joueur.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.o
-.PHONY : src/game/carte/carte_argent_depuis_joueur.o
+src/game_log/carte/carte_argent.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_argent.o
+.PHONY : src/game_log/carte/carte_argent.o
 
 # target to preprocess a source file
-src/game/carte/carte_argent_depuis_joueur.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.i
-.PHONY : src/game/carte/carte_argent_depuis_joueur.i
+src/game_log/carte/carte_argent.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_argent.i
+.PHONY : src/game_log/carte/carte_argent.i
 
 # target to generate assembly for a file
-src/game/carte/carte_argent_depuis_joueur.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_argent_depuis_joueur.s
-.PHONY : src/game/carte/carte_argent_depuis_joueur.s
+src/game_log/carte/carte_argent.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_argent.s
+.PHONY : src/game_log/carte/carte_argent.s
 
 # target to build an object file
-src/game/carte/carte_libere.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o
-.PHONY : src/game/carte/carte_libere.o
+src/game_log/carte/carte_argent_depuis_joueur.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_argent_depuis_joueur.o
+.PHONY : src/game_log/carte/carte_argent_depuis_joueur.o
 
 # target to preprocess a source file
-src/game/carte/carte_libere.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.i
-.PHONY : src/game/carte/carte_libere.i
+src/game_log/carte/carte_argent_depuis_joueur.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_argent_depuis_joueur.i
+.PHONY : src/game_log/carte/carte_argent_depuis_joueur.i
 
 # target to generate assembly for a file
-src/game/carte/carte_libere.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_libere.s
-.PHONY : src/game/carte/carte_libere.s
+src/game_log/carte/carte_argent_depuis_joueur.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_argent_depuis_joueur.s
+.PHONY : src/game_log/carte/carte_argent_depuis_joueur.s
 
 # target to build an object file
-src/game/carte/carte_reparation.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o
-.PHONY : src/game/carte/carte_reparation.o
+src/game_log/carte/carte_libere.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_libere.o
+.PHONY : src/game_log/carte/carte_libere.o
 
 # target to preprocess a source file
-src/game/carte/carte_reparation.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.i
-.PHONY : src/game/carte/carte_reparation.i
+src/game_log/carte/carte_libere.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_libere.i
+.PHONY : src/game_log/carte/carte_libere.i
 
 # target to generate assembly for a file
-src/game/carte/carte_reparation.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.s
-.PHONY : src/game/carte/carte_reparation.s
+src/game_log/carte/carte_libere.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_libere.s
+.PHONY : src/game_log/carte/carte_libere.s
 
 # target to build an object file
-src/game/carte/carte_retourner.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.o
-.PHONY : src/game/carte/carte_retourner.o
+src/game_log/carte/carte_reparation.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_reparation.o
+.PHONY : src/game_log/carte/carte_reparation.o
 
 # target to preprocess a source file
-src/game/carte/carte_retourner.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.i
-.PHONY : src/game/carte/carte_retourner.i
+src/game_log/carte/carte_reparation.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_reparation.i
+.PHONY : src/game_log/carte/carte_reparation.i
 
 # target to generate assembly for a file
-src/game/carte/carte_retourner.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/carte_retourner.s
-.PHONY : src/game/carte/carte_retourner.s
+src/game_log/carte/carte_reparation.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_reparation.s
+.PHONY : src/game_log/carte/carte_reparation.s
 
 # target to build an object file
-src/game/carte/paquet.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.o
-.PHONY : src/game/carte/paquet.o
+src/game_log/carte/carte_retourner.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_retourner.o
+.PHONY : src/game_log/carte/carte_retourner.o
 
 # target to preprocess a source file
-src/game/carte/paquet.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.i
-.PHONY : src/game/carte/paquet.i
+src/game_log/carte/carte_retourner.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_retourner.i
+.PHONY : src/game_log/carte/carte_retourner.i
 
 # target to generate assembly for a file
-src/game/carte/paquet.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/paquet.s
-.PHONY : src/game/carte/paquet.s
+src/game_log/carte/carte_retourner.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte_retourner.s
+.PHONY : src/game_log/carte/carte_retourner.s
 
 # target to build an object file
-src/game/carte/payer_ou_tirer.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.o
-.PHONY : src/game/carte/payer_ou_tirer.o
+src/game_log/carte/paquet.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/paquet.o
+.PHONY : src/game_log/carte/paquet.o
 
 # target to preprocess a source file
-src/game/carte/payer_ou_tirer.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.i
-.PHONY : src/game/carte/payer_ou_tirer.i
+src/game_log/carte/paquet.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/paquet.i
+.PHONY : src/game_log/carte/paquet.i
 
 # target to generate assembly for a file
-src/game/carte/payer_ou_tirer.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/carte/payer_ou_tirer.s
-.PHONY : src/game/carte/payer_ou_tirer.s
+src/game_log/carte/paquet.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/paquet.s
+.PHONY : src/game_log/carte/paquet.s
 
 # target to build an object file
-src/game/case/case.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/case.o
-.PHONY : src/game/case/case.o
+src/game_log/carte/payer_ou_tirer.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/payer_ou_tirer.o
+.PHONY : src/game_log/carte/payer_ou_tirer.o
 
 # target to preprocess a source file
-src/game/case/case.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/case.i
-.PHONY : src/game/case/case.i
+src/game_log/carte/payer_ou_tirer.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/payer_ou_tirer.i
+.PHONY : src/game_log/carte/payer_ou_tirer.i
 
 # target to generate assembly for a file
-src/game/case/case.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/case.s
-.PHONY : src/game/case/case.s
+src/game_log/carte/payer_ou_tirer.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/payer_ou_tirer.s
+.PHONY : src/game_log/carte/payer_ou_tirer.s
 
 # target to build an object file
-src/game/case/caseallerenprison.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.o
-.PHONY : src/game/case/caseallerenprison.o
+src/game_log/case/case.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/case.o
+.PHONY : src/game_log/case/case.o
 
 # target to preprocess a source file
-src/game/case/caseallerenprison.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.i
-.PHONY : src/game/case/caseallerenprison.i
+src/game_log/case/case.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/case.i
+.PHONY : src/game_log/case/case.i
 
 # target to generate assembly for a file
-src/game/case/caseallerenprison.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseallerenprison.s
-.PHONY : src/game/case/caseallerenprison.s
+src/game_log/case/case.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/case.s
+.PHONY : src/game_log/case/case.s
 
 # target to build an object file
-src/game/case/casecarte.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casecarte.o
-.PHONY : src/game/case/casecarte.o
+src/game_log/case/caseallerenprison.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseallerenprison.o
+.PHONY : src/game_log/case/caseallerenprison.o
 
 # target to preprocess a source file
-src/game/case/casecarte.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casecarte.i
-.PHONY : src/game/case/casecarte.i
+src/game_log/case/caseallerenprison.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseallerenprison.i
+.PHONY : src/game_log/case/caseallerenprison.i
 
 # target to generate assembly for a file
-src/game/case/casecarte.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casecarte.s
-.PHONY : src/game/case/casecarte.s
+src/game_log/case/caseallerenprison.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseallerenprison.s
+.PHONY : src/game_log/case/caseallerenprison.s
 
 # target to build an object file
-src/game/case/casedepart.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casedepart.o
-.PHONY : src/game/case/casedepart.o
+src/game_log/case/casecarte.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o
+.PHONY : src/game_log/case/casecarte.o
 
 # target to preprocess a source file
-src/game/case/casedepart.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casedepart.i
-.PHONY : src/game/case/casedepart.i
+src/game_log/case/casecarte.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casecarte.i
+.PHONY : src/game_log/case/casecarte.i
 
 # target to generate assembly for a file
-src/game/case/casedepart.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casedepart.s
-.PHONY : src/game/case/casedepart.s
+src/game_log/case/casecarte.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casecarte.s
+.PHONY : src/game_log/case/casecarte.s
 
 # target to build an object file
-src/game/case/caseparkinggratuit.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseparkinggratuit.o
-.PHONY : src/game/case/caseparkinggratuit.o
+src/game_log/case/casedepart.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casedepart.o
+.PHONY : src/game_log/case/casedepart.o
 
 # target to preprocess a source file
-src/game/case/caseparkinggratuit.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseparkinggratuit.i
-.PHONY : src/game/case/caseparkinggratuit.i
+src/game_log/case/casedepart.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casedepart.i
+.PHONY : src/game_log/case/casedepart.i
 
 # target to generate assembly for a file
-src/game/case/caseparkinggratuit.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseparkinggratuit.s
-.PHONY : src/game/case/caseparkinggratuit.s
+src/game_log/case/casedepart.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casedepart.s
+.PHONY : src/game_log/case/casedepart.s
 
 # target to build an object file
-src/game/case/caseprison.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseprison.o
-.PHONY : src/game/case/caseprison.o
+src/game_log/case/caseparkinggratuit.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseparkinggratuit.o
+.PHONY : src/game_log/case/caseparkinggratuit.o
 
 # target to preprocess a source file
-src/game/case/caseprison.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseprison.i
-.PHONY : src/game/case/caseprison.i
+src/game_log/case/caseparkinggratuit.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseparkinggratuit.i
+.PHONY : src/game_log/case/caseparkinggratuit.i
 
 # target to generate assembly for a file
-src/game/case/caseprison.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/caseprison.s
-.PHONY : src/game/case/caseprison.s
+src/game_log/case/caseparkinggratuit.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseparkinggratuit.s
+.PHONY : src/game_log/case/caseparkinggratuit.s
 
 # target to build an object file
-src/game/case/casepropriete/casecompagnie.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.o
-.PHONY : src/game/case/casepropriete/casecompagnie.o
+src/game_log/case/caseprison.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseprison.o
+.PHONY : src/game_log/case/caseprison.o
 
 # target to preprocess a source file
-src/game/case/casepropriete/casecompagnie.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.i
-.PHONY : src/game/case/casepropriete/casecompagnie.i
+src/game_log/case/caseprison.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseprison.i
+.PHONY : src/game_log/case/caseprison.i
 
 # target to generate assembly for a file
-src/game/case/casepropriete/casecompagnie.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casecompagnie.s
-.PHONY : src/game/case/casepropriete/casecompagnie.s
+src/game_log/case/caseprison.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/caseprison.s
+.PHONY : src/game_log/case/caseprison.s
 
 # target to build an object file
-src/game/case/casepropriete/casegare.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.o
-.PHONY : src/game/case/casepropriete/casegare.o
+src/game_log/case/casepropriete/casecompagnie.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casecompagnie.o
+.PHONY : src/game_log/case/casepropriete/casecompagnie.o
 
 # target to preprocess a source file
-src/game/case/casepropriete/casegare.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.i
-.PHONY : src/game/case/casepropriete/casegare.i
+src/game_log/case/casepropriete/casecompagnie.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casecompagnie.i
+.PHONY : src/game_log/case/casepropriete/casecompagnie.i
 
 # target to generate assembly for a file
-src/game/case/casepropriete/casegare.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casegare.s
-.PHONY : src/game/case/casepropriete/casegare.s
+src/game_log/case/casepropriete/casecompagnie.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casecompagnie.s
+.PHONY : src/game_log/case/casepropriete/casecompagnie.s
 
 # target to build an object file
-src/game/case/casepropriete/casepropriete.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.o
-.PHONY : src/game/case/casepropriete/casepropriete.o
+src/game_log/case/casepropriete/casegare.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casegare.o
+.PHONY : src/game_log/case/casepropriete/casegare.o
 
 # target to preprocess a source file
-src/game/case/casepropriete/casepropriete.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.i
-.PHONY : src/game/case/casepropriete/casepropriete.i
+src/game_log/case/casepropriete/casegare.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casegare.i
+.PHONY : src/game_log/case/casepropriete/casegare.i
 
 # target to generate assembly for a file
-src/game/case/casepropriete/casepropriete.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/casepropriete.s
-.PHONY : src/game/case/casepropriete/casepropriete.s
+src/game_log/case/casepropriete/casegare.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casegare.s
+.PHONY : src/game_log/case/casepropriete/casegare.s
 
 # target to build an object file
-src/game/case/casepropriete/caseterrain.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.o
-.PHONY : src/game/case/casepropriete/caseterrain.o
+src/game_log/case/casepropriete/casepropriete.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casepropriete.o
+.PHONY : src/game_log/case/casepropriete/casepropriete.o
 
 # target to preprocess a source file
-src/game/case/casepropriete/caseterrain.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.i
-.PHONY : src/game/case/casepropriete/caseterrain.i
+src/game_log/case/casepropriete/casepropriete.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casepropriete.i
+.PHONY : src/game_log/case/casepropriete/casepropriete.i
 
 # target to generate assembly for a file
-src/game/case/casepropriete/caseterrain.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/caseterrain.s
-.PHONY : src/game/case/casepropriete/caseterrain.s
+src/game_log/case/casepropriete/casepropriete.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/casepropriete.s
+.PHONY : src/game_log/case/casepropriete/casepropriete.s
 
 # target to build an object file
-src/game/case/casepropriete/groupeterrain.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.o
-.PHONY : src/game/case/casepropriete/groupeterrain.o
+src/game_log/case/casepropriete/caseterrain.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/caseterrain.o
+.PHONY : src/game_log/case/casepropriete/caseterrain.o
 
 # target to preprocess a source file
-src/game/case/casepropriete/groupeterrain.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.i
-.PHONY : src/game/case/casepropriete/groupeterrain.i
+src/game_log/case/casepropriete/caseterrain.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/caseterrain.i
+.PHONY : src/game_log/case/casepropriete/caseterrain.i
 
 # target to generate assembly for a file
-src/game/case/casepropriete/groupeterrain.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casepropriete/groupeterrain.s
-.PHONY : src/game/case/casepropriete/groupeterrain.s
+src/game_log/case/casepropriete/caseterrain.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/caseterrain.s
+.PHONY : src/game_log/case/casepropriete/caseterrain.s
 
 # target to build an object file
-src/game/case/casetaxe.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casetaxe.o
-.PHONY : src/game/case/casetaxe.o
+src/game_log/case/casepropriete/groupeterrain.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/groupeterrain.o
+.PHONY : src/game_log/case/casepropriete/groupeterrain.o
 
 # target to preprocess a source file
-src/game/case/casetaxe.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casetaxe.i
-.PHONY : src/game/case/casetaxe.i
+src/game_log/case/casepropriete/groupeterrain.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/groupeterrain.i
+.PHONY : src/game_log/case/casepropriete/groupeterrain.i
 
 # target to generate assembly for a file
-src/game/case/casetaxe.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/case/casetaxe.s
-.PHONY : src/game/case/casetaxe.s
+src/game_log/case/casepropriete/groupeterrain.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casepropriete/groupeterrain.s
+.PHONY : src/game_log/case/casepropriete/groupeterrain.s
 
 # target to build an object file
-src/game/des.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/des.o
-.PHONY : src/game/des.o
+src/game_log/case/casetaxe.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casetaxe.o
+.PHONY : src/game_log/case/casetaxe.o
 
 # target to preprocess a source file
-src/game/des.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/des.i
-.PHONY : src/game/des.i
+src/game_log/case/casetaxe.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casetaxe.i
+.PHONY : src/game_log/case/casetaxe.i
 
 # target to generate assembly for a file
-src/game/des.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/des.s
-.PHONY : src/game/des.s
+src/game_log/case/casetaxe.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/case/casetaxe.s
+.PHONY : src/game_log/case/casetaxe.s
 
 # target to build an object file
-src/game/joueur.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/joueur.o
-.PHONY : src/game/joueur.o
+src/game_log/des.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/des.o
+.PHONY : src/game_log/des.o
 
 # target to preprocess a source file
-src/game/joueur.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/joueur.i
-.PHONY : src/game/joueur.i
+src/game_log/des.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/des.i
+.PHONY : src/game_log/des.i
 
 # target to generate assembly for a file
-src/game/joueur.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/joueur.s
-.PHONY : src/game/joueur.s
+src/game_log/des.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/des.s
+.PHONY : src/game_log/des.s
 
 # target to build an object file
-src/game/plateau.o:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/plateau.o
-.PHONY : src/game/plateau.o
+src/game_log/joueur.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/joueur.o
+.PHONY : src/game_log/joueur.o
 
 # target to preprocess a source file
-src/game/plateau.i:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/plateau.i
-.PHONY : src/game/plateau.i
+src/game_log/joueur.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/joueur.i
+.PHONY : src/game_log/joueur.i
 
 # target to generate assembly for a file
-src/game/plateau.s:
-	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game/plateau.s
-.PHONY : src/game/plateau.s
+src/game_log/joueur.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/joueur.s
+.PHONY : src/game_log/joueur.s
+
+# target to build an object file
+src/game_log/plateau.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/plateau.o
+.PHONY : src/game_log/plateau.o
+
+# target to preprocess a source file
+src/game_log/plateau.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/plateau.i
+.PHONY : src/game_log/plateau.i
+
+# target to generate assembly for a file
+src/game_log/plateau.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/plateau.s
+.PHONY : src/game_log/plateau.s
 
 # target to build an object file
 src/graphics/cameramanager.o:
@@ -1062,84 +1077,87 @@ help:
 	@echo "... src/core/trigo.o"
 	@echo "... src/core/trigo.i"
 	@echo "... src/core/trigo.s"
-	@echo "... src/game/carte/carte.o"
-	@echo "... src/game/carte/carte.i"
-	@echo "... src/game/carte/carte.s"
-	@echo "... src/game/carte/carte_aller_a.o"
-	@echo "... src/game/carte/carte_aller_a.i"
-	@echo "... src/game/carte/carte_aller_a.s"
-	@echo "... src/game/carte/carte_aller_a_relatif.o"
-	@echo "... src/game/carte/carte_aller_a_relatif.i"
-	@echo "... src/game/carte/carte_aller_a_relatif.s"
-	@echo "... src/game/carte/carte_aller_prison.o"
-	@echo "... src/game/carte/carte_aller_prison.i"
-	@echo "... src/game/carte/carte_aller_prison.s"
-	@echo "... src/game/carte/carte_argent.o"
-	@echo "... src/game/carte/carte_argent.i"
-	@echo "... src/game/carte/carte_argent.s"
-	@echo "... src/game/carte/carte_argent_depuis_joueur.o"
-	@echo "... src/game/carte/carte_argent_depuis_joueur.i"
-	@echo "... src/game/carte/carte_argent_depuis_joueur.s"
-	@echo "... src/game/carte/carte_libere.o"
-	@echo "... src/game/carte/carte_libere.i"
-	@echo "... src/game/carte/carte_libere.s"
-	@echo "... src/game/carte/carte_reparation.o"
-	@echo "... src/game/carte/carte_reparation.i"
-	@echo "... src/game/carte/carte_reparation.s"
-	@echo "... src/game/carte/carte_retourner.o"
-	@echo "... src/game/carte/carte_retourner.i"
-	@echo "... src/game/carte/carte_retourner.s"
-	@echo "... src/game/carte/paquet.o"
-	@echo "... src/game/carte/paquet.i"
-	@echo "... src/game/carte/paquet.s"
-	@echo "... src/game/carte/payer_ou_tirer.o"
-	@echo "... src/game/carte/payer_ou_tirer.i"
-	@echo "... src/game/carte/payer_ou_tirer.s"
-	@echo "... src/game/case/case.o"
-	@echo "... src/game/case/case.i"
-	@echo "... src/game/case/case.s"
-	@echo "... src/game/case/caseallerenprison.o"
-	@echo "... src/game/case/caseallerenprison.i"
-	@echo "... src/game/case/caseallerenprison.s"
-	@echo "... src/game/case/casecarte.o"
-	@echo "... src/game/case/casecarte.i"
-	@echo "... src/game/case/casecarte.s"
-	@echo "... src/game/case/casedepart.o"
-	@echo "... src/game/case/casedepart.i"
-	@echo "... src/game/case/casedepart.s"
-	@echo "... src/game/case/caseparkinggratuit.o"
-	@echo "... src/game/case/caseparkinggratuit.i"
-	@echo "... src/game/case/caseparkinggratuit.s"
-	@echo "... src/game/case/caseprison.o"
-	@echo "... src/game/case/caseprison.i"
-	@echo "... src/game/case/caseprison.s"
-	@echo "... src/game/case/casepropriete/casecompagnie.o"
-	@echo "... src/game/case/casepropriete/casecompagnie.i"
-	@echo "... src/game/case/casepropriete/casecompagnie.s"
-	@echo "... src/game/case/casepropriete/casegare.o"
-	@echo "... src/game/case/casepropriete/casegare.i"
-	@echo "... src/game/case/casepropriete/casegare.s"
-	@echo "... src/game/case/casepropriete/casepropriete.o"
-	@echo "... src/game/case/casepropriete/casepropriete.i"
-	@echo "... src/game/case/casepropriete/casepropriete.s"
-	@echo "... src/game/case/casepropriete/caseterrain.o"
-	@echo "... src/game/case/casepropriete/caseterrain.i"
-	@echo "... src/game/case/casepropriete/caseterrain.s"
-	@echo "... src/game/case/casepropriete/groupeterrain.o"
-	@echo "... src/game/case/casepropriete/groupeterrain.i"
-	@echo "... src/game/case/casepropriete/groupeterrain.s"
-	@echo "... src/game/case/casetaxe.o"
-	@echo "... src/game/case/casetaxe.i"
-	@echo "... src/game/case/casetaxe.s"
-	@echo "... src/game/des.o"
-	@echo "... src/game/des.i"
-	@echo "... src/game/des.s"
-	@echo "... src/game/joueur.o"
-	@echo "... src/game/joueur.i"
-	@echo "... src/game/joueur.s"
-	@echo "... src/game/plateau.o"
-	@echo "... src/game/plateau.i"
-	@echo "... src/game/plateau.s"
+	@echo "... src/game_graph/jeu.o"
+	@echo "... src/game_graph/jeu.i"
+	@echo "... src/game_graph/jeu.s"
+	@echo "... src/game_log/carte/carte.o"
+	@echo "... src/game_log/carte/carte.i"
+	@echo "... src/game_log/carte/carte.s"
+	@echo "... src/game_log/carte/carte_aller_a.o"
+	@echo "... src/game_log/carte/carte_aller_a.i"
+	@echo "... src/game_log/carte/carte_aller_a.s"
+	@echo "... src/game_log/carte/carte_aller_a_relatif.o"
+	@echo "... src/game_log/carte/carte_aller_a_relatif.i"
+	@echo "... src/game_log/carte/carte_aller_a_relatif.s"
+	@echo "... src/game_log/carte/carte_aller_prison.o"
+	@echo "... src/game_log/carte/carte_aller_prison.i"
+	@echo "... src/game_log/carte/carte_aller_prison.s"
+	@echo "... src/game_log/carte/carte_argent.o"
+	@echo "... src/game_log/carte/carte_argent.i"
+	@echo "... src/game_log/carte/carte_argent.s"
+	@echo "... src/game_log/carte/carte_argent_depuis_joueur.o"
+	@echo "... src/game_log/carte/carte_argent_depuis_joueur.i"
+	@echo "... src/game_log/carte/carte_argent_depuis_joueur.s"
+	@echo "... src/game_log/carte/carte_libere.o"
+	@echo "... src/game_log/carte/carte_libere.i"
+	@echo "... src/game_log/carte/carte_libere.s"
+	@echo "... src/game_log/carte/carte_reparation.o"
+	@echo "... src/game_log/carte/carte_reparation.i"
+	@echo "... src/game_log/carte/carte_reparation.s"
+	@echo "... src/game_log/carte/carte_retourner.o"
+	@echo "... src/game_log/carte/carte_retourner.i"
+	@echo "... src/game_log/carte/carte_retourner.s"
+	@echo "... src/game_log/carte/paquet.o"
+	@echo "... src/game_log/carte/paquet.i"
+	@echo "... src/game_log/carte/paquet.s"
+	@echo "... src/game_log/carte/payer_ou_tirer.o"
+	@echo "... src/game_log/carte/payer_ou_tirer.i"
+	@echo "... src/game_log/carte/payer_ou_tirer.s"
+	@echo "... src/game_log/case/case.o"
+	@echo "... src/game_log/case/case.i"
+	@echo "... src/game_log/case/case.s"
+	@echo "... src/game_log/case/caseallerenprison.o"
+	@echo "... src/game_log/case/caseallerenprison.i"
+	@echo "... src/game_log/case/caseallerenprison.s"
+	@echo "... src/game_log/case/casecarte.o"
+	@echo "... src/game_log/case/casecarte.i"
+	@echo "... src/game_log/case/casecarte.s"
+	@echo "... src/game_log/case/casedepart.o"
+	@echo "... src/game_log/case/casedepart.i"
+	@echo "... src/game_log/case/casedepart.s"
+	@echo "... src/game_log/case/caseparkinggratuit.o"
+	@echo "... src/game_log/case/caseparkinggratuit.i"
+	@echo "... src/game_log/case/caseparkinggratuit.s"
+	@echo "... src/game_log/case/caseprison.o"
+	@echo "... src/game_log/case/caseprison.i"
+	@echo "... src/game_log/case/caseprison.s"
+	@echo "... src/game_log/case/casepropriete/casecompagnie.o"
+	@echo "... src/game_log/case/casepropriete/casecompagnie.i"
+	@echo "... src/game_log/case/casepropriete/casecompagnie.s"
+	@echo "... src/game_log/case/casepropriete/casegare.o"
+	@echo "... src/game_log/case/casepropriete/casegare.i"
+	@echo "... src/game_log/case/casepropriete/casegare.s"
+	@echo "... src/game_log/case/casepropriete/casepropriete.o"
+	@echo "... src/game_log/case/casepropriete/casepropriete.i"
+	@echo "... src/game_log/case/casepropriete/casepropriete.s"
+	@echo "... src/game_log/case/casepropriete/caseterrain.o"
+	@echo "... src/game_log/case/casepropriete/caseterrain.i"
+	@echo "... src/game_log/case/casepropriete/caseterrain.s"
+	@echo "... src/game_log/case/casepropriete/groupeterrain.o"
+	@echo "... src/game_log/case/casepropriete/groupeterrain.i"
+	@echo "... src/game_log/case/casepropriete/groupeterrain.s"
+	@echo "... src/game_log/case/casetaxe.o"
+	@echo "... src/game_log/case/casetaxe.i"
+	@echo "... src/game_log/case/casetaxe.s"
+	@echo "... src/game_log/des.o"
+	@echo "... src/game_log/des.i"
+	@echo "... src/game_log/des.s"
+	@echo "... src/game_log/joueur.o"
+	@echo "... src/game_log/joueur.i"
+	@echo "... src/game_log/joueur.s"
+	@echo "... src/game_log/plateau.o"
+	@echo "... src/game_log/plateau.i"
+	@echo "... src/game_log/plateau.s"
 	@echo "... src/graphics/cameramanager.o"
 	@echo "... src/graphics/cameramanager.i"
 	@echo "... src/graphics/cameramanager.s"
