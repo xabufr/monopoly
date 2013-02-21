@@ -7,9 +7,8 @@ class PaquetCarte;
 class CaseCarte : public Case
 {
 public:
-	CaseCarte(size_t id, const std::string& nom);
+	CaseCarte(size_t id, PaquetCarte*);
 	virtual void joueurArrive(Joueur*);
-	void setPaquet(PaquetCarte*);
 private:
     PaquetCarte *m_paquet;
 };

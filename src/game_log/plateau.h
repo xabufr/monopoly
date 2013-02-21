@@ -20,20 +20,12 @@ public:
 	void liberer(Joueur*);
 	Joueur* getJoueurTour() const;
 	void joueurTourFinit();
-	enum EtatPlateau{
-		AttenteLancerDes,
-		LancerDes,
-		DeplacerPion,
-		AfficherOptions,
-		PasserJoueurSuivant
-	};
-	EtatPlateau etatPlateau() const;
-	void setEtatPlateau(EtatPlateau);
 	void avancerCurrentJoueur(int dep);
 	void placerCurrentJoueur(int id, bool passerDepart);
+	void addJoueur(Joueur*);
 private:
-	EtatPlateau m_etat;
 	int m_argent;
+	int m_argent_depart;
 	std::vector<Joueur*> m_joueurs;
 	Case* m_case[40];
 	PaquetCarte* m_paquets[2];

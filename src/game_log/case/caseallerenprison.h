@@ -7,7 +7,7 @@ class Joueur;
 class CaseAllerEnPrison : public Case
 {
 public:
-	CaseAllerEnPrison(size_t id, const std::string& nom);
+	CaseAllerEnPrison(size_t id);
 	virtual void joueurArrive(Joueur*);
 };
 

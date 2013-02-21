@@ -6,7 +6,7 @@
 class CaseParkingGratuit : public Case
 {
 public:
-	CaseParkingGratuit(size_t id, const std::string& nom);
+	CaseParkingGratuit(size_t id);
 };
 
 #endif // CASEPARKINGGRATUIT_H_INCLUDED

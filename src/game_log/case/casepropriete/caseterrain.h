@@ -17,6 +17,7 @@ public:
     void setGroupe(GroupeTerrain*);
     int tarif() const;
     int maisons() const;
+	void setLoyer(int index, int value);
     // 5 = hotel
 private:
     int m_nombre_maison;

@@ -1,7 +1,7 @@
 #include "caseallerenprison.h"
 #include "../joueur.h"
 
-CaseAllerEnPrison::CaseAllerEnPrison(size_t id, const std::string& nom):Case(id, nom)
+CaseAllerEnPrison::CaseAllerEnPrison(size_t id):Case(id, "Allez en prison")
 {
 
 }

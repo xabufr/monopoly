@@ -7,11 +7,8 @@
 class Carte_aller_a_relatif : public  Carte_aller_a
 {
     public:
-        Carte_aller_a_relatif(int id,const std::string& descr, PaquetCarte* paquet, int deplacement);
+        Carte_aller_a_relatif(int id,const std::string& descr, PaquetCarte* paquet);
         virtual void tirer(Joueur*);
-    protected:
-    private:
-        int m_deplacement;
 };
 
 #endif
