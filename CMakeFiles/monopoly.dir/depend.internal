@@ -75,6 +75,13 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../case/case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../case/casecarte.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../case/casepropriete/../case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../case/casepropriete/casepropriete.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../case/casepropriete/caseterrain.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/../plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.h

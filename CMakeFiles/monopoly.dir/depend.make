@@ -74,6 +74,13 @@ CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_libere.o: src/game/carte/carte_libere.h
 
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/case.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casecarte.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casepropriete/casepropriete.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../case/casepropriete/caseterrain.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../joueur.h
+CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/../plateau.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte.h
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.cpp
 CMakeFiles/monopoly.dir/src/game/carte/carte_reparation.o: src/game/carte/carte_reparation.h

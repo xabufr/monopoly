@@ -2,10 +2,13 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
 	<File name="src/game/carte/carte_reparation.cpp" open="1" top="1" tabpos="5">
-		<Cursor position="1184" topLine="15" />
+		<Cursor position="806" topLine="7" />
 	</File>
 	<File name="src/game/carte/carte_reparation.h" open="1" top="0" tabpos="4">
-		<Cursor position="0" topLine="0" />
+		<Cursor position="238" topLine="0" />
+	</File>
+	<File name="src/game/carte/paquet.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="1098" topLine="31" />
 	</File>
 	<File name="src/game/carte/paquet.h" open="1" top="0" tabpos="2">
 		<Cursor position="0" topLine="0" />
@@ -20,7 +23,7 @@
 		<Cursor position="1278" topLine="35" />
 	</File>
 	<File name="src/game/case/casepropriete/caseterrain.h" open="1" top="0" tabpos="6">
-		<Cursor position="312" topLine="0" />
+		<Cursor position="143" topLine="0" />
 	</File>
 	<File name="src/game/joueur.cpp" open="0" top="0" tabpos="0">
 		<Cursor position="1330" topLine="65" />
