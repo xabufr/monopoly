@@ -104,57 +104,61 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a_relatif.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_prison.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a_relatif.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent_depuis_joueur.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_prison.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent_depuis_joueur.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_retourner.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_reparation.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/payer_ou_tirer.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_retourner.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/case.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseallerenprison.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/payer_ou_tirer.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casecarte.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casedepart.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseallerenprison.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseparkinggratuit.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casecarte.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseprison.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casedepart.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casecompagnie.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseparkinggratuit.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casegare.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseprison.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/caseterrain.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/groupeterrain.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casetaxe.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/des.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/joueur.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.cpp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/plateau.cpp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.cpp">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.cpp">
       </Unit>
@@ -226,59 +230,63 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/.plateau.cpp.swp">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_a_relatif.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_aller_prison.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_argent_depuis_joueur.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a_relatif.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_libere.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_prison.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_reparation.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/carte_retourner.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/paquet.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/carte/payer_ou_tirer.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_reparation.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/.caseprison.h.swp">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_retourner.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/case.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseallerenprison.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/payer_ou_tirer.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casecarte.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casedepart.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseallerenprison.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseparkinggratuit.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casecarte.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/caseprison.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casedepart.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casecompagnie.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseparkinggratuit.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casegare.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseprison.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/casepropriete.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/caseterrain.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casepropriete/groupeterrain.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/case/casetaxe.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/des.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/joueur.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.h">
       </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game/plateau.h">
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.h">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h">
       </Unit>

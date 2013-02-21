@@ -2,9 +2,8 @@
 #include "paquet.h"
 #include "../joueur.h"
 
-Payer_ou_tirer::Payer_ou_tirer(int type,int val,const std::string& descr, PaquetCarte* paquet, PaquetCarte* paquet_cible)
-: Carte_argent( val, descr, paquet)
-, m_type (type)
+Payer_ou_tirer::Payer_ou_tirer(int val,const std::string& descr, PaquetCarte* paquet_source, PaquetCarte* paquet_cible)
+: Carte_argent( val, descr, paquet_source)
 , m_paquet_cible (paquet_cible)
 {
 
@@ -12,7 +11,7 @@ Payer_ou_tirer::Payer_ou_tirer(int type,int val,const std::string& descr, Paquet
 
 void Payer_ou_tirer::tirer(Joueur* j)
 {
-    if (veut_payer() == true)
+    if (veut_payer() == true) // pour l'instant : on a pas de moyen de savoir si le joueur veut payer
     {
         if(m_valeur > 0)
         {
