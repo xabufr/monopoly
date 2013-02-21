@@ -54,11 +54,30 @@ Plateau::Plateau()
 	rapidxml::xml_node<> *node;
 	rapidxml::xml_node<> *paquet;
 
+	rapidxml::xml_node<>* nComp = root->first_node("compagnie");
+	rapidxml::xml_node<> *nGare = root->first_node("gare");
 	int multiplicateurs_compagnies[2];
 	int loyers_gare[4];
 	int credit_tour;
 	int prix_gare, prix_compagnie;
 	int hyp_gare, hyp_compagnie;
+
+	prix_compagnie = boost::lexical_cast<int>(nComp->first_attribute("prix")->value());
+	for (size_t i = 0; i < 2; ++i)
+	{
+		multiplicateurs_compagnies[i] = boost::lexical_cast<int>(
+				nComp->first_attribute(("mul"+boost::lexical_cast<std::string>(i+1)).c_str())->value());
+	}
+	hyp_compagnie = boost::lexical_cast<int>(nComp->first_attribute("hyp")->value());
+
+	prix_gare = boost::lexical_cast<int>(nGare->first_attribute("prix")->value());
+	for (size_t i = 0; i < 4; ++i)
+	{
+		loyers_gare[i] = boost::lexical_cast<int>(nGare->first_attribute(("t"+boost::lexical_cast<std::string>(i)).c_str())->value());
+	}
+	hyp_gare    	= boost::lexical_cast<int>(nGare->first_attribute("hyp")->value());
+	credit_tour 	= boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
+	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
 
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
 	{

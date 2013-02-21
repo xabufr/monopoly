@@ -250,6 +250,21 @@ src/game_graph/jeu.s:
 .PHONY : src/game_graph/jeu.s
 
 # target to build an object file
+src/game_graph/plateau.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.o
+.PHONY : src/game_graph/plateau.o
+
+# target to preprocess a source file
+src/game_graph/plateau.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.i
+.PHONY : src/game_graph/plateau.i
+
+# target to generate assembly for a file
+src/game_graph/plateau.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.s
+.PHONY : src/game_graph/plateau.s
+
+# target to build an object file
 src/game_log/carte/carte.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_log/carte/carte.o
 .PHONY : src/game_log/carte/carte.o
@@ -1080,6 +1095,9 @@ help:
 	@echo "... src/game_graph/jeu.o"
 	@echo "... src/game_graph/jeu.i"
 	@echo "... src/game_graph/jeu.s"
+	@echo "... src/game_graph/plateau.o"
+	@echo "... src/game_graph/plateau.i"
+	@echo "... src/game_graph/plateau.s"
 	@echo "... src/game_log/carte/carte.o"
 	@echo "... src/game_log/carte/carte.i"
 	@echo "... src/game_log/carte/carte.s"

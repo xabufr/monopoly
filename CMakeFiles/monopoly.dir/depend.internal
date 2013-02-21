@@ -71,6 +71,46 @@ CMakeFiles/monopoly.dir/src/game_graph/jeu.o
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
  /home/thomas/Programmation/monopoly/src/game_graph/jeu.cpp
  /home/thomas/Programmation/monopoly/src/game_graph/jeu.h
+ /home/thomas/Programmation/monopoly/src/game_graph/plateau.h
+CMakeFiles/monopoly.dir/src/game_graph/plateau.o
+ /home/thomas/Programmation/monopoly/src/game_graph/../core/exception.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../core/logger.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/random.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/singleton.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/cameramanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/fontmanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicontener.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guielement.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guimanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/particlemanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/positioninformations.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenemanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenode.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
+ /home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/plateau.cpp
+ /home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 CMakeFiles/monopoly.dir/src/game_log/carte/carte.o
  /home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
  /home/thomas/Programmation/monopoly/src/game_log/carte/carte.cpp

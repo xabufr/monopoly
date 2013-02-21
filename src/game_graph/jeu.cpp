@@ -3,6 +3,7 @@
 #include "../core/consolelogger.h"
 #include "../graphics/graphicalengine.h"
 #include <boost/lexical_cast.hpp>
+#include "plateau.h"
 
 Jeu::Jeu()
 {
@@ -49,6 +50,7 @@ void Jeu::changeState()
 			setupContinuePlayMenu();
 			break;
 		case play:
+			setupPlay();
 			break;
 	}
 }
@@ -118,6 +120,10 @@ void Jeu::setupContinuePlayMenu()
 	btnContinuer->SetData("this", this);
 	btnContinuer->SetCallBack("clicked", Jeu::start_play);
 	cont->AjouterItem(btnContinuer, 0, (m_nb_joueurs+1)/2);
+}
+void Jeu::setupPlay()
+{
+	PlateauGraph graph(nullptr);
 }
 void Jeu::changeState(state s)
 {
