@@ -12,7 +12,6 @@ GuiSliderNumberItem::GuiSliderNumberItem()
     m_value=0;
     ValueChanged();
 }
-
 GuiSliderNumberItem::~GuiSliderNumberItem()
 {
     //dtor
