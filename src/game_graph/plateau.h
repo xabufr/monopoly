@@ -11,6 +11,7 @@ class PlateauGraph
 {
 public:
 	PlateauGraph(Plateau*);
+	void update();
 private:
 	SceneNodeSpriteItem *m_item_plateau;
 	Plateau *m_plateau;

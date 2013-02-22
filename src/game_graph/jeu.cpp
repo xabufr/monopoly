@@ -5,7 +5,7 @@
 #include <boost/lexical_cast.hpp>
 #include "plateau.h"
 
-Jeu::Jeu()
+Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
 {
 	m_requ_change_state = true;
 	m_requ_state      = main_menu;
@@ -80,12 +80,15 @@ void Jeu::setupPlayMenu()
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode();
 	GuiContener *contener = m_sceneNode->AddContener();
 	GuiSliderNumberItem *slider = new GuiSliderNumberItem;
+	GuiTextItem *texteNbJoueurs = new GuiTextItem;
+	texteNbJoueurs->SetText("2 joueurs");
 	slider->SetRange(2,8);
 	slider->SetColor(sf::Color(255,255,255));
 	slider->SetFocusColor(sf::Color(255,0,0));
+	slider->SetData("text", texteNbJoueurs);
+	slider->SetData("this", this);
+	slider->SetCallBack("value_changed", Jeu::update_nb_joueurs);
 	slider->SetValue(m_nb_joueurs);
-	GuiTextItem *texteNbJoueurs = new GuiTextItem;
-	texteNbJoueurs->SetText("2 joueurs");
 	GuiButtonItem *btnContinuer = new GuiButtonItem;
 	btnContinuer->SetText("Continuer");
 	btnContinuer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
@@ -95,10 +98,6 @@ void Jeu::setupPlayMenu()
 	contener->AjouterItem(slider, 0, 0);
 	contener->AjouterItem(texteNbJoueurs, 1, 0);
 	contener->AjouterItem(btnContinuer, 0, 1);
-
-	slider->SetData("text", texteNbJoueurs);
-	slider->SetData("this", this);
-	slider->SetCallBack("value_changed", Jeu::update_nb_joueurs);
 }
 void Jeu::setupContinuePlayMenu()
 {
@@ -114,16 +113,24 @@ void Jeu::setupContinuePlayMenu()
 		cont->AjouterItem(input, (i%2==0) ?0:1, i/2);
 	}
 	GuiButtonItem *btnContinuer = new GuiButtonItem;
+	GuiButtonItem *btnRetour = new GuiButtonItem;
 	btnContinuer->SetText("Jouer !!!");
 	btnContinuer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	btnContinuer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	btnContinuer->SetData("this", this);
 	btnContinuer->SetCallBack("clicked", Jeu::start_play);
-	cont->AjouterItem(btnContinuer, 0, (m_nb_joueurs+1)/2);
+	btnRetour->SetText("Retour");
+	btnRetour->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	btnRetour->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+	btnRetour->SetData("this", this);
+	btnRetour->SetCallBack("clicked", Jeu::menu_jouer);
+	cont->AjouterItem(btnRetour, 0, (m_nb_joueurs+1)/2);
+	cont->AjouterItem(btnContinuer, 1, (m_nb_joueurs+1)/2);
 }
 void Jeu::setupPlay()
 {
-	PlateauGraph graph(nullptr);
+	m_plateau      = new Plateau;
+	m_plateauGraph = new PlateauGraph(m_plateau);
 }
 void Jeu::changeState(state s)
 {

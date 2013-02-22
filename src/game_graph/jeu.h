@@ -4,6 +4,8 @@
 class GraphicalEngine;
 class GuiNode;
 class GuiItem;
+class PlateauGraph;
+class Plateau;
 class Jeu
 {
 public:
@@ -31,6 +33,8 @@ private:
 	void setupPlay();
 	GuiNode *m_sceneNode;
 	int m_nb_joueurs;
+	Plateau *m_plateau;
+	PlateauGraph *m_plateauGraph;
 };
 
 #endif 
