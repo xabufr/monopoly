@@ -92,3 +92,7 @@ const std::list<CasePropriete*>& Joueur::proprietes() const
 {
 	return m_proprietes;
 }
+const std::list<Carte_Libere*> Joueur::cartesLiberte() const
+{
+	return m_cartes_liberte;
+}

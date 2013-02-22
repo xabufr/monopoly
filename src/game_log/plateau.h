@@ -13,6 +13,7 @@ class Plateau
 {
 public:
 	Plateau();
+	~Plateau();
 	void addArgent(int);
 	void viderArgent();
 	std::vector<Joueur*> GetJoueurs();

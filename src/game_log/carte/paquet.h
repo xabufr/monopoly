@@ -10,6 +10,7 @@ class PaquetCarte
 {
 public:
 	PaquetCarte(int type, const std::string& nom, const std::string& logo, Plateau*);
+	~PaquetCarte();
 	int type() const;
 	const std::string& nom() const;
 	const std::list<Carte*>& cartes() const;

@@ -6,6 +6,11 @@
 PaquetCarte::PaquetCarte(int type, const std::string& nom, const std::string& logo, Plateau* plateau): m_type(type), m_nom(nom), m_chemin_logo(logo), m_plateau(plateau)
 {
 }
+PaquetCarte::~PaquetCarte()
+{
+	for(Carte* c : m_cartes)
+		delete c;
+}
 int PaquetCarte::type() const
 {
 	return m_type;

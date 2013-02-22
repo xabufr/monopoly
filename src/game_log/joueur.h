@@ -37,6 +37,7 @@ public:
     */
     void addPropriete(CasePropriete*);
 	const std::list<CasePropriete*>& proprietes() const;
+	const std::list<Carte_Libere*> cartesLiberte() const;
 private:
 	int m_argent;
 	std::string m_nom;
