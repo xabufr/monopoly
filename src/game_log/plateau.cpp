@@ -299,4 +299,5 @@ void Plateau::addJoueur(Joueur *j)
 {
 	m_joueurs.push_back(j);
 	j->positinner(m_case[0]);
+	j->crediter(m_argent_depart);
 }
