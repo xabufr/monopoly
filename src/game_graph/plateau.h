@@ -1,16 +1,17 @@
 #ifndef H_PLATEAU_GRAPH_H
 #define H_PLATEAU_GRAPH_H
 
+#include <SFML/Graphics.hpp>
+
 class Plateau;
 class SceneNodeSpriteItem;
 class GraphicalEngine;
-namespace sf {
-	class View;
-} // namespace sf
 class PlateauGraph
 {
 public:
 	PlateauGraph(Plateau*);
+	void update();
+	sf::IntRect caseRect(int id) const;
 private:
 	SceneNodeSpriteItem *m_item_plateau;
 	Plateau *m_plateau;

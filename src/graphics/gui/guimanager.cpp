@@ -81,7 +81,7 @@ void GuiManager::AddToRemoveNode(GuiNode* node)
 void GuiManager::CalculerCamera()
 {
     sf::RenderWindow *app = GraphicalEngine::GetInstance()->GetRenderWindow();
-    m_view.setSize(app->getSize().x, app->getSize().x);
+    m_view.setSize(app->getSize().x, app->getSize().y);
     m_view.setCenter(app->getSize().y/2, app->getSize().y/2);
 }
 bool GuiManager::isEventLocked() const

@@ -10,6 +10,7 @@ class Carte_Libere;
 class Joueur
 {
 public:
+	Joueur(const std::string&);
 	const std::string& nom() const;
 	int argent() const;
 	bool estFauche() const;

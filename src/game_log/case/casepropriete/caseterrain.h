@@ -13,6 +13,7 @@ public:
 	virtual int loyer() const;
 	virtual void acheter(Joueur*);
 	virtual bool peutConstruire() const;
+	void setMaisons(int);
 
     void setGroupe(GroupeTerrain*);
     int tarif() const;

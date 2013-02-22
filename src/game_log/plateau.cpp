@@ -13,6 +13,7 @@
 #include "carte/carte_retourner.h"
 //Inclues cases
 #include "case/case.h"
+#include "case/casepropriete/casepropriete.h"
 #include "case/casepropriete/casegare.h"
 #include "case/casepropriete/casecompagnie.h"
 #include "case/casepropriete/caseterrain.h"
@@ -36,7 +37,7 @@ Plateau::Plateau()
 	file.open("config.xml");
 	if(!file)
 	{
-		std::cout << "Fichier config.xml manquant" << std::endl;
+		std::cerr << "Fichier config.xml manquant" << std::endl;
 		exit(0);
 	}
 	file.seekg(0, std::ios_base::end);
@@ -79,6 +80,7 @@ Plateau::Plateau()
 	hyp_gare    	= boost::lexical_cast<int>(nGare->first_attribute("hyp")->value());
 	credit_tour 	= boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
 	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
+	m_taille_case   = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_case")->value());
 
 	std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
@@ -299,4 +301,58 @@ void Plateau::addJoueur(Joueur *j)
 {
 	m_joueurs.push_back(j);
 	j->positinner(m_case[0]);
+	j->crediter(m_argent_depart);
+}
+void Plateau::load(const std::string& filepath)
+{
+	std::ifstream file;
+	file.open(filepath.c_str());
+	if(!file)
+	{
+		std::cerr << "Le fichier de sauvegarde n'existe pas" << std::endl;
+		exit(0);
+	}
+	file.seekg(0, std::ios_base::end);
+	const int length = file.tellg();
+	char *buffer     = new char[length+1];
+	file.seekg(0, std::ios_base::beg);
+	file.read(buffer, length);
+	buffer[length] = 0;
+	rapidxml::xml_document<> document;
+	document.parse<0>(buffer);
+	rapidxml::xml_node<> *root = document.first_node("root");
+	rapidxml::xml_node<> *node;
+	for(node=root->first_node("joueurs")->first_node("joueur");node;node=node->next_sibling("joueur")) 
+	{
+		Joueur *joueur = new Joueur(node->first_attribute("nom")->value());
+		addJoueur(joueur);
+		joueur->crediter(boost::lexical_cast<int>(node->first_attribute("argent")->value()));
+		int idCase = boost::lexical_cast<int>(node->first_attribute("case")->value());
+		joueur->positinner(m_case[idCase]);
+		m_case[idCase]->joueurArrive(joueur);
+		if(boost::lexical_cast<bool>(node->first_attribute("prison")->value()))
+			emprisoner(joueur);
+		rapidxml::xml_node<> *nodeProp;
+		for(nodeProp=node->first_node("propriete");nodeProp;nodeProp=nodeProp->next_sibling("propriete")) 
+		{
+			CasePropriete *prop = (CasePropriete*) m_case[boost::lexical_cast<int>(nodeProp->first_attribute("id")->value())];
+			prop->setProprietaire(joueur);
+			joueur->addPropriete(prop);
+			if(boost::lexical_cast<bool>(nodeProp->first_attribute("hypotheque")->value()))
+				prop->hypothequer(false);
+			CaseTerrain *terrain = dynamic_cast<CaseTerrain*>(prop);
+			if(terrain)
+			{
+				terrain->setMaisons(boost::lexical_cast<int>(nodeProp->first_attribute("maisons")->value()));
+			}
+		}
+	}
+	m_index_current_joueur = boost::lexical_cast<int>(root->first_node("joueurs")->first_attribute("current")->value());
+}
+void Plateau::save(const std::string& file)
+{
+}
+int Plateau::getTailleCase() const
+{
+	return m_taille_case;
 }

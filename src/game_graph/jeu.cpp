@@ -1,12 +1,13 @@
 #include "jeu.h"
 #include "../game_log/plateau.h"
+#include "../game_log/joueur.h"
 #include "../core/consolelogger.h"
 #include "../graphics/graphicalengine.h"
 #include <boost/lexical_cast.hpp>
 #include "plateau.h"
 #include "joueur.h"
 
-Jeu::Jeu()
+Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
 {
 	m_requ_change_state = true;
 	m_requ_state      = main_menu;
@@ -29,6 +30,8 @@ void Jeu::run()
 			if(event.type == sf::Event::KeyReleased && event.key.code==sf::Keyboard::Escape)
 				m_engine->GetRenderWindow()->close();
 		}
+		if(m_plateau&&m_plateauGraph)
+			m_plateauGraph->update();
 		m_engine->DrawScene();
 	}
 }
@@ -81,12 +84,15 @@ void Jeu::setupPlayMenu()
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode();
 	GuiContener *contener = m_sceneNode->AddContener();
 	GuiSliderNumberItem *slider = new GuiSliderNumberItem;
+	GuiTextItem *texteNbJoueurs = new GuiTextItem;
+	texteNbJoueurs->SetText("2 joueurs");
 	slider->SetRange(2,8);
 	slider->SetColor(sf::Color(255,255,255));
 	slider->SetFocusColor(sf::Color(255,0,0));
+	slider->SetData("text", texteNbJoueurs);
+	slider->SetData("this", this);
+	slider->SetCallBack("value_changed", Jeu::update_nb_joueurs);
 	slider->SetValue(m_nb_joueurs);
-	GuiTextItem *texteNbJoueurs = new GuiTextItem;
-	texteNbJoueurs->SetText("2 joueurs");
 	GuiButtonItem *btnContinuer = new GuiButtonItem;
 	btnContinuer->SetText("Continuer");
 	btnContinuer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
@@ -96,10 +102,6 @@ void Jeu::setupPlayMenu()
 	contener->AjouterItem(slider, 0, 0);
 	contener->AjouterItem(texteNbJoueurs, 1, 0);
 	contener->AjouterItem(btnContinuer, 0, 1);
-
-	slider->SetData("text", texteNbJoueurs);
-	slider->SetData("this", this);
-	slider->SetCallBack("value_changed", Jeu::update_nb_joueurs);
 }
 void Jeu::setupContinuePlayMenu()
 {
@@ -113,20 +115,34 @@ void Jeu::setupContinuePlayMenu()
 		input->SetBgColor(sf::Color(128,128,128));
 		input->SetMaxSize(sf::Vector2f(200, 30));
 		cont->AjouterItem(input, (i%2==0) ?0:1, i/2);
+		m_nomsJoueurs[i] = input;
 	}
 	GuiButtonItem *btnContinuer = new GuiButtonItem;
+	GuiButtonItem *btnRetour = new GuiButtonItem;
 	btnContinuer->SetText("Jouer !!!");
 	btnContinuer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	btnContinuer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	btnContinuer->SetData("this", this);
 	btnContinuer->SetCallBack("clicked", Jeu::start_play);
-	cont->AjouterItem(btnContinuer, 0, (m_nb_joueurs+1)/2);
+	btnRetour->SetText("Retour");
+	btnRetour->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	btnRetour->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+	btnRetour->SetData("this", this);
+	btnRetour->SetCallBack("clicked", Jeu::menu_jouer);
+	cont->AjouterItem(btnRetour, 0, (m_nb_joueurs+1)/2);
+	cont->AjouterItem(btnContinuer, 1, (m_nb_joueurs+1)/2);
 }
 void Jeu::setupPlay()
 {
-	PlateauGraph graph(nullptr);
-	JoueurGraph stat(nullptr);
-	stat.stat();
+	m_plateau      = new Plateau;
+	m_plateauGraph = new PlateauGraph(m_plateau);
+	for (size_t i = 0; i < m_nb_joueurs; ++i)
+	{
+		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
+		m_plateau->addJoueur(joueur);
+		JoueurGraph stat(joueur);
+        stat.stat();
+	}
 }
 void Jeu::changeState(state s)
 {

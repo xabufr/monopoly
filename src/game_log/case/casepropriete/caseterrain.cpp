@@ -2,7 +2,7 @@
 #include "../../joueur.h"
 #include "groupeterrain.h"
 
-CaseTerrain::CaseTerrain(size_t id, const std::string& nom):CasePropriete(id, nom)
+CaseTerrain::CaseTerrain(size_t id, const std::string& nom):CasePropriete(id, nom), m_nombre_maison(0)
 {
 
 }
@@ -55,4 +55,9 @@ int CaseTerrain::tarif() const
 void CaseTerrain::setLoyer(int index, int value)
 {
 	m_loyer[index] = value;
+}
+void CaseTerrain::setMaisons(int m)
+{
+	if(m>=0&&m<=5)
+		m_nombre_maison=m;
 }

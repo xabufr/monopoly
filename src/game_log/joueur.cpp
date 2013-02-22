@@ -3,6 +3,9 @@
 #include "case/casepropriete/casegare.h"
 #include "case/casepropriete/casecompagnie.h"
 
+Joueur::Joueur(const std::string& nom): m_nom(nom), m_argent(0), m_prisonier(false), m_doubles_consecutifs(0)
+{
+}
 const std::string& Joueur::nom() const
 {
 	return m_nom;
