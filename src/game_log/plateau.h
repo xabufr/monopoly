@@ -2,6 +2,7 @@
 #define _HOME_THOMAS_PROGRAMMATION_MONOPOLY_SRC_PLATEAU_H__
 
 #include <vector>
+#include <string>
 #include <cstddef>
 
 class Joueur;
@@ -23,6 +24,8 @@ public:
 	void avancerCurrentJoueur(int dep);
 	void placerCurrentJoueur(int id, bool passerDepart);
 	void addJoueur(Joueur*);
+	void load(const std::string&);
+	void save(const std::string&);
 private:
 	int m_argent;
 	int m_argent_depart;

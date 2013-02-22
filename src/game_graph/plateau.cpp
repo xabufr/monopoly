@@ -17,3 +17,19 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 void PlateauGraph::update()
 {
 }
+sf::IntRect PlateauGraph::caseRect(int id) const
+{
+	if((id>=1&&id<=10)||(id>=21&&id<=29))
+	{
+
+	}
+	else if((id>=11&&id<=19)||(id>=31&&id<=39)) 
+	{
+		
+	}
+	else
+	{
+
+	}
+	return sf::IntRect();
+}

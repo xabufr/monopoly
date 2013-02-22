@@ -301,3 +301,11 @@ void Plateau::addJoueur(Joueur *j)
 	j->positinner(m_case[0]);
 	j->crediter(m_argent_depart);
 }
+void Plateau::load(const std::string&)
+{
+
+}
+void Plateau::save(const std::string&)
+{
+
+}
