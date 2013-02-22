@@ -3,6 +3,8 @@
 #include "../core/consolelogger.h"
 #include "../graphics/graphicalengine.h"
 #include <boost/lexical_cast.hpp>
+#include "plateau.h"
+#include "joueur.h"
 
 Jeu::Jeu()
 {
@@ -49,6 +51,7 @@ void Jeu::changeState()
 			setupContinuePlayMenu();
 			break;
 		case play:
+			setupPlay();
 			break;
 	}
 }
@@ -119,6 +122,12 @@ void Jeu::setupContinuePlayMenu()
 	btnContinuer->SetCallBack("clicked", Jeu::start_play);
 	cont->AjouterItem(btnContinuer, 0, (m_nb_joueurs+1)/2);
 }
+void Jeu::setupPlay()
+{
+	PlateauGraph graph(nullptr);
+	JoueurGraph stat(nullptr);
+	stat.stat();
+}
 void Jeu::changeState(state s)
 {
 	m_requ_state        = s;
@@ -126,7 +135,7 @@ void Jeu::changeState(state s)
 }
 void Jeu::menu_jouer(GuiItem* i)
 {
-	Jeu* thi = (Jeu*)i->GetData("this"); 
+	Jeu* thi = (Jeu*)i->GetData("this");
 	thi->changeState(play_menu);
 }
 void Jeu::quitter(GuiItem* i)

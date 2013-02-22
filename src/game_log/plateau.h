@@ -25,6 +25,7 @@ public:
 	void addJoueur(Joueur*);
 private:
 	int m_argent;
+	int m_argent_depart;
 	std::vector<Joueur*> m_joueurs;
 	Case* m_case[40];
 	PaquetCarte* m_paquets[2];

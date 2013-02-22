@@ -27,6 +27,7 @@
 #include "../../rapidxml/rapidxml.hpp"
 #include <fstream>
 #include <iostream>
+#include <utility>
 #include <boost/lexical_cast.hpp>
 
 Plateau::Plateau()
@@ -54,18 +55,37 @@ Plateau::Plateau()
 	rapidxml::xml_node<> *node;
 	rapidxml::xml_node<> *paquet;
 
+	rapidxml::xml_node<>* nComp = root->first_node("compagnie");
+	rapidxml::xml_node<> *nGare = root->first_node("gare");
 	int multiplicateurs_compagnies[2];
 	int loyers_gare[4];
 	int credit_tour;
 	int prix_gare, prix_compagnie;
 	int hyp_gare, hyp_compagnie;
 
+	prix_compagnie = boost::lexical_cast<int>(nComp->first_attribute("prix")->value());
+	for (size_t i = 0; i < 2; ++i)
+	{
+		multiplicateurs_compagnies[i] = boost::lexical_cast<int>(
+				nComp->first_attribute(("mul"+boost::lexical_cast<std::string>(i+1)).c_str())->value());
+	}
+	hyp_compagnie = boost::lexical_cast<int>(nComp->first_attribute("hyp")->value());
+
+	prix_gare = boost::lexical_cast<int>(nGare->first_attribute("prix")->value());
+	for (size_t i = 0; i < 4; ++i)
+	{
+		loyers_gare[i] = boost::lexical_cast<int>(nGare->first_attribute(("t"+boost::lexical_cast<std::string>(i)).c_str())->value());
+	}
+	hyp_gare    	= boost::lexical_cast<int>(nGare->first_attribute("hyp")->value());
+	credit_tour 	= boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
+	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
+
+	std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
 	{
 		int type        = boost::lexical_cast<int>(paquet->first_attribute("type")->value());
 		std::string nom = paquet->first_attribute("nom")->value();
 		PaquetCarte *curPaq = m_paquets[type] = new PaquetCarte(type, nom, "", this);
-		std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 		for(node=paquet->first_node("carte");node;node=node->next_sibling("carte")) 
 		{
 			Carte *carte=nullptr;
@@ -106,6 +126,8 @@ Plateau::Plateau()
 			}
 			else if(type=="argent_tirer") 
 			{
+				carte = new Payer_ou_tirer(boost::lexical_cast<int>(node->first_attribute("valeur")->value()), description, curPaq, nullptr);
+				cacheLiensCarte.push_back(std::pair<Carte*,int>(carte, boost::lexical_cast<int>(node->first_attribute("autre")->value())));
 			}
 			else if(type=="argent_depuis_joueurs") 
 			{
@@ -114,6 +136,11 @@ Plateau::Plateau()
 			}
 			curPaq->ajouterCarte(carte);
 		}
+	}
+	//Pseudo édition de liens
+	for(auto it = cacheLiensCarte.begin();it!=cacheLiensCarte.end();++it) 
+	{
+		((Payer_ou_tirer*)it->first)->setPaquetAutre(m_paquets[it->second]);
 	}
 	for (node=plateau->first_node();node;node=node->next_sibling())
 	{

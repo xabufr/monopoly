@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/thomas/Programmation/monopoly
+CMAKE_SOURCE_DIR = /home/zequiel/software/c++/monopoly
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/thomas/Programmation/monopoly
+CMAKE_BINARY_DIR = /home/zequiel/software/c++/monopoly
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles /home/thomas/Programmation/monopoly/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zequiel/software/c++/monopoly/CMakeFiles /home/zequiel/software/c++/monopoly/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zequiel/software/c++/monopoly/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -248,6 +248,36 @@ src/game_graph/jeu.i:
 src/game_graph/jeu.s:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/jeu.s
 .PHONY : src/game_graph/jeu.s
+
+# target to build an object file
+src/game_graph/joueur.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/joueur.o
+.PHONY : src/game_graph/joueur.o
+
+# target to preprocess a source file
+src/game_graph/joueur.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/joueur.i
+.PHONY : src/game_graph/joueur.i
+
+# target to generate assembly for a file
+src/game_graph/joueur.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/joueur.s
+.PHONY : src/game_graph/joueur.s
+
+# target to build an object file
+src/game_graph/plateau.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.o
+.PHONY : src/game_graph/plateau.o
+
+# target to preprocess a source file
+src/game_graph/plateau.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.i
+.PHONY : src/game_graph/plateau.i
+
+# target to generate assembly for a file
+src/game_graph/plateau.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.s
+.PHONY : src/game_graph/plateau.s
 
 # target to build an object file
 src/game_log/carte/carte.o:
@@ -1080,6 +1110,12 @@ help:
 	@echo "... src/game_graph/jeu.o"
 	@echo "... src/game_graph/jeu.i"
 	@echo "... src/game_graph/jeu.s"
+	@echo "... src/game_graph/joueur.o"
+	@echo "... src/game_graph/joueur.i"
+	@echo "... src/game_graph/joueur.s"
+	@echo "... src/game_graph/plateau.o"
+	@echo "... src/game_graph/plateau.i"
+	@echo "... src/game_graph/plateau.s"
 	@echo "... src/game_log/carte/carte.o"
 	@echo "... src/game_log/carte/carte.i"
 	@echo "... src/game_log/carte/carte.s"

@@ -28,6 +28,7 @@ private:
 	void setupMainMenu();
 	void setupPlayMenu();
 	void setupContinuePlayMenu();
+	void setupPlay();
 	GuiNode *m_sceneNode;
 	int m_nb_joueurs;
 };

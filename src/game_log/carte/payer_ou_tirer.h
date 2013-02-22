@@ -8,13 +8,14 @@
 class Payer_ou_tirer : public  Carte_argent
 {
     public:
-        Payer_ou_tirer(int type,int val,const std::string& descr, PaquetCarte* paquet, PaquetCarte* paquet_cible);
+        Payer_ou_tirer(int val,const std::string& descr, PaquetCarte* paquet_source, PaquetCarte* paquet_cible);
         virtual void tirer(Joueur*);
+		void setPaquetAutre(PaquetCarte*);
+		PaquetCarte* paquetAutre() const;
     protected:
     private:
         bool veut_payer();
         // true = payer
-        int m_type;
         PaquetCarte* m_paquet_cible;
         bool m_choix;
         // type : type du paquet a recuperer

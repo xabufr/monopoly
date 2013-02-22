@@ -9,6 +9,7 @@ public:
 	Des();
 	void lancer();
 	int valeur() const;
+	int valeur(int i) const;
 	bool estDouble() const;
 	int valeur(size_t) const; //Retourne la valeur du dés 0 ou 1
 private:
