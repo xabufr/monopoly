@@ -13,7 +13,7 @@ public:
 	virtual bool estAchete() const;
 	virtual void acheter(Joueur*);
 	virtual int valeur_hypotheque() const;
-    virtual void hypothequer();
+    virtual void hypothequer(bool=true);
     virtual void deshypothequer();
     virtual bool estEnHypotheque() const;
     virtual int loyer() const;

@@ -37,9 +37,10 @@ int CasePropriete::valeur_hypotheque() const
     return m_hypotheque;
 }
 
-void CasePropriete::hypothequer()
+void CasePropriete::hypothequer(bool crediter)
 {
-    m_proprietaire->crediter(m_hypotheque);
+	if(crediter)
+		m_proprietaire->crediter(m_hypotheque);
     m_en_hypotheque = true;
 }
 
