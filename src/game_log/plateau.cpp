@@ -79,6 +79,7 @@ Plateau::Plateau()
 	hyp_gare    	= boost::lexical_cast<int>(nGare->first_attribute("hyp")->value());
 	credit_tour 	= boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
 	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
+	m_taille_case   = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_case")->value());
 
 	std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
@@ -308,4 +309,8 @@ void Plateau::load(const std::string&)
 void Plateau::save(const std::string&)
 {
 
+}
+int Plateau::getTailleCase() const
+{
+	return m_taille_case;
 }
