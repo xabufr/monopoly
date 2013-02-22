@@ -1,5 +1,6 @@
 #include "jeu.h"
 #include "../game_log/plateau.h"
+#include "../game_log/joueur.h"
 #include "../core/consolelogger.h"
 #include "../graphics/graphicalengine.h"
 #include <boost/lexical_cast.hpp>
@@ -28,6 +29,8 @@ void Jeu::run()
 			if(event.type == sf::Event::KeyReleased && event.key.code==sf::Keyboard::Escape)
 				m_engine->GetRenderWindow()->close();
 		}
+		if(m_plateau&&m_plateauGraph)
+			m_plateauGraph->update();
 		m_engine->DrawScene();
 	}
 }
@@ -111,6 +114,7 @@ void Jeu::setupContinuePlayMenu()
 		input->SetBgColor(sf::Color(128,128,128));
 		input->SetMaxSize(sf::Vector2f(200, 30));
 		cont->AjouterItem(input, (i%2==0) ?0:1, i/2);
+		m_nomsJoueurs[i] = input;
 	}
 	GuiButtonItem *btnContinuer = new GuiButtonItem;
 	GuiButtonItem *btnRetour = new GuiButtonItem;
@@ -131,6 +135,11 @@ void Jeu::setupPlay()
 {
 	m_plateau      = new Plateau;
 	m_plateauGraph = new PlateauGraph(m_plateau);
+	for (size_t i = 0; i < m_nb_joueurs; ++i)
+	{
+		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
+		m_plateau->addJoueur(joueur);
+	}
 }
 void Jeu::changeState(state s)
 {

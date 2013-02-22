@@ -3,6 +3,9 @@
 #include "case/casepropriete/casegare.h"
 #include "case/casepropriete/casecompagnie.h"
 
+Joueur::Joueur(const std::string& nom): m_nom(nom)
+{
+}
 const std::string& Joueur::nom() const
 {
 	return m_nom;

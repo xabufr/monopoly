@@ -14,3 +14,6 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y; 
 	m_item_plateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 }
+void PlateauGraph::update()
+{
+}
