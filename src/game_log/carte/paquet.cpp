@@ -30,7 +30,6 @@ const std::string& PaquetCarte::cheminLogo() const
 Carte* PaquetCarte::tirer()
 {
 	Carte* carte;
-	//Carte* carte = new Carte("test",this);
 	do
 	{
 		carte = m_cartes.front();

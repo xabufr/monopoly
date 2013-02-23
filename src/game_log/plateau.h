@@ -29,10 +29,11 @@ public:
 	void save(const std::string&);
 
 	int getTailleCase() const;
+	int getEspaceMaison() const;
 private:
 	int m_argent;
 	int m_argent_depart;
-	int m_taille_case;
+	int m_taille_case, m_espace_maison;
 	std::vector<Joueur*> m_joueurs;
 	Case* m_case[40];
 	PaquetCarte* m_paquets[2];
