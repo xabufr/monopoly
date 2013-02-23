@@ -16,7 +16,7 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y; 
 	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 
-	sf::IntRect rTest = maisonRect(37);
+	sf::IntRect rTest = maisonRect(34);
 	SceneNodeShapeItem *rect = new SceneNodeShapeItem;
 	m_nodePlateau->AddItem(rect);
 	rect->SetSize(sf::Vector2f(rTest.width, rTest.height));
@@ -55,10 +55,10 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		espace     = espace /9;
 		debY      += (idRel - 1) * espace;
 		sf::IntRect rect;
-		rect.left   = m_plateau->getEspaceMaison();
-		rect.width  = m_plateau->getTailleCase() - m_plateau->getEspaceMaison();
+		rect.left   = m_plateau->getEspaceMaison() + m_plateau->getTailleTraits();
+		rect.width  = m_plateau->getTailleCase() - m_plateau->getEspaceMaison() - m_plateau->getTailleTraits();
 		rect.top    = debY + espace;
-		rect.height = espace;
+		rect.height = espace - m_plateau->getTailleTraits();// - m_plateau->getTailleTraits();
 		if(id<=10)
 		{
 			rect.top  = -rect.top + m_item_plateau->GetSize().y*0.5;
@@ -66,7 +66,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		}
 		else 
 		{
-			rect.top  = rect.top - m_item_plateau->GetSize().y*0.5;
+			rect.top  = rect.top - m_item_plateau->GetSize().y*0.5 + m_plateau->getTailleTraits();
 			rect.left = m_item_plateau->GetSize().x*0.5 - rect.left - rect.width;
 		}
 		return rect;
@@ -83,10 +83,10 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		espace     = espace /9;
 		debX      += (idRel - 11) * espace;
 		sf::IntRect rect;
-		rect.top   = m_plateau->getEspaceMaison();
-		rect.height = m_plateau->getTailleCase() - m_plateau->getEspaceMaison();
+		rect.top   = m_plateau->getEspaceMaison() + m_plateau->getTailleTraits();
+		rect.height = m_plateau->getTailleCase() - m_plateau->getEspaceMaison() - m_plateau->getTailleTraits();
 		rect.left   = debX + espace;
-		rect.width  = espace;
+		rect.width  = espace - m_plateau->getTailleTraits();
 		if(id<=19)
 		{
 			rect.left = rect.left - m_item_plateau->GetSize().x*0.5 - rect.width;
@@ -94,7 +94,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		}
 		else 
 		{
-			rect.left = -rect.left + m_item_plateau->GetSize().x*0.5 + rect.width; 
+			rect.left = -rect.left + m_item_plateau->GetSize().x*0.5 + rect.width + m_plateau->getTailleTraits(); 
 			rect.top  = m_item_plateau->GetSize().y*0.5 - rect.top - rect.height;
 		}
 		return rect;

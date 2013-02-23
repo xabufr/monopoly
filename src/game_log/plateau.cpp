@@ -82,6 +82,7 @@ Plateau::Plateau()
 	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
 	m_taille_case   = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_case")->value());
 	m_espace_maison = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("espace_maison")->value());
+	m_taille_traits = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_traits")->value());
 
 	std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
@@ -430,4 +431,8 @@ int Plateau::getTailleCase() const
 int Plateau::getEspaceMaison() const
 {
 	return m_espace_maison;
+}
+int Plateau::getTailleTraits() const
+{
+	return m_taille_traits;
 }
