@@ -13,7 +13,7 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	sf::Vector2f sizePlateau = m_item_plateau->GetSize();
 	m_item_plateau->SetRelativePosition(sf::Vector2f(-sizePlateau.x*0.5, -sizePlateau.y*0.5));
 	m_camera = m_engine->GetCameraManager()->AddCamera();
-	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y; 
+	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y;
 	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 
 	sf::IntRect rTest = maisonRect(37);
@@ -31,9 +31,9 @@ sf::IntRect PlateauGraph::caseRect(int id) const
 	{
 
 	}
-	else if((id>=11&&id<=19)||(id>=31&&id<=39)) 
+	else if((id>=11&&id<=19)||(id>=31&&id<=39))
 	{
-		
+
 	}
 	else
 	{
@@ -46,7 +46,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 	if((id>=1&&id<=10)||(id>=21&&id<=29))
 	{
 		int idRel = id;
-		if(idRel>10) 
+		if(idRel>10)
 		{
 			idRel = id-21;
 		}
@@ -64,17 +64,17 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 			rect.top  = -rect.top + m_item_plateau->GetSize().y*0.5;
 			rect.left = -m_item_plateau->GetSize().x*0.5 + rect.left;
 		}
-		else 
+		else
 		{
 			rect.top  = rect.top - m_item_plateau->GetSize().y*0.5;
 			rect.left = m_item_plateau->GetSize().x*0.5 - rect.left - rect.width;
 		}
 		return rect;
 	}
-	else if((id>=11&&id<=19)||(id>=31&&id<=39)) 
+	else if((id>=11&&id<=19)||(id>=31&&id<=39))
 	{
 		int idRel = id;
-		if(idRel>30) 
+		if(idRel>30)
 		{
 			idRel = id-30+11;
 		}
@@ -92,12 +92,21 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 			rect.left = rect.left - m_item_plateau->GetSize().x*0.5 - rect.width;
 			rect.top  = -m_item_plateau->GetSize().y*0.5 + rect.top;
 		}
-		else 
+		else
 		{
-			rect.left = -rect.left + m_item_plateau->GetSize().x*0.5 + rect.width; 
+			rect.left = -rect.left + m_item_plateau->GetSize().x*0.5 + rect.width;
 			rect.top  = m_item_plateau->GetSize().y*0.5 - rect.top - rect.height;
 		}
 		return rect;
 	}
 	return sf::IntRect();
 }
+
+void DeplacerPion(int n)
+{
+
+    m_plateau->avancerCurrentJoueur(n);
+
+
+}
+

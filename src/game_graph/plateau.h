@@ -14,6 +14,7 @@ public:
 	void update();
 	sf::IntRect caseRect(int id) const;
 	sf::IntRect maisonRect(int id) const;
+	void DeplacerPion(Joueur*,int);
 private:
 	SceneNodeSpriteItem *m_item_plateau;
 	Plateau *m_plateau;
@@ -22,4 +23,4 @@ private:
 	sf::View *m_camera;
 };
 
-#endif 	
+#endif

@@ -1,43 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
-	<File name="src/game/carte/carte_reparation.cpp" open="0" top="0" tabpos="5">
-		<Cursor position="806" topLine="7" />
-	</File>
-	<File name="src/game/carte/carte_reparation.h" open="0" top="0" tabpos="4">
-		<Cursor position="238" topLine="0" />
-	</File>
-	<File name="src/game/carte/paquet.cpp" open="0" top="0" tabpos="8">
-		<Cursor position="1098" topLine="31" />
-	</File>
-	<File name="src/game/carte/paquet.h" open="1" top="0" tabpos="2">
-		<Cursor position="0" topLine="0" />
-	</File>
-	<File name="src/game/carte/payer_ou_tirer.cpp" open="1" top="0" tabpos="4">
-		<Cursor position="682" topLine="24" />
-	</File>
-	<File name="src/game/carte/payer_ou_tirer.h" open="1" top="0" tabpos="5">
-		<Cursor position="452" topLine="0" />
-	</File>
-	<File name="src/game/case/casecarte.cpp" open="0" top="0" tabpos="7">
-		<Cursor position="329" topLine="0" />
-	</File>
-	<File name="src/game/case/casecarte.h" open="0" top="0" tabpos="0">
-		<Cursor position="287" topLine="0" />
-	</File>
-	<File name="src/game/case/casepropriete/caseterrain.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1278" topLine="35" />
-	</File>
-	<File name="src/game/case/casepropriete/caseterrain.h" open="0" top="0" tabpos="6">
-		<Cursor position="143" topLine="0" />
-	</File>
-	<File name="src/game/joueur.cpp" open="0" top="0" tabpos="0">
-		<Cursor position="1330" topLine="65" />
-	</File>
-	<File name="src/game/joueur.h" open="1" top="0" tabpos="1">
-		<Cursor position="330" topLine="11" />
-	</File>
-	<File name="src/game/plateau.h" open="1" top="0" tabpos="3">
-		<Cursor position="0" topLine="18" />
-	</File>
 </CodeBlocks_layout_file>
