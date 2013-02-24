@@ -31,6 +31,7 @@ public:
 	int getTailleCase() const;
 	int getEspaceMaison() const;
 	int getTailleTraits() const;
+	Case* getCase(size_t) const;
 private:
 	int m_argent;
 	int m_argent_depart;

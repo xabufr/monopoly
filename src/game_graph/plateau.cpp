@@ -1,7 +1,11 @@
 #include "plateau.h"
 #include "../game_log/plateau.h"
+#include "terrain.h"
+#include "../game_log/case/casepropriete/caseterrain.h"
 #include "../graphics/graphicalengine.h"
 #include "../core/logger.h"
+
+#include <iostream>
 
 PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 {
@@ -14,13 +18,18 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	m_item_plateau->SetRelativePosition(sf::Vector2f(-sizePlateau.x*0.5, -sizePlateau.y*0.5));
 	m_camera = m_engine->GetCameraManager()->AddCamera();
 	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y; 
-	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 
-	sf::IntRect rTest = maisonRect(34);
-	SceneNodeShapeItem *rect = new SceneNodeShapeItem;
-	m_nodePlateau->AddItem(rect);
-	rect->SetSize(sf::Vector2f(rTest.width, rTest.height));
-	rect->SetRelativePosition(sf::Vector2f(rTest.left, rTest.top));
+	for (size_t i = 0; i < 40; ++i)
+	{
+		Case *c        = m_plateau->getCase(i);
+		CaseTerrain *t = dynamic_cast<CaseTerrain*>(c);
+		if(t)
+		{
+			TerrainGraph *tG = new TerrainGraph(this, t, m_nodePlateau);
+			m_terrains.push_back(tG);
+		}
+	}
+	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 }
 void PlateauGraph::update()
 {

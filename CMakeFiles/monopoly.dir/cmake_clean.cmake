@@ -35,6 +35,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/monopoly.dir/src/graphics/particlemanager.o"
   "CMakeFiles/monopoly.dir/src/graphics/scenenodetextureitem.o"
   "CMakeFiles/monopoly.dir/src/game_graph/plateau.o"
+  "CMakeFiles/monopoly.dir/src/game_graph/terrain.o"
   "CMakeFiles/monopoly.dir/src/game_graph/jeu.o"
   "CMakeFiles/monopoly.dir/src/game_log/des.o"
   "CMakeFiles/monopoly.dir/src/game_log/plateau.o"

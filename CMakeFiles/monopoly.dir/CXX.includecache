@@ -6,27 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/thomas/Programmation/monopoly/src/game_graph/../core/exception.h
-exception
--
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
 string
+-
+list
 -
 
-/home/thomas/Programmation/monopoly/src/game_graph/../core/logger.h
-string
--
-sstream
--
-exception.h
-/home/thomas/Programmation/monopoly/src/game_graph/../core/exception.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+../case.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
 
-/home/thomas/Programmation/monopoly/src/game_graph/../game_log/plateau.h
-vector
--
-string
--
-cstddef
--
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
 
 /home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/random.h
 
@@ -302,17 +294,23 @@ SFML/Graphics/Texture.hpp
 ../core/singleton.h
 /home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/singleton.h
 
-/home/thomas/Programmation/monopoly/src/game_graph/plateau.cpp
-plateau.h
-/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
-../game_log/plateau.h
-/home/thomas/Programmation/monopoly/src/game_graph/../game_log/plateau.h
-../graphics/graphicalengine.h
-/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
-../core/logger.h
-/home/thomas/Programmation/monopoly/src/game_graph/../core/logger.h
-
 /home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 SFML/Graphics.hpp
 -
+list
+-
+
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.cpp
+terrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.h
+../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
+plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
+../game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+iostream
+-
+
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.h
 

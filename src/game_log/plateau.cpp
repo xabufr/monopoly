@@ -162,6 +162,7 @@ Plateau::Plateau()
 				terrain->setPrix(boost::lexical_cast<int>(nodeTerrain->first_attribute("prix")->value()));
 				terrain->setHypotheque(boost::lexical_cast<int>(nodeTerrain->first_attribute("hyp")->value()));
 				terrain->setGroupe(groupe);
+				m_case[id] = terrain;
 				for (size_t i = 0; i < 6; ++i)
 				{
 					terrain->setLoyer(i, 
@@ -435,4 +436,8 @@ int Plateau::getEspaceMaison() const
 int Plateau::getTailleTraits() const
 {
 	return m_taille_traits;
+}
+Case* Plateau::getCase(size_t id) const
+{
+	return (id<40) ?m_case[id]:nullptr;
 }

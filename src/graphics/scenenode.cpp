@@ -1,14 +1,16 @@
 #include "scenenode.h"
 #include "scenemanager.h"
 
+#include <iostream>
+
 SceneNode::SceneNode(SceneManager* mng, SceneNode* parent)
 {
     m_parent=parent;
 
     m_level=0;
     m_levelReel = this->CalculerLevel();
-    m_relative.rotation=0;
-    m_relative.scale=sf::Vector2f(1,1);
+	SetRelativeScale(1,1);
+	SetRelativeRotation(0);
 
     m_manager=mng;
     m_manager->AddNodeLevel(m_levelReel, this);
@@ -123,6 +125,7 @@ void SceneNode::SetRelativePosition(const sf::Vector2f& pos)
     {
         sf::Transform trans;
         trans.rotate(m_parent->m_absolute.rotation);
+		trans.scale(m_parent->m_absolute.scale, m_parent->m_absolute.position);
         m_absolute.position.x=m_parent->m_absolute.position.x+trans.transformPoint(m_relative.position).x;
         m_absolute.position.y=m_parent->m_absolute.position.y+trans.transformPoint(m_relative.position).y;
     }
@@ -135,6 +138,7 @@ void SceneNode::SetRelativeScale(const sf::Vector2f& scale)
     {
         m_absolute.scale.x*=m_parent->m_absolute.scale.x;
         m_absolute.scale.y*=m_parent->m_absolute.scale.y;
+		SetRelativePosition(m_relative.position);
     }
     ScaleChanged();
 }
