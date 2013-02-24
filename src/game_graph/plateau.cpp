@@ -33,6 +33,10 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 }
 void PlateauGraph::update()
 {
+	for(TerrainGraph *terrain : m_terrains) 
+	{
+		terrain->update();
+	}
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
 {
