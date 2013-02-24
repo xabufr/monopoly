@@ -1,8 +1,6 @@
 #include "scenenode.h"
 #include "scenemanager.h"
 
-#include <iostream>
-
 SceneNode::SceneNode(SceneManager* mng, SceneNode* parent)
 {
     m_parent=parent;
