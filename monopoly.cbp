@@ -104,9 +104,15 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.cpp">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.cpp">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.cpp">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.cpp">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.cpp">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.cpp">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.cpp">
       </Unit>
@@ -232,9 +238,15 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.h">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h">
       </Unit>
@@ -289,8 +301,6 @@
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.h">
-      </Unit>
-      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/.scenenode.cpp.swp">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h">
       </Unit>

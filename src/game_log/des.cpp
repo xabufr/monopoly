@@ -6,8 +6,8 @@ Des::Des()
 }
 void Des::lancer()
 {
-	m_valeur[0] = Random::Rand(1,6);
-	m_valeur[1] = Random::Rand(1,6);
+	m_valeur[0] = Random::Rand(1,7);
+	m_valeur[1] = Random::Rand(1,7);
 }
 int Des::valeur() const
 {

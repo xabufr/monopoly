@@ -4,7 +4,9 @@
 #include "../core/consolelogger.h"
 #include "../graphics/graphicalengine.h"
 #include <boost/lexical_cast.hpp>
+#include "interface.h"
 #include "plateau.h"
+#include "joueur.h"
 
 Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
 {
@@ -16,6 +18,13 @@ Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
 	m_sceneNode = nullptr;
 	m_nb_joueurs = 2;
 }
+
+Jeu::~Jeu()
+{
+	if(m_plateauGraph)
+		delete m_plateauGraph;
+}
+
 void Jeu::run()
 {
 	while(m_engine->GetRenderWindow()->isOpen())
@@ -44,7 +53,7 @@ void Jeu::changeState()
 	switch(m_requ_state)
 	{
 		case main_menu:
-			setupMainMenu();
+            setupMainMenu();
 			break;
 		case play_menu:
 			setupPlayMenu();
@@ -59,6 +68,12 @@ void Jeu::changeState()
 }
 void Jeu::setupMainMenu()
 {
+    if (m_plateauGraph)
+    {
+        delete m_plateauGraph;
+        m_plateauGraph = nullptr;
+        m_plateau = nullptr;
+    }
 	GuiManager *gui = m_engine->GetGuiManager();
 	m_sceneNode = gui->GetRootNode()->AddGuiNode();
 	GuiContener *contener = m_sceneNode->AddContener();
@@ -135,10 +150,13 @@ void Jeu::setupPlay()
 {
 	m_plateau      = new Plateau;
 	m_plateauGraph = new PlateauGraph(m_plateau);
+	m_interface = new Interface(this, m_plateauGraph);
 	for (size_t i = 0; i < m_nb_joueurs; ++i)
 	{
 		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
 		m_plateau->addJoueur(joueur);
+		m_joueurGraph[i] = new JoueurGraph(joueur);
+        m_joueurGraph[i]->stat(i);
 	}
 }
 void Jeu::changeState(state s)
@@ -148,7 +166,7 @@ void Jeu::changeState(state s)
 }
 void Jeu::menu_jouer(GuiItem* i)
 {
-	Jeu* thi = (Jeu*)i->GetData("this"); 
+	Jeu* thi = (Jeu*)i->GetData("this");
 	thi->changeState(play_menu);
 }
 void Jeu::quitter(GuiItem* i)

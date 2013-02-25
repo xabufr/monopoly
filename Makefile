@@ -232,6 +232,21 @@ src/core/trigo.s:
 .PHONY : src/core/trigo.s
 
 # target to build an object file
+src/game_graph/interface.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/interface.o
+.PHONY : src/game_graph/interface.o
+
+# target to preprocess a source file
+src/game_graph/interface.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/interface.i
+.PHONY : src/game_graph/interface.i
+
+# target to generate assembly for a file
+src/game_graph/interface.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/interface.s
+.PHONY : src/game_graph/interface.s
+
+# target to build an object file
 src/game_graph/jeu.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/jeu.o
 .PHONY : src/game_graph/jeu.o
@@ -247,6 +262,21 @@ src/game_graph/jeu.s:
 .PHONY : src/game_graph/jeu.s
 
 # target to build an object file
+src/game_graph/joueur.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/joueur.o
+.PHONY : src/game_graph/joueur.o
+
+# target to preprocess a source file
+src/game_graph/joueur.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/joueur.i
+.PHONY : src/game_graph/joueur.i
+
+# target to generate assembly for a file
+src/game_graph/joueur.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/joueur.s
+.PHONY : src/game_graph/joueur.s
+
+# target to build an object file
 src/game_graph/plateau.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.o
 .PHONY : src/game_graph/plateau.o
@@ -260,6 +290,21 @@ src/game_graph/plateau.i:
 src/game_graph/plateau.s:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.s
 .PHONY : src/game_graph/plateau.s
+
+# target to build an object file
+src/game_graph/propriete.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/propriete.o
+.PHONY : src/game_graph/propriete.o
+
+# target to preprocess a source file
+src/game_graph/propriete.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/propriete.i
+.PHONY : src/game_graph/propriete.i
+
+# target to generate assembly for a file
+src/game_graph/propriete.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/propriete.s
+.PHONY : src/game_graph/propriete.s
 
 # target to build an object file
 src/game_graph/terrain.o:
@@ -1104,12 +1149,21 @@ help:
 	@echo "... src/core/trigo.o"
 	@echo "... src/core/trigo.i"
 	@echo "... src/core/trigo.s"
+	@echo "... src/game_graph/interface.o"
+	@echo "... src/game_graph/interface.i"
+	@echo "... src/game_graph/interface.s"
 	@echo "... src/game_graph/jeu.o"
 	@echo "... src/game_graph/jeu.i"
 	@echo "... src/game_graph/jeu.s"
+	@echo "... src/game_graph/joueur.o"
+	@echo "... src/game_graph/joueur.i"
+	@echo "... src/game_graph/joueur.s"
 	@echo "... src/game_graph/plateau.o"
 	@echo "... src/game_graph/plateau.i"
 	@echo "... src/game_graph/plateau.s"
+	@echo "... src/game_graph/propriete.o"
+	@echo "... src/game_graph/propriete.i"
+	@echo "... src/game_graph/propriete.s"
 	@echo "... src/game_graph/terrain.o"
 	@echo "... src/game_graph/terrain.i"
 	@echo "... src/game_graph/terrain.s"
