@@ -102,7 +102,7 @@ void Interface::update()
     m_button_achat->SetVisible(false);
     Joueur *joueur = m_plateau->getPlateau()->getJoueurTour();
 
-    if (dynamic_cast<CasePropriete*>(joueur->estSur()))
+    if (dynamic_cast<CasePropriete*>(joueur->estSur()) && ((CasePropriete*)(joueur->estSur()))->proprietaire() == nullptr)
         m_button_achat->SetVisible(true);
 
     if (m_lancer)
@@ -150,7 +150,22 @@ void Interface::achat(GuiItem* g)
 
 void Interface::hypothequer(GuiItem* g)
 {
-
+    Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    GuiWindowNode *window = ((Interface*)g->GetData("this"))->m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+    window->SetWindowTitle("Hypotéquer");
+    window->SetClosable(true);
+    int x, y;
+    x=y=0;
+    for (CasePropriete* m_case : joueur->proprietes())
+    {
+        if (x > 4)
+            ++y;
+        GuiButtonItem *button = new GuiButtonItem;
+        button->SetText(m_case->nom());
+        window->GetContener()->AjouterItem(button, x, y);
+        ++x;
+    }
+    window->CalculerTaille();
 }
 
 void Interface::tourSuivant(GuiItem* g)

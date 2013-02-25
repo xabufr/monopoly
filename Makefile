@@ -280,6 +280,21 @@ src/game_graph/joueur.s:
 .PHONY : src/game_graph/joueur.s
 
 # target to build an object file
+src/game_graph/messagebox.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/messagebox.o
+.PHONY : src/game_graph/messagebox.o
+
+# target to preprocess a source file
+src/game_graph/messagebox.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/messagebox.i
+.PHONY : src/game_graph/messagebox.i
+
+# target to generate assembly for a file
+src/game_graph/messagebox.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/messagebox.s
+.PHONY : src/game_graph/messagebox.s
+
+# target to build an object file
 src/game_graph/plateau.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.o
 .PHONY : src/game_graph/plateau.o
@@ -1161,6 +1176,9 @@ help:
 	@echo "... src/game_graph/joueur.o"
 	@echo "... src/game_graph/joueur.i"
 	@echo "... src/game_graph/joueur.s"
+	@echo "... src/game_graph/messagebox.o"
+	@echo "... src/game_graph/messagebox.i"
+	@echo "... src/game_graph/messagebox.s"
 	@echo "... src/game_graph/plateau.o"
 	@echo "... src/game_graph/plateau.i"
 	@echo "... src/game_graph/plateau.s"

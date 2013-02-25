@@ -6,25 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/consolelogger.h
-logger.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/logger.h
-iostream
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_graph/plateau.h
+SFML/Graphics.hpp
+-
+list
+-
+map
 -
 
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/exception.h
-exception
--
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
 string
+-
+list
 -
 
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/logger.h
-string
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+../case.h
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/des.h
+SFML/System.hpp
 -
-sstream
--
-exception.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/exception.h
 
 /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/joueur.h
 string
@@ -314,39 +316,29 @@ SFML/Graphics/Texture.hpp
 ../core/singleton.h
 /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h
 
+/home/zequiel/software/c++/monopoly/src/game_graph/interface.cpp
+interface.h
 /home/zequiel/software/c++/monopoly/src/game_graph/interface.h
-
-/home/zequiel/software/c++/monopoly/src/game_graph/jeu.cpp
-jeu.h
-/home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
+../game_graph/plateau.h
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_graph/plateau.h
 ../game_log/plateau.h
 /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/plateau.h
+jeu.h
+/home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
+../game_log/des.h
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/des.h
 ../game_log/joueur.h
 /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/joueur.h
-../core/consolelogger.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/consolelogger.h
+../game_log/case/casepropriete/casepropriete.h
+/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
 ../graphics/graphicalengine.h
 /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/graphicalengine.h
 boost/lexical_cast.hpp
 -
-interface.h
+iostream
+-
+
 /home/zequiel/software/c++/monopoly/src/game_graph/interface.h
-plateau.h
-/home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
-joueur.h
-/home/zequiel/software/c++/monopoly/src/game_graph/joueur.h
 
 /home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
-
-/home/zequiel/software/c++/monopoly/src/game_graph/joueur.h
-SFML/Graphics/Color.hpp
--
-
-/home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
-SFML/Graphics.hpp
--
-list
--
-map
--
 

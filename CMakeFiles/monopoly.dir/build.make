@@ -1317,9 +1317,32 @@ CMakeFiles/monopoly.dir/src/game_graph/propriete.o.provides: CMakeFiles/monopoly
 
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o.provides.build: CMakeFiles/monopoly.dir/src/game_graph/propriete.o
 
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.o: CMakeFiles/monopoly.dir/flags.make
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.o: src/game_graph/messagebox.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_56)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game_graph/messagebox.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game_graph/messagebox.o -c /home/zequiel/software/c++/monopoly/src/game_graph/messagebox.cpp
+
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/monopoly.dir/src/game_graph/messagebox.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/zequiel/software/c++/monopoly/src/game_graph/messagebox.cpp > CMakeFiles/monopoly.dir/src/game_graph/messagebox.i
+
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/monopoly.dir/src/game_graph/messagebox.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/zequiel/software/c++/monopoly/src/game_graph/messagebox.cpp -o CMakeFiles/monopoly.dir/src/game_graph/messagebox.s
+
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.requires:
+.PHONY : CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.requires
+
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.provides: CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.requires
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.provides.build
+.PHONY : CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.provides
+
+CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.provides.build: CMakeFiles/monopoly.dir/src/game_graph/messagebox.o
+
 CMakeFiles/monopoly.dir/src/game_graph/terrain.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game_graph/terrain.o: src/game_graph/terrain.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_56)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_57)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game_graph/terrain.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game_graph/terrain.o -c /home/zequiel/software/c++/monopoly/src/game_graph/terrain.cpp
 
@@ -1342,7 +1365,7 @@ CMakeFiles/monopoly.dir/src/game_graph/terrain.o.provides.build: CMakeFiles/mono
 
 CMakeFiles/monopoly.dir/src/game_graph/joueur.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game_graph/joueur.o: src/game_graph/joueur.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_57)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_58)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game_graph/joueur.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game_graph/joueur.o -c /home/zequiel/software/c++/monopoly/src/game_graph/joueur.cpp
 
@@ -1365,7 +1388,7 @@ CMakeFiles/monopoly.dir/src/game_graph/joueur.o.provides.build: CMakeFiles/monop
 
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/plateau.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_58)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_59)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game_graph/plateau.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game_graph/plateau.o -c /home/zequiel/software/c++/monopoly/src/game_graph/plateau.cpp
 
@@ -1388,7 +1411,7 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o.provides.build: CMakeFiles/mono
 
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/interface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_59)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_60)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/game_graph/interface.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/game_graph/interface.o -c /home/zequiel/software/c++/monopoly/src/game_graph/interface.cpp
 
@@ -1411,7 +1434,7 @@ CMakeFiles/monopoly.dir/src/game_graph/interface.o.provides.build: CMakeFiles/mo
 
 CMakeFiles/monopoly.dir/src/core/exception.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/exception.o: src/core/exception.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_60)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_61)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/exception.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/exception.o -c /home/zequiel/software/c++/monopoly/src/core/exception.cpp
 
@@ -1434,7 +1457,7 @@ CMakeFiles/monopoly.dir/src/core/exception.o.provides.build: CMakeFiles/monopoly
 
 CMakeFiles/monopoly.dir/src/core/filelogger.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/filelogger.o: src/core/filelogger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_61)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_62)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/filelogger.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/filelogger.o -c /home/zequiel/software/c++/monopoly/src/core/filelogger.cpp
 
@@ -1457,7 +1480,7 @@ CMakeFiles/monopoly.dir/src/core/filelogger.o.provides.build: CMakeFiles/monopol
 
 CMakeFiles/monopoly.dir/src/core/trigo.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_62)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_63)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/trigo.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/trigo.o -c /home/zequiel/software/c++/monopoly/src/core/trigo.cpp
 
@@ -1480,7 +1503,7 @@ CMakeFiles/monopoly.dir/src/core/trigo.o.provides.build: CMakeFiles/monopoly.dir
 
 CMakeFiles/monopoly.dir/src/core/consolelogger.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/consolelogger.o: src/core/consolelogger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_63)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_64)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/consolelogger.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/consolelogger.o -c /home/zequiel/software/c++/monopoly/src/core/consolelogger.cpp
 
@@ -1503,7 +1526,7 @@ CMakeFiles/monopoly.dir/src/core/consolelogger.o.provides.build: CMakeFiles/mono
 
 CMakeFiles/monopoly.dir/src/core/singleton.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/singleton.o: src/core/singleton.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_64)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_65)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/singleton.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/singleton.o -c /home/zequiel/software/c++/monopoly/src/core/singleton.cpp
 
@@ -1526,7 +1549,7 @@ CMakeFiles/monopoly.dir/src/core/singleton.o.provides.build: CMakeFiles/monopoly
 
 CMakeFiles/monopoly.dir/src/core/logger.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/logger.o: src/core/logger.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_65)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_66)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/logger.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/logger.o -c /home/zequiel/software/c++/monopoly/src/core/logger.cpp
 
@@ -1549,7 +1572,7 @@ CMakeFiles/monopoly.dir/src/core/logger.o.provides.build: CMakeFiles/monopoly.di
 
 CMakeFiles/monopoly.dir/src/core/conversion.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/conversion.o: src/core/conversion.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_66)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_67)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/conversion.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/conversion.o -c /home/zequiel/software/c++/monopoly/src/core/conversion.cpp
 
@@ -1572,7 +1595,7 @@ CMakeFiles/monopoly.dir/src/core/conversion.o.provides.build: CMakeFiles/monopol
 
 CMakeFiles/monopoly.dir/src/core/random.o: CMakeFiles/monopoly.dir/flags.make
 CMakeFiles/monopoly.dir/src/core/random.o: src/core/random.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_67)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zequiel/software/c++/monopoly/CMakeFiles $(CMAKE_PROGRESS_68)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/monopoly.dir/src/core/random.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/monopoly.dir/src/core/random.o -c /home/zequiel/software/c++/monopoly/src/core/random.cpp
 
@@ -1650,6 +1673,7 @@ monopoly_OBJECTS = \
 "CMakeFiles/monopoly.dir/src/main.o" \
 "CMakeFiles/monopoly.dir/src/game_graph/jeu.o" \
 "CMakeFiles/monopoly.dir/src/game_graph/propriete.o" \
+"CMakeFiles/monopoly.dir/src/game_graph/messagebox.o" \
 "CMakeFiles/monopoly.dir/src/game_graph/terrain.o" \
 "CMakeFiles/monopoly.dir/src/game_graph/joueur.o" \
 "CMakeFiles/monopoly.dir/src/game_graph/plateau.o" \
@@ -1721,6 +1745,7 @@ monopoly: CMakeFiles/monopoly.dir/src/graphics/scenemanager.o
 monopoly: CMakeFiles/monopoly.dir/src/main.o
 monopoly: CMakeFiles/monopoly.dir/src/game_graph/jeu.o
 monopoly: CMakeFiles/monopoly.dir/src/game_graph/propriete.o
+monopoly: CMakeFiles/monopoly.dir/src/game_graph/messagebox.o
 monopoly: CMakeFiles/monopoly.dir/src/game_graph/terrain.o
 monopoly: CMakeFiles/monopoly.dir/src/game_graph/joueur.o
 monopoly: CMakeFiles/monopoly.dir/src/game_graph/plateau.o
@@ -1797,6 +1822,7 @@ CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/graphics/scenemana
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/main.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game_graph/jeu.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game_graph/propriete.o.requires
+CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game_graph/messagebox.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game_graph/terrain.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game_graph/joueur.o.requires
 CMakeFiles/monopoly.dir/requires: CMakeFiles/monopoly.dir/src/game_graph/plateau.o.requires

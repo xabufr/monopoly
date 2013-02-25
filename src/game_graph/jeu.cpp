@@ -7,6 +7,7 @@
 #include "interface.h"
 #include "plateau.h"
 #include "joueur.h"
+#include "messagebox.h"
 
 Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
 {
@@ -152,6 +153,7 @@ void Jeu::setupPlay()
 {
 	m_plateau      = new Plateau;
 	m_plateauGraph = new PlateauGraph(m_plateau);
+	MessageBox *message = new MessageBox("tutu", "Dans la vie il y a toujours,\n des truc des bidulles et des chouettes.");
 	m_interface = new Interface(this, m_plateauGraph);
 	sf::Color couleurs[8] = {
 		sf::Color(255,0,0),
