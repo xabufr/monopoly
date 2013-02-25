@@ -19,6 +19,8 @@ public:
 	~JoueurGraph();
 	void stat(float) const;
 	const sf::Color& couleur() const;
+	void setCouleur(const sf::Color&);
+	Joueur* joueur() const;
 private:
 	GuiNode *m_sceneNode;
 	Joueur *m_joueur;

@@ -1,5 +1,6 @@
 #include "propriete.h"
 #include "plateau.h"
+#include "joueur.h"
 #include "../game_log/case/casepropriete/casepropriete.h"
 #include "../graphics/graphicalengine.h"
 
@@ -22,7 +23,14 @@ void ProprieteGraph::update()
 {
 	if(m_case->proprietaire())
 	{
-		m_item->SetColor(sf::Color(255,255,255,128));
+		JoueurGraph *jg = m_plateau->findJoueurGraph(m_case->proprietaire());
+		sf::Color c;
+		if(jg)
+		{
+			sf::Color c = jg->couleur();
+		}
+		c.a=128;
+		m_item->SetColor(c);
 		m_item->SetVisible(true);
 	}
 	else

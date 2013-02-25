@@ -18,13 +18,11 @@ Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
 	m_sceneNode = nullptr;
 	m_nb_joueurs = 2;
 }
-
 Jeu::~Jeu()
 {
 	if(m_plateauGraph)
 		delete m_plateauGraph;
 }
-
 void Jeu::run()
 {
 	while(m_engine->GetRenderWindow()->isOpen())
@@ -151,12 +149,24 @@ void Jeu::setupPlay()
 	m_plateau      = new Plateau;
 	m_plateauGraph = new PlateauGraph(m_plateau);
 	m_interface = new Interface(this, m_plateauGraph);
+	sf::Color couleurs[8] = {
+		sf::Color(255,0,0),
+		sf::Color(0,255,0),
+		sf::Color(0,0,255),
+		sf::Color(255,255,255),
+		sf::Color(128,128,128),
+		sf::Color(255,255,0),
+		sf::Color(0, 255, 255),
+		sf::Color(255, 0, 255)
+	};
 	for (size_t i = 0; i < m_nb_joueurs; ++i)
 	{
 		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
 		m_plateau->addJoueur(joueur);
 		m_joueurGraph[i] = new JoueurGraph(joueur);
         m_joueurGraph[i]->stat(i);
+		m_plateauGraph->addJoueurGraph(m_joueurGraph[i]);
+		m_joueurGraph[i]->setCouleur(couleurs[i]);
 	}
 }
 void Jeu::changeState(state s)

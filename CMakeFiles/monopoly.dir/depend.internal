@@ -155,6 +155,7 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/joueur.h
  /home/thomas/Programmation/monopoly/src/game_graph/plateau.cpp
  /home/thomas/Programmation/monopoly/src/game_graph/plateau.h
  /home/thomas/Programmation/monopoly/src/game_graph/propriete.h
@@ -196,6 +197,7 @@ CMakeFiles/monopoly.dir/src/game_graph/propriete.o
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
  /home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/thomas/Programmation/monopoly/src/game_graph/joueur.h
  /home/thomas/Programmation/monopoly/src/game_graph/plateau.h
  /home/thomas/Programmation/monopoly/src/game_graph/propriete.cpp
  /home/thomas/Programmation/monopoly/src/game_graph/propriete.h
