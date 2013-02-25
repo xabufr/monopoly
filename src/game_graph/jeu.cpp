@@ -167,7 +167,7 @@ void Jeu::setupPlay()
 	{
 		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
 		m_plateau->addJoueur(joueur);
-		m_joueurGraph[i] = new JoueurGraph(joueur);
+		m_joueurGraph[i] = new JoueurGraph(joueur,m_plateauGraph->getSceneNode(),m_plateauGraph);
         m_joueurGraph[i]->stat(i);
 		m_plateauGraph->addJoueurGraph(m_joueurGraph[i]);
 		m_joueurGraph[i]->setCouleur(couleurs[i]);
