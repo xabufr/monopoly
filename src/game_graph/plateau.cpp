@@ -2,6 +2,8 @@
 #include "../game_log/plateau.h"
 #include "../graphics/graphicalengine.h"
 #include "../core/logger.h"
+#include "../game_log/joueur.h"
+#include "../game_log/case/case.h"
 
 PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 {
@@ -16,7 +18,7 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y;
 	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 
-	sf::IntRect rTest = maisonRect(37);
+	sf::IntRect rTest = maisonRect(34);
 	SceneNodeShapeItem *rect = new SceneNodeShapeItem;
 	m_nodePlateau->AddItem(rect);
 	rect->SetSize(sf::Vector2f(rTest.width, rTest.height));
@@ -24,6 +26,14 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 }
 void PlateauGraph::update()
 {
+   /* char str[1];
+    int n;
+
+    printf("lancer le dé?");
+    n = rand() % 10 + 1;
+*/
+    size_t n = 1;
+    DeplacerPion(n);
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
 {
@@ -55,10 +65,10 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		espace     = espace /9;
 		debY      += (idRel - 1) * espace;
 		sf::IntRect rect;
-		rect.left   = m_plateau->getEspaceMaison();
-		rect.width  = m_plateau->getTailleCase() - m_plateau->getEspaceMaison();
+		rect.left   = m_plateau->getEspaceMaison() + m_plateau->getTailleTraits();
+		rect.width  = m_plateau->getTailleCase() - m_plateau->getEspaceMaison() - m_plateau->getTailleTraits();
 		rect.top    = debY + espace;
-		rect.height = espace;
+		rect.height = espace - m_plateau->getTailleTraits();// - m_plateau->getTailleTraits();
 		if(id<=10)
 		{
 			rect.top  = -rect.top + m_item_plateau->GetSize().y*0.5;
@@ -66,7 +76,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		}
 		else
 		{
-			rect.top  = rect.top - m_item_plateau->GetSize().y*0.5;
+			rect.top  = rect.top - m_item_plateau->GetSize().y*0.5 + m_plateau->getTailleTraits();
 			rect.left = m_item_plateau->GetSize().x*0.5 - rect.left - rect.width;
 		}
 		return rect;
@@ -83,10 +93,10 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		espace     = espace /9;
 		debX      += (idRel - 11) * espace;
 		sf::IntRect rect;
-		rect.top   = m_plateau->getEspaceMaison();
-		rect.height = m_plateau->getTailleCase() - m_plateau->getEspaceMaison();
+		rect.top   = m_plateau->getEspaceMaison() + m_plateau->getTailleTraits();
+		rect.height = m_plateau->getTailleCase() - m_plateau->getEspaceMaison() - m_plateau->getTailleTraits();
 		rect.left   = debX + espace;
-		rect.width  = espace;
+		rect.width  = espace - m_plateau->getTailleTraits();
 		if(id<=19)
 		{
 			rect.left = rect.left - m_item_plateau->GetSize().x*0.5 - rect.width;
@@ -94,7 +104,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		}
 		else
 		{
-			rect.left = -rect.left + m_item_plateau->GetSize().x*0.5 + rect.width;
+            rect.left = -rect.left + m_item_plateau->GetSize().x*0.5 + rect.width + m_plateau->getTailleTraits();
 			rect.top  = m_item_plateau->GetSize().y*0.5 - rect.top - rect.height;
 		}
 		return rect;
@@ -102,10 +112,56 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 	return sf::IntRect();
 }
 
-void DeplacerPion(int n)
+void PlateauGraph::DeplacerPion(size_t n)
 {
 
+    /**
+        meme chose qu'afficher plateau
+        creer noeud avec noeud parent = noeud plateau
+        creer items pour pions
+
+    */
+
+
     m_plateau->avancerCurrentJoueur(n);
+    size_t CooX =0;
+    size_t CooY =0;
+    Joueur *j = m_plateau->getJoueurTour();
+	size_t curPos = j->estSur()->id();
+
+    size_t CaseCible = curPos+n;
+
+    if (CaseCible <= 9)
+    {
+        CooX = (m_plateau->getTailleCase() * CaseCible * 2) + m_plateau->getTailleCase() * 2;
+        // +1 pour la 1ere case qui en vaut le double
+    }
+    else if (CaseCible == 10)
+    {
+        //prison
+    }
+    else if (CaseCible <= 20)
+    {
+        CooX = m_plateau->getTailleCase() * 10 * 2;
+        CooY = (m_plateau->getTailleCase() * CaseCible) + m_plateau->getTailleCase();
+    }
+    else if (CaseCible <= 30)
+    {
+        CooX = m_plateau->getTailleCase() * 10 * 2;
+        CooY = m_plateau->getTailleCase() * 10;
+        CooY -= (m_plateau->getTailleCase() * CaseCible) + m_plateau->getTailleCase();
+    }
+    else if (CaseCible <= 40)
+    {
+        CooY = 0;
+        CooX = m_plateau->getTailleCase() * 10 *2;
+        CooX -= (m_plateau->getTailleCase() * CaseCible * 2) + m_plateau->getTailleCase() *2;
+    }
+
+    /**
+        nombre de cases * taille
+        si case en coin, on add X ou Y en fonction de la case
+    */
 
 
 }

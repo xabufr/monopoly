@@ -1,6 +1,5 @@
 #ifndef H_PLATEAU_GRAPH_H
 #define H_PLATEAU_GRAPH_H
-
 #include <SFML/Graphics.hpp>
 
 class Plateau;
@@ -14,7 +13,7 @@ public:
 	void update();
 	sf::IntRect caseRect(int id) const;
 	sf::IntRect maisonRect(int id) const;
-	void DeplacerPion(Joueur*,int);
+	void DeplacerPion(size_t);
 private:
 	SceneNodeSpriteItem *m_item_plateau;
 	Plateau *m_plateau;

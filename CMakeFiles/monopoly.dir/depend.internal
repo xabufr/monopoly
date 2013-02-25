@@ -76,6 +76,8 @@ CMakeFiles/monopoly.dir/src/game_graph/jeu.o
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
