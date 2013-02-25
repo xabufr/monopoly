@@ -11,6 +11,7 @@ GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,
 
     m_windowTitle->SetRelativePosition(0,0);
     m_windowTitle->SetCharacterSize(10);
+    m_windowTitle->SetColor(sf::Color(0,0,0));
 
     AddItem(m_contenerShape);
     AddItem(m_windowShape);

@@ -16,6 +16,7 @@ JoueurGraph::JoueurGraph(Joueur* j,SceneNode *nodeparent,PlateauGraph *plateau):
 	m_nodepion = nodeparent->AddSceneNode();
 	m_nodepion->AddItem(m_item_pion);
 	m_item_pion->SetRadius(50);
+	m_item_stat_joueur = new GuiTextItem;
 }
 JoueurGraph::~JoueurGraph()
 {
@@ -23,7 +24,6 @@ JoueurGraph::~JoueurGraph()
 }
 void JoueurGraph::stat(float pos) const
 {
-    GuiTextItem *m_item_stat_joueur = new GuiTextItem;
     m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" euros");
     m_item_stat_joueur->SetCharacterSize(12);
     m_sceneNode->AddItem(m_item_stat_joueur);
@@ -34,7 +34,7 @@ void JoueurGraph::stat(float pos) const
 
 void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
 {
-
+    m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" euros");
 	sf::Vector2f sizePion = m_item_pion->GetSize();
     int curPos = m_joueur->estSur()->id();
 
