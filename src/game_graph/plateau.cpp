@@ -126,3 +126,8 @@ SceneNode *PlateauGraph::getSceneNode() const
 {
     return m_nodePlateau;
 }
+
+Plateau *PlateauGraph::getPlateau() const
+{
+    return m_plateau;
+}

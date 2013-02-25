@@ -15,6 +15,7 @@ public:
 	PlateauGraph(Plateau*);
 	~PlateauGraph();
 	SceneNode *getSceneNode() const;
+	Plateau *getPlateau() const;
 	void update();
 	sf::IntRect caseRect(int id) const;
 	sf::IntRect maisonRect(int id) const;

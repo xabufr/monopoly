@@ -13,9 +13,10 @@ class Interface
 public:
     Interface(Jeu*, PlateauGraph*);
     ~Interface();
+    void update();
     static void lancerDes(GuiItem*);
     static void achat();
-    static void hypothequer();
+    static void hypothequer(GuiItem*);
     static void tourSuivant();
     static void quitter(GuiItem*);
 private:
@@ -24,6 +25,9 @@ private:
     GuiNode *m_sceneNode;
 	GuiButtonItem *m_button_des;
 	GuiButtonItem *m_button_quitter;
+	GuiButtonItem *m_button_hypothequer;
+	GuiButtonItem *m_button_achat;
+	GuiButtonItem *m_button_tour;
 	GraphicalEngine *m_engine;
     SceneNode *m_des[12];
 };

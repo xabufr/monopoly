@@ -32,7 +32,11 @@ CMakeFiles/monopoly.dir/src/core/trigo.o
  /home/zequiel/software/c++/monopoly/src/core/trigo.h
 CMakeFiles/monopoly.dir/src/game_graph/interface.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../game_graph/plateau.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/des.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/joueur.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/plateau.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/random.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/cameramanager.h
