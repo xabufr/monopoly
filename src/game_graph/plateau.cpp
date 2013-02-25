@@ -47,8 +47,6 @@ PlateauGraph::~PlateauGraph()
 }
 void PlateauGraph::update()
 {
-    DeplacerPion(1);
-    sleep(0.3);
 	for(ProprieteGraph *terrain : m_terrains)
 	{
 		terrain->update();
@@ -178,84 +176,6 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 		return rect;
 	}
 	return sf::IntRect();
-}
-
-void PlateauGraph::DeplacerPion(int n)
-{
-
-    /**
-        meme chose qu'afficher plateau
-        creer noeud avec noeud parent = noeud plateau
-        creer items pour pions
-
-    */
-	m_item_pion = new SceneNodeSpriteItem;
-	m_nodepion = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
-	m_nodepion->AddItem(m_item_pion);
-	m_item_pion->SetImage("data/pion.jpg");
-	sf::Vector2f sizePion = m_item_pion->GetSize();
-	m_item_pion->SetRelativePosition(sf::Vector2f(-270,250));
-
-
-    m_plateau->avancerCurrentJoueur(n);
-    int CooX =-270;
-    int CooY =275;
-    Joueur *j = m_plateau->getJoueurTour();
-	int curPos = j->estSur()->id();
-
-    int CaseCible = curPos+n;
-    if (CaseCible > 40)
-    {
-        CaseCible -= 40;
-    }
-
-    if (CaseCible <= 10 )
-    {
-        CooY -= (47 * CaseCible);
-    }
-    else if (CaseCible == 11)
-    {
-        CooY -= 47 * CaseCible;
-        CooX -= 24;
-    }
-    else if (CaseCible <= 20)
-    {
-        CooY -= 47 * 11 ;
-        CooX = -290;
-        CooX -= 47 * (10 - CaseCible);
-    }
-    else if (CaseCible == 21)
-    {
-        CooY -= 47 * 11;
-        CooX = -290;
-        CooX -= 50 * (10 - CaseCible);
-    }
-    else if (CaseCible <= 30)
-    {
-        CooX = 250;
-        CooY = -250;
-        CooY -= 47 * (21 - CaseCible);
-    }
-    else if (CaseCible == 31)
-    {
-        CooX = 250;
-        CooY = 250;
-    }
-    else if (CaseCible <= 40)
-    {
-        CooX = 225;
-        CooY = 250;
-        CooX += 47 * (31 - CaseCible);
-    }
-
-	m_item_pion->SetRelativePosition(sf::Vector2f(CooX,CooY));
-
-    /**
-        nombre de cases * taille
-        si case en coin, on add X ou Y en fonction de la case
-    */
-
-
 }
 
 JoueurGraph* PlateauGraph::findJoueurGraph(Joueur* j) const

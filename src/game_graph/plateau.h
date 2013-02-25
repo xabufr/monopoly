@@ -20,7 +20,6 @@ public:
 	void update();
 	sf::IntRect caseRect(int id) const;
 	sf::IntRect maisonRect(int id) const;
-	void DeplacerPion(int );
 	JoueurGraph* findJoueurGraph(Joueur*) const;
 
 private:

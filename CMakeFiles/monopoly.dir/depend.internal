@@ -116,6 +116,9 @@ CMakeFiles/monopoly.dir/src/game_graph/jeu.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
 CMakeFiles/monopoly.dir/src/game_graph/joueur.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
@@ -153,6 +156,8 @@ CMakeFiles/monopoly.dir/src/game_graph/joueur.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
