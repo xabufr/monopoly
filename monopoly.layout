@@ -1,104 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
-	<File name="src/game_graph/joueur.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="283" topLine="0" />
-		</Cursor>
+	<File name="src/game_graph/jeu.cpp" open="1" top="0" tabpos="8">
+		<Cursor position="965" topLine="12" />
 	</File>
-	<File name="src/graphics/scenemanager.cpp" open="1" top="1" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1037" topLine="8" />
-		</Cursor>
+	<File name="src/game_graph/plateau.cpp" open="1" top="0" tabpos="2">
+		<Cursor position="4147" topLine="124" />
 	</File>
-	<File name="src/graphics/gui/guitextitem.h" open="0" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="116" topLine="20" />
-		</Cursor>
+	<File name="src/game_graph/plateau.h" open="1" top="0" tabpos="3">
+		<Cursor position="369" topLine="0" />
 	</File>
-	<File name="src/graphics/gui/guinode.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="742" topLine="0" />
-		</Cursor>
+	<File name="src/game_graph/terrain.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="681" topLine="0" />
 	</File>
-	<File name="src/graphics/scenenode.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="45" />
-		</Cursor>
+	<File name="src/game_graph/terrain.h" open="1" top="0" tabpos="6">
+		<Cursor position="467" topLine="0" />
 	</File>
-	<File name="src/game_graph/interface.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="144" topLine="14" />
-		</Cursor>
+	<File name="src/game_log/carte/paquet.cpp" open="1" top="0" tabpos="12">
+		<Cursor position="733" topLine="13" />
 	</File>
-	<File name="src/game_graph/jeu.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="985" topLine="34" />
-		</Cursor>
+	<File name="src/game_log/case/case.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src/game_graph/plateau.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="567" topLine="0" />
-		</Cursor>
+	<File name="src/game_log/case/case.h" open="0" top="0" tabpos="6">
+		<Cursor position="785" topLine="7" />
 	</File>
-	<File name="src/game_log/joueur.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="0" />
-		</Cursor>
+	<File name="src/game_log/case/casepropriete/casecompagnie.cpp" open="1" top="0" tabpos="11">
+		<Cursor position="440" topLine="1" />
 	</File>
-	<File name="src/game_graph/plateau.h" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="25" topLine="0" />
-		</Cursor>
+	<File name="src/game_log/case/casepropriete/casegare.cpp" open="1" top="0" tabpos="10">
+		<Cursor position="208" topLine="0" />
 	</File>
-	<File name="src/graphics/gui/guimanager.cpp" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="846" topLine="4" />
-		</Cursor>
+	<File name="src/game_log/joueur.cpp" open="1" top="0" tabpos="9">
+		<Cursor position="983" topLine="33" />
 	</File>
-	<File name="src/game_log/joueur.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="502" topLine="0" />
-		</Cursor>
+	<File name="src/game_log/joueur.h" open="0" top="0" tabpos="4">
+		<Cursor position="610" topLine="20" />
 	</File>
-	<File name="src/game_log/plateau.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="976" topLine="3" />
-		</Cursor>
+	<File name="src/game_log/plateau.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="1063" topLine="9" />
 	</File>
-	<File name="src/game_log/plateau.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="452" topLine="11" />
-		</Cursor>
+	<File name="src/game_log/plateau.h" open="1" top="0" tabpos="4">
+		<Cursor position="210" topLine="0" />
 	</File>
-	<File name="src/game_log/des.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="191" topLine="0" />
-		</Cursor>
+	<File name="src/graphics/graphicalengine.cpp" open="0" top="0" tabpos="6">
+		<Cursor position="1284" topLine="33" />
 	</File>
-	<File name="src/graphics/scenenode.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="358" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="src/graphics/gui/guicontener.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="0" topLine="84" />
-		</Cursor>
-	</File>
-	<File name="src/game_graph/joueur.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="648" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src/game_graph/jeu.h" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="442" topLine="12" />
-		</Cursor>
-	</File>
-	<File name="src/graphics/graphicalengine.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1944" topLine="45" />
-		</Cursor>
+	<File name="src/graphics/graphicalengine.h" open="0" top="0" tabpos="5">
+		<Cursor position="1274" topLine="35" />
 	</File>
 </CodeBlocks_layout_file>

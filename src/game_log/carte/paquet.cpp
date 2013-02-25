@@ -2,6 +2,7 @@
 #include "../../core/random.h"
 #include <iterator>
 #include "carte.h"
+#include <iostream>
 
 PaquetCarte::PaquetCarte(int type, const std::string& nom, const std::string& logo, Plateau* plateau): m_type(type), m_nom(nom), m_chemin_logo(logo), m_plateau(plateau)
 {
@@ -35,6 +36,7 @@ Carte* PaquetCarte::tirer()
 		carte = m_cartes.front();
 		m_cartes.pop_front();
 		m_cartes.push_back(carte);
+		std::cout << carte->description() << std::endl;
 	}while(carte->estEnPossession());
 	return carte;
 }

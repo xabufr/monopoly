@@ -19,4 +19,4 @@ private:
 	CaseTerrain *m_terrain;
 };
 
-#endif 
+#endif

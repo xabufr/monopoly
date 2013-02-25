@@ -1,6 +1,5 @@
 #ifndef H_PLATEAU_GRAPH_H
 #define H_PLATEAU_GRAPH_H
-
 #include <SFML/Graphics.hpp>
 #include <list>
 #include <map>
@@ -21,13 +20,14 @@ public:
 	void update();
 	sf::IntRect caseRect(int id) const;
 	sf::IntRect maisonRect(int id) const;
+	void DeplacerPion(int );
 	JoueurGraph* findJoueurGraph(Joueur*) const;
 	void addJoueurGraph(JoueurGraph*);
 
 private:
-	SceneNodeSpriteItem *m_item_plateau;
+	SceneNodeSpriteItem *m_item_plateau,*m_item_pion;
 	Plateau *m_plateau;
-	SceneNode *m_nodePlateau;
+	SceneNode *m_nodePlateau,*m_nodepion;
 	GraphicalEngine *m_engine;
 	sf::View *m_camera;
 	std::list<ProprieteGraph*> m_terrains;
