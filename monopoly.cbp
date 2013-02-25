@@ -87,6 +87,8 @@
 		<Unit filename="src/core/singleton.h" />
 		<Unit filename="src/core/trigo.cpp" />
 		<Unit filename="src/core/trigo.h" />
+		<Unit filename="src/game_graph/interface.cpp" />
+		<Unit filename="src/game_graph/interface.h" />
 		<Unit filename="src/game_graph/jeu.cpp" />
 		<Unit filename="src/game_graph/jeu.h" />
 		<Unit filename="src/game_graph/joueur.cpp" />

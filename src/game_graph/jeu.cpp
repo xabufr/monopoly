@@ -141,7 +141,7 @@ void Jeu::setupPlay()
 		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
 		m_plateau->addJoueur(joueur);
 		JoueurGraph stat(joueur);
-        stat.stat();
+        stat.stat(i);
 	}
 }
 void Jeu::changeState(state s)

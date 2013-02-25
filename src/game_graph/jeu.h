@@ -17,17 +17,18 @@ public:
 	static void update_nb_joueurs(GuiItem*);
 	static void continuer_jouer(GuiItem*);
 	static void start_play(GuiItem*);
-private:
-	bool m_requ_change_state;
 	enum state{
 		main_menu,
 		play_menu,
 		continue_play_menu,
 		play,
-	}m_requ_state;
-	GraphicalEngine *m_engine; 
-	void changeState();
+	};
 	void changeState(state);
+private:
+	bool m_requ_change_state;
+	state m_requ_state;
+	GraphicalEngine *m_engine;
+	void changeState();
 	void setupMainMenu();
 	void setupPlayMenu();
 	void setupContinuePlayMenu();
@@ -39,4 +40,4 @@ private:
 	PlateauGraph *m_plateauGraph;
 };
 
-#endif 
+#endif
