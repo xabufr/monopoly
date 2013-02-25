@@ -9,7 +9,7 @@
 #include <boost/lexical_cast.hpp>
 #include <iostream>
 
-Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plateau)
+Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plateau), m_lancer(true)
 {
     m_engine = GraphicalEngine::GetInstance();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
@@ -37,6 +37,16 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
     y = 0;
 	m_button_des->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_des);
+
+	m_button_tour = new GuiButtonItem;
+	m_button_tour->SetText("Tour suivant");
+	m_button_tour->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	m_button_tour->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+	m_button_tour->SetData("this", this);
+	m_button_tour->SetCallBack("clicked", Interface::tourSuivant);
+	m_button_tour->SetRelativePosition(x, y);
+	m_button_tour->SetVisible(false);
+	m_sceneNode->AddItem(m_button_tour);
 
 	for (int i=0; i<12; ++i)
     {
@@ -72,7 +82,7 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
 	m_button_achat->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_achat->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_achat->SetData("this", this);
-	m_button_achat->SetCallBack("clicked", Interface::hypothequer);
+	m_button_achat->SetCallBack("clicked", Interface::achat);
 
     x = m_engine->GetRenderWindow()->getSize().x-(m_button_achat->GetSize().x+5);
     y = 15+m_button_des->GetSize().y+m_button_hypothequer->GetSize().y;
@@ -93,6 +103,18 @@ void Interface::update()
 
     if (dynamic_cast<CasePropriete*>(joueur->estSur()))
         m_button_achat->SetVisible(true);
+
+    if (m_lancer)
+    {
+        m_button_des->SetVisible(true);
+        m_button_tour->SetVisible(false);
+    }
+    else
+    {
+        m_button_des->SetVisible(false);
+        m_button_tour->SetVisible(true);
+    }
+
 }
 
 void Interface::lancerDes(GuiItem* g)
@@ -103,6 +125,7 @@ void Interface::lancerDes(GuiItem* g)
     Des des;
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     des.lancer();
+    ((Interface*)g->GetData("this"))->m_lancer = false;
 
     joueur->setDernierLancer(des.valeur());
     ((Interface*)g->GetData("this"))->m_des[des.valeur(0)-1]->SetVisible(true);
@@ -111,11 +134,14 @@ void Interface::lancerDes(GuiItem* g)
     if (joueur->estEnPrison() && des.estDouble())
         ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->liberer(joueur);
 
+    if (!joueur->estEnPrison() && des.estDouble())
+        ((Interface*)g->GetData("this"))->m_lancer = true;
+
     if (!joueur->estEnPrison())
         ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->avancerCurrentJoueur(des.valeur());
 }
 
-void Interface::achat()
+void Interface::achat(GuiItem* g)
 {
 
 }
@@ -125,9 +151,9 @@ void Interface::hypothequer(GuiItem* g)
 
 }
 
-void Interface::tourSuivant()
+void Interface::tourSuivant(GuiItem* g)
 {
-
+    ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->joueurTourFinit();
 }
 
 void Interface::quitter(GuiItem* g)

@@ -6,30 +6,12 @@
 
 #IncludeRegexTransform: 
 
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/consolelogger.h
-logger.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/logger.h
-iostream
--
-
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/exception.h
-exception
--
-string
--
-
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/logger.h
-string
--
-sstream
--
-exception.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/exception.h
-
 /home/zequiel/software/c++/monopoly/src/game_graph/../game_graph/plateau.h
 SFML/Graphics.hpp
 -
 list
+-
+map
 -
 
 /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
@@ -358,33 +340,5 @@ iostream
 
 /home/zequiel/software/c++/monopoly/src/game_graph/interface.h
 
-/home/zequiel/software/c++/monopoly/src/game_graph/jeu.cpp
-jeu.h
 /home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
-../game_log/plateau.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/plateau.h
-../game_log/joueur.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../game_log/joueur.h
-../core/consolelogger.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../core/consolelogger.h
-../graphics/graphicalengine.h
-/home/zequiel/software/c++/monopoly/src/game_graph/../graphics/graphicalengine.h
-boost/lexical_cast.hpp
--
-interface.h
-/home/zequiel/software/c++/monopoly/src/game_graph/interface.h
-plateau.h
-/home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
-joueur.h
-/home/zequiel/software/c++/monopoly/src/game_graph/joueur.h
-
-/home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
-
-/home/zequiel/software/c++/monopoly/src/game_graph/joueur.h
-
-/home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
-SFML/Graphics.hpp
--
-list
--
 

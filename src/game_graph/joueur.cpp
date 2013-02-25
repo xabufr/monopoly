@@ -9,13 +9,10 @@ JoueurGraph::JoueurGraph(Joueur* j):m_joueur(j)
     m_engine = GraphicalEngine::GetInstance();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
 }
-
 JoueurGraph::~JoueurGraph()
 {
 
 }
-
-
 void JoueurGraph::stat(float pos) const
 {
     GuiTextItem *m_item_stat_joueur = new GuiTextItem;
@@ -25,4 +22,8 @@ void JoueurGraph::stat(float pos) const
 
     pos = pos*(m_item_stat_joueur->GetHeigth()+4);
     m_item_stat_joueur->SetRelativePosition(0, pos);
+}
+const sf::Color& JoueurGraph::couleur() const
+{
+	return m_couleur;
 }

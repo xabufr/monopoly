@@ -295,6 +295,21 @@ src/game_graph/plateau.s:
 .PHONY : src/game_graph/plateau.s
 
 # target to build an object file
+src/game_graph/propriete.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/propriete.o
+.PHONY : src/game_graph/propriete.o
+
+# target to preprocess a source file
+src/game_graph/propriete.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/propriete.i
+.PHONY : src/game_graph/propriete.i
+
+# target to generate assembly for a file
+src/game_graph/propriete.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/propriete.s
+.PHONY : src/game_graph/propriete.s
+
+# target to build an object file
 src/game_graph/terrain.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/terrain.o
 .PHONY : src/game_graph/terrain.o
@@ -1149,6 +1164,9 @@ help:
 	@echo "... src/game_graph/plateau.o"
 	@echo "... src/game_graph/plateau.i"
 	@echo "... src/game_graph/plateau.s"
+	@echo "... src/game_graph/propriete.o"
+	@echo "... src/game_graph/propriete.i"
+	@echo "... src/game_graph/propriete.s"
 	@echo "... src/game_graph/terrain.o"
 	@echo "... src/game_graph/terrain.i"
 	@echo "... src/game_graph/terrain.s"

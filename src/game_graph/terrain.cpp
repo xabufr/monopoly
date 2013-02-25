@@ -4,7 +4,7 @@
 #include "../game_log/case/casepropriete/caseterrain.h"
 
 TerrainGraph::TerrainGraph(PlateauGraph *p, CaseTerrain *t, SceneNode *pNode) :
-	m_plateau(p),
+	ProprieteGraph(p, t, pNode),
 	m_terrain(t)
 {
 	m_nodeTerrain = pNode->AddSceneNode();
@@ -45,6 +45,7 @@ TerrainGraph::~TerrainGraph()
 }
 void TerrainGraph::update()
 {
+	ProprieteGraph::update();
 	if(m_terrain->maisons()<=4)
 	{
 		for (size_t i = 0; i < 5; ++i)

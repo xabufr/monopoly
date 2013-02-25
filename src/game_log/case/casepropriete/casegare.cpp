@@ -9,7 +9,7 @@ CaseGare::CaseGare(size_t id, const std::string& nom):CasePropriete(id, nom)
 void CaseGare::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
-    if (CasePropriete::proprietaire() != nullptr && CasePropriete::proprietaire() == j)
+    if (CasePropriete::proprietaire() == nullptr || CasePropriete::proprietaire() == j)
         return;
 
     j->payer(m_loyer_par_gare[CasePropriete::proprietaire()->getNombreGare()-1]);
