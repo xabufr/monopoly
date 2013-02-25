@@ -16,6 +16,8 @@ new
 exception
 -
 
+/home/thomas/Programmation/monopoly/src/game_log/carte/../../core/random.h
+
 /home/thomas/Programmation/monopoly/src/game_log/carte/../case/case.h
 string
 -
@@ -119,6 +121,16 @@ carte_aller_a.h
 /home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.h
 string
 -
+
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.cpp
+paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
+../../core/random.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../../core/random.h
+iterator
+-
+carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 
 /home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 list
@@ -254,8 +266,6 @@ case/casecarte.h
 ../../rapidxml/rapidxml.hpp
 /home/thomas/Programmation/monopoly/src/game_log/../../rapidxml/rapidxml.hpp
 fstream
--
-iostream
 -
 utility
 -
