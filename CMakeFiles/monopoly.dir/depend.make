@@ -31,7 +31,11 @@ CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.cpp
 CMakeFiles/monopoly.dir/src/core/trigo.o: src/core/trigo.h
 
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../game_graph/plateau.h
+CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../game_log/case/casepropriete/../case.h
+CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../game_log/case/casepropriete/casepropriete.h
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../game_log/des.h
+CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../game_log/joueur.h
+CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../game_log/plateau.h
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../graphics/../core/random.h
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../graphics/../core/singleton.h
 CMakeFiles/monopoly.dir/src/game_graph/interface.o: src/game_graph/../graphics/cameramanager.h
@@ -467,6 +471,7 @@ CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/case/casepropriete/
 CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/case/casepropriete/caseterrain.h
 CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/case/casepropriete/groupeterrain.h
 CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/case/casetaxe.h
+CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/des.h
 CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/joueur.h
 CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/plateau.cpp
 CMakeFiles/monopoly.dir/src/game_log/plateau.o: src/game_log/plateau.h

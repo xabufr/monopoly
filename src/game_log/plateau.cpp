@@ -1,5 +1,6 @@
 #include "plateau.h"
 #include "joueur.h"
+#include "des.h"
 //include cartes
 #include "carte/paquet.h"
 #include "carte/carte_argent.h"
@@ -32,6 +33,7 @@
 
 Plateau::Plateau()
 {
+    m_des = new Des;
     m_index_current_joueur = 0;
 	std::ifstream file;
 	file.open("config.xml");
@@ -243,6 +245,7 @@ Plateau::~Plateau()
 	{
 		delete j;
 	}
+	delete m_des;
 }
 void Plateau::addArgent(int a)
 {
@@ -442,3 +445,9 @@ Case* Plateau::getCase(size_t id) const
 {
 	return (id<40) ?m_case[id]:nullptr;
 }
+Des& Plateau::getDes() const
+{
+    return *m_des;
+}
+
+

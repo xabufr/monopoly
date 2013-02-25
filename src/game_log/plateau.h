@@ -9,6 +9,7 @@ class Joueur;
 class PaquetCarte;
 class Case;
 class CasePrison;
+class Des;
 class Plateau
 {
 public:
@@ -21,6 +22,7 @@ public:
 	void emprisoner(Joueur*);
 	void liberer(Joueur*);
 	Joueur* getJoueurTour() const;
+	Des& getDes() const;
 	void joueurTourFinit();
 	void avancerCurrentJoueur(int dep);
 	void placerCurrentJoueur(int id, bool passerDepart);
@@ -40,6 +42,7 @@ private:
 	Case* m_case[40];
 	PaquetCarte* m_paquets[2];
 	CasePrison *m_prison;
+	Des *m_des;
 	size_t m_index_current_joueur;
 };
 

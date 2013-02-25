@@ -49,7 +49,7 @@ PlateauGraph::~PlateauGraph()
 void PlateauGraph::update()
 {
     DeplacerPion(1);
-    sleep(0.3);
+
 	for(ProprieteGraph *terrain : m_terrains)
 	{
 		terrain->update();
@@ -280,6 +280,11 @@ JoueurGraph* PlateauGraph::findJoueurGraph(Joueur* j) const
 SceneNode *PlateauGraph::getSceneNode() const
 {
     return m_nodePlateau;
+}
+
+Plateau *PlateauGraph::getPlateau() const
+{
+    return m_plateau;
 }
 void PlateauGraph::addJoueurGraph(JoueurGraph* j)
 {
