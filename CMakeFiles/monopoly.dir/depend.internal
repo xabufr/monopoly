@@ -121,6 +121,9 @@ CMakeFiles/monopoly.dir/src/game_graph/jeu.o
  /home/zequiel/software/c++/monopoly/src/game_graph/messagebox.h
  /home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
 CMakeFiles/monopoly.dir/src/game_graph/joueur.o
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/joueur.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/random.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h
@@ -158,6 +161,9 @@ CMakeFiles/monopoly.dir/src/game_graph/joueur.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/texturemanager.h
  /home/zequiel/software/c++/monopoly/src/game_graph/joueur.cpp
  /home/zequiel/software/c++/monopoly/src/game_graph/joueur.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/propriete.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/terrain.h
 CMakeFiles/monopoly.dir/src/game_graph/messagebox.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/random.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h

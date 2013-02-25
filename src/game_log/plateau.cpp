@@ -28,7 +28,6 @@
 //end include cases
 #include "../../rapidxml/rapidxml.hpp"
 #include <fstream>
-#include <iostream>
 #include <utility>
 #include <boost/lexical_cast.hpp>
 
