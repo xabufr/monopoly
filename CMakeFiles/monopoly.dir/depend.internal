@@ -201,6 +201,7 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
@@ -242,6 +243,7 @@ CMakeFiles/monopoly.dir/src/game_graph/propriete.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h

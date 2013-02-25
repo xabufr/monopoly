@@ -6,7 +6,6 @@
 #include "../graphics/graphicalengine.h"
 #include <boost/lexical_cast.hpp>
 
-
 JoueurGraph::JoueurGraph(Joueur* j):m_joueur(j)
 {
     m_engine = GraphicalEngine::GetInstance();
@@ -15,6 +14,7 @@ JoueurGraph::JoueurGraph(Joueur* j):m_joueur(j)
 	m_item_pion->SetColor(m_couleur);
 	m_nodepion = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
 	m_nodepion->AddItem(m_item_pion);
+	m_item_pion->SetRadius(150);
 }
 JoueurGraph::~JoueurGraph()
 {
@@ -40,11 +40,6 @@ void JoueurGraph::update()
     int CooX =-270;
     int CooY =275;
     int curPos = m_joueur->estSur()->id();
-
-    if (curPos > 40)
-    {
-        curPos -= 40;
-    }
 
     if (curPos <= 10 )
     {
@@ -91,4 +86,12 @@ void JoueurGraph::update()
 const sf::Color& JoueurGraph::couleur() const
 {
 	return m_couleur;
+}
+Joueur* JoueurGraph::joueur() const
+{
+	return m_joueur;
+}
+void JoueurGraph::setCouleur(const sf::Color& c)
+{
+	m_couleur=c;
 }

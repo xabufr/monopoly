@@ -23,6 +23,8 @@ public:
 	void stat(float) const;
 	void update();
 	const sf::Color& couleur() const;
+	void setCouleur(const sf::Color&);
+	Joueur* joueur() const;
 private:
 	GuiNode *m_sceneNode;
 	Joueur *m_joueur;

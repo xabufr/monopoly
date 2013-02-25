@@ -200,6 +200,7 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/../graphics/sce
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/../graphics/scenenodespriteitem.h
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/../graphics/scenenodetextureitem.h
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/../graphics/texturemanager.h
+CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/joueur.h
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/plateau.cpp
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/plateau.h
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o: src/game_graph/propriete.h
@@ -241,6 +242,7 @@ CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/../graphics/s
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/../graphics/scenenodespriteitem.h
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/../graphics/scenenodetextureitem.h
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/../graphics/texturemanager.h
+CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/joueur.h
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/plateau.h
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/propriete.cpp
 CMakeFiles/monopoly.dir/src/game_graph/propriete.o: src/game_graph/propriete.h

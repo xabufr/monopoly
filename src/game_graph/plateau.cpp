@@ -4,6 +4,7 @@
 #include "../game_log/case/casepropriete/caseterrain.h"
 #include "../graphics/graphicalengine.h"
 #include "../core/logger.h"
+#include "joueur.h"
 #include "../game_log/joueur.h"
 #include "../game_log/case/case.h"
 
@@ -50,7 +51,10 @@ void PlateauGraph::update()
 	for(ProprieteGraph *terrain : m_terrains)
 	{
 		terrain->update();
-
+	}
+	for(auto it:m_joueurs)
+	{
+	    it.second->update();
 	}
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
@@ -188,4 +192,8 @@ JoueurGraph* PlateauGraph::findJoueurGraph(Joueur* j) const
 SceneNode *PlateauGraph::getSceneNode() const
 {
     return m_nodePlateau;
+}
+void PlateauGraph::addJoueurGraph(JoueurGraph* j)
+{
+	m_joueurs[j->joueur()] = j;
 }

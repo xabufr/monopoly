@@ -139,7 +139,8 @@ Plateau::Plateau()
 				carte = new Carte_argent_depuis_joueur(boost::lexical_cast<int>(node->first_attribute("valeur")->value()),
 						description, curPaq);
 			}
-			curPaq->ajouterCarte(carte);
+			if(carte)
+				curPaq->ajouterCarte(carte);
 		}
 	}
 	//Pseudo édition de liens
