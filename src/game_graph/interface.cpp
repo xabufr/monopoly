@@ -1,11 +1,12 @@
 #include "interface.h"
-#include "../game_log/plateau.h"
+#include "../game_graph/plateau.h"
 #include "jeu.h"
 #include "../game_log/des.h"
 #include "../graphics/graphicalengine.h"
+#include <boost/lexical_cast.hpp>
 #include <iostream>
 
-Interface::Interface(Jeu* jeu):m_jeu(jeu)
+Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plateau)
 {
     m_engine = GraphicalEngine::GetInstance();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
@@ -34,9 +35,21 @@ Interface::Interface(Jeu* jeu):m_jeu(jeu)
 	m_button_des->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_des);
 
-	for (int i=1; i<7; ++i)
+	for (int i=0; i<12; ++i)
     {
+        int num = i+1;
+        if (num>6)
+            num -= 6;
+        SceneNodeSpriteItem *item = new SceneNodeSpriteItem;
+        item->SetImage("data/"+boost::lexical_cast<std::string>(num)+".jpg");
 
+        x = ((i+1)>6)?0+item->GetSize().x:0-item->GetSize().x;
+        y = 0-(item->GetSize().y/2);
+
+        m_des[i] = m_plateau->getSceneNode()->AddSceneNode();
+        m_des[i]->AddItem(item);
+        m_des[i]->SetRelativePosition(x, y);
+        m_des[i]->SetVisible(false);
     }
 }
 
@@ -49,7 +62,8 @@ void Interface::lancerDes(GuiItem* g)
 {
     Des des;
     des.lancer();
-    std::cout << des.valeur() << std::endl;
+    ((Interface*)g->GetData("this"))->m_des[des.valeur(0)-1]->SetVisible(true);
+    ((Interface*)g->GetData("this"))->m_des[des.valeur(1)+5]->SetVisible(true);
 }
 
 void Interface::achat()

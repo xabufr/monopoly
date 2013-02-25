@@ -122,3 +122,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 	}
 	return sf::IntRect();
 }
+SceneNode *PlateauGraph::getSceneNode() const
+{
+    return m_nodePlateau;
+}
