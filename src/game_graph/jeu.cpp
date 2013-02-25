@@ -150,7 +150,7 @@ void Jeu::setupPlay()
 {
 	m_plateau      = new Plateau;
 	m_plateauGraph = new PlateauGraph(m_plateau);
-	m_interface = new Interface(this);
+	m_interface = new Interface(this, m_plateauGraph);
 	for (size_t i = 0; i < m_nb_joueurs; ++i)
 	{
 		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());

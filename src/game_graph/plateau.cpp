@@ -182,3 +182,7 @@ JoueurGraph* PlateauGraph::findJoueurGraph(Joueur* j) const
 		return it->second;
 	return nullptr;
 }
+SceneNode *PlateauGraph::getSceneNode() const
+{
+    return m_nodePlateau;
+}
