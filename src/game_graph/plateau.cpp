@@ -193,6 +193,11 @@ SceneNode *PlateauGraph::getSceneNode() const
 {
     return m_nodePlateau;
 }
+
+Plateau *PlateauGraph::getPlateau() const
+{
+    return m_plateau;
+}
 void PlateauGraph::addJoueurGraph(JoueurGraph* j)
 {
 	m_joueurs[j->joueur()] = j;

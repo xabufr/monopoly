@@ -8,7 +8,7 @@
 #include "plateau.h"
 #include "joueur.h"
 
-Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
+Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
 {
 	m_requ_change_state = true;
 	m_requ_state      = main_menu;
@@ -38,6 +38,8 @@ void Jeu::run()
 		}
 		if(m_plateau&&m_plateauGraph)
 			m_plateauGraph->update();
+        if (m_interface)
+            m_interface->update();
 		m_engine->DrawScene();
 	}
 }
@@ -69,6 +71,8 @@ void Jeu::setupMainMenu()
     if (m_plateauGraph)
     {
         delete m_plateauGraph;
+        delete m_interface;
+        m_interface = nullptr;
         m_plateauGraph = nullptr;
         m_plateau = nullptr;
     }
@@ -163,7 +167,7 @@ void Jeu::setupPlay()
 	{
 		Joueur *joueur = new Joueur(m_nomsJoueurs[i]->GetText().toAnsiString());
 		m_plateau->addJoueur(joueur);
-		m_joueurGraph[i] = new JoueurGraph(joueur);
+		m_joueurGraph[i] = new JoueurGraph(joueur,m_plateauGraph->getSceneNode(),m_plateauGraph);
         m_joueurGraph[i]->stat(i);
 		m_plateauGraph->addJoueurGraph(m_joueurGraph[i]);
 		m_joueurGraph[i]->setCouleur(couleurs[i]);

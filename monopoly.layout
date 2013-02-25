@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
-	<File name="src/game_graph/jeu.cpp" open="0" top="0" tabpos="8">
-		<Cursor position="965" topLine="12" />
+	<File name="src/game_graph/jeu.cpp" open="1" top="1" tabpos="5">
+		<Cursor position="5363" topLine="141" />
 	</File>
 	<File name="src/game_graph/joueur.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="458" topLine="0" />
+		<Cursor position="244" topLine="0" />
 	</File>
-	<File name="src/game_graph/joueur.h" open="1" top="1" tabpos="4">
-		<Cursor position="280" topLine="0" />
+	<File name="src/game_graph/joueur.h" open="1" top="0" tabpos="4">
+		<Cursor position="292" topLine="2" />
 	</File>
 	<File name="src/game_graph/plateau.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="1485" topLine="22" />
+		<Cursor position="1612" topLine="29" />
 	</File>
 	<File name="src/game_graph/plateau.h" open="1" top="0" tabpos="1">
-		<Cursor position="574" topLine="0" />
+		<Cursor position="770" topLine="7" />
 	</File>
 	<File name="src/game_graph/terrain.cpp" open="0" top="0" tabpos="7">
 		<Cursor position="681" topLine="0" />

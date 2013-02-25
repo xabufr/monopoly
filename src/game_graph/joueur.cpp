@@ -4,15 +4,16 @@
 #include "terrain.h"
 #include "../game_log/case/casepropriete/caseterrain.h"
 #include "../graphics/graphicalengine.h"
+#include "plateau.h"
 #include <boost/lexical_cast.hpp>
 
-JoueurGraph::JoueurGraph(Joueur* j):m_joueur(j)
+JoueurGraph::JoueurGraph(Joueur* j,SceneNode *nodeparent,PlateauGraph *plateau):m_joueur(j), m_plateau(plateau)
 {
     m_engine = GraphicalEngine::GetInstance();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
 	m_item_pion = new SceneNodeCircleShapeItem;
 	m_item_pion->SetColor(m_couleur);
-	m_nodepion = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
+	m_nodepion = nodeparent->AddSceneNode();
 	m_nodepion->AddItem(m_item_pion);
 	m_item_pion->SetRadius(150);
 }
@@ -35,11 +36,12 @@ void JoueurGraph::update()
 {
 
 	sf::Vector2f sizePion = m_item_pion->GetSize();
-	m_item_pion->SetRelativePosition(sf::Vector2f(-270,250));
+    int curPos = m_joueur->estSur()->id();
+/*	m_item_pion->SetRelativePosition(sf::Vector2f(-270,250));
 
     int CooX =-270;
     int CooY =275;
-    int curPos = m_joueur->estSur()->id();
+
 
     if (curPos <= 10 )
     {
@@ -79,8 +81,10 @@ void JoueurGraph::update()
         CooY = 250;
         CooX += 47 * (31 - curPos);
     }
-
-	m_item_pion->SetRelativePosition(sf::Vector2f(CooX,CooY));
+*/
+    sf::IntRect rect;
+    rect = m_plateau->caseRect(curPos);
+	m_item_pion->SetRelativePosition(sf::Vector2f(rect.top - 5,rect.left + 5));
 }
 
 const sf::Color& JoueurGraph::couleur() const

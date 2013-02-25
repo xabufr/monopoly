@@ -32,7 +32,11 @@ CMakeFiles/monopoly.dir/src/core/trigo.o
  /home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h
 CMakeFiles/monopoly.dir/src/game_graph/interface.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_graph/plateau.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/des.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/cameramanager.h
@@ -473,6 +477,7 @@ CMakeFiles/monopoly.dir/src/game_log/plateau.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.h
