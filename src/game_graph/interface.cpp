@@ -49,7 +49,7 @@ void Interface::lancerDes(GuiItem* g)
 {
     Des des;
     des.lancer();
-    std::cout << des.valeur() << std::endl;
+    std::cout << des.valeur(0) << " "<<des.valeur(1) << std::endl;
 }
 
 void Interface::achat()

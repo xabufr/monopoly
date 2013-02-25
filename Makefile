@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zequiel/software/c++/monopoly
+CMAKE_SOURCE_DIR = /home/thomas/Programmation/monopoly
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zequiel/software/c++/monopoly
+CMAKE_BINARY_DIR = /home/thomas/Programmation/monopoly
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zequiel/software/c++/monopoly/CMakeFiles /home/zequiel/software/c++/monopoly/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles /home/thomas/Programmation/monopoly/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zequiel/software/c++/monopoly/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/thomas/Programmation/monopoly/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
