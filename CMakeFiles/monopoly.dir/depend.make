@@ -416,8 +416,9 @@ CMakeFiles/monopoly.dir/src/game_log/case/caseallerenprison.o: src/game_log/case
 CMakeFiles/monopoly.dir/src/game_log/case/caseallerenprison.o: src/game_log/case/caseallerenprison.h
 
 CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/../carte/carte.h
-CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/../carte/carte_libere.h
+CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/../carte/carte_argent.h
 CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/../carte/paquet.h
+CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/../carte/payer_ou_tirer.h
 CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/../joueur.h
 CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/case.h
 CMakeFiles/monopoly.dir/src/game_log/case/casecarte.o: src/game_log/case/casecarte.cpp

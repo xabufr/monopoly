@@ -287,16 +287,30 @@ void Plateau::avancerCurrentJoueur(int dep)
 	Joueur *j = getJoueurTour();
 	size_t curPos = j->estSur()->id();
 	m_case[curPos]->joueurPart(j);
-	for(int i=0;i<dep-1;++i)
+	if(dep>0)
 	{
+		for(int i=0;i<dep-1;++i)
+		{
+			if(++curPos==40)
+				curPos=0;
+			m_case[curPos]->joueurPasse(j);
+		}
 		if(++curPos==40)
 			curPos=0;
-		m_case[curPos]->joueurPasse(j);
 	}
-	if(++curPos==40)
-		curPos=0;
-	m_case[curPos]->joueurArrive(j);
+	else
+	{
+		for(int i=0;i < (-dep);++i) 
+		{
+			std::cout << i << std::endl;
+			if(curPos==0)
+				curPos = 39;
+			else
+				--curPos;
+		}
+	}
 	j->positinner(m_case[curPos]);
+	m_case[curPos]->joueurArrive(j);
 }
 void Plateau::placerCurrentJoueur(int id, bool passerDepart)
 {
@@ -449,5 +463,3 @@ Des& Plateau::getDes() const
 {
     return *m_des;
 }
-
-
