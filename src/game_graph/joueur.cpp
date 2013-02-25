@@ -15,7 +15,7 @@ JoueurGraph::JoueurGraph(Joueur* j,SceneNode *nodeparent,PlateauGraph *plateau):
 	m_item_pion->SetColor(m_couleur);
 	m_nodepion = nodeparent->AddSceneNode();
 	m_nodepion->AddItem(m_item_pion);
-	m_item_pion->SetRadius(150);
+	m_item_pion->SetRadius(50);
 }
 JoueurGraph::~JoueurGraph()
 {
@@ -37,54 +37,19 @@ void JoueurGraph::update()
 
 	sf::Vector2f sizePion = m_item_pion->GetSize();
     int curPos = m_joueur->estSur()->id();
-/*	m_item_pion->SetRelativePosition(sf::Vector2f(-270,250));
+   // std::vector<Joueur*> = m_plateau->getPlateau()->GetJoueurs();
 
-    int CooX =-270;
-    int CooY =275;
+    /*  get les joueurs, saboir combien de joueurs sur la case curPos, => bouger un peu le X
+        en fonction du joueur
+    */
 
-
-    if (curPos <= 10 )
-    {
-        CooY -= (47 * curPos);
-    }
-    else if (curPos == 11)
-    {
-        CooY -= 47 * curPos;
-        CooX -= 24;
-    }
-    else if (curPos <= 20)
-    {
-        CooY -= 47 * 11 ;
-        CooX = -290;
-        CooX -= 47 * (10 - curPos);
-    }
-    else if (curPos == 21)
-    {
-        CooY -= 47 * 11;
-        CooX = -290;
-        CooX -= 50 * (10 - curPos);
-    }
-    else if (curPos <= 30)
-    {
-        CooX = 250;
-        CooY = -250;
-        CooY -= 47 * (21 - curPos);
-    }
-    else if (curPos == 31)
-    {
-        CooX = 250;
-        CooY = 250;
-    }
-    else if (curPos <= 40)
-    {
-        CooX = 225;
-        CooY = 250;
-        CooX += 47 * (31 - curPos);
-    }
-*/
     sf::IntRect rect;
     rect = m_plateau->caseRect(curPos);
-	m_item_pion->SetRelativePosition(sf::Vector2f(rect.top - 5,rect.left + 5));
+
+    if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+        m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + 60,rect.top + 30));
+    else
+        m_item_pion->SetRelativePosition(sf::Vector2f(rect.left +30,rect.top + 60));
 }
 
 const sf::Color& JoueurGraph::couleur() const
@@ -98,4 +63,5 @@ Joueur* JoueurGraph::joueur() const
 void JoueurGraph::setCouleur(const sf::Color& c)
 {
 	m_couleur=c;
+	m_item_pion->SetColor(m_couleur);
 }

@@ -59,7 +59,7 @@ void PlateauGraph::update()
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
 {
-	if((id>=1&&id<=10)||(id>=21&&id<=29))
+	if((id>=1&&id<=9)||(id>=21&&id<=29))
 	{
 		int idRel = id;
 		if(idRel>10)
@@ -117,6 +117,17 @@ sf::IntRect PlateauGraph::caseRect(int id) const
 	}
 	else
 	{
+		sf::IntRect rect;
+		rect.width = rect.height = m_plateau->getTailleCase();
+		if(id==0||id==30)
+			rect.top = m_item_plateau->GetSize().y*0.5;
+		else
+			rect.top = -m_item_plateau->GetSize().y*0.5 + rect.height;
+		if(id==0||id==10)
+			rect.left = -m_item_plateau->GetSize().x*0.5;
+		else
+			rect.left = m_item_plateau->GetSize().x*0.5-rect.width;
+		return rect;
 
 	}
 	return sf::IntRect();
