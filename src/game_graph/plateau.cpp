@@ -1,9 +1,13 @@
 #include "plateau.h"
 #include "../game_log/plateau.h"
+#include "terrain.h"
+#include "../game_log/case/casepropriete/caseterrain.h"
 #include "../graphics/graphicalengine.h"
 #include "../core/logger.h"
 #include "../game_log/joueur.h"
 #include "../game_log/case/case.h"
+
+#include <iostream>
 
 PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 {
@@ -16,24 +20,29 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	m_item_plateau->SetRelativePosition(sf::Vector2f(-sizePlateau.x*0.5, -sizePlateau.y*0.5));
 	m_camera = m_engine->GetCameraManager()->AddCamera();
 	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y;
-	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 
-	sf::IntRect rTest = maisonRect(34);
-	SceneNodeShapeItem *rect = new SceneNodeShapeItem;
-	m_nodePlateau->AddItem(rect);
-	rect->SetSize(sf::Vector2f(rTest.width, rTest.height));
-	rect->SetRelativePosition(sf::Vector2f(rTest.left, rTest.top));
+	for (size_t i = 0; i < 40; ++i)
+	{
+		Case *c        = m_plateau->getCase(i);
+		CaseTerrain *t = dynamic_cast<CaseTerrain*>(c);
+		if(t)
+		{
+			TerrainGraph *tG = new TerrainGraph(this, t, m_nodePlateau);
+			m_terrains.push_back(tG);
+		}
+	}
+	m_nodePlateau->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
 }
 void PlateauGraph::update()
 {
-   /* char str[1];
-    int n;
 
-    printf("lancer le dé?");
-    n = rand() % 10 + 1;
-*/
-    size_t n = 1;
-    DeplacerPion(n);
+    DeplacerPion(1);
+    sleep(0.3);
+	for(TerrainGraph *terrain : m_terrains)
+	{
+		terrain->update();
+
+	}
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
 {
@@ -112,7 +121,7 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 	return sf::IntRect();
 }
 
-void PlateauGraph::DeplacerPion(size_t n)
+void PlateauGraph::DeplacerPion(int n)
 {
 
     /**
@@ -121,42 +130,66 @@ void PlateauGraph::DeplacerPion(size_t n)
         creer items pour pions
 
     */
+	m_item_pion = new SceneNodeSpriteItem;
+	m_nodepion = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
+	m_nodepion->AddItem(m_item_pion);
+	m_item_pion->SetImage("data/pion.jpg");
+	sf::Vector2f sizePion = m_item_pion->GetSize();
+	m_item_pion->SetRelativePosition(sf::Vector2f(-270,250));
 
 
     m_plateau->avancerCurrentJoueur(n);
-    size_t CooX =0;
-    size_t CooY =0;
+    int CooX =-270;
+    int CooY =275;
     Joueur *j = m_plateau->getJoueurTour();
-	size_t curPos = j->estSur()->id();
+	int curPos = j->estSur()->id();
 
-    size_t CaseCible = curPos+n;
-
-    if (CaseCible <= 9)
+    int CaseCible = curPos+n;
+    if (CaseCible > 40)
     {
-        CooX = (m_plateau->getTailleCase() * CaseCible * 2) + m_plateau->getTailleCase() * 2;
-        // +1 pour la 1ere case qui en vaut le double
+        CaseCible -= 40;
     }
-    else if (CaseCible == 10)
+
+    if (CaseCible <= 10 )
     {
-        //prison
+        CooY -= (47 * CaseCible);
+    }
+    else if (CaseCible == 11)
+    {
+        CooY -= 47 * CaseCible;
+        CooX -= 24;
     }
     else if (CaseCible <= 20)
     {
-        CooX = m_plateau->getTailleCase() * 10 * 2;
-        CooY = (m_plateau->getTailleCase() * CaseCible) + m_plateau->getTailleCase();
+        CooY -= 47 * 11 ;
+        CooX = -290;
+        CooX -= 47 * (10 - CaseCible);
+    }
+    else if (CaseCible == 21)
+    {
+        CooY -= 47 * 11;
+        CooX = -290;
+        CooX -= 50 * (10 - CaseCible);
     }
     else if (CaseCible <= 30)
     {
-        CooX = m_plateau->getTailleCase() * 10 * 2;
-        CooY = m_plateau->getTailleCase() * 10;
-        CooY -= (m_plateau->getTailleCase() * CaseCible) + m_plateau->getTailleCase();
+        CooX = 250;
+        CooY = -250;
+        CooY -= 47 * (21 - CaseCible);
+    }
+    else if (CaseCible == 31)
+    {
+        CooX = 250;
+        CooY = 250;
     }
     else if (CaseCible <= 40)
     {
-        CooY = 0;
-        CooX = m_plateau->getTailleCase() * 10 *2;
-        CooX -= (m_plateau->getTailleCase() * CaseCible * 2) + m_plateau->getTailleCase() *2;
+        CooX = 225;
+        CooY = 250;
+        CooX += 47 * (31 - CaseCible);
     }
+
+	m_item_pion->SetRelativePosition(sf::Vector2f(CooX,CooY));
 
     /**
         nombre de cases * taille

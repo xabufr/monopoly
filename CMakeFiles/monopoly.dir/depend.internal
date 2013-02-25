@@ -77,6 +77,9 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
@@ -115,6 +118,48 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.cpp
  /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+CMakeFiles/monopoly.dir/src/game_graph/terrain.o
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/cameramanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/fontmanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicontener.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guielement.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guimanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/particlemanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/positioninformations.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenemanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenode.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.cpp
+ /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
 CMakeFiles/monopoly.dir/src/game_log/carte/carte.o
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
  /home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.cpp

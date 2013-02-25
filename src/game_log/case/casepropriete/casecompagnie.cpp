@@ -14,7 +14,7 @@ int CaseCompagnie::loyer() const
 void CaseCompagnie::joueurArrive(Joueur* j)
 {
     Case::joueurArrive(j);
-    if (CasePropriete::proprietaire() != nullptr && CasePropriete::proprietaire() == j)
+    if (CasePropriete::proprietaire() == nullptr || CasePropriete::proprietaire() == j)
         return;
 
     j->payer(m_multiplicateur[CasePropriete::proprietaire()->getNombreGare()-1]*j->dernierLancer());

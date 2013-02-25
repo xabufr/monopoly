@@ -26,6 +26,20 @@ string
 list
 -
 
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+string
+-
+list
+-
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+../case.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+casepropriete.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
 string
 -
@@ -319,6 +333,10 @@ plateau.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
 ../game_log/plateau.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
+terrain.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+../game_log/case/casepropriete/caseterrain.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
 ../graphics/graphicalengine.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
 ../core/logger.h
@@ -327,8 +345,14 @@ plateau.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
 ../game_log/case/case.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/case.h
+iostream
+-
 
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
 SFML/Graphics.hpp
 -
+list
+-
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
 

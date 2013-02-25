@@ -108,6 +108,8 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.cpp">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.cpp">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.cpp">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.cpp">
@@ -234,6 +236,8 @@
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h">
       </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h">
+      </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h">
@@ -285,6 +289,8 @@
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.h">
+      </Unit>
+      <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/.scenenode.cpp.swp">
       </Unit>
       <Unit filename="/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h">
       </Unit>

@@ -2,15 +2,15 @@
 <CodeBlocks_layout_file>
 	<ActiveTarget name="monopoly" />
 	<File name="src/game_graph/plateau.cpp" open="1" top="1" tabpos="1">
-		<Cursor position="3584" topLine="108" />
+		<Cursor position="3572" topLine="101" />
 	</File>
 	<File name="src/game_graph/plateau.h" open="1" top="0" tabpos="2">
-		<Cursor position="51" topLine="0" />
+		<Cursor position="145" topLine="0" />
 	</File>
-	<File name="src/game_log/case/case.cpp" open="1" top="0" tabpos="5">
+	<File name="src/game_log/case/case.cpp" open="0" top="0" tabpos="5">
 		<Cursor position="0" topLine="0" />
 	</File>
-	<File name="src/game_log/case/case.h" open="1" top="0" tabpos="6">
+	<File name="src/game_log/case/case.h" open="0" top="0" tabpos="6">
 		<Cursor position="785" topLine="7" />
 	</File>
 	<File name="src/game_log/joueur.cpp" open="0" top="0" tabpos="3">
@@ -19,10 +19,16 @@
 	<File name="src/game_log/joueur.h" open="0" top="0" tabpos="4">
 		<Cursor position="610" topLine="20" />
 	</File>
-	<File name="src/game_log/plateau.cpp" open="1" top="0" tabpos="3">
-		<Cursor position="9192" topLine="272" />
+	<File name="src/game_log/plateau.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="1063" topLine="9" />
 	</File>
-	<File name="src/game_log/plateau.h" open="1" top="0" tabpos="4">
-		<Cursor position="210" topLine="12" />
+	<File name="src/game_log/plateau.h" open="1" top="0" tabpos="3">
+		<Cursor position="210" topLine="0" />
+	</File>
+	<File name="src/graphics/graphicalengine.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="1284" topLine="33" />
+	</File>
+	<File name="src/graphics/graphicalengine.h" open="1" top="0" tabpos="5">
+		<Cursor position="1274" topLine="35" />
 	</File>
 </CodeBlocks_layout_file>

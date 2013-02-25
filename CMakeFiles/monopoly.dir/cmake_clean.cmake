@@ -27,6 +27,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/monopoly.dir/src/game_log/plateau.o"
   "CMakeFiles/monopoly.dir/src/game_graph/jeu.o"
   "CMakeFiles/monopoly.dir/src/game_graph/plateau.o"
+  "CMakeFiles/monopoly.dir/src/game_graph/terrain.o"
   "CMakeFiles/monopoly.dir/src/core/exception.o"
   "CMakeFiles/monopoly.dir/src/core/filelogger.o"
   "CMakeFiles/monopoly.dir/src/core/logger.o"
