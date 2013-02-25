@@ -16,6 +16,7 @@ SET(CMAKE_DEPENDS_CHECK_CXX
   "/home/thomas/Programmation/monopoly/src/game_graph/jeu.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_graph/jeu.o"
   "/home/thomas/Programmation/monopoly/src/game_graph/joueur.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_graph/joueur.o"
   "/home/thomas/Programmation/monopoly/src/game_graph/plateau.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_graph/plateau.o"
+  "/home/thomas/Programmation/monopoly/src/game_graph/propriete.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_graph/propriete.o"
   "/home/thomas/Programmation/monopoly/src/game_graph/terrain.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_graph/terrain.o"
   "/home/thomas/Programmation/monopoly/src/game_log/carte/carte.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_log/carte/carte.o"
   "/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.cpp" "/home/thomas/Programmation/monopoly/CMakeFiles/monopoly.dir/src/game_log/carte/carte_aller_a.o"

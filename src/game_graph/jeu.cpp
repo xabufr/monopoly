@@ -21,8 +21,8 @@ Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr)
 
 Jeu::~Jeu()
 {
-    delete m_plateau;
-    delete m_plateauGraph;
+	if(m_plateauGraph)
+		delete m_plateauGraph;
 }
 
 void Jeu::run()
