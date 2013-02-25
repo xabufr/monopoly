@@ -191,7 +191,6 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 	}
 	return sf::IntRect();
 }
-
 void PlateauGraph::DeplacerPion(int n)
 {
 
@@ -269,7 +268,6 @@ void PlateauGraph::DeplacerPion(int n)
 
 
 }
-
 JoueurGraph* PlateauGraph::findJoueurGraph(Joueur* j) const
 {
 	auto it = m_joueurs.find(j);
@@ -281,7 +279,6 @@ SceneNode *PlateauGraph::getSceneNode() const
 {
     return m_nodePlateau;
 }
-
 Plateau *PlateauGraph::getPlateau() const
 {
     return m_plateau;
