@@ -81,6 +81,8 @@ Plateau::Plateau()
 	credit_tour 	= boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
 	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
 	m_taille_case   = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_case")->value());
+	m_espace_maison = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("espace_maison")->value());
+	m_taille_traits = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_traits")->value());
 
 	std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet")) 
@@ -160,6 +162,7 @@ Plateau::Plateau()
 				terrain->setPrix(boost::lexical_cast<int>(nodeTerrain->first_attribute("prix")->value()));
 				terrain->setHypotheque(boost::lexical_cast<int>(nodeTerrain->first_attribute("hyp")->value()));
 				terrain->setGroupe(groupe);
+				m_case[id] = terrain;
 				for (size_t i = 0; i < 6; ++i)
 				{
 					terrain->setLoyer(i, 
@@ -224,6 +227,21 @@ Plateau::Plateau()
 		}
 	}
 	delete buffer;
+}
+Plateau::~Plateau()
+{
+	for (size_t i = 0; i < 40; ++i)
+	{
+		delete m_case[i];
+	}
+	for (size_t i = 0; i < 2; ++i)
+	{
+		delete m_paquets[i];
+	}
+	for(Joueur *j : m_joueurs) 
+	{
+		delete j;
+	}
 }
 void Plateau::addArgent(int a)
 {
@@ -295,7 +313,7 @@ void Plateau::placerCurrentJoueur(int id, bool passerDepart)
 }
 std::vector<Joueur*> Plateau::GetJoueurs()
 {
-    return m_joueurs;
+	return m_joueurs;
 }
 void Plateau::addJoueur(Joueur *j)
 {
@@ -325,7 +343,7 @@ void Plateau::load(const std::string& filepath)
 	for(node=root->first_node("joueurs")->first_node("joueur");node;node=node->next_sibling("joueur")) 
 	{
 		Joueur *joueur = new Joueur(node->first_attribute("nom")->value());
-		addJoueur(joueur);
+		m_joueurs.push_back(joueur);
 		joueur->crediter(boost::lexical_cast<int>(node->first_attribute("argent")->value()));
 		int idCase = boost::lexical_cast<int>(node->first_attribute("case")->value());
 		joueur->positinner(m_case[idCase]);
@@ -333,6 +351,20 @@ void Plateau::load(const std::string& filepath)
 		if(boost::lexical_cast<bool>(node->first_attribute("prison")->value()))
 			emprisoner(joueur);
 		rapidxml::xml_node<> *nodeProp;
+		rapidxml::xml_node<> *nodeCartes;
+		for(nodeCartes=node->first_node("cartes")->first_node("carte");nodeCartes;nodeCartes=nodeCartes->next_sibling("carte"))
+		{
+			int paq = boost::lexical_cast<int>(nodeCartes->first_attribute("paquet")->value());
+			for(Carte *carte : m_paquets[paq]->cartes())
+			{
+				Carte_Libere *lib = dynamic_cast<Carte_Libere*>(carte);
+				if(lib)
+				{
+					lib->tirer(joueur);
+					break;
+				}
+			}
+		}
 		for(nodeProp=node->first_node("propriete");nodeProp;nodeProp=nodeProp->next_sibling("propriete")) 
 		{
 			CasePropriete *prop = (CasePropriete*) m_case[boost::lexical_cast<int>(nodeProp->first_attribute("id")->value())];
@@ -351,8 +383,61 @@ void Plateau::load(const std::string& filepath)
 }
 void Plateau::save(const std::string& file)
 {
+	rapidxml::xml_document<> document;
+	rapidxml::xml_node<> *root = document.allocate_node(rapidxml::node_type::node_element);
+	root->name("root");
+	document.append_node(root);
+	rapidxml::xml_node<> *nJoueurs = document.allocate_node(rapidxml::node_type::node_element);
+	nJoueurs->name("joueurs");
+	root->append_node(nJoueurs);
+	for(Joueur *j : m_joueurs)
+	{
+		rapidxml::xml_node<> *nJoueur = document.allocate_node(rapidxml::node_type::node_element);
+		nJoueur->name("joueur");
+		nJoueur->append_attribute(document.allocate_attribute("nom", j->nom().c_str()));
+		nJoueur->append_attribute(document.allocate_attribute("case", boost::lexical_cast<std::string>(j->estSur()->id()).c_str()));
+		nJoueur->append_attribute(document.allocate_attribute("prison", boost::lexical_cast<std::string>(j->estEnPrison()).c_str()));
+		nJoueur->append_attribute(document.allocate_attribute("argent", boost::lexical_cast<std::string>(j->argent()).c_str()));
+		nJoueurs->append_node(nJoueur);
+		rapidxml::xml_node<> *nCartes = document.allocate_node(rapidxml::node_type::node_element);
+		nCartes->name("cartes");
+		nJoueur->append_node(nCartes);
+		for(Carte_Libere *c : j->cartesLiberte())
+		{
+			rapidxml::xml_node<> *nCarte = document.allocate_node(rapidxml::node_type::node_element);
+			nCarte->name("carte");
+			nCarte->append_attribute(document.allocate_attribute("paquet", boost::lexical_cast<std::string>(c->paquet()->type()).c_str()));
+			nCartes->append_node(nCarte);
+		}
+		rapidxml::xml_node<> *nProprietes = document.allocate_node(rapidxml::node_type::node_element);
+		nJoueur->append_node(nProprietes);
+		for(CasePropriete *prop : j->proprietes())
+		{
+			rapidxml::xml_node<> *nPropriete = document.allocate_node(rapidxml::node_type::node_element);
+			nProprietes->append_node(nPropriete);
+			nPropriete->append_attribute(document.allocate_attribute("id", boost::lexical_cast<std::string>(prop->id()).c_str()));
+			nPropriete->append_attribute(document.allocate_attribute("hypotheque", boost::lexical_cast<std::string>(prop->estEnHypotheque()).c_str()));
+			CaseTerrain *terrain = dynamic_cast<CaseTerrain*>(prop);
+			if(terrain)
+			{
+				nPropriete->append_attribute(document.allocate_attribute("maisons", boost::lexical_cast<std::string>(terrain->maisons()).c_str()));
+			}
+		}
+	}
 }
 int Plateau::getTailleCase() const
 {
 	return m_taille_case;
+}
+int Plateau::getEspaceMaison() const
+{
+	return m_espace_maison;
+}
+int Plateau::getTailleTraits() const
+{
+	return m_taille_traits;
+}
+Case* Plateau::getCase(size_t id) const
+{
+	return (id<40) ?m_case[id]:nullptr;
 }

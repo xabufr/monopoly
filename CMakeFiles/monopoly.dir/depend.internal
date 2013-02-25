@@ -30,6 +30,46 @@ CMakeFiles/monopoly.dir/src/core/singleton.o
 CMakeFiles/monopoly.dir/src/core/trigo.o
  /home/zequiel/software/c++/monopoly/src/core/trigo.cpp
  /home/zequiel/software/c++/monopoly/src/core/trigo.h
+CMakeFiles/monopoly.dir/src/game_graph/interface.o
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/des.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/plateau.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/random.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/cameramanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/graphicalengine.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/fontmanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guicontener.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guielement.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guimanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guinode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/particlemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/positioninformations.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/interface.cpp
+ /home/zequiel/software/c++/monopoly/src/game_graph/interface.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
 CMakeFiles/monopoly.dir/src/game_graph/jeu.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../core/consolelogger.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../core/exception.h
@@ -70,6 +110,7 @@ CMakeFiles/monopoly.dir/src/game_graph/jeu.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/interface.h
  /home/zequiel/software/c++/monopoly/src/game_graph/jeu.cpp
  /home/zequiel/software/c++/monopoly/src/game_graph/jeu.h
  /home/zequiel/software/c++/monopoly/src/game_graph/joueur.h
@@ -115,6 +156,10 @@ CMakeFiles/monopoly.dir/src/game_graph/joueur.o
 CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../core/exception.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../core/logger.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/plateau.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/random.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/cameramanager.h
@@ -151,6 +196,48 @@ CMakeFiles/monopoly.dir/src/game_graph/plateau.o
  /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/texturemanager.h
  /home/zequiel/software/c++/monopoly/src/game_graph/plateau.cpp
  /home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/terrain.h
+CMakeFiles/monopoly.dir/src/game_graph/terrain.o
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/random.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/../core/singleton.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/cameramanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/graphicalengine.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/fontmanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guicontener.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guielement.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guimanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guinode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/particlemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/positioninformations.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenode.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/../graphics/texturemanager.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/plateau.h
+ /home/zequiel/software/c++/monopoly/src/game_graph/terrain.cpp
+ /home/zequiel/software/c++/monopoly/src/game_graph/terrain.h
 CMakeFiles/monopoly.dir/src/game_log/carte/carte.o
  /home/zequiel/software/c++/monopoly/src/game_log/carte/../joueur.h
  /home/zequiel/software/c++/monopoly/src/game_log/carte/carte.cpp

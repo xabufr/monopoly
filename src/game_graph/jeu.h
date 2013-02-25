@@ -5,12 +5,15 @@ class GraphicalEngine;
 class GuiNode;
 class GuiItem;
 class GuiTextInputItem;
+class JoueurGraph;
 class PlateauGraph;
+class Interface;
 class Plateau;
 class Jeu
 {
 public:
 	Jeu();
+	~Jeu();
 	void run();
 	static void menu_jouer(GuiItem*);
 	static void quitter(GuiItem*);
@@ -38,6 +41,8 @@ private:
 	GuiTextInputItem* m_nomsJoueurs[8];
 	Plateau *m_plateau;
 	PlateauGraph *m_plateauGraph;
+	JoueurGraph *m_joueurGraph[8];
+	Interface *m_interface;
 };
 
 #endif

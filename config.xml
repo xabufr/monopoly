@@ -3,7 +3,7 @@
 	<compagnie prix="150" mul1="4" mul2="10" hyp="75"/>
 	<gare prix="200" t0="25" t1="50" t2="100" t3="200" hyp="100" />
 	<joueur  argent_depart="1500" argent_tour="200"/>
-	<plateau taille_case="146">
+	<plateau taille_case="300" espace_maison="240" taille_traits="5">
 		<groupe couleur="bleu" r="" g="" b="" maison="200">
 			<terrain id="37" nom="Avenue des Champs-Elysées" t0="35" t1="175" t2="500" t3="1100" t4="1300" t5="1500" hyp="175" prix="350"/>
 			<terrain id="39" nom="Rue de la Paix" t0="50" t1="200" t2="600" t3="1400" t4="1700" t5="2000" hyp="200" prix="400"/> 
@@ -46,8 +46,7 @@
 		<gare id="15" nom="Gare de Lyon" />
 		<gare id="25" nom="Gare du Nord" />
 		<gare id="35" nom="Gare Saint-Lazare"/>
-		<parc id="20"/>
-		<prison id="10"/>
+		<parc id="20"/> <prison id="10"/>
 		<police id="30"/>
 		<depart id="0"/>
 		<carte id="2" type="1"/>

@@ -235,6 +235,21 @@ src/core/trigo.s:
 .PHONY : src/core/trigo.s
 
 # target to build an object file
+src/game_graph/interface.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/interface.o
+.PHONY : src/game_graph/interface.o
+
+# target to preprocess a source file
+src/game_graph/interface.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/interface.i
+.PHONY : src/game_graph/interface.i
+
+# target to generate assembly for a file
+src/game_graph/interface.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/interface.s
+.PHONY : src/game_graph/interface.s
+
+# target to build an object file
 src/game_graph/jeu.o:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/jeu.o
 .PHONY : src/game_graph/jeu.o
@@ -278,6 +293,21 @@ src/game_graph/plateau.i:
 src/game_graph/plateau.s:
 	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/plateau.s
 .PHONY : src/game_graph/plateau.s
+
+# target to build an object file
+src/game_graph/terrain.o:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/terrain.o
+.PHONY : src/game_graph/terrain.o
+
+# target to preprocess a source file
+src/game_graph/terrain.i:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/terrain.i
+.PHONY : src/game_graph/terrain.i
+
+# target to generate assembly for a file
+src/game_graph/terrain.s:
+	$(MAKE) -f CMakeFiles/monopoly.dir/build.make CMakeFiles/monopoly.dir/src/game_graph/terrain.s
+.PHONY : src/game_graph/terrain.s
 
 # target to build an object file
 src/game_log/carte/carte.o:
@@ -1107,6 +1137,9 @@ help:
 	@echo "... src/core/trigo.o"
 	@echo "... src/core/trigo.i"
 	@echo "... src/core/trigo.s"
+	@echo "... src/game_graph/interface.o"
+	@echo "... src/game_graph/interface.i"
+	@echo "... src/game_graph/interface.s"
 	@echo "... src/game_graph/jeu.o"
 	@echo "... src/game_graph/jeu.i"
 	@echo "... src/game_graph/jeu.s"
@@ -1116,6 +1149,9 @@ help:
 	@echo "... src/game_graph/plateau.o"
 	@echo "... src/game_graph/plateau.i"
 	@echo "... src/game_graph/plateau.s"
+	@echo "... src/game_graph/terrain.o"
+	@echo "... src/game_graph/terrain.i"
+	@echo "... src/game_graph/terrain.s"
 	@echo "... src/game_log/carte/carte.o"
 	@echo "... src/game_log/carte/carte.i"
 	@echo "... src/game_log/carte/carte.s"
