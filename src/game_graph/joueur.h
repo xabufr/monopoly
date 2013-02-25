@@ -22,7 +22,7 @@ public:
 	JoueurGraph(Joueur*,SceneNode *nodeparent,PlateauGraph *plateau);
 	~JoueurGraph();
 	void stat(float) const;
-	void update();
+	void update(int nbreJoueursSurCase,int JoueurEnCours);
 	const sf::Color& couleur() const;
 	void setCouleur(const sf::Color&);
 	Joueur* joueur() const;

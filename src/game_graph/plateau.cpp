@@ -122,7 +122,9 @@ sf::IntRect PlateauGraph::caseRect(int id) const
 		if(id==0||id==30)
 			rect.top = m_item_plateau->GetSize().y*0.5;
 		else
-			rect.top = -m_item_plateau->GetSize().y*0.5 + rect.height;
+			rect.top = m_item_plateau->GetSize().y*0.5 - rect.height;
+		else
+			rect.top = -m_item_plateau->GetSize().y*0.5;
 		if(id==0||id==10)
 			rect.left = -m_item_plateau->GetSize().x*0.5;
 		else

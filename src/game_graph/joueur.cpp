@@ -32,14 +32,14 @@ void JoueurGraph::stat(float pos) const
     m_item_stat_joueur->SetRelativePosition(0, pos);
 }
 
-void JoueurGraph::update()
+void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
 {
 
 	sf::Vector2f sizePion = m_item_pion->GetSize();
     int curPos = m_joueur->estSur()->id();
-   // std::vector<Joueur*> = m_plateau->getPlateau()->GetJoueurs();
 
-    /*  get les joueurs, saboir combien de joueurs sur la case curPos, => bouger un peu le X
+    /*
+        get les joueurs, saboir combien de joueurs sur la case curPos, => bouger un peu le X
         en fonction du joueur
     */
 
