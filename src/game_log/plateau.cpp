@@ -1,5 +1,6 @@
 #include "plateau.h"
 #include "joueur.h"
+#include "des.h"
 //include cartes
 #include "carte/paquet.h"
 #include "carte/carte_argent.h"
@@ -33,6 +34,7 @@
 
 Plateau::Plateau()
 {
+    m_des = new Des;
     m_index_current_joueur = 0;
 	std::ifstream file;
 	file.open("config.xml");
@@ -139,7 +141,8 @@ Plateau::Plateau()
 				carte = new Carte_argent_depuis_joueur(boost::lexical_cast<int>(node->first_attribute("valeur")->value()),
 						description, curPaq);
 			}
-			curPaq->ajouterCarte(carte);
+			if(carte)
+				curPaq->ajouterCarte(carte);
 		}
 	}
 	//Pseudo édition de liens
@@ -243,6 +246,7 @@ Plateau::~Plateau()
 	{
 		delete j;
 	}
+	delete m_des;
 }
 void Plateau::addArgent(int a)
 {
@@ -442,3 +446,9 @@ Case* Plateau::getCase(size_t id) const
 {
 	return (id<40) ?m_case[id]:nullptr;
 }
+Des& Plateau::getDes() const
+{
+    return *m_des;
+}
+
+

@@ -27,3 +27,11 @@ const sf::Color& JoueurGraph::couleur() const
 {
 	return m_couleur;
 }
+Joueur* JoueurGraph::joueur() const
+{
+	return m_joueur;
+}
+void JoueurGraph::setCouleur(const sf::Color& c)
+{
+	m_couleur=c;
+}

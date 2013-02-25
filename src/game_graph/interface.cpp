@@ -44,6 +44,7 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
 	m_button_tour->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_tour->SetData("this", this);
 	m_button_tour->SetCallBack("clicked", Interface::tourSuivant);
+	x = m_engine->GetRenderWindow()->getSize().x-(m_button_tour->GetSize().x+5);
 	m_button_tour->SetRelativePosition(x, y);
 	m_button_tour->SetVisible(false);
 	m_sceneNode->AddItem(m_button_tour);
@@ -122,7 +123,7 @@ void Interface::lancerDes(GuiItem* g)
     for (int i=0; i<12; ++i)
         ((Interface*)g->GetData("this"))->m_des[i]->SetVisible(false);
 
-    Des des;
+    Des& des = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getDes();
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     des.lancer();
     ((Interface*)g->GetData("this"))->m_lancer = false;
@@ -143,7 +144,8 @@ void Interface::lancerDes(GuiItem* g)
 
 void Interface::achat(GuiItem* g)
 {
-
+    Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    joueur->estSur()->acheter(joueur);
 }
 
 void Interface::hypothequer(GuiItem* g)
@@ -153,7 +155,11 @@ void Interface::hypothequer(GuiItem* g)
 
 void Interface::tourSuivant(GuiItem* g)
 {
+    for (int i=0; i<12; ++i)
+        ((Interface*)g->GetData("this"))->m_des[i]->SetVisible(false);
+
     ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->joueurTourFinit();
+    ((Interface*)g->GetData("this"))->m_lancer = true;
 }
 
 void Interface::quitter(GuiItem* g)

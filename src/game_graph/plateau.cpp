@@ -4,6 +4,7 @@
 #include "../game_log/case/casepropriete/caseterrain.h"
 #include "../graphics/graphicalengine.h"
 #include "../core/logger.h"
+#include "joueur.h"
 #include "../game_log/joueur.h"
 #include "../game_log/case/case.h"
 
@@ -273,4 +274,8 @@ SceneNode *PlateauGraph::getSceneNode() const
 Plateau *PlateauGraph::getPlateau() const
 {
     return m_plateau;
+}
+void PlateauGraph::addJoueurGraph(JoueurGraph* j)
+{
+	m_joueurs[j->joueur()] = j;
 }
