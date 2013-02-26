@@ -8,7 +8,6 @@ class CaseGare : public CasePropriete
 {
 public:
 	CaseGare(size_t id, const std::string& nom);
-	virtual void joueurArrive(Joueur*);
     void setLoyerParGare(int index, int value);
 
     virtual int loyer() const;
