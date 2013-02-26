@@ -13,6 +13,7 @@ public:
 	virtual void acheter(Joueur*);
 	virtual bool peutConstruire() const;
 	void setMaisons(int);
+	virtual std::string description() const;
 
     void setGroupe(GroupeTerrain*);
     int tarif() const;

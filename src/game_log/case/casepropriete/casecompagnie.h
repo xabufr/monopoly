@@ -11,6 +11,7 @@ public:
 	virtual void joueurArrive(Joueur*);
 	virtual int loyer() const;
     void setMultiplicateur(int index, int value);
+	virtual std::string description() const;
 private:
     int m_multiplicateur[2];
 };

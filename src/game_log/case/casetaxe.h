@@ -10,6 +10,7 @@ public:
 	CaseTaxe(size_t id, size_t value, const std::string& nom);
 	int getValue() const;
 	virtual void joueurArrive(Joueur*);
+	virtual std::string description() const;
 private:
     int m_value;
 };

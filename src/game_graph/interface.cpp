@@ -102,15 +102,22 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
 	m_sceneNode->AddItem(m_info);
 	m_info->SetRelativePosition(200,100);
 	m_lastInfos = "Dernières infos";
+
+	m_infoCase = new GuiTextItem;
+	m_infoCase->SetCharacterSize(12);
+	m_infoCase->SetColor(sf::Color(255,255,255));
+	m_sceneNode->AddItem(m_infoCase);
+	m_infoCase->SetRelativePosition(200, 320);
 }
 Interface::~Interface()
 {
-
 }
 void Interface::update()
 {
     m_button_achat->SetVisible(false);
     Joueur *joueur = m_plateau->getPlateau()->getJoueurTour();
+
+	m_infoCase->SetText(joueur->nom()+" est sur : " + joueur->estSur()->nom()+"\n"+joueur->estSur()->description());
 
     if (dynamic_cast<CasePropriete*>(joueur->estSur()) && !((CasePropriete*)(joueur->estSur()))->estAchete())
         m_button_achat->SetVisible(true);

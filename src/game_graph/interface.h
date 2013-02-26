@@ -28,7 +28,7 @@ private:
     PlateauGraph *m_plateau;
     Jeu *m_jeu;
     GuiNode *m_sceneNode;
-	GuiTextItem* m_info;
+	GuiTextItem* m_info, *m_infoCase;
 	GuiButtonItem *m_button_des;
 	GuiButtonItem *m_button_quitter;
 	GuiButtonItem *m_button_hypothequer;
