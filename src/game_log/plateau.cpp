@@ -215,7 +215,7 @@ Plateau::Plateau()
 			}
 			else if(type=="police")
 			{
-				currCase = new CaseAllerEnPrison(id);
+				currCase = new CaseAllerEnPrison(id, this);
 			}
 			else if(type=="parc")
 			{
@@ -268,7 +268,7 @@ void Plateau::emprisoner(Joueur* j)
 }
 void Plateau::liberer(Joueur* j)
 {
-	j->setPrison(true);
+	j->setPrison(false);
 }
 Joueur* Plateau::getJoueurTour() const
 {
@@ -462,4 +462,47 @@ Case* Plateau::getCase(size_t id) const
 Des& Plateau::getDes() const
 {
     return *m_des;
+}
+void Plateau::lancerDes()
+{
+	if(m_changer_joueur)
+	{
+		joueurTourFinit();
+		m_changer_joueur = false;
+	}
+	Joueur* curj = getJoueurTour();
+	m_des->lancer();
+	if(curj->estEnPrison())
+	{
+		m_changer_joueur = true;
+		if(m_des->estDouble())
+		{
+			liberer(curj);
+			avancerCurrentJoueur(m_des->valeur());
+			m_changer_joueur = false;
+		}
+		else if(curj->getToursPrison()>3) 
+		{
+			liberer(curj);
+			avancerCurrentJoueur(m_des->valeur());
+		}
+	}
+	else
+	{
+		avancerCurrentJoueur(m_des->valeur());
+		m_changer_joueur = true;
+		if(m_des->estDouble())
+		{
+			curj->incDoubleConsecutifs();
+			m_changer_joueur = false;
+			if(curj->doublesConsecutifs()>=3)
+			{
+				emprisoner(curj);
+				m_changer_joueur = true;
+			}
+		}
+		else
+			curj->resetDoubles();
+	}
+	curj->setDernierLancer(m_des->valeur());
 }

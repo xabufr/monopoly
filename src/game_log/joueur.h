@@ -30,17 +30,12 @@ public:
     void addCarteLiberte(Carte_Libere*);
 	Carte* lastCarte() const;
 	void setLastCarte(Carte*);
-    // UseCarteLibere
-    /*
-    void Joueur::utiliserCarteLiberte(Joueur* j, paquet* paquet)
-    {
-         Plateau* temp_plateau = paquet->plateau();
-         temp_plateau->liberer(j);
-    }
-    */
     void addPropriete(CasePropriete*);
 	const std::list<CasePropriete*>& proprietes() const;
 	const std::list<Carte_Libere*> cartesLiberte() const;
+	void incDoubleConsecutifs();
+	int doublesConsecutifs() const;
+	void resetDoubles();
 private:
 	int m_argent;
 	std::string m_nom;

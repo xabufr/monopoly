@@ -105,3 +105,15 @@ void Joueur::setLastCarte(Carte* c)
 {
 	m_lastCarte=c;
 }
+void Joueur::incDoubleConsecutifs()
+{
+	++m_doubles_consecutifs;
+}
+void Joueur::resetDoubles()
+{
+	m_doubles_consecutifs = 0;
+}
+int Joueur::doublesConsecutifs() const
+{
+	return m_doubles_consecutifs;
+}
