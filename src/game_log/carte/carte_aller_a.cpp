@@ -10,9 +10,6 @@ Carte_aller_a::Carte_aller_a(int id,const std::string& descr, PaquetCarte* paque
 {
 
 }
-
-
-
 void Carte_aller_a::tirer(Joueur* j)
 {
     Plateau* temp_plateau = m_paquet->plateau();

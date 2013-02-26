@@ -98,12 +98,10 @@ void GuiWindowNode::SetClosable(bool clos)
     m_closable=clos;
     ClosableChanged();
 }
-
 bool GuiWindowNode::IsClosable() const
 {
     return m_closable;
 }
-
 void GuiWindowNode::ClosableChanged()
 {
     if(m_closable&&!m_btnClose)

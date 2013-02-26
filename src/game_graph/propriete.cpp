@@ -27,7 +27,7 @@ void ProprieteGraph::update()
 		sf::Color c;
 		if(jg)
 		{
-			sf::Color c = jg->couleur();
+			c = jg->couleur();
 		}
 		c.a=128;
 		m_item->SetColor(c);
