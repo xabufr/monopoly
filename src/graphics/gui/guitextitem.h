@@ -34,7 +34,7 @@ class GuiTextItem: public GuiItem
           */
         void HandleEvent(const sf::Event&);
 
-        void SetText(const sf::String&);
+        void SetText(const std::string&);
         void SetCharacterSize(unsigned int);
         unsigned int GetCharacterSize() const;
         float GetWidth() const;

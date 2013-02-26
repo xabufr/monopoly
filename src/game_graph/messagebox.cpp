@@ -1,7 +1,7 @@
 #include "messagebox.h"
 #include "../graphics/graphicalengine.h"
 
-MessageBox::MessageBox(sf::String title, sf::String description)
+MessageBox::MessageBox(const std::string& title, const std::string& description)
 {
     m_engine = GraphicalEngine::GetInstance();
     m_window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
