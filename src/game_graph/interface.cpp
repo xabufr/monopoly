@@ -111,6 +111,7 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
 }
 Interface::~Interface()
 {
+    m_sceneNode->Remove();
 }
 void Interface::update()
 {

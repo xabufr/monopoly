@@ -488,7 +488,7 @@ void Plateau::lancerDes()
 				avancerCurrentJoueur(m_des->valeur());
 				m_changer_joueur = false;
 			}
-			else if(curj->getToursPrison()>3) 
+			else if(curj->getToursPrison()>3)
 			{
 				liberer(curj);
 				avancerCurrentJoueur(m_des->valeur());
@@ -522,8 +522,9 @@ Joueur* Plateau::gagnant() const
 		bool fauche = j->estFauche();
 		if(!fauche&&g)
 			return nullptr;
-		else if(!fauche) 
+		else if(!fauche)
 			g=j;
 	}
+
 	return g;
 }
