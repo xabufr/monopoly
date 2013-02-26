@@ -1,6 +1,7 @@
 #include "joueur.h"
 #include "../graphics/graphicalengine.h"
 #include "../game_log/joueur.h"
+#include "../game_log/plateau.h"
 #include "terrain.h"
 #include "../game_log/case/casepropriete/caseterrain.h"
 #include "../graphics/graphicalengine.h"
@@ -34,6 +35,14 @@ void JoueurGraph::stat(float pos) const
 
 void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
 {
+    if (m_plateau->getPlateau()->getJoueurTour() == m_joueur)
+        m_item_stat_joueur->SetColor(m_couleur);
+    else
+        m_item_stat_joueur->SetColor(sf::Color(255, 255, 255));
+
+    m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €");
+	sf::Vector2f sizePion = m_item_pion->GetSize();
+
     int curPos = m_joueur->estSur()->id();
     sf::IntRect rect;
     rect = m_plateau->caseRect(curPos);

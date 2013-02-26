@@ -16,7 +16,10 @@ public:
     void update();
     static void lancerDes(GuiItem*);
     static void achat(GuiItem*);
+    static void hypothequer_propriete(GuiItem*);
+    static void deshypothequer_propriete(GuiItem*);
     static void hypothequer(GuiItem*);
+    static void deshypothequer(GuiItem*);
     static void quitter(GuiItem*);
 private:
     bool m_lancer;
@@ -26,6 +29,7 @@ private:
 	GuiButtonItem *m_button_des;
 	GuiButtonItem *m_button_quitter;
 	GuiButtonItem *m_button_hypothequer;
+	GuiButtonItem *m_button_deshypothequer;
 	GuiButtonItem *m_button_achat;
 	GraphicalEngine *m_engine;
     SceneNode *m_des[12];

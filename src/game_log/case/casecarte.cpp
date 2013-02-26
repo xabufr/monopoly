@@ -13,9 +13,7 @@ void CaseCarte::joueurArrive(Joueur* j)
     Case::joueurArrive(j);
     Carte *carte = m_paquet->tirer();
 	j->setLastCarte(carte);
-    if (dynamic_cast<Payer_ou_tirer*>(carte) != 0)
-		;
-	else
+    if (!dynamic_cast<Payer_ou_tirer*>(carte))
 		carte->tirer(j);
 }
 
