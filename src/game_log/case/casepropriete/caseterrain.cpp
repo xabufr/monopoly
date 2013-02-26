@@ -21,6 +21,7 @@ void CaseTerrain::acheter(Joueur* j)
     {
         j->payer(CasePropriete::prixAchat());
         CasePropriete::setProprietaire(j);
+		j->addPropriete(this);
     }
     else if ((CasePropriete::proprietaire() == j && peutConstruire()) && j->argent() >= (m_groupe->prix_construction()))
         CasePropriete::proprietaire()->payer(m_groupe->prix_construction());
