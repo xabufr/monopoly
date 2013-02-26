@@ -15,7 +15,7 @@ JoueurGraph::JoueurGraph(Joueur* j,SceneNode *nodeparent,PlateauGraph *plateau):
 	m_item_pion->SetColor(m_couleur);
 	m_nodepion = nodeparent->AddSceneNode();
 	m_nodepion->AddItem(m_item_pion);
-	m_item_pion->SetRadius(50);
+	m_item_pion->SetRadius(20);
 	m_item_stat_joueur = new GuiTextItem;
 }
 JoueurGraph::~JoueurGraph()
@@ -46,10 +46,28 @@ void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
     sf::IntRect rect;
     rect = m_plateau->caseRect(curPos);
 
-    if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
-        m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + 60,rect.top + 30));
-    else
-        m_item_pion->SetRelativePosition(sf::Vector2f(rect.left +30,rect.top + 60));
+    if (nbreJoueursSurCase > 1 && nbreJoueursSurCase <= 4)
+    {
+        if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x)+ 60,rect.top + 30));
+        else
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + 60));
+    }
+
+    else if (nbreJoueursSurCase > 4 && nbreJoueursSurCase <= 8 )
+    {
+        if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 60,rect.top + (JoueurEnCours * m_item_pion->GetSize().y) + 30));
+        else
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + (JoueurEnCours * m_item_pion->GetSize().y) +60));
+    }
+    else //(nbreJoueursSurCase == 1 )
+    {
+        if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + 60,rect.top + 30));
+        else
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left +30,rect.top + 60));
+    }
 }
 
 const sf::Color& JoueurGraph::couleur() const
