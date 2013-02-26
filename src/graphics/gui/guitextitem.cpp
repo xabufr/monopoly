@@ -15,7 +15,6 @@ GuiTextItem::~GuiTextItem()
 void GuiTextItem::ScaleChanged()
 {
 }
-
 /** @brief RotationChanged
   *
   * @todo: document this function
@@ -23,7 +22,6 @@ void GuiTextItem::ScaleChanged()
 void GuiTextItem::RotationChanged()
 {
 }
-
 /** @brief PositionChanged
   *
   * @todo: document this function
@@ -35,7 +33,6 @@ void GuiTextItem::PositionChanged()
     sf::Vector2f rel = -(m_relative.position*2.f) + sf::Vector2f(m_texte.getGlobalBounds().left, m_texte.getGlobalBounds().top)-m_parent.position;
     m_texte.setOrigin(rel);
 }
-
 /** @brief Draw
   *
   * @todo: document this function
@@ -46,7 +43,6 @@ void GuiTextItem::Draw(sf::RenderWindow* app)
         return;
     app->draw(m_texte);
 }
-
 /** @brief HandleEvent
   *
   * @todo: document this function
@@ -83,7 +79,6 @@ sf::Vector2f GuiTextItem::GetSize() const
 {
     return sf::Vector2f(GetWidth(), GetHeigth());
 }
-
 void GuiTextItem::SetColor(const sf::Color& color)
 {
     m_texte.setColor(color);

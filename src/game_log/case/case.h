@@ -23,6 +23,7 @@ public:
     virtual bool estEnHypotheque() const;
     virtual int loyer() const;
     virtual bool peutConstruire() const;
+	virtual std::string description() const;
 
 	const std::list<Joueur*>& getJoueurs() const;
 	size_t id() const;

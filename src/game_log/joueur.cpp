@@ -17,7 +17,13 @@ int Joueur::argent() const
 }
 bool Joueur::estFauche() const
 {
-	return m_argent<=0;
+	if(m_argent>0)
+		return false;
+	int total = m_argent;
+	for(CasePropriete *p : m_proprietes)
+		if(!p->estEnHypotheque())
+			total+=p->valeur_hypotheque();
+	return total <= 0;
 }
 void Joueur::payer(int val)
 {

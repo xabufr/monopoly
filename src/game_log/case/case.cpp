@@ -29,12 +29,10 @@ bool Case::peutAppartenir() const
 {
 	return false;
 }
-
 const std::list<Joueur*>& Case::getJoueurs() const
 {
 	return m_joueurs;
 }
-
 size_t Case::id() const
 {
 	return m_id;
@@ -43,45 +41,39 @@ int Case::prixAchat() const
 {
     return 0;
 }
-
 bool Case::estAchete() const
 {
     return false;
 }
-
 void Case::acheter(Joueur*)
 {
 
 }
-
 int Case::valeur_hypotheque() const
 {
     return 0;
 }
-
 void Case::hypothequer()
 {
 
 }
-
 void Case::deshypothequer()
 {
 
 }
-
 bool Case::estEnHypotheque() const
 {
     return false;
 }
-
 int Case::loyer() const
 {
     return 0;
 }
-
 bool Case::peutConstruire() const
 {
     return false;
 }
-
-
+std::string Case::description() const
+{
+	return "";
+}

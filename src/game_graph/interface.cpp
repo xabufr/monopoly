@@ -126,10 +126,22 @@ m_detruire(false)
             m_button_detruire->GetSize().y;
 	m_button_achat->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_achat);
+
+	m_info = new GuiTextItem;
+	m_info->SetCharacterSize(12);
+	m_info->SetColor(sf::Color(255,255,255,255));
+	m_sceneNode->AddItem(m_info);
+	m_info->SetRelativePosition(200,100);
+	m_lastInfos = "Dernières infos";
+
+	m_infoCase = new GuiTextItem;
+	m_infoCase->SetCharacterSize(12);
+	m_infoCase->SetColor(sf::Color(255,255,255));
+	m_sceneNode->AddItem(m_infoCase);
+	m_infoCase->SetRelativePosition(200, 320);
 }
 Interface::~Interface()
 {
-
 }
 void Interface::update()
 {
@@ -139,6 +151,8 @@ void Interface::update()
     m_button_construire->SetVisible(false);
     m_button_detruire->SetVisible(false);
     Joueur *joueur = m_plateau->getPlateau()->getJoueurTour();
+
+	m_infoCase->SetText(joueur->nom()+" est sur : " + joueur->estSur()->nom()+"\n"+joueur->estSur()->description());
 
     if (dynamic_cast<CasePropriete*>(joueur->estSur()) && !((CasePropriete*)(joueur->estSur()))->estAchete())
         m_button_achat->SetVisible(true);
@@ -160,7 +174,7 @@ void Interface::update()
 	joueur->setLastCarte(nullptr);
 
 	if(carte && !dynamic_cast<Payer_ou_tirer*>(carte))
-		new MessageBox("Carte "+carte->paquet()->nom(), carte->description());
+		m_lastInfos = joueur->nom()+":\nCarte " + carte->paquet()->nom() + "\n" + carte->description();
 
 	if (dynamic_cast<Payer_ou_tirer*>(carte))
         new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
@@ -256,6 +270,7 @@ void Interface::update()
         window->CalculerTaille();
         m_construire = false;
     }
+	m_info->SetText(m_lastInfos);
 }
 void Interface::lancerDes(GuiItem* g)
 {
@@ -277,17 +292,14 @@ void Interface::hypothequer(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_hypothequer = true;
 }
-
 void Interface::deshypothequer(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_deshypothequer = true;
 }
-
 void Interface::hypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->hypothequer();
 }
-
 void Interface::deshypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->deshypothequer();

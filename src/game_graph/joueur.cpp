@@ -32,49 +32,51 @@ void JoueurGraph::stat(float pos) const
     pos = pos*(m_item_stat_joueur->GetHeigth()+4);
     m_item_stat_joueur->SetRelativePosition(0, pos);
 }
-
 void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
 {
     if (m_plateau->getPlateau()->getJoueurTour() == m_joueur)
         m_item_stat_joueur->SetColor(m_couleur);
     else
         m_item_stat_joueur->SetColor(sf::Color(255, 255, 255));
+
     m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €");
 	sf::Vector2f sizePion = m_item_pion->GetSize();
+
     int curPos = m_joueur->estSur()->id();
-
-    /*
-        get les joueurs, saboir combien de joueurs sur la case curPos, => bouger un peu le X
-        en fonction du joueur
-    */
-
     sf::IntRect rect;
     rect = m_plateau->caseRect(curPos);
 
-    if (nbreJoueursSurCase > 1 && nbreJoueursSurCase <= 4)
+    if (m_joueur->estEnPrison() == true)
     {
-        if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x)+ 60,rect.top + 30));
-        else
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + 60));
+        m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x)+ 60 + 35,rect.top + 80));
     }
-
-    else if (nbreJoueursSurCase > 4 && nbreJoueursSurCase <= 8 )
+    else
     {
-        if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 60,rect.top + (JoueurEnCours * m_item_pion->GetSize().y) + 30));
-        else
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + (JoueurEnCours * m_item_pion->GetSize().y) +60));
-    }
-    else //(nbreJoueursSurCase == 1 )
-    {
-        if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + 60,rect.top + 30));
-        else
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left +30,rect.top + 60));
+        m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €");
+        sf::Vector2f sizePion = m_item_pion->GetSize();
+        if (JoueurEnCours > 1 && JoueurEnCours <= 4)
+        {
+            if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+                m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x)+ 60,rect.top + 30));
+            else
+                m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + 60));
+        }
+        else if (JoueurEnCours > 4 && JoueurEnCours <= 8 )
+        {
+            if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+                m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + ((JoueurEnCours-4) * m_item_pion->GetSize().x) + 60,rect.top +  m_item_pion->GetSize().y + 30));
+            else
+                m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + ((JoueurEnCours-4) * m_item_pion->GetSize().x) + 30,rect.top + m_item_pion->GetSize().y +60));
+        }
+        else //(nbreJoueursSurCase == 1 )
+        {
+            if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
+                m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + 60,rect.top + 30));
+            else
+                m_item_pion->SetRelativePosition(sf::Vector2f(rect.left +30,rect.top + 60));
+        }
     }
 }
-
 const sf::Color& JoueurGraph::couleur() const
 {
 	return m_couleur;

@@ -23,7 +23,6 @@ public:
 	sf::IntRect maisonRect(int id) const;
 	JoueurGraph* findJoueurGraph(Joueur*) const;
 	void addJoueurGraph(JoueurGraph*);
-
 private:
 	SceneNodeSpriteItem *m_item_plateau,*m_item_pion;
 	Plateau *m_plateau;

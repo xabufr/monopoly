@@ -30,6 +30,7 @@ public:
 	void addJoueur(Joueur*);
 	void load(const std::string&);
 	void save(const std::string&);
+	Joueur* gagnant() const;
 
 	int getTailleCase() const;
 	int getEspaceMaison() const;

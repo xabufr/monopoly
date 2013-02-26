@@ -15,6 +15,7 @@ public:
 	virtual bool peutConstruire() const;
 	virtual bool peutDetruire() const;
 	void setMaisons(int);
+	virtual std::string description() const;
 
     void setGroupe(GroupeTerrain*);
     int tarif() const;

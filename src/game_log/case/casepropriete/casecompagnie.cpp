@@ -1,5 +1,6 @@
 #include "casecompagnie.h"
 #include "../../joueur.h"
+#include <boost/lexical_cast.hpp>
 
 CaseCompagnie::CaseCompagnie(size_t id, const std::string& nom):CasePropriete(id, nom)
 {
@@ -22,4 +23,13 @@ void CaseCompagnie::joueurArrive(Joueur* j)
 void CaseCompagnie::setMultiplicateur(int index, int value)
 {
     m_multiplicateur[index] = value;
+}
+std::string CaseCompagnie::description() const
+{
+	std::string desc = "Loyer: \n";
+	for (size_t i = 0; i < 2; ++i)
+	{
+		desc += boost::lexical_cast<std::string>(i+1)+" compagnie(s) => montant des dés X "+ boost::lexical_cast<std::string>(m_multiplicateur[i]) + "\n";
+	}
+	return desc;
 }

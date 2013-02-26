@@ -15,7 +15,7 @@ Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
 	m_requ_state      = main_menu;
 	Logger::SetLogger(new ConsoleLogger());
 	m_engine = GraphicalEngine::GetInstance();
-	m_engine->CreateRenderWindow(sf::VideoMode(800, 600, 32), "Monopoly");
+	m_engine->CreateRenderWindow(sf::VideoMode(800, 600, 32), "Monopoly", sf::Style::Titlebar | sf::Style::Close);
 	m_sceneNode = nullptr;
 	m_nb_joueurs = 2;
 }
@@ -158,11 +158,11 @@ void Jeu::setupPlay()
 		sf::Color(255,0,0),
 		sf::Color(0,255,0),
 		sf::Color(0,0,255),
-		sf::Color(255,255,255),
-		sf::Color(128,128,128),
+		sf::Color(0,255,255),
 		sf::Color(255,255,0),
-		sf::Color(0, 255, 255),
-		sf::Color(255, 0, 255)
+		sf::Color(255, 0, 255),
+		sf::Color(128, 128, 255),
+		sf::Color(255,128,128)
 	};
 	for (size_t i = 0; i < m_nb_joueurs; ++i)
 	{

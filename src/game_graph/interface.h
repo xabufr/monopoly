@@ -1,6 +1,7 @@
 #ifndef INTERFACE_H_INCLUDED
 #define INTERFACE_H_INCLUDED
 
+#include <string>
 class PlateauGraph;
 class Jeu;
 class GuiNode;
@@ -8,6 +9,7 @@ class GuiButtonItem;
 class GuiItem;
 class GraphicalEngine;
 class SceneNode;
+class GuiTextItem;
 class Interface
 {
 public:
@@ -34,6 +36,7 @@ private:
     PlateauGraph *m_plateau;
     Jeu *m_jeu;
     GuiNode *m_sceneNode;
+	GuiTextItem* m_info, *m_infoCase;
 	GuiButtonItem *m_button_des;
 	GuiButtonItem *m_button_quitter;
 	GuiButtonItem *m_button_hypothequer;
@@ -43,5 +46,6 @@ private:
 	GuiButtonItem *m_button_achat;
 	GraphicalEngine *m_engine;
     SceneNode *m_des[12];
+	std::string m_lastInfos;
 };
 #endif // INTERFACE_H_INCLUDED

@@ -33,8 +33,8 @@
 
 Plateau::Plateau()
 {
-    m_des = new Des;
-    m_index_current_joueur = 0;
+	m_des = new Des;
+	m_index_current_joueur = 0;
 	std::ifstream file;
 	file.open("config.xml");
 	if(!file)
@@ -300,9 +300,8 @@ void Plateau::avancerCurrentJoueur(int dep)
 	}
 	else
 	{
-		for(int i=0;i < (-dep);++i) 
+		for(int i=0;i < (-dep);++i)
 		{
-			std::cout << i << std::endl;
 			if(curPos==0)
 				curPos = 39;
 			else
@@ -336,8 +335,10 @@ std::vector<Joueur*> Plateau::GetJoueurs()
 void Plateau::addJoueur(Joueur *j)
 {
 	m_joueurs.push_back(j);
+	m_case[0]->joueurArrive(j);
 	j->positinner(m_case[0]);
 	j->crediter(m_argent_depart);
+	j->payer(((CaseDepart*)m_case[0])->getValueCredit());
 }
 void Plateau::load(const std::string& filepath)
 {
@@ -461,7 +462,7 @@ Case* Plateau::getCase(size_t id) const
 }
 Des& Plateau::getDes() const
 {
-    return *m_des;
+	return *m_des;
 }
 void Plateau::lancerDes()
 {
@@ -471,38 +472,58 @@ void Plateau::lancerDes()
 		m_changer_joueur = false;
 	}
 	Joueur* curj = getJoueurTour();
-	m_des->lancer();
-	if(curj->estEnPrison())
+	if(curj->estFauche())
 	{
 		m_changer_joueur = true;
-		if(m_des->estDouble())
-		{
-			liberer(curj);
-			avancerCurrentJoueur(m_des->valeur());
-			m_changer_joueur = false;
-		}
-		else if(curj->getToursPrison()>3) 
-		{
-			liberer(curj);
-			avancerCurrentJoueur(m_des->valeur());
-		}
 	}
 	else
 	{
-		avancerCurrentJoueur(m_des->valeur());
-		m_changer_joueur = true;
-		if(m_des->estDouble())
+		m_des->lancer();
+		if(curj->estEnPrison())
 		{
-			curj->incDoubleConsecutifs();
-			m_changer_joueur = false;
-			if(curj->doublesConsecutifs()>=3)
+			m_changer_joueur = true;
+			if(m_des->estDouble())
 			{
-				emprisoner(curj);
-				m_changer_joueur = true;
+				liberer(curj);
+				avancerCurrentJoueur(m_des->valeur());
+				m_changer_joueur = false;
+			}
+			else if(curj->getToursPrison()>3) 
+			{
+				liberer(curj);
+				avancerCurrentJoueur(m_des->valeur());
 			}
 		}
 		else
-			curj->resetDoubles();
+		{
+			avancerCurrentJoueur(m_des->valeur());
+			m_changer_joueur = true;
+			if(m_des->estDouble())
+			{
+				curj->incDoubleConsecutifs();
+				m_changer_joueur = false;
+				if(curj->doublesConsecutifs()>=3)
+				{
+					emprisoner(curj);
+					m_changer_joueur = true;
+				}
+			}
+			else
+				curj->resetDoubles();
+		}
+		curj->setDernierLancer(m_des->valeur());
 	}
-	curj->setDernierLancer(m_des->valeur());
+}
+Joueur* Plateau::gagnant() const
+{
+	Joueur *g = nullptr;
+	for(Joueur *j : m_joueurs)
+	{
+		bool fauche = j->estFauche();
+		if(!fauche&&g)
+			return nullptr;
+		else if(!fauche) 
+			g=j;
+	}
+	return g;
 }

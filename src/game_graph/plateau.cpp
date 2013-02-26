@@ -20,6 +20,7 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 	m_camera = m_engine->GetCameraManager()->AddCamera();
 	float ratio = m_engine->GetRenderWindow()->getSize().y/sizePlateau.y;
 
+
 	for (size_t i = 0; i < 40; ++i)
 	{
 		Case *c        = m_plateau->getCase(i);
