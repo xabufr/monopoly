@@ -338,6 +338,7 @@ void Plateau::addJoueur(Joueur *j)
 	m_case[0]->joueurArrive(j);
 	j->positinner(m_case[0]);
 	j->crediter(m_argent_depart);
+	j->payer(((CaseDepart*)m_case[0])->getValueCredit());
 }
 void Plateau::load(const std::string& filepath)
 {

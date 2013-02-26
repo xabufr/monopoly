@@ -158,11 +158,11 @@ void Jeu::setupPlay()
 		sf::Color(255,0,0),
 		sf::Color(0,255,0),
 		sf::Color(0,0,255),
-		sf::Color(255,255,255),
-		sf::Color(128,128,128),
+		sf::Color(0,255,255),
 		sf::Color(255,255,0),
-		sf::Color(0, 255, 255),
-		sf::Color(255, 0, 255)
+		sf::Color(255, 0, 255),
+		sf::Color(128, 128, 255),
+		sf::Color(255,128,128)
 	};
 	for (size_t i = 0; i < m_nb_joueurs; ++i)
 	{
