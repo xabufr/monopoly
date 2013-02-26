@@ -6,38 +6,24 @@
 
 #IncludeRegexTransform: 
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/consolelogger.h
-logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
-iostream
--
-
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
-exception
--
-string
--
-
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
-string
--
-sstream
--
-exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
-
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
-vector
--
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+../case.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+casepropriete.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
 string
 -
-cstddef
+list
 -
 
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
@@ -314,29 +300,23 @@ SFML/Graphics/Texture.hpp
 ../core/singleton.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.h
-
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.cpp
-jeu.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h
-../game_log/plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
-../game_log/joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
-../core/consolelogger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/consolelogger.h
-../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
-boost/lexical_cast.hpp
--
-interface.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.h
-plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.cpp
 joueur.h
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
-
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h
+../graphics/graphicalengine.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+../game_log/joueur.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+terrain.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+../game_log/case/casepropriete/caseterrain.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+../graphics/graphicalengine.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+plateau.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+boost/lexical_cast.hpp
+-
 
 /home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
 SFML/Graphics/Color.hpp
@@ -349,4 +329,10 @@ list
 -
 map
 -
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
+
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+propriete.h
+/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
 

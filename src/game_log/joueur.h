@@ -27,14 +27,6 @@ public:
 	Case* estSur() const;
 	void positinner(Case*);
     void addCarteLiberte(Carte_Libere*);
-    // UseCarteLibere
-    /*
-    void Joueur::utiliserCarteLiberte(Joueur* j, paquet* paquet)
-    {
-         Plateau* temp_plateau = paquet->plateau();
-         temp_plateau->liberer(j);
-    }
-    */
     void addPropriete(CasePropriete*);
 	const std::list<CasePropriete*>& proprietes() const;
 	const std::list<Carte_Libere*> cartesLiberte() const;

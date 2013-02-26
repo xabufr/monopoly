@@ -52,10 +52,18 @@ void PlateauGraph::update()
 	{
 		terrain->update();
 	}
-	for(auto it:m_joueurs)
-	{
-	    it.second->update();
-	}
+    // m_joureurs->id()
+    for(int i=0; i< 40; i++)
+    {
+        int cpt = 1;
+        for(Joueur* j : m_plateau->getCase(i)->getJoueurs())
+        {
+            std::list<Joueur*> liste_temp = m_plateau->getCase(i)->getJoueurs();
+            m_joueurs[j]->update(liste_temp.size(),cpt);
+            cpt ++;
+        }
+    }
+
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
 {
@@ -120,8 +128,6 @@ sf::IntRect PlateauGraph::caseRect(int id) const
 		sf::IntRect rect;
 		rect.width = rect.height = m_plateau->getTailleCase();
 		if(id==0||id==30)
-			rect.top = m_item_plateau->GetSize().y*0.5;
-		else
 			rect.top = m_item_plateau->GetSize().y*0.5 - rect.height;
 		else
 			rect.top = -m_item_plateau->GetSize().y*0.5;
