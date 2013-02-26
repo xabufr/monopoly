@@ -244,7 +244,6 @@ void Interface::construir(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->acheter(joueur);
-    ((CaseTerrain*)g->GetData("case"))->setMaisons(((CaseTerrain*)g->GetData("case"))->maisons()+1);
 }
 
 void Interface::construction(GuiItem* g)
