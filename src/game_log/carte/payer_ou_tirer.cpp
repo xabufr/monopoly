@@ -8,17 +8,7 @@ Payer_ou_tirer::Payer_ou_tirer(int val,const std::string& descr, PaquetCarte* pa
 {
 
 }
-void Payer_ou_tirer::tirer(Joueur* j)
-{
-	if(m_valeur > 0)
-	{
-		j->crediter(m_valeur);
-	}
-	else
-	{
-		j->payer(m_valeur);
-	}
-}
+
 PaquetCarte* Payer_ou_tirer::paquetAutre() const
 {
 	return m_paquet_cible;

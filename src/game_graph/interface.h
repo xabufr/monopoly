@@ -16,6 +16,7 @@ public:
     void update();
     static void lancerDes(GuiItem*);
     static void achat(GuiItem*);
+    static void vendre(GuiItem*);
     static void hypothequer(GuiItem*);
     static void tourSuivant(GuiItem*);
     static void quitter(GuiItem*);

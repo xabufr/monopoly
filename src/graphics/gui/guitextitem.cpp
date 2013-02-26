@@ -83,3 +83,8 @@ sf::Vector2f GuiTextItem::GetSize() const
 {
     return sf::Vector2f(GetWidth(), GetHeigth());
 }
+
+void GuiTextItem::SetColor(const sf::Color& color)
+{
+    m_texte.setColor(color);
+}

@@ -8,6 +8,7 @@
 #include "../graphics/graphicalengine.h"
 #include "../game_log/carte/carte.h"
 #include "../game_log/carte/paquet.h"
+#include "../game_log/carte/payer_ou_tirer.h"
 #include <boost/lexical_cast.hpp>
 #include <iostream>
 #include "messagebox.h"
@@ -118,10 +119,11 @@ void Interface::update()
     }
 	Carte* carte = joueur->lastCarte();
 	joueur->setLastCarte(nullptr);
-	if(carte)
-	{
+	if(carte && !dynamic_cast<Payer_ou_tirer*>(carte))
 		new MessageBox("Carte "+carte->paquet()->nom(), carte->description());
-	}
+
+	if (dynamic_cast<Payer_ou_tirer*>(carte))
+        new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
 }
 void Interface::lancerDes(GuiItem* g)
 {
@@ -169,6 +171,12 @@ void Interface::hypothequer(GuiItem* g)
     }
     window->CalculerTaille();
 }
+
+void Interface::vendre(GuiItem* g)
+{
+
+}
+
 void Interface::tourSuivant(GuiItem* g)
 {
     for (int i=0; i<12; ++i)

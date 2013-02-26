@@ -41,6 +41,7 @@ class GuiTextItem: public GuiItem
         float GetHeigth() const;
 
         virtual sf::Vector2f GetSize() const;
+        virtual void SetColor(const sf::Color&);
 
         virtual ~GuiTextItem();
 
