@@ -8,7 +8,7 @@ CaseTerrain::CaseTerrain(size_t id, const std::string& nom):CasePropriete(id, no
 }
 int CaseTerrain::loyer() const
 {
-    return m_loyer[m_nombre_maison];
+    return m_loyer[m_nombre_maison] * (m_groupe->joueurMonopole()&&m_nombre_maison==0) ?2:1;
 }
 void CaseTerrain::setGroupe(GroupeTerrain* g)
 {
@@ -45,10 +45,7 @@ int CaseTerrain::maisons() const
 }
 int CaseTerrain::tarif() const
 {
-    if (m_nombre_maison <= 4)
-        return m_groupe->prix_construction();
-    else
-        return m_groupe->prix_construction()*5;
+	return m_groupe->prix_construction();
 }
 void CaseTerrain::setLoyer(int index, int value)
 {
