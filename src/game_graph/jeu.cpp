@@ -153,7 +153,7 @@ void Jeu::setupPlay()
 {
 	m_plateau      = new Plateau;
 	m_plateauGraph = new PlateauGraph(m_plateau);
-	MessageBox *message = new MessageBox("tutu", "Dans la vie il y a toujours,\n des truc des bidulles et des chouettes.");
+	MessageBox *message = new MessageBox("éé", "Déééééééééééééééééééé");
 	m_interface = new Interface(this, m_plateauGraph);
 	sf::Color couleurs[8] = {
 		sf::Color(255,0,0),

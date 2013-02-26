@@ -10,7 +10,7 @@ class GuiButtonItem : public GuiItem
 {
     public:
         GuiButtonItem();
-        virtual void SetText(const sf::String&);
+        virtual void SetText(const std::string&);
         virtual ~GuiButtonItem();
         virtual void HandleEvent(const sf::Event&);
         void SetNormalColor(const sf::Color&, const sf::Color&);
