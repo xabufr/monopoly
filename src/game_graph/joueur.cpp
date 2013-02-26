@@ -39,7 +39,10 @@ void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
     else
         m_item_stat_joueur->SetColor(sf::Color(255, 255, 255));
 
-    m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €");
+    std::string text = m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €";
+    if (m_joueur->estEnPrison())
+        text = m_joueur->nom()+"(Prison)\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €";
+    m_item_stat_joueur->SetText(text);
 	sf::Vector2f sizePion = m_item_pion->GetSize();
 
     int curPos = m_joueur->estSur()->id();

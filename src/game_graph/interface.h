@@ -10,6 +10,7 @@ class GuiItem;
 class GraphicalEngine;
 class SceneNode;
 class GuiTextItem;
+class GuiWindowNode;
 class Interface
 {
 public:
@@ -44,6 +45,10 @@ private:
 	GuiButtonItem *m_button_construire;
 	GuiButtonItem *m_button_detruire;
 	GuiButtonItem *m_button_achat;
+	GuiWindowNode *m_window_hypothequer;
+	GuiWindowNode *m_window_deshypothequer;
+	GuiWindowNode *m_window_construire;
+	GuiWindowNode *m_window_detruire;
 	GraphicalEngine *m_engine;
     SceneNode *m_des[12];
 	std::string m_lastInfos;

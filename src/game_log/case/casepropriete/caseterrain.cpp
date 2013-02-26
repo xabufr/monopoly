@@ -58,7 +58,8 @@ bool CaseTerrain::peutDetruire() const
 	{
 		if(*it==this)
 			continue;
-		if ((m_nombre_maison-1) == (((CaseTerrain*)(*it))->maisons()-1) && m_nombre_maison != 0)
+		if (((m_nombre_maison-1) == (((CaseTerrain*)(*it))->maisons()-1) || (m_nombre_maison-1) == ((CaseTerrain*)(*it))->maisons())
+            && m_nombre_maison != 0)
 			return true;
 
 	}

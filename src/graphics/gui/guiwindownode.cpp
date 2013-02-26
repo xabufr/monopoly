@@ -2,7 +2,7 @@
 #include "guiitem.h"
 #include "guimanager.h"
 
-GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,parent)
+GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,parent), m_closed(false)
 {
     m_windowShape = new SceneNodeShapeItem;
     m_contenerShape = new SceneNodeShapeItem;
@@ -102,6 +102,11 @@ bool GuiWindowNode::IsClosable() const
 {
     return m_closable;
 }
+bool GuiWindowNode::IsClosed() const
+{
+    return m_closed;
+}
+
 void GuiWindowNode::ClosableChanged()
 {
     if(m_closable&&!m_btnClose)
@@ -126,6 +131,7 @@ void GuiWindowNode::ClosableChanged()
 void GuiWindowNode::CloseWindowCallBack(GuiItem* item)
 {
     ((GuiWindowNode*)item->GetData("window"))->m_RemoveMeNextDraw();
+    ((GuiWindowNode*)item->GetData("window"))->m_closed = true;
 }
 void GuiWindowNode::SetWindowTitle(const std::string& title)
 {

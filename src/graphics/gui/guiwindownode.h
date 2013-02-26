@@ -18,6 +18,7 @@ class GuiWindowNode: public GuiNode
 
         void SetClosable(bool);
         bool IsClosable()const;
+        bool IsClosed() const;
         static void CloseWindowCallBack(GuiItem*);
 
         void SetWindowTitle(const std::string&);
@@ -36,6 +37,8 @@ class GuiWindowNode: public GuiNode
 
         void ClosableChanged();
         void CalculerCoord();
+    private:
+        bool m_closed;
 };
 
 #endif // GUIWINDOWITEM_H

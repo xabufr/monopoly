@@ -64,6 +64,11 @@ m_detruire(false)
         m_des[i]->SetVisible(false);
     }
 
+    m_window_hypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+	m_window_hypothequer->SetWindowTitle("Hypotéquer");
+    m_window_hypothequer->SetClosable(true);
+    m_window_hypothequer->SetVisible(false);
+
     m_button_hypothequer = new GuiButtonItem;
 	m_button_hypothequer->SetText("Hypothéquer");
 	m_button_hypothequer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
@@ -75,6 +80,11 @@ m_detruire(false)
     y = 10+m_button_des->GetSize().y;
 	m_button_hypothequer->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_hypothequer);
+
+    m_window_deshypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+	m_window_deshypothequer->SetWindowTitle("Deshypotéquer");
+    m_window_deshypothequer->SetClosable(true);
+    m_window_deshypothequer->SetVisible(false);
 
 	m_button_deshypothequer = new GuiButtonItem;
 	m_button_deshypothequer->SetText("Deshypothéquer");
@@ -88,6 +98,11 @@ m_detruire(false)
 	m_button_deshypothequer->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_deshypothequer);
 
+    m_window_construire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+	m_window_construire->SetWindowTitle("Construire");
+    m_window_construire->SetClosable(true);
+    m_window_construire->SetVisible(false);
+
 	m_button_construire = new GuiButtonItem;
 	m_button_construire->SetText("Construire");
 	m_button_construire->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
@@ -99,6 +114,11 @@ m_detruire(false)
     y = 20+m_button_des->GetSize().y+m_button_hypothequer->GetSize().y+m_button_deshypothequer->GetSize().y;
 	m_button_construire->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_construire);
+
+    m_window_detruire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+	m_window_detruire->SetWindowTitle("Détruire");
+    m_window_detruire->SetClosable(true);
+    m_window_detruire->SetVisible(false);
 
 	m_button_detruire = new GuiButtonItem;
 	m_button_detruire->SetText("Détruire");
@@ -145,6 +165,8 @@ Interface::~Interface()
 }
 void Interface::update()
 {
+    int x, y;
+    x=y=0;
     m_button_achat->SetVisible(false);
     m_button_hypothequer->SetVisible(false);
     m_button_deshypothequer->SetVisible(false);
@@ -154,16 +176,17 @@ void Interface::update()
 
 	m_infoCase->SetText(joueur->nom()+" est sur : " + joueur->estSur()->nom()+"\n"+joueur->estSur()->description());
 
-    if (dynamic_cast<CasePropriete*>(joueur->estSur()) && !((CasePropriete*)(joueur->estSur()))->estAchete())
+    if (dynamic_cast<CasePropriete*>(joueur->estSur()) && !((CasePropriete*)(joueur->estSur()))->estAchete()
+        && joueur->argent() > ((CasePropriete*)(joueur->estSur()))->prixAchat())
         m_button_achat->SetVisible(true);
 
     for (CasePropriete *m_case : joueur->proprietes())
     {
-        if (m_case->proprietaire() == joueur)
+        if (m_case->proprietaire() == joueur && !m_case->estEnHypotheque())
             m_button_hypothequer->SetVisible(true);
         if (m_case->estEnHypotheque())
             m_button_deshypothequer->SetVisible(true);
-        if (m_case->peutConstruire())
+        if (m_case->peutConstruire() && joueur->argent() > ((CasePropriete*)(joueur->estSur()))->prixAchat())
             m_button_construire->SetVisible(true);
         if (m_case->peutDetruire())
             m_button_detruire->SetVisible(true);
@@ -179,11 +202,8 @@ void Interface::update()
 	if (dynamic_cast<Payer_ou_tirer*>(carte))
         new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
 
-    if (m_hypothequer)
+    if (m_hypothequer && !m_window_hypothequer->IsClosed())
     {
-        GuiWindowNode *window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-        window->SetWindowTitle("Hypotéquer");
-        window->SetClosable(true);
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -194,19 +214,26 @@ void Interface::update()
                 button->SetData("case", m_case);
                 button->SetData("this", this);
                 button->SetCallBack("clicked", Interface::hypothequer_propriete);
-                window->GetContener()->AjouterItem(button, 0, x);
+                button->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
+                button->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+                m_window_hypothequer->GetContener()->AjouterItem(button, 0, x);
                 ++x;
             }
         }
-        window->CalculerTaille();
+        m_window_hypothequer->CalculerTaille();
+        x = (m_engine->GetRenderWindow()->getSize().x/2)-(m_window_hypothequer->GetContener()->GetSize().x/2);
+        y = (m_engine->GetRenderWindow()->getSize().y/2)-(m_window_hypothequer->GetContener()->GetSize().y/2);
+        m_window_hypothequer->SetRelativePosition(x, y);
+        m_window_hypothequer->SetVisible(true);
+    }
+    else
+    {
+        m_window_hypothequer->SetVisible(false);
         m_hypothequer = false;
     }
 
-    if (m_deshypothequer)
+    if (m_deshypothequer && !m_window_deshypothequer->IsClosed())
     {
-        GuiWindowNode *window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-        window->SetWindowTitle("Deshypotéquer");
-        window->SetClosable(true);
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -217,19 +244,26 @@ void Interface::update()
                 button->SetData("case", m_case);
                 button->SetData("this", this);
                 button->SetCallBack("clicked", Interface::deshypothequer_propriete);
-                window->GetContener()->AjouterItem(button, 0, x);
+                button->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
+                button->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+                m_window_deshypothequer->GetContener()->AjouterItem(button, 0, x);
                 ++x;
             }
         }
-        window->CalculerTaille();
+        m_window_deshypothequer->CalculerTaille();
+        x = (m_engine->GetRenderWindow()->getSize().x/2)-(m_window_deshypothequer->GetContener()->GetSize().x/2);
+        y = (m_engine->GetRenderWindow()->getSize().y/2)-(m_window_deshypothequer->GetContener()->GetSize().y/2);
+        m_window_deshypothequer->SetRelativePosition(x, y);
+        m_window_deshypothequer->SetVisible(true);
+    }
+    else
+    {
+        m_window_deshypothequer->SetVisible(false);
         m_deshypothequer = false;
     }
 
-    if (m_construire)
+    if (m_construire && !m_window_construire->IsClosed())
     {
-        GuiWindowNode *window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-        window->SetWindowTitle("Construire");
-        window->SetClosable(true);
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -240,19 +274,26 @@ void Interface::update()
                 button->SetData("case", m_case);
                 button->SetData("this", this);
                 button->SetCallBack("clicked", Interface::construire);
-                window->GetContener()->AjouterItem(button, 0, x);
+                button->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
+                button->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+                m_window_construire->GetContener()->AjouterItem(button, 0, x);
                 ++x;
             }
         }
-        window->CalculerTaille();
+        m_window_construire->CalculerTaille();
+        x = (m_engine->GetRenderWindow()->getSize().x/2)-(m_window_construire->GetContener()->GetSize().x/2);
+        y = (m_engine->GetRenderWindow()->getSize().y/2)-(m_window_construire->GetContener()->GetSize().y/2);
+        m_window_construire->SetRelativePosition(x, y);
+        m_window_construire->SetVisible(true);
+    }
+    else
+    {
+        m_window_construire->SetVisible(false);
         m_construire = false;
     }
 
-    if (m_detruire)
+    if (m_detruire && !m_window_detruire->IsClosed())
     {
-        GuiWindowNode *window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-        window->SetWindowTitle("Détruire");
-        window->SetClosable(true);
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -263,12 +304,22 @@ void Interface::update()
                 button->SetData("case", m_case);
                 button->SetData("this", this);
                 button->SetCallBack("clicked", Interface::detruire);
-                window->GetContener()->AjouterItem(button, 0, x);
+                button->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
+                button->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+                m_window_detruire->GetContener()->AjouterItem(button, 0, x);
                 ++x;
             }
         }
-        window->CalculerTaille();
-        m_construire = false;
+        m_window_detruire->CalculerTaille();
+        x = (m_engine->GetRenderWindow()->getSize().x/2)-(m_window_detruire->GetContener()->GetSize().x/2);
+        y = (m_engine->GetRenderWindow()->getSize().y/2)-(m_window_detruire->GetContener()->GetSize().y/2);
+        m_window_detruire->SetRelativePosition(x, y);
+        m_window_detruire->SetVisible(true);
+    }
+    else
+    {
+        m_window_detruire->SetVisible(false);
+        m_detruire = false;
     }
 	m_info->SetText(m_lastInfos);
 }

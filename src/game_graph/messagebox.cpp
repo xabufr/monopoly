@@ -13,12 +13,13 @@ MessageBox::MessageBox(const std::string& title, const std::string& description,
     m_engine = GraphicalEngine::GetInstance();
     m_window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
     m_window->SetWindowTitle(title);
-    m_window->SetClosable(true);
+    m_window->SetClosable(false);
 
     GuiTextItem *item = new GuiTextItem;
     item->SetText(description);
     m_window->GetContener()->AjouterItem(item, 0, 0);
     m_window->CalculerTaille();
+    int x, y;
 
     if (m_plateau && m_carte)
     {
@@ -26,6 +27,8 @@ MessageBox::MessageBox(const std::string& title, const std::string& description,
         button->SetText("Payer");
         button->SetData("this", this);
         button->SetCallBack("clicked", MessageBox::payer);
+        button->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
+        button->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
         m_window->GetContener()->AjouterItem(button, 1, 1);
         m_window->CalculerTaille();
 
@@ -33,8 +36,13 @@ MessageBox::MessageBox(const std::string& title, const std::string& description,
         button->SetText("Tirer");
         button->SetData("this", this);
         button->SetCallBack("clicked", MessageBox::tirer);
+        button->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
+        button->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
         m_window->GetContener()->AjouterItem(button, 1, 1);
         m_window->CalculerTaille();
+        x = (m_engine->GetRenderWindow()->getSize().x/2)-(m_window->GetContener()->GetSize().x/2);
+        y = (m_engine->GetRenderWindow()->getSize().y/2)-(m_window->GetContener()->GetSize().y/2);
+        m_window->SetRelativePosition(x, y);
     }
 }
 
