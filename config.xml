@@ -74,13 +74,13 @@
 			<carte lib="Vous héritez 100€" type="argent" valeur="100" />
 			<carte lib="La vente de votre stock vous rapporte 50€" type="argent" valeur="50" />
 			<carte lib="Allez en prison.
-				Avancez tous droit en prison.
-				Ne passez pas par la case départ.
-				Ne recevez pas 200€"
+Avancez tous droit en prison.
+Ne passez pas par la case départ.
+Ne recevez pas 200€"
 				type="aller_prison" />
 			<carte lib="Recevez votre revenu annuel 100€" type="argent" valeur="100" />
 			<carte lib="C'est votre anniversaire:
-				chaque joueur doit vous donner 10€" type="argent_depuis_joueurs" valeur="10"/>
+chaque joueur doit vous donner 10€" type="argent_depuis_joueurs" valeur="10"/>
 			<carte lib="Retournez à Belleville" type="retourner" id="1" />
 			<carte lib="Vous êtes libéré de prison." type="libere" />
 			<carte lib="Avancez jusqu'à la case départ" type="aller_a" id="0" />
@@ -89,31 +89,31 @@
 		<paquet type="0" nom="Chance">
 			<carte lib="Reculez de 3 cases" type="aller_relatif" dep="-3" />
 			<carte lib="Avancez à Boulevard de la Villette.
-				Si vous passez par la case Départ recevez 200€" type="aller_a" id="11" />
+Si vous passez par la case Départ recevez 200€" type="aller_a" id="11" />
 			<carte lib="La banque vous verse un diviende de 50€" type="argent" valeur="50" />
 			<carte lib="Payez pour frais de scolarité. 150€" type="argent" valeur="-150" />
 			<carte lib="Rendez-vous à l'Avenue Henri-Martin.
-				Si vous passer par la case Départ recevez 200€" type="aller_a" id="24" />
+Si vous passer par la case Départ recevez 200€" type="aller_a" id="24" />
 			<carte lib="Faites des réparations dans toutes vos maisons.
-				Versez pour chaque maison 25€.
-				Versez pour chaque hotel 100€." type="reparation" maison="-25" hotel="-100" />
+Versez pour chaque maison 25€.
+Versez pour chaque hotel 100€." type="reparation" maison="-25" hotel="-100" />
 			<carte lib="Vous êtes imposé pour les réparations
-				de voirie à raison de:
-				40€ par maison et
-				115€ par hotel." type="reparation" maison="-40" hotel="-115" />
+de voirie à raison de:
+40€ par maison et
+115€ par hotel." type="reparation" maison="-40" hotel="-115" />
 			<carte lib="Allez à la gare de Lyon" type="aller_a" id="15" />
 			<carte lib="Amende pour excès de vitesse: 15€." type="argent" valeur="-15" />
 			<carte lib="Vous avez gagné le prix de mots croisés.
-				recevez 100€." type="argent" valeur="100" />
+recevez 100€." type="argent" valeur="100" />
 			<carte lib="Amende pour ivresse: 20€" type="argent" valeur="-20" />
 			<carte lib="Avancez jusqu'à la case départ" type="allez_a" id="0" />
 			<carte lib="Vous êtes libéré de prison." type="libere" />
 			<carte lib="Rendez-vous à la Rue de la Paix" type="retourner" id="39" />
 			<carte lib="Votre immeuble et votre prêt rapportent 150€" type="argent" valeur="150" />
 			<carte lib="Allez en prison.
-				Avancez tous droit en prison.
-				Ne passez pas par la case départ.
-				Ne recevez pas 200€"
+Avancez tous droit en prison.
+Ne passez pas par la case départ.
+Ne recevez pas 200€"
 				type="aller_prison" />
 		</paquet>
 	</cartes>

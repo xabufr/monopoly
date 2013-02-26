@@ -32,7 +32,6 @@ void JoueurGraph::stat(float pos) const
     pos = pos*(m_item_stat_joueur->GetHeigth()+4);
     m_item_stat_joueur->SetRelativePosition(0, pos);
 }
-
 void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
 {
     if (m_plateau->getPlateau()->getJoueurTour() == m_joueur)
@@ -74,7 +73,6 @@ void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
             m_item_pion->SetRelativePosition(sf::Vector2f(rect.left +30,rect.top + 60));
     }
 }
-
 const sf::Color& JoueurGraph::couleur() const
 {
 	return m_couleur;

@@ -95,6 +95,13 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
 	m_button_achat->SetRelativePosition(x, y);
 	m_button_achat->SetVisible(false);
 	m_sceneNode->AddItem(m_button_achat);
+
+	m_info = new GuiTextItem;
+	m_info->SetCharacterSize(12);
+	m_info->SetColor(sf::Color(255,255,255,255));
+	m_sceneNode->AddItem(m_info);
+	m_info->SetRelativePosition(200,100);
+	m_lastInfos = "Dernières infos";
 }
 Interface::~Interface()
 {
@@ -113,10 +120,11 @@ void Interface::update()
 	joueur->setLastCarte(nullptr);
 
 	if(carte && !dynamic_cast<Payer_ou_tirer*>(carte))
-		new MessageBox("Carte "+carte->paquet()->nom(), carte->description());
+		m_lastInfos = joueur->nom()+":\nCarte " + carte->paquet()->nom() + "\n" + carte->description();
 
 	if (dynamic_cast<Payer_ou_tirer*>(carte))
         new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
+	m_info->SetText(m_lastInfos);
 }
 void Interface::lancerDes(GuiItem* g)
 {
@@ -152,7 +160,6 @@ void Interface::hypothequer(GuiItem* g)
     }
     window->CalculerTaille();
 }
-
 void Interface::deshypothequer(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
@@ -174,17 +181,14 @@ void Interface::deshypothequer(GuiItem* g)
     }
     window->CalculerTaille();
 }
-
 void Interface::hypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->hypothequer();
 }
-
 void Interface::deshypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->deshypothequer();
 }
-
 void Interface::quitter(GuiItem* g)
 {
     ((Jeu*)g->GetData("jeu"))->changeState(Jeu::state::main_menu);

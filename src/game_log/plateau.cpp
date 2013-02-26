@@ -302,7 +302,6 @@ void Plateau::avancerCurrentJoueur(int dep)
 	{
 		for(int i=0;i < (-dep);++i) 
 		{
-			std::cout << i << std::endl;
 			if(curPos==0)
 				curPos = 39;
 			else
