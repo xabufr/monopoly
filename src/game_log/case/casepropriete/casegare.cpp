@@ -22,5 +22,6 @@ std::string CaseGare::description() const
 		desc += boost::lexical_cast<std::string>(i+1);
 		desc += " gare => " + boost::lexical_cast<std::string>(m_loyer_par_gare[i]) + " € \n";
 	}
+	desc += "Prix => " + boost::lexical_cast<std::string>(prixAchat()) + " €";
 	return desc;
 }

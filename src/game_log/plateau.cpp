@@ -484,6 +484,7 @@ void Plateau::lancerDes()
 	else
 	{
 		m_des->lancer();
+		curj->setDernierLancer(m_des->valeur());
 		if(curj->estEnPrison())
 		{
 			m_changer_joueur = true;
@@ -516,7 +517,6 @@ void Plateau::lancerDes()
 			else
 				curj->resetDoubles();
 		}
-		curj->setDernierLancer(m_des->valeur());
 	}
 }
 Joueur* Plateau::gagnant() const
