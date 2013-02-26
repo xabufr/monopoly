@@ -54,9 +54,12 @@ void GuiTextItem::Draw(sf::RenderWindow* app)
 void GuiTextItem::HandleEvent(const sf::Event&)
 {
 }
-void GuiTextItem::SetText(const sf::String& texte)
+void GuiTextItem::SetText(const std::string& texte)
 {
-    m_texte.setString(texte);
+	std::basic_string<sf::Uint32> tmp;
+	sf::Utf8::toUtf32(texte.begin(), texte.end(), std::back_inserter(tmp));
+	sf::String out = tmp;
+	m_texte.setString(out);
     PositionChanged();
 }
 void GuiTextItem::SetCharacterSize(unsigned int taille)

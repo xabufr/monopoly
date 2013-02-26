@@ -6,8 +6,11 @@
 #include "../game_log/joueur.h"
 #include "../game_log/case/casepropriete/casepropriete.h"
 #include "../graphics/graphicalengine.h"
+#include "../game_log/carte/carte.h"
+#include "../game_log/carte/paquet.h"
 #include <boost/lexical_cast.hpp>
 #include <iostream>
+#include "messagebox.h"
 
 Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plateau), m_lancer(true)
 {
@@ -91,12 +94,10 @@ Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plat
 	m_button_achat->SetVisible(false);
 	m_sceneNode->AddItem(m_button_achat);
 }
-
 Interface::~Interface()
 {
 
 }
-
 void Interface::update()
 {
     m_button_achat->SetVisible(false);
@@ -115,9 +116,13 @@ void Interface::update()
         m_button_des->SetVisible(false);
         m_button_tour->SetVisible(true);
     }
-
+	Carte* carte = joueur->lastCarte();
+	joueur->setLastCarte(nullptr);
+	if(carte)
+	{
+		new MessageBox("Carte "+carte->paquet()->nom(), carte->description());
+	}
 }
-
 void Interface::lancerDes(GuiItem* g)
 {
     for (int i=0; i<12; ++i)
@@ -141,13 +146,11 @@ void Interface::lancerDes(GuiItem* g)
     if (!joueur->estEnPrison())
         ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->avancerCurrentJoueur(des.valeur());
 }
-
 void Interface::achat(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     joueur->estSur()->acheter(joueur);
 }
-
 void Interface::hypothequer(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
@@ -166,7 +169,6 @@ void Interface::hypothequer(GuiItem* g)
     }
     window->CalculerTaille();
 }
-
 void Interface::tourSuivant(GuiItem* g)
 {
     for (int i=0; i<12; ++i)
@@ -175,7 +177,6 @@ void Interface::tourSuivant(GuiItem* g)
     ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->joueurTourFinit();
     ((Interface*)g->GetData("this"))->m_lancer = true;
 }
-
 void Interface::quitter(GuiItem* g)
 {
     ((Jeu*)g->GetData("jeu"))->changeState(Jeu::state::main_menu);
