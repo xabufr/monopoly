@@ -16,7 +16,6 @@ GuiButtonItem::~GuiButtonItem()
 {
     //dtor
 }
-
 void GuiButtonItem::HandleEvent(const sf::Event& event)
 {
     if(!m_visible)
@@ -36,12 +35,11 @@ void GuiButtonItem::HandleEvent(const sf::Event& event)
             m_mouveOver=false;
         }
     }
-    if(m_mouveOver&&event.type == sf::Event::MouseButtonReleased)
+    if(m_btn_fond.getGlobalBounds().contains(GraphicalEngine::GetInstance()->GetGuiManager()->GetMousePosition())&&event.type == sf::Event::MouseButtonReleased)
     {
         CallCallBack("clicked");
     }
 }
-
 void GuiButtonItem::Draw(sf::RenderWindow* app)
 {
     if(!m_visible)
@@ -59,7 +57,6 @@ void GuiButtonItem::Draw(sf::RenderWindow* app)
     app->draw(m_btn_fond);
     app->draw(m_btn_txt);
 }
-
 void GuiButtonItem::PositionChanged()
 {
     m_btn_txt.setOrigin(-m_relative.position.x, -m_relative.position.y);
@@ -71,13 +68,11 @@ void GuiButtonItem::PositionChanged()
     m_btn_fond.setOrigin(-m_relative.position.x, -m_relative.position.y);
     m_btn_fond.setPosition(m_parent.position);
 }
-
 void GuiButtonItem::RotationChanged()
 {
     m_btn_txt.setRotation(m_relative.rotation+m_parent.rotation);
     m_btn_fond.setRotation(m_relative.rotation+m_parent.rotation);
 }
-
 void GuiButtonItem::ScaleChanged()
 {
     m_btn_txt.setScale(m_parent.scale.x*m_relative.scale.x, m_parent.scale.y*m_relative.scale.y);
@@ -99,7 +94,6 @@ void GuiButtonItem::SetNormalColor(const sf::Color& txt, const sf::Color& fnd)
     m_clr_nml_fnd=fnd;
     m_clr_nml_txt=txt;
 }
-
 void GuiButtonItem::SetMouseOverColor(const sf::Color& txt, const sf::Color& fnd)
 {
     m_clr_ovr_fnd=fnd;
@@ -118,7 +112,6 @@ void GuiButtonItem::SetCharacterSize(unsigned int taille)
     m_btn_txt.setCharacterSize(taille);
     SetText(m_btn_txt.getString());
 }
-
 unsigned int GuiButtonItem::GetCharacterSize() const
 {
     return m_btn_txt.getCharacterSize();
