@@ -58,17 +58,19 @@ int Joueur::getNombreGare() const
     int i=0;
     for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
 	{
-		if(dynamic_cast<CaseGare*>(*it)!=0)
+		CaseGare* gare = dynamic_cast<CaseGare*>(*it);
+		if(gare&&!gare->estEnHypotheque())
             ++i;
 	}
-	return i;
+	return i; 
 }
 int Joueur::getNombreCompagnie() const
 {
     int i=0;
     for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
 	{
-		if(dynamic_cast<CaseCompagnie*>(*it)!=0)
+		CaseCompagnie* comp = dynamic_cast<CaseCompagnie*>(*it);
+		if(comp && !comp->estEnHypotheque())
             ++i;
 	}
 	return i;
@@ -104,4 +106,16 @@ Carte* Joueur::lastCarte() const
 void Joueur::setLastCarte(Carte* c)
 {
 	m_lastCarte=c;
+}
+void Joueur::incDoubleConsecutifs()
+{
+	++m_doubles_consecutifs;
+}
+void Joueur::resetDoubles()
+{
+	m_doubles_consecutifs = 0;
+}
+int Joueur::doublesConsecutifs() const
+{
+	return m_doubles_consecutifs;
 }

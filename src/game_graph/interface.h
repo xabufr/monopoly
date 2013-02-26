@@ -17,7 +17,6 @@ public:
     static void lancerDes(GuiItem*);
     static void achat(GuiItem*);
     static void hypothequer(GuiItem*);
-    static void tourSuivant(GuiItem*);
     static void quitter(GuiItem*);
 private:
     bool m_lancer;
@@ -28,7 +27,6 @@ private:
 	GuiButtonItem *m_button_quitter;
 	GuiButtonItem *m_button_hypothequer;
 	GuiButtonItem *m_button_achat;
-	GuiButtonItem *m_button_tour;
 	GraphicalEngine *m_engine;
     SceneNode *m_des[12];
 };

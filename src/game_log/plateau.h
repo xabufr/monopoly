@@ -23,6 +23,7 @@ public:
 	void liberer(Joueur*);
 	Joueur* getJoueurTour() const;
 	Des& getDes() const;
+	void lancerDes();
 	void joueurTourFinit();
 	void avancerCurrentJoueur(int dep);
 	void placerCurrentJoueur(int id, bool passerDepart);
@@ -44,6 +45,7 @@ private:
 	CasePrison *m_prison;
 	Des *m_des;
 	size_t m_index_current_joueur;
+	bool m_changer_joueur;
 };
 
 #endif

@@ -33,6 +33,9 @@ public:
     void addPropriete(CasePropriete*);
 	const std::list<CasePropriete*>& proprietes() const;
 	const std::list<Carte_Libere*> cartesLiberte() const;
+	void incDoubleConsecutifs();
+	int doublesConsecutifs() const;
+	void resetDoubles();
 private:
 	int m_argent;
 	std::string m_nom;

@@ -9,7 +9,6 @@ class CaseTerrain : public CasePropriete
 {
 public:
 	CaseTerrain(size_t id, const std::string& nom);
-	virtual void joueurArrive(Joueur*);
 	virtual int loyer() const;
 	virtual void acheter(Joueur*);
 	virtual bool peutConstruire() const;
