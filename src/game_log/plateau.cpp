@@ -276,11 +276,16 @@ Joueur* Plateau::getJoueurTour() const
 }
 void Plateau::joueurTourFinit()
 {
-	if(++m_index_current_joueur == m_joueurs.size())
-		m_index_current_joueur = 0;
-	Joueur *j = getJoueurTour();
-	if(j->estEnPrison())
-		j->ajouterTourPrison();
+	if(gagnant())
+		return;
+	do
+	{
+		if(++m_index_current_joueur == m_joueurs.size())
+			m_index_current_joueur = 0;
+		Joueur *j = getJoueurTour();
+		if(j->estEnPrison())
+			j->ajouterTourPrison();
+	}while(getJoueurTour()->estFauche());
 }
 void Plateau::avancerCurrentJoueur(int dep)
 {
