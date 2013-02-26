@@ -18,6 +18,7 @@ class SceneNode
 
         SceneNodeItem* AddItem(SceneNodeItem *item);
         void RemoveItem(SceneNodeItem *item);
+		void RemoveAllItems();
 
         const std::vector<SceneNode*>& GetChildSceneNodes() const;
         const std::vector<SceneNodeItem*>& GetChildItems() const;

@@ -18,23 +18,23 @@ GuiButtonItem::~GuiButtonItem()
 }
 void GuiButtonItem::HandleEvent(const sf::Event& event)
 {
-    if(!m_visible)
-        return;
     if(event.type == sf::Event::MouseMoved)
     {
         if(m_btn_fond.getGlobalBounds().contains(GraphicalEngine::GetInstance()->GetGuiManager()->GetMousePosition()))
         {
-            if(!m_mouveOver)
+            if(!m_mouveOver && m_visible)
                 CallCallBack("mouse_over");
             m_mouveOver=true;
         }
         else
         {
-            if(m_mouveOver)
+            if(m_mouveOver && m_visible)
                 CallCallBack("mouse_out");
             m_mouveOver=false;
         }
     }
+    if(!m_visible)
+        return;
     if(m_btn_fond.getGlobalBounds().contains(GraphicalEngine::GetInstance()->GetGuiManager()->GetMousePosition())&&event.type == sf::Event::MouseButtonReleased)
     {
         CallCallBack("clicked");
