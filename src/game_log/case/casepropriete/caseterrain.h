@@ -11,7 +11,9 @@ public:
 	CaseTerrain(size_t id, const std::string& nom);
 	virtual int loyer() const;
 	virtual void acheter(Joueur*);
+	virtual void vendre(Joueur*);
 	virtual bool peutConstruire() const;
+	virtual bool peutDetruire() const;
 	void setMaisons(int);
 
     void setGroupe(GroupeTerrain*);

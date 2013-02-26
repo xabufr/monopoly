@@ -87,3 +87,8 @@ void CasePropriete::joueurArrive(Joueur *j)
 		proprietaire()->crediter(loyer());
 	}
 }
+
+bool CasePropriete::peutDetruire() const
+{
+    return false;
+}
