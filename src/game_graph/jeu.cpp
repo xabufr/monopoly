@@ -15,7 +15,7 @@ Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
 	m_requ_state      = main_menu;
 	Logger::SetLogger(new ConsoleLogger());
 	m_engine = GraphicalEngine::GetInstance();
-	m_engine->CreateRenderWindow(sf::VideoMode(800, 600, 32), "Monopoly");
+	m_engine->CreateRenderWindow(sf::VideoMode(800, 600, 32), "Monopoly", sf::Style::Titlebar);
 	m_sceneNode = nullptr;
 	m_nb_joueurs = 2;
 }
