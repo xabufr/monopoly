@@ -8,8 +8,12 @@ class GraphicalEngine;
 class MessageBox
 {
 public:
-    MessageBox(const std::string&, const std::string&);
+    MessageBox(const std::string&, const std::string&, bool);
+    bool wantPayed() const;
+    static void payer(GuiItem*);
+    static void tirer(GuiItem*);
 private:
+    bool m_payer;
     GuiWindowNode *m_window;
     GraphicalEngine *m_engine;
 };

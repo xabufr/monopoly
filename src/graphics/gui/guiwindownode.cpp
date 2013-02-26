@@ -129,12 +129,7 @@ void GuiWindowNode::CloseWindowCallBack(GuiItem* item)
 }
 void GuiWindowNode::SetWindowTitle(const std::string& title)
 {
-    std::basic_string<sf::Uint32> tmp;
-
-    sf::Utf8::toUtf32( title.begin(), title.end(), std::back_inserter( tmp ) );
-
-    sf::String out = tmp;
-    m_windowTitle->SetText(out);
+    m_windowTitle->SetText(title);
     CalculerCoord();
 }
 void GuiWindowNode::CalculerCoord()
