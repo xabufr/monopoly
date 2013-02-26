@@ -215,7 +215,7 @@ Plateau::Plateau()
 			}
 			else if(type=="police")
 			{
-				currCase = new CaseAllerEnPrison(id);
+				currCase = new CaseAllerEnPrison(id, this);
 			}
 			else if(type=="parc")
 			{
