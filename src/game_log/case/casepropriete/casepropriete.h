@@ -9,6 +9,7 @@ class CasePropriete : public Case
 public:
 	CasePropriete(size_t id, const std::string& nom);
 	virtual bool peutAppartenir() const;
+	virtual void joueurArrive(Joueur*);
 	virtual int prixAchat() const;
 	virtual bool estAchete() const;
 	virtual void acheter(Joueur*);

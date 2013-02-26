@@ -6,15 +6,6 @@ CaseTerrain::CaseTerrain(size_t id, const std::string& nom):CasePropriete(id, no
 {
 
 }
-void CaseTerrain::joueurArrive(Joueur* j)
-{
-    Case::joueurArrive(j);
-    if (CasePropriete::proprietaire() && CasePropriete::proprietaire() != j)
-	{
-        j->payer(m_loyer[m_nombre_maison]);
-		CasePropriete::proprietaire()->crediter(m_loyer[m_nombre_maison]);
-	}
-}
 int CaseTerrain::loyer() const
 {
     return m_loyer[m_nombre_maison];
@@ -30,6 +21,7 @@ void CaseTerrain::acheter(Joueur* j)
     {
         j->payer(CasePropriete::prixAchat());
         CasePropriete::setProprietaire(j);
+		j->addPropriete(this);
     }
     else if ((CasePropriete::proprietaire() == j && peutConstruire()) && j->argent() >= (m_groupe->prix_construction()))
         CasePropriete::proprietaire()->payer(m_groupe->prix_construction());

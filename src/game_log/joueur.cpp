@@ -58,17 +58,19 @@ int Joueur::getNombreGare() const
     int i=0;
     for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
 	{
-		if(dynamic_cast<CaseGare*>(*it)!=0)
+		CaseGare* gare = dynamic_cast<CaseGare*>(*it);
+		if(gare&&!gare->estEnHypotheque())
             ++i;
 	}
-	return i;
+	return i; 
 }
 int Joueur::getNombreCompagnie() const
 {
     int i=0;
     for(auto it=m_proprietes.begin(); it!=m_proprietes.end();++it)
 	{
-		if(dynamic_cast<CaseCompagnie*>(*it)!=0)
+		CaseCompagnie* comp = dynamic_cast<CaseCompagnie*>(*it);
+		if(comp && !comp->estEnHypotheque())
             ++i;
 	}
 	return i;

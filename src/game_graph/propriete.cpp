@@ -29,6 +29,10 @@ void ProprieteGraph::update()
 		{
 			c = jg->couleur();
 		}
+		if(m_case->estEnHypotheque())
+		{
+			c = sf::Color(0,0,0);
+		}
 		c.a=128;
 		m_item->SetColor(c);
 		m_item->SetVisible(true);
