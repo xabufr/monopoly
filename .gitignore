@@ -18,7 +18,11 @@ CMakeFiles
 cmake_install.cmake
 Makefile
 monopoly
+CMakeFiles/monopoly.dir/*
 
 #codeblocks
 monopoly.cbp
 monopoly.layout
+
+#vim
+*.swp
