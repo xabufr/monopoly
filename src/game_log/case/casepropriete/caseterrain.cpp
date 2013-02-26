@@ -24,29 +24,54 @@ void CaseTerrain::acheter(Joueur* j)
         CasePropriete::setProprietaire(j);
 		j->addPropriete(this);
     }
-    else if ((CasePropriete::proprietaire() == j && peutConstruire()) && j->argent() >= (m_groupe->prix_construction()))
+    else if (CasePropriete::proprietaire() == j && peutConstruire() && j->argent() >= (m_groupe->prix_construction()))
+    {
         CasePropriete::proprietaire()->payer(m_groupe->prix_construction());
-
+        ++m_nombre_maison;
+    }
 }
+void CaseTerrain::vendre(Joueur*)
+{
+    if (peutDetruire())
+    {
+        CasePropriete::proprietaire()->crediter(m_groupe->prix_construction());
+        --m_nombre_maison;
+    }
+}
+
 bool CaseTerrain::peutConstruire() const
 {
-	bool work=true;
 	for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
 	{
-		if(*it==this) 
+		if(*it==this)
 			continue;
 		if (m_nombre_maison > ((CaseTerrain*)(*it))->maisons() || m_nombre_maison == 5)
 			return false;
+
 	}
-    return (CasePropriete::proprietaire() == m_groupe->joueurMonopole() && work);
+    return (CasePropriete::proprietaire() == m_groupe->joueurMonopole());
 }
+
+bool CaseTerrain::peutDetruire() const
+{
+    for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
+	{
+		if(*it==this)
+			continue;
+		if ((m_nombre_maison-1) == (((CaseTerrain*)(*it))->maisons()-1) && m_nombre_maison != 0)
+			return true;
+
+	}
+    return false;
+}
+
 int CaseTerrain::maisons() const
 {
     return m_nombre_maison;
 }
 int CaseTerrain::tarif() const
 {
-	return m_groupe->prix_construction();
+    return m_groupe->prix_construction();
 }
 void CaseTerrain::setLoyer(int index, int value)
 {
