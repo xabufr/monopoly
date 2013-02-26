@@ -6,53 +6,53 @@
 
 #IncludeRegexTransform: 
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/consolelogger.cpp
+/home/thomas/Programmation/monopoly/src/core/consolelogger.cpp
 consolelogger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/consolelogger.h
+/home/thomas/Programmation/monopoly/src/core/consolelogger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/consolelogger.h
+/home/thomas/Programmation/monopoly/src/core/consolelogger.h
 logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.h
+/home/thomas/Programmation/monopoly/src/core/logger.h
 iostream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/conversion.cpp
+/home/thomas/Programmation/monopoly/src/core/conversion.cpp
 conversion.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/conversion.h
+/home/thomas/Programmation/monopoly/src/core/conversion.h
 sstream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/conversion.h
+/home/thomas/Programmation/monopoly/src/core/conversion.h
 string
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/exception.cpp
+/home/thomas/Programmation/monopoly/src/core/exception.cpp
 exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/exception.h
+/home/thomas/Programmation/monopoly/src/core/exception.h
 sstream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/exception.h
+/home/thomas/Programmation/monopoly/src/core/exception.h
 exception
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/filelogger.cpp
+/home/thomas/Programmation/monopoly/src/core/filelogger.cpp
 filelogger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/filelogger.h
+/home/thomas/Programmation/monopoly/src/core/filelogger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/filelogger.h
+/home/thomas/Programmation/monopoly/src/core/filelogger.h
 logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.h
+/home/thomas/Programmation/monopoly/src/core/logger.h
 fstream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.cpp
+/home/thomas/Programmation/monopoly/src/core/logger.cpp
 logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.h
+/home/thomas/Programmation/monopoly/src/core/logger.h
 cstdarg
 -
 cstdio
@@ -60,17 +60,17 @@ cstdio
 sstream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/logger.h
+/home/thomas/Programmation/monopoly/src/core/logger.h
 string
 -
 sstream
 -
 exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/exception.h
+/home/thomas/Programmation/monopoly/src/core/exception.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/random.cpp
+/home/thomas/Programmation/monopoly/src/core/random.cpp
 random.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/random.h
+/home/thomas/Programmation/monopoly/src/core/random.h
 cstdlib
 -
 algorithm
@@ -78,45 +78,45 @@ algorithm
 ctime
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/random.h
+/home/thomas/Programmation/monopoly/src/core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/singleton.cpp
+/home/thomas/Programmation/monopoly/src/core/singleton.cpp
 singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/singleton.h
+/home/thomas/Programmation/monopoly/src/core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/singleton.h
+/home/thomas/Programmation/monopoly/src/core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.cpp
+/home/thomas/Programmation/monopoly/src/core/trigo.cpp
 trigo.h
-/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h
+/home/thomas/Programmation/monopoly/src/core/trigo.h
 cmath
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/core/trigo.h
+/home/thomas/Programmation/monopoly/src/core/trigo.h
 SFML/System.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/consolelogger.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/consolelogger.h
 logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/logger.h
 iostream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/exception.h
 exception
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/logger.h
 string
 -
 sstream
 -
 exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/exception.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/exception.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_graph/plateau.h
 SFML/Graphics.hpp
 -
 list
@@ -124,47 +124,47 @@ list
 map
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/carte/paquet.h
 list
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
 ../case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/../case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
 casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/des.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/des.h
 SFML/System.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/joueur.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/plateau.h
 vector
 -
 string
@@ -172,19 +172,19 @@ string
 cstddef
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/cameramanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/cameramanager.h
 SFML/Graphics/View.hpp
 -
 vector
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/singleton.h
 vector
 -
 unordered_map
@@ -192,91 +192,91 @@ unordered_map
 SFML/Graphics.hpp
 -
 scenenodetextureitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
 scenenodespriteitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
 scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
 scenenodecircleshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenode.h
 scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenemanager.h
 cameramanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/cameramanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/cameramanager.h
 gui/guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guimanager.h
 gui/guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
 gui/guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 gui/guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
 gui/guiwindownode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
 gui/guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextitem.h
 gui/guiprogressbaritem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
 gui/guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicontener.h
 gui/guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
 gui/guitextinputitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
 gui/guislidernumberitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
 gui/guicolorselector.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
 gui/guirectangleitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
 particlemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/particlemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/particlemanager.h
 gui/fontmanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/fontmanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenode.h
 map
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenode.h
 vector
 -
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
 SFML/Graphics.hpp
 -
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/fontmanager.h
 ../../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../../core/singleton.h
 string
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 SFML/Graphics/Text.hpp
 -
 SFML/System/String.hpp
@@ -284,99 +284,99 @@ SFML/System/String.hpp
 SFML/Graphics/RectangleShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicolorselector.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicontener.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicontener.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
 SFML/Graphics.hpp
 -
 deque
 -
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guielement.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 ../scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeitem.h
 unordered_map
 -
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guimanager.h
 ../scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenemanager.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
 vector
 -
 map
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
 ../scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenode.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiprogressbaritem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guirectangleitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 ../scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guislidernumberitem.h
 SFML/Graphics.hpp
 -
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextinputitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextitem.h
 SFML/Graphics.hpp
 -
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guicontener.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindownode.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guinode.h
 ../scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/../scenenodeshapeitem.h
 guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guibuttonitem.h
 guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guitextitem.h
 guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/gui/guiwindowcontener.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/particlemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/particlemanager.h
 unordered_map
 -
 vector
@@ -386,57 +386,57 @@ SFML/Graphics.hpp
 SFML/System.hpp
 -
 ../core/random.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/random.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/positioninformations.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenemanager.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenode.h
 map
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenode.h
 vector
 -
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/positioninformations.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodecircleshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 SFML/Graphics/CircleShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 SFML/Graphics.hpp
 -
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/positioninformations.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodespriteitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodetextureitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/scenenodeitem.h
 SFML/Graphics.hpp
 -
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/texturemanager.h
 unordered_map
 -
 string
@@ -444,115 +444,115 @@ string
 SFML/Graphics/Texture.hpp
 -
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/interface.cpp
 interface.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.h
+/home/thomas/Programmation/monopoly/src/game_graph/interface.h
 ../game_graph/plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_graph/plateau.h
 ../game_log/plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/plateau.h
 jeu.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h
+/home/thomas/Programmation/monopoly/src/game_graph/jeu.h
 ../game_log/des.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/des.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/des.h
 ../game_log/joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/joueur.h
 ../game_log/case/casepropriete/casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 ../game_log/carte/carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/carte/carte.h
 ../game_log/carte/paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/carte/paquet.h
 boost/lexical_cast.hpp
 -
 iostream
 -
 messagebox.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/messagebox.h
+/home/thomas/Programmation/monopoly/src/game_graph/messagebox.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.h
+/home/thomas/Programmation/monopoly/src/game_graph/interface.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/jeu.cpp
 jeu.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h
+/home/thomas/Programmation/monopoly/src/game_graph/jeu.h
 ../game_log/plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/plateau.h
 ../game_log/joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/joueur.h
 ../core/consolelogger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/consolelogger.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/consolelogger.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 boost/lexical_cast.hpp
 -
 interface.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/interface.h
+/home/thomas/Programmation/monopoly/src/game_graph/interface.h
 plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/joueur.h
 messagebox.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/messagebox.h
+/home/thomas/Programmation/monopoly/src/game_graph/messagebox.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h
+/home/thomas/Programmation/monopoly/src/game_graph/jeu.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/joueur.cpp
 joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/joueur.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 ../game_log/joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/joueur.h
 terrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.h
 ../game_log/case/casepropriete/caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 boost/lexical_cast.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/joueur.h
 SFML/Graphics/Color.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/messagebox.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/messagebox.cpp
 messagebox.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/messagebox.h
+/home/thomas/Programmation/monopoly/src/game_graph/messagebox.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/messagebox.h
+/home/thomas/Programmation/monopoly/src/game_graph/messagebox.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.cpp
 plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 ../game_log/plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/plateau.h
 terrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.h
 ../game_log/case/casepropriete/caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 ../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../core/logger.h
+/home/thomas/Programmation/monopoly/src/game_graph/../core/logger.h
 joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/joueur.h
 ../game_log/joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/joueur.h
 ../game_log/case/case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 SFML/Graphics.hpp
 -
 list
@@ -560,35 +560,35 @@ list
 map
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/propriete.cpp
 propriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/propriete.h
 plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/joueur.h
+/home/thomas/Programmation/monopoly/src/game_graph/joueur.h
 ../game_log/case/casepropriete/casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/casepropriete.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/propriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.cpp
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.cpp
 terrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.h
 ../graphics/graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/game_graph/../graphics/graphicalengine.h
 plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/plateau.h
+/home/thomas/Programmation/monopoly/src/game_graph/plateau.h
 ../game_log/case/casepropriete/caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/../game_log/case/casepropriete/caseterrain.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/terrain.h
+/home/thomas/Programmation/monopoly/src/game_graph/terrain.h
 propriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/propriete.h
+/home/thomas/Programmation/monopoly/src/game_graph/propriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/../../rapidxml/rapidxml.hpp
+/home/thomas/Programmation/monopoly/src/game_log/../../rapidxml/rapidxml.hpp
 cstdlib
 -
 cassert
@@ -598,41 +598,41 @@ new
 exception
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/../core/random.h
+/home/thomas/Programmation/monopoly/src/game_log/../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../../core/random.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casecarte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casecarte.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casepropriete/../case.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casepropriete/../case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casepropriete/casepropriete.h
 ../case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casepropriete/../case.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casepropriete/../case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casepropriete/caseterrain.h
 casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casepropriete/casepropriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 vector
 -
 string
@@ -640,341 +640,351 @@ string
 cstddef
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.cpp
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.cpp
 carte_aller_a.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 ../plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 string
 -
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a_relatif.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a_relatif.cpp
 carte_aller_a_relatif.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a_relatif.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a_relatif.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 ../plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 iostream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a_relatif.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a_relatif.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 carte_aller_a.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_prison.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_prison.cpp
 carte_aller_prison.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_prison.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_prison.h
 ../plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_prison.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_prison.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent.cpp
 carte_argent.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent_depuis_joueur.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent_depuis_joueur.cpp
 carte_argent_depuis_joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 carte_argent.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent.h
 string
 -
 ../plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_libere.cpp
 carte_libere.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_libere.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_libere.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_reparation.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_reparation.cpp
 carte_reparation.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_reparation.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_reparation.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_reparation.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_reparation.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 string
 -
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 ../plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 ../case/case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/case.h
 ../case/casecarte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casecarte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casecarte.h
 ../case/casepropriete/caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../case/casepropriete/caseterrain.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_retourner.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_retourner.cpp
 carte_retourner.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_retourner.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_retourner.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 ../plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../plateau.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_retourner.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_retourner.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 carte_aller_a.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.cpp
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 ../../core/random.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../../core/random.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../../core/random.h
 iterator
 -
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 list
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/payer_ou_tirer.cpp
+/home/thomas/Programmation/monopoly/src/game_log/carte/payer_ou_tirer.cpp
 payer_ou_tirer.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/payer_ou_tirer.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/payer_ou_tirer.h
 paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/payer_ou_tirer.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/payer_ou_tirer.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte.h
 carte_argent.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent.h
 string
 -
 iostream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/carte_argent.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/carte.h
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/paquet.h
 list
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/payer_ou_tirer.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/payer_ou_tirer.h
 carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/carte.h
 carte_argent.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/carte_argent.h
 string
 -
 iostream
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../joueur.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/../plateau.h
+vector
+-
+string
+-
+cstddef
+-
+
+/home/thomas/Programmation/monopoly/src/game_log/case/case.cpp
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseallerenprison.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/caseallerenprison.cpp
 caseallerenprison.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseallerenprison.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseallerenprison.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../joueur.h
+../plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../plateau.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseallerenprison.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseallerenprison.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casecarte.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casecarte.cpp
 casecarte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casecarte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casecarte.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../joueur.h
 ../carte/carte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/carte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/carte.h
 ../carte/paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/paquet.h
 ../carte/payer_ou_tirer.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../carte/payer_ou_tirer.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../carte/payer_ou_tirer.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casecarte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casecarte.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casedepart.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casedepart.cpp
 casedepart.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casedepart.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casedepart.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casedepart.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casedepart.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseparkinggratuit.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/caseparkinggratuit.cpp
 caseparkinggratuit.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseparkinggratuit.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseparkinggratuit.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseparkinggratuit.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseparkinggratuit.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseprison.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/caseprison.cpp
 caseprison.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseprison.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseprison.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseprison.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseprison.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../../joueur.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../case.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casecompagnie.cpp
 casecompagnie.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casecompagnie.h
 ../../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casecompagnie.h
 casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casegare.cpp
 casegare.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casegare.h
 ../../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casegare.h
 casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.cpp
 casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.h
 ../../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.h
 ../case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/caseterrain.cpp
 caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/caseterrain.h
 ../../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/../../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/../../joueur.h
 groupeterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/groupeterrain.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/caseterrain.h
 casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/groupeterrain.cpp
 groupeterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/groupeterrain.h
 caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/caseterrain.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/groupeterrain.h
 string
 -
 list
@@ -982,95 +992,95 @@ list
 SFML/Graphics/Color.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.cpp
+/home/thomas/Programmation/monopoly/src/game_log/case/casetaxe.cpp
 casetaxe.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casetaxe.h
 ../joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/../joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/case/../joueur.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casetaxe.h
 case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.cpp
+/home/thomas/Programmation/monopoly/src/game_log/des.cpp
 des.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.h
+/home/thomas/Programmation/monopoly/src/game_log/des.h
 ../core/random.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/../core/random.h
+/home/thomas/Programmation/monopoly/src/game_log/../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.h
+/home/thomas/Programmation/monopoly/src/game_log/des.h
 SFML/System.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.cpp
+/home/thomas/Programmation/monopoly/src/game_log/joueur.cpp
 joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/joueur.h
 carte/carte_libere.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_libere.h
 case/casepropriete/casegare.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casegare.h
 case/casepropriete/casecompagnie.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casecompagnie.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/joueur.h
 string
 -
 list
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.cpp
+/home/thomas/Programmation/monopoly/src/game_log/plateau.cpp
 plateau.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/plateau.h
 joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/joueur.h
 des.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/des.h
+/home/thomas/Programmation/monopoly/src/game_log/des.h
 carte/paquet.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/paquet.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/paquet.h
 carte/carte_argent.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent.h
 carte/carte_argent_depuis_joueur.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_argent_depuis_joueur.h
 carte/carte_reparation.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_reparation.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_reparation.h
 carte/carte_aller_a.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a.h
 carte/carte_aller_a_relatif.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_a_relatif.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_a_relatif.h
 carte/carte_aller_prison.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_aller_prison.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_aller_prison.h
 carte/payer_ou_tirer.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/payer_ou_tirer.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/payer_ou_tirer.h
 carte/carte_libere.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_libere.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_libere.h
 carte/carte_retourner.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/carte/carte_retourner.h
+/home/thomas/Programmation/monopoly/src/game_log/carte/carte_retourner.h
 case/case.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/case.h
+/home/thomas/Programmation/monopoly/src/game_log/case/case.h
 case/casepropriete/casepropriete.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casepropriete.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casepropriete.h
 case/casepropriete/casegare.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casegare.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casegare.h
 case/casepropriete/casecompagnie.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/casecompagnie.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/casecompagnie.h
 case/casepropriete/caseterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/caseterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/caseterrain.h
 case/casepropriete/groupeterrain.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casepropriete/groupeterrain.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casepropriete/groupeterrain.h
 case/caseprison.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseprison.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseprison.h
 case/casetaxe.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casetaxe.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casetaxe.h
 case/casedepart.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casedepart.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casedepart.h
 case/caseallerenprison.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseallerenprison.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseallerenprison.h
 case/caseparkinggratuit.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/caseparkinggratuit.h
+/home/thomas/Programmation/monopoly/src/game_log/case/caseparkinggratuit.h
 case/casecarte.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/case/casecarte.h
+/home/thomas/Programmation/monopoly/src/game_log/case/casecarte.h
 ../../rapidxml/rapidxml.hpp
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/../../rapidxml/rapidxml.hpp
+/home/thomas/Programmation/monopoly/src/game_log/../../rapidxml/rapidxml.hpp
 fstream
 -
 utility
@@ -1078,7 +1088,7 @@ utility
 boost/lexical_cast.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/game_log/plateau.h
+/home/thomas/Programmation/monopoly/src/game_log/plateau.h
 vector
 -
 string
@@ -1086,55 +1096,55 @@ string
 cstddef
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/exception.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/exception.h
 exception
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/logger.h
 string
 -
 sstream
 -
 exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/exception.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/exception.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/random.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/trigo.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/trigo.h
 SFML/System.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.cpp
+/home/thomas/Programmation/monopoly/src/graphics/cameramanager.cpp
 cameramanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h
+/home/thomas/Programmation/monopoly/src/graphics/cameramanager.h
 ../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/logger.h
 graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h
+/home/thomas/Programmation/monopoly/src/graphics/cameramanager.h
 SFML/Graphics/View.hpp
 -
 vector
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.cpp
+/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.cpp
 graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h
 ../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/logger.h
 scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/singleton.h
 vector
 -
 unordered_map
@@ -1142,85 +1152,85 @@ unordered_map
 SFML/Graphics.hpp
 -
 scenenodetextureitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.h
 scenenodespriteitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.h
 scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.h
 scenenodecircleshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodecircleshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenode.h
 scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h
 cameramanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/cameramanager.h
+/home/thomas/Programmation/monopoly/src/graphics/cameramanager.h
 gui/guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h
 gui/guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 gui/guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 gui/guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.h
 gui/guiwindownode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h
 gui/guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.h
 gui/guiprogressbaritem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiprogressbaritem.h
 gui/guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h
 gui/guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.h
 gui/guitextinputitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.h
 gui/guislidernumberitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.h
 gui/guicolorselector.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.h
 gui/guirectangleitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.h
 particlemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h
 gui/fontmanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/conversion.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/conversion.h
 string
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/exception.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/exception.h
 exception
 -
 string
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 string
 -
 sstream
 -
 exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/exception.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/exception.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/random.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../cameramanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../cameramanager.h
 SFML/Graphics/View.hpp
 -
 vector
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../graphicalengine.h
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/singleton.h
 vector
 -
 unordered_map
@@ -1228,91 +1238,91 @@ unordered_map
 SFML/Graphics.hpp
 -
 scenenodetextureitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodetextureitem.h
 scenenodespriteitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodespriteitem.h
 scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeshapeitem.h
 scenenodecircleshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodecircleshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenode.h
 scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenemanager.h
 cameramanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../cameramanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../cameramanager.h
 gui/guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guimanager.h
 gui/guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guinode.h
 gui/guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 gui/guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guibuttonitem.h
 gui/guiwindownode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiwindownode.h
 gui/guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guitextitem.h
 gui/guiprogressbaritem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiprogressbaritem.h
 gui/guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guicontener.h
 gui/guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiwindowcontener.h
 gui/guitextinputitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guitextinputitem.h
 gui/guislidernumberitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guislidernumberitem.h
 gui/guicolorselector.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guicolorselector.h
 gui/guirectangleitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guirectangleitem.h
 particlemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../particlemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../particlemanager.h
 gui/fontmanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/fontmanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenemanager.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenode.h
 map
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenode.h
 vector
 -
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
 SFML/Graphics.hpp
 -
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/fontmanager.h
 ../../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../../core/singleton.h
 string
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guibuttonitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 SFML/Graphics/Text.hpp
 -
 SFML/System/String.hpp
@@ -1320,95 +1330,95 @@ SFML/System/String.hpp
 SFML/Graphics/RectangleShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guicolorselector.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guicontener.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guicontener.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guinode.h
 SFML/Graphics.hpp
 -
 deque
 -
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guielement.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 ../scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeitem.h
 unordered_map
 -
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guielement.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guimanager.h
 ../scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenemanager.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guinode.h
 vector
 -
 map
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guinode.h
 ../scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenode.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiprogressbaritem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guirectangleitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 ../scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeshapeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guislidernumberitem.h
 SFML/Graphics.hpp
 -
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guitextinputitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guitextitem.h
 SFML/Graphics.hpp
 -
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiwindowcontener.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guicontener.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiwindownode.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guinode.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guinode.h
 ../scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/../scenenodeshapeitem.h
 guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guibuttonitem.h
 guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guitextitem.h
 guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../gui/guiwindowcontener.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../particlemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../particlemanager.h
 unordered_map
 -
 vector
@@ -1418,57 +1428,57 @@ SFML/Graphics.hpp
 SFML/System.hpp
 -
 ../core/random.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/random.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenemanager.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenode.h
 map
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenode.h
 vector
 -
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodecircleshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 SFML/Graphics/CircleShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 SFML/Graphics.hpp
 -
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodespriteitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodetextureitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 SFML/Graphics.hpp
 -
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../texturemanager.h
 unordered_map
 -
 string
@@ -1476,31 +1486,31 @@ string
 SFML/Graphics/Texture.hpp
 -
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.cpp
 fontmanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h
 ../../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/singleton.h
 string
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.cpp
 guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.h
 guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h
 ../graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../graphicalengine.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 SFML/Graphics/Text.hpp
 -
 SFML/System/String.hpp
@@ -1508,201 +1518,201 @@ SFML/System/String.hpp
 SFML/Graphics/RectangleShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicolorselector.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.cpp
 guicolorselector.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.h
 ../graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../graphicalengine.h
 ../../core/conversion.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/conversion.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/conversion.h
 ../../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicolorselector.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicolorselector.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.cpp
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 ../../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 SFML/Graphics.hpp
 -
 deque
 -
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.cpp
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.cpp
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 ../scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeitem.h
 unordered_map
 -
 guielement.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guielement.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guielement.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.cpp
 guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h
 ../../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 ../graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../graphicalengine.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h
 ../scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenemanager.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 vector
 -
 map
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.cpp
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 guiwindownode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h
 guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h
 ../../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 ../scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenode.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiprogressbaritem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiprogressbaritem.cpp
 guiprogressbaritem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiprogressbaritem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiprogressbaritem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiprogressbaritem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guirectangleitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.cpp
 guirectangleitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guirectangleitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guirectangleitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 ../scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeshapeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guislidernumberitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.cpp
 guislidernumberitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.h
 ../graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../graphicalengine.h
 iostream
 -
 ../../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guislidernumberitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guislidernumberitem.h
 SFML/Graphics.hpp
 -
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextinputitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.cpp
 guitextinputitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.h
 ../graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../graphicalengine.h
 ../../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextinputitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextinputitem.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.cpp
 guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.h
 fontmanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/fontmanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/fontmanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.h
 SFML/Graphics.hpp
 -
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.cpp
 guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.h
 guiwindownode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.h
 guicontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guicontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guicontener.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.cpp
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.cpp
 guiwindownode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h
 guiitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiitem.h
 guimanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guimanager.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guimanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindownode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindownode.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 guinode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guinode.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guinode.h
 ../scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/../scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/../scenenodeshapeitem.h
 guibuttonitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guibuttonitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guibuttonitem.h
 guitextitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guitextitem.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guitextitem.h
 guiwindowcontener.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/gui/guiwindowcontener.h
+/home/thomas/Programmation/monopoly/src/graphics/gui/guiwindowcontener.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.cpp
+/home/thomas/Programmation/monopoly/src/graphics/particlemanager.cpp
 particlemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h
 graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h
 ../core/trigo.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/trigo.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/trigo.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h
 unordered_map
 -
 vector
@@ -1712,107 +1722,107 @@ SFML/Graphics.hpp
 SFML/System.hpp
 -
 ../core/random.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/random.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/random.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenemanager.cpp
 scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h
 graphicalengine.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/graphicalengine.h
+/home/thomas/Programmation/monopoly/src/graphics/graphicalengine.h
 ../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/logger.h
 particlemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/particlemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/particlemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenode.h
 map
 -
 SFML/Graphics.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenenode.cpp
 scenenode.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenode.h
 scenemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/scenemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenode.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenode.h
 vector
 -
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodecircleshapeitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenenodecircleshapeitem.cpp
 scenenodecircleshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodecircleshapeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodecircleshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodecircleshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 SFML/Graphics/CircleShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.cpp
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 SFML/Graphics.hpp
 -
 positioninformations.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/positioninformations.h
+/home/thomas/Programmation/monopoly/src/graphics/positioninformations.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeshapeitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.cpp
 scenenodeshapeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.h
 SFML/Graphics/ConvexShape.hpp
 -
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeshapeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeshapeitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodespriteitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.cpp
 scenenodespriteitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.h
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodespriteitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodespriteitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodetextureitem.cpp
+/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.cpp
 scenenodetextureitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.h
 ../core/exception.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/exception.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/exception.h
 ../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodetextureitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodetextureitem.h
 scenenodeitem.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/scenenodeitem.h
+/home/thomas/Programmation/monopoly/src/graphics/scenenodeitem.h
 SFML/Graphics.hpp
 -
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.cpp
+/home/thomas/Programmation/monopoly/src/graphics/texturemanager.cpp
 texturemanager.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h
 ../core/logger.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/logger.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/logger.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/texturemanager.h
+/home/thomas/Programmation/monopoly/src/graphics/texturemanager.h
 unordered_map
 -
 string
@@ -1820,9 +1830,9 @@ string
 SFML/Graphics/Texture.hpp
 -
 ../core/singleton.h
-/home/bastien/Bureau/Monopoly/monopoly/src/graphics/../core/singleton.h
+/home/thomas/Programmation/monopoly/src/graphics/../core/singleton.h
 
-/home/bastien/Bureau/Monopoly/monopoly/src/main.cpp
+/home/thomas/Programmation/monopoly/src/main.cpp
 game_graph/jeu.h
-/home/bastien/Bureau/Monopoly/monopoly/src/game_graph/jeu.h
+/home/thomas/Programmation/monopoly/src/game_graph/jeu.h
 
