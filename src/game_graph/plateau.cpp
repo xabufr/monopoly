@@ -63,7 +63,6 @@ void PlateauGraph::update()
             cpt ++;
         }
     }
-
 }
 sf::IntRect PlateauGraph::caseRect(int id) const
 {
@@ -200,7 +199,6 @@ sf::IntRect PlateauGraph::maisonRect(int id) const
 	}
 	return sf::IntRect();
 }
-
 JoueurGraph* PlateauGraph::findJoueurGraph(Joueur* j) const
 {
 	auto it = m_joueurs.find(j);
@@ -212,7 +210,6 @@ SceneNode *PlateauGraph::getSceneNode() const
 {
     return m_nodePlateau;
 }
-
 Plateau *PlateauGraph::getPlateau() const
 {
     return m_plateau;

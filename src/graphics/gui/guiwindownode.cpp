@@ -11,6 +11,7 @@ GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,
 
     m_windowTitle->SetRelativePosition(0,0);
     m_windowTitle->SetCharacterSize(10);
+    m_windowTitle->SetColor(sf::Color(0,0,0));
 
     AddItem(m_contenerShape);
     AddItem(m_windowShape);
@@ -97,12 +98,10 @@ void GuiWindowNode::SetClosable(bool clos)
     m_closable=clos;
     ClosableChanged();
 }
-
 bool GuiWindowNode::IsClosable() const
 {
     return m_closable;
 }
-
 void GuiWindowNode::ClosableChanged()
 {
     if(m_closable&&!m_btnClose)
@@ -128,9 +127,14 @@ void GuiWindowNode::CloseWindowCallBack(GuiItem* item)
 {
     ((GuiWindowNode*)item->GetData("window"))->m_RemoveMeNextDraw();
 }
-void GuiWindowNode::SetWindowTitle(const sf::String& title)
+void GuiWindowNode::SetWindowTitle(const std::string& title)
 {
-    m_windowTitle->SetText(title);
+    std::basic_string<sf::Uint32> tmp;
+
+    sf::Utf8::toUtf32( title.begin(), title.end(), std::back_inserter( tmp ) );
+
+    sf::String out = tmp;
+    m_windowTitle->SetText(out);
     CalculerCoord();
 }
 void GuiWindowNode::CalculerCoord()

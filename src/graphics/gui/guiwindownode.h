@@ -20,7 +20,7 @@ class GuiWindowNode: public GuiNode
         bool IsClosable()const;
         static void CloseWindowCallBack(GuiItem*);
 
-        void SetWindowTitle(const sf::String&);
+        void SetWindowTitle(const std::string&);
 
         GuiWindowContener* GetContener() const;
         void CalculerTaille();

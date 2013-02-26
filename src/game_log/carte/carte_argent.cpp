@@ -16,7 +16,7 @@ void Carte_argent::tirer(Joueur* j)
     }
     else
     {
-        j->payer(m_valeur);
+        j->payer(-m_valeur);
     }
 
 }

@@ -4,6 +4,7 @@
 #include <string>
 #include <list>
 
+class Carte;
 class CasePropriete;
 class Case;
 class Carte_Libere;
@@ -27,6 +28,8 @@ public:
 	Case* estSur() const;
 	void positinner(Case*);
     void addCarteLiberte(Carte_Libere*);
+	Carte* lastCarte() const;
+	void setLastCarte(Carte*);
     void addPropriete(CasePropriete*);
 	const std::list<CasePropriete*>& proprietes() const;
 	const std::list<Carte_Libere*> cartesLiberte() const;
@@ -40,6 +43,7 @@ private:
 	std::list<CasePropriete*> m_proprietes;
 	std::list<Carte_Libere*> m_cartes_liberte;
 	Case *m_CasePosition;
+	Carte *m_lastCarte;
 };
 
 #endif

@@ -83,9 +83,14 @@ void GuiButtonItem::ScaleChanged()
     m_btn_txt.setScale(m_parent.scale.x*m_relative.scale.x, m_parent.scale.y*m_relative.scale.y);
     m_btn_fond.setScale(m_parent.scale.x*m_relative.scale.x, m_parent.scale.y*m_relative.scale.y);
 }
-void GuiButtonItem::SetText(const sf::String& txt)
+void GuiButtonItem::SetText(const std::string& txt)
 {
-    m_btn_txt.setString(txt);
+    std::basic_string<sf::Uint32> tmp;
+
+    sf::Utf8::toUtf32( txt.begin(), txt.end(), std::back_inserter( tmp ) );
+
+    sf::String out = tmp;
+    m_btn_txt.setString(out);
     m_btn_fond.setSize(GetTextRealSize(m_btn_txt));
     PositionChanged();
 }

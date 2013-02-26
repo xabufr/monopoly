@@ -5,6 +5,7 @@
 
 Joueur::Joueur(const std::string& nom): m_nom(nom), m_argent(0), m_prisonier(false), m_doubles_consecutifs(0)
 {
+	m_lastCarte=nullptr;
 }
 const std::string& Joueur::nom() const
 {
@@ -95,4 +96,12 @@ const std::list<CasePropriete*>& Joueur::proprietes() const
 const std::list<Carte_Libere*> Joueur::cartesLiberte() const
 {
 	return m_cartes_liberte;
+}
+Carte* Joueur::lastCarte() const
+{
+	return m_lastCarte;
+}
+void Joueur::setLastCarte(Carte* c)
+{
+	m_lastCarte=c;
 }
