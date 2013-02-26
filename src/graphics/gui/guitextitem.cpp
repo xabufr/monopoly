@@ -56,12 +56,10 @@ void GuiTextItem::HandleEvent(const sf::Event&)
 }
 void GuiTextItem::SetText(const std::string& texte)
 {
-    std::basic_string<sf::Uint32> tmp;
-
-    sf::Utf8::toUtf32( texte.begin(), texte.end(), std::back_inserter( tmp ) );
-
-    sf::String out = tmp;
-    m_texte.setString(out);
+	std::basic_string<sf::Uint32> tmp;
+	sf::Utf8::toUtf32(texte.begin(), texte.end(), std::back_inserter(tmp));
+	sf::String out = tmp;
+	m_texte.setString(out);
     PositionChanged();
 }
 void GuiTextItem::SetCharacterSize(unsigned int taille)
