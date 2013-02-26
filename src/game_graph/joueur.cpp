@@ -46,7 +46,7 @@ void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
     sf::IntRect rect;
     rect = m_plateau->caseRect(curPos);
 
-    if (nbreJoueursSurCase > 1 && nbreJoueursSurCase <= 4)
+    if (JoueurEnCours > 1 && JoueurEnCours <= 4)
     {
         if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
             m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x)+ 60,rect.top + 30));
@@ -54,12 +54,12 @@ void JoueurGraph::update(int nbreJoueursSurCase,int JoueurEnCours)
             m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + 60));
     }
 
-    else if (nbreJoueursSurCase > 4 && nbreJoueursSurCase <= 8 )
+    else if (JoueurEnCours > 4 && JoueurEnCours <= 8 )
     {
         if ((curPos <= 10 and curPos >= 1) || (curPos >= 20 and curPos <= 30))
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 60,rect.top + (JoueurEnCours * m_item_pion->GetSize().y) + 30));
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + ((JoueurEnCours-4) * m_item_pion->GetSize().x) + 60,rect.top +  m_item_pion->GetSize().y + 30));
         else
-            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + (JoueurEnCours * m_item_pion->GetSize().x) + 30,rect.top + (JoueurEnCours * m_item_pion->GetSize().y) +60));
+            m_item_pion->SetRelativePosition(sf::Vector2f(rect.left + ((JoueurEnCours-4) * m_item_pion->GetSize().x) + 30,rect.top + m_item_pion->GetSize().y +60));
     }
     else //(nbreJoueursSurCase == 1 )
     {

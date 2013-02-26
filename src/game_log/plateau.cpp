@@ -300,7 +300,7 @@ void Plateau::avancerCurrentJoueur(int dep)
 	}
 	else
 	{
-		for(int i=0;i < (-dep);++i) 
+		for(int i=0;i < (-dep);++i)
 		{
 			std::cout << i << std::endl;
 			if(curPos==0)
@@ -336,6 +336,7 @@ std::vector<Joueur*> Plateau::GetJoueurs()
 void Plateau::addJoueur(Joueur *j)
 {
 	m_joueurs.push_back(j);
+	m_case[0]->joueurArrive(j);
 	j->positinner(m_case[0]);
 	j->crediter(m_argent_depart);
 }
