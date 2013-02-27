@@ -16,8 +16,9 @@ class Carte_Libere : public Carte
         // prison : redefinition : true
         virtual bool estEnPossession() const;
         // sortir de prison => 1 par paquet;
-
+		void utiliser();
     private:
+		Joueur* m_proprietaire;
 
 };
 

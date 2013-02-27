@@ -52,7 +52,7 @@ bool CaseTerrain::peutConstruire() const
 }
 bool CaseTerrain::peutDetruire() const
 {
-    bool work = false
+    bool work = false;
     for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
 	{
 		if(*it==this)

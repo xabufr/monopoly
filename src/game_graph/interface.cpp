@@ -66,7 +66,9 @@ m_detruire(false)
 
     m_window_hypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
 	m_window_hypothequer->SetWindowTitle("Hypotéquer");
-    m_window_hypothequer->SetClosable(true);
+	m_window_hypothequer->SetClosable(true);
+	m_window_hypothequer->CloseItem()->SetData("this", this);
+	m_window_hypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeHypotheque);
     m_window_hypothequer->SetVisible(false);
 
     m_button_hypothequer = new GuiButtonItem;
@@ -82,8 +84,10 @@ m_detruire(false)
 	m_sceneNode->AddItem(m_button_hypothequer);
 
     m_window_deshypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-	m_window_deshypothequer->SetWindowTitle("Deshypotéquer");
+    m_window_deshypothequer->SetWindowTitle("Deshypotéquer");
     m_window_deshypothequer->SetClosable(true);
+    m_window_deshypothequer->CloseItem()->SetData("this", this);
+    m_window_deshypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeDeshypotheque);
     m_window_deshypothequer->SetVisible(false);
 
 	m_button_deshypothequer = new GuiButtonItem;
@@ -99,8 +103,10 @@ m_detruire(false)
 	m_sceneNode->AddItem(m_button_deshypothequer);
 
     m_window_construire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-	m_window_construire->SetWindowTitle("Construire");
+    m_window_construire->SetWindowTitle("Construire");
     m_window_construire->SetClosable(true);
+    m_window_construire->CloseItem()->SetData("this", this);
+    m_window_construire->CloseItem()->SetCallBack("onClosed", Interface::closeConstruire);
     m_window_construire->SetVisible(false);
 
 	m_button_construire = new GuiButtonItem;
@@ -116,8 +122,10 @@ m_detruire(false)
 	m_sceneNode->AddItem(m_button_construire);
 
     m_window_detruire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-	m_window_detruire->SetWindowTitle("Détruire");
+    m_window_detruire->SetWindowTitle("Détruire");
     m_window_detruire->SetClosable(true);
+    m_window_detruire->CloseItem()->SetData("this", this);
+    m_window_detruire->CloseItem()->SetCallBack("onClosed", Interface::closeDetruire);
     m_window_detruire->SetVisible(false);
 
 	m_button_detruire = new GuiButtonItem;
@@ -202,7 +210,7 @@ void Interface::update()
 	if (dynamic_cast<Payer_ou_tirer*>(carte))
         new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
 
-    if (m_hypothequer && !m_window_hypothequer->IsClosed())
+    if (m_hypothequer && m_window_hypothequer)
     {
         m_window_hypothequer->GetContener()->RemoveAllGuiItems();
         int x=0;
@@ -229,11 +237,15 @@ void Interface::update()
     }
     else
     {
+        m_window_hypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+        m_window_hypothequer->SetWindowTitle("Hypotéquer");
+        m_window_hypothequer->SetClosable(true);
+        m_window_hypothequer->CloseItem()->SetData("this", this);
+        m_window_hypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeHypotheque);
         m_window_hypothequer->SetVisible(false);
-        m_hypothequer = false;
     }
 
-    if (m_deshypothequer && !m_window_deshypothequer->IsClosed())
+    if (m_deshypothequer && m_window_deshypothequer)
     {
         m_window_deshypothequer->GetContener()->RemoveAllGuiItems();
         int x=0;
@@ -260,11 +272,15 @@ void Interface::update()
     }
     else
     {
+        m_window_deshypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+        m_window_deshypothequer->SetWindowTitle("Deshypotéquer");
+        m_window_deshypothequer->SetClosable(true);
+        m_window_deshypothequer->CloseItem()->SetData("this", this);
+        m_window_deshypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeDeshypotheque);
         m_window_deshypothequer->SetVisible(false);
-        m_deshypothequer = false;
     }
 
-    if (m_construire && !m_window_construire->IsClosed())
+    if (m_construire && m_window_construire)
     {
         m_window_construire->GetContener()->RemoveAllGuiItems();
         int x=0;
@@ -291,11 +307,15 @@ void Interface::update()
     }
     else
     {
+        m_window_construire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+        m_window_construire->SetWindowTitle("Construire");
+        m_window_construire->SetClosable(true);
+        m_window_construire->CloseItem()->SetData("this", this);
+        m_window_construire->CloseItem()->SetCallBack("onClosed", Interface::closeConstruire);
         m_window_construire->SetVisible(false);
-        m_construire = false;
     }
 
-    if (m_detruire && !m_window_detruire->IsClosed())
+    if (m_detruire && m_window_detruire)
     {
         m_window_detruire->GetContener()->RemoveAllGuiItems();
         int x=0;
@@ -322,8 +342,12 @@ void Interface::update()
     }
     else
     {
+        m_window_detruire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
+        m_window_detruire->SetWindowTitle("Détruire");
+        m_window_detruire->SetClosable(true);
+        m_window_detruire->CloseItem()->SetData("this", this);
+        m_window_detruire->CloseItem()->SetCallBack("onClosed", Interface::closeDetruire);
         m_window_detruire->SetVisible(false);
-        m_detruire = false;
     }
 	m_info->SetText(m_lastInfos);
 }
@@ -385,4 +409,27 @@ void Interface::destruction(GuiItem* g)
 void Interface::quitter(GuiItem* g)
 {
     ((Jeu*)g->GetData("jeu"))->changeState(Jeu::state::main_menu);
+}
+void Interface::closeHypotheque(GuiItem* g)
+{
+    ((Interface*)g->GetData("this"))->m_window_hypothequer = nullptr;
+    ((Interface*)g->GetData("this"))->m_hypothequer = false;
+}
+
+void Interface::closeDeshypotheque(GuiItem* g)
+{
+    ((Interface*)g->GetData("this"))->m_window_deshypothequer = nullptr;
+    ((Interface*)g->GetData("this"))->m_deshypothequer = false;
+}
+
+void Interface::closeConstruire(GuiItem* g)
+{
+    ((Interface*)g->GetData("this"))->m_window_construire = nullptr;
+    ((Interface*)g->GetData("this"))->m_construire = false;
+}
+
+void Interface::closeDetruire(GuiItem* g)
+{
+    ((Interface*)g->GetData("this"))->m_window_detruire = nullptr;
+    ((Interface*)g->GetData("this"))->m_detruire = false;
 }

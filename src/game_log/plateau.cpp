@@ -247,18 +247,6 @@ Plateau::~Plateau()
 	}
 	delete m_des;
 }
-void Plateau::addArgent(int a)
-{
-	m_argent += a;
-}
-void Plateau::viderArgent()
-{
-	m_argent = 0;
-}
-int Plateau::getArgent() const
-{
-	return m_argent;
-}
 void Plateau::emprisoner(Joueur* j)
 {
 	j->setPrison(true);

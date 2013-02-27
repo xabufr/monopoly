@@ -28,6 +28,10 @@ public:
     static void detruire(GuiItem*);
     static void destruction(GuiItem*);
     static void quitter(GuiItem*);
+    static void closeHypotheque(GuiItem*);
+    static void closeDeshypotheque(GuiItem*);
+    static void closeConstruire(GuiItem*);
+    static void closeDetruire(GuiItem*);
 private:
     bool m_lancer;
     bool m_hypothequer;

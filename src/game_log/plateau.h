@@ -15,10 +15,7 @@ class Plateau
 public:
 	Plateau();
 	~Plateau();
-	void addArgent(int);
-	void viderArgent();
 	std::vector<Joueur*> GetJoueurs();
-	int getArgent() const;
 	void emprisoner(Joueur*);
 	void liberer(Joueur*);
 	Joueur* getJoueurTour() const;
@@ -37,7 +34,6 @@ public:
 	int getTailleTraits() const;
 	Case* getCase(size_t) const;
 private:
-	int m_argent;
 	int m_argent_depart;
 	int m_taille_case, m_espace_maison, m_taille_traits;
 	std::vector<Joueur*> m_joueurs;

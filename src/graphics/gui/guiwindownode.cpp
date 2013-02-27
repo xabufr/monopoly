@@ -168,3 +168,7 @@ void GuiWindowNode::CalculerTaille()
             m_btnClose->SetRelativePosition(m_windowShape->GetGlobalBounds().width-m_btnClose->GetWidth()-3, 0);
     }
 }
+GuiItem* GuiWindowNode::CloseItem()
+{
+	return m_btnClose;
+}

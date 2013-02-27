@@ -28,6 +28,7 @@ public:
 	Case* estSur() const;
 	void positinner(Case*);
     void addCarteLiberte(Carte_Libere*);
+	void delCarteLiberte(Carte_Libere*);
 	Carte* lastCarte() const;
 	void setLastCarte(Carte*);
     void addPropriete(CasePropriete*);

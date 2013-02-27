@@ -14,7 +14,7 @@ GuiButtonItem::GuiButtonItem()
 
 GuiButtonItem::~GuiButtonItem()
 {
-    //dtor
+	CallCallBack("onClosed");
 }
 void GuiButtonItem::HandleEvent(const sf::Event& event)
 {

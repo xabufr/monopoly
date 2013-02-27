@@ -2,6 +2,7 @@
 #include "carte/carte_libere.h"
 #include "case/casepropriete/casegare.h"
 #include "case/casepropriete/casecompagnie.h"
+#include <algorithm>
 
 Joueur::Joueur(const std::string& nom): m_nom(nom), m_argent(0), m_prisonier(false), m_doubles_consecutifs(0)
 {
@@ -92,6 +93,10 @@ void Joueur::positinner(Case* pos)
 void Joueur::addCarteLiberte(Carte_Libere* c)
 {
     m_cartes_liberte.push_back(c);
+}
+void Joueur::delCarteLiberte(Carte_Libere* c)
+{
+	std::remove(m_cartes_liberte.begin(), m_cartes_liberte.end(), c);
 }
 void Joueur::addPropriete(CasePropriete* p)
 {
