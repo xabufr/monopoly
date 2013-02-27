@@ -197,6 +197,7 @@ void Interface::update()
     m_button_construire->SetVisible(false);
     m_button_detruire->SetVisible(false);
     m_button_liberer->SetVisible(false);
+    m_button_des->SetVisible(true);
     Joueur *joueur = m_plateau->getPlateau()->getJoueurTour();
 
 	m_infoCase->SetText(joueur->nom()+" est sur : " + joueur->estSur()->nom()+"\n"+joueur->estSur()->description());
@@ -228,7 +229,10 @@ void Interface::update()
 		m_lastInfos = joueur->nom()+":\nCarte " + carte->paquet()->nom() + "\n" + carte->description();
 
 	if (dynamic_cast<Payer_ou_tirer*>(carte))
-        new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
+    {
+        MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
+        m_button_des->SetVisible(false);
+    }
 
     if (m_hypothequer && m_window_hypothequer)
     {
