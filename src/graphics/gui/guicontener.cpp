@@ -104,7 +104,6 @@ void GuiContener::CalculerPositions()
     m_size.x-=m_espacement.x*0.5;
     m_size.y = posY+m_espacement.y*0.5;
 }
-
 GuiElementType GuiContener::GetType() const
 {
     return GuiElementType::TypeContener;
@@ -112,4 +111,19 @@ GuiElementType GuiContener::GetType() const
 void GuiContener::PositionChanged()
 {
     SceneNode::PositionChanged();
+}
+void GuiContener::RemoveAllGuiItems()
+{
+	for(auto it : m_items)
+	{
+		for(auto el : it)
+		{
+			if(el->GetType() != GuiElementType::TypeItem)
+			{
+				((GuiNode*)el)->Remove();
+			}
+		}
+	}
+	m_items.clear();
+	SceneNode::RemoveAllItems();
 }
