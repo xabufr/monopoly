@@ -27,6 +27,7 @@ public:
     static void construction(GuiItem*);
     static void detruire(GuiItem*);
     static void destruction(GuiItem*);
+    static void liberer(GuiItem*);
     static void quitter(GuiItem*);
     static void closeHypotheque(GuiItem*);
     static void closeDeshypotheque(GuiItem*);
@@ -49,6 +50,7 @@ private:
 	GuiButtonItem *m_button_construire;
 	GuiButtonItem *m_button_detruire;
 	GuiButtonItem *m_button_achat;
+	GuiButtonItem *m_button_liberer;
 	GuiWindowNode *m_window_hypothequer;
 	GuiWindowNode *m_window_deshypothequer;
 	GuiWindowNode *m_window_construire;

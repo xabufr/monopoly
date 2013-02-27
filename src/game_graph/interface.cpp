@@ -10,6 +10,7 @@
 #include "../game_log/carte/carte.h"
 #include "../game_log/carte/paquet.h"
 #include "../game_log/carte/payer_ou_tirer.h"
+#include "../game_log/carte/carte_libere.h"
 #include <boost/lexical_cast.hpp>
 #include <iostream>
 #include "messagebox.h"
@@ -155,6 +156,20 @@ m_detruire(false)
 	m_button_achat->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_achat);
 
+	m_button_liberer = new GuiButtonItem;
+	m_button_liberer->SetText("Liberer");
+	m_button_liberer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	m_button_liberer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+	m_button_liberer->SetData("this", this);
+	m_button_liberer->SetCallBack("clicked", Interface::liberer);
+
+    x = m_engine->GetRenderWindow()->getSize().x-(m_button_liberer->GetSize().x+5);
+    y = 35+m_button_des->GetSize().y+m_button_hypothequer->GetSize().y+
+            m_button_deshypothequer->GetSize().y+m_button_construire->GetSize().y+
+            m_button_detruire->GetSize().y+m_button_liberer->GetSize().y;
+	m_button_liberer->SetRelativePosition(x, y);
+	m_sceneNode->AddItem(m_button_liberer);
+
 	m_info = new GuiTextItem;
 	m_info->SetCharacterSize(12);
 	m_info->SetColor(sf::Color(255,255,255,255));
@@ -170,6 +185,7 @@ m_detruire(false)
 }
 Interface::~Interface()
 {
+
 }
 void Interface::update()
 {
@@ -180,6 +196,7 @@ void Interface::update()
     m_button_deshypothequer->SetVisible(false);
     m_button_construire->SetVisible(false);
     m_button_detruire->SetVisible(false);
+    m_button_liberer->SetVisible(false);
     Joueur *joueur = m_plateau->getPlateau()->getJoueurTour();
 
 	m_infoCase->SetText(joueur->nom()+" est sur : " + joueur->estSur()->nom()+"\n"+joueur->estSur()->description());
@@ -187,6 +204,9 @@ void Interface::update()
     if (dynamic_cast<CasePropriete*>(joueur->estSur()) && !((CasePropriete*)(joueur->estSur()))->estAchete()
         && joueur->argent() > ((CasePropriete*)(joueur->estSur()))->prixAchat())
         m_button_achat->SetVisible(true);
+
+    if (joueur->estEnPrison() && joueur->cartesLiberte().size() != 0)
+       m_button_liberer->SetVisible(true);
 
     for (CasePropriete *m_case : joueur->proprietes())
     {
@@ -378,6 +398,7 @@ void Interface::deshypothequer(GuiItem* g)
 void Interface::hypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->hypothequer();
+    Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
 }
 void Interface::deshypothequer_propriete(GuiItem* g)
 {
@@ -404,6 +425,12 @@ void Interface::detruire(GuiItem* g)
 void Interface::destruction(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_detruire = true;
+}
+
+void Interface::liberer(GuiItem* g)
+{
+    Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    joueur->cartesLiberte().back()->utiliser();
 }
 
 void Interface::quitter(GuiItem* g)
