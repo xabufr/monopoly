@@ -15,11 +15,12 @@
 #include <iostream>
 #include "messagebox.h"
 
-Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plateau), m_lancer(true),
+Interface::Interface(Jeu* jeu, PlateauGraph* plateau):m_jeu(jeu), m_plateau(plateau),
 m_hypothequer(false),
 m_deshypothequer(false),
 m_construire(false),
-m_detruire(false)
+m_detruire(false),
+m_message(nullptr)
 {
     m_engine = GraphicalEngine::GetInstance();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
@@ -197,7 +198,6 @@ void Interface::update()
     m_button_construire->SetVisible(false);
     m_button_detruire->SetVisible(false);
     m_button_liberer->SetVisible(false);
-    m_button_des->SetVisible(true);
     Joueur *joueur = m_plateau->getPlateau()->getJoueurTour();
 
 	m_infoCase->SetText(joueur->nom()+" est sur : " + joueur->estSur()->nom()+"\n"+joueur->estSur()->description());
@@ -230,7 +230,7 @@ void Interface::update()
 
 	if (dynamic_cast<Payer_ou_tirer*>(carte))
     {
-        MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte));
+        new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte), m_button_des);
         m_button_des->SetVisible(false);
     }
 

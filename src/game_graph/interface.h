@@ -11,6 +11,7 @@ class GraphicalEngine;
 class SceneNode;
 class GuiTextItem;
 class GuiWindowNode;
+class MessageBox;
 class Interface
 {
 public:
@@ -34,13 +35,13 @@ public:
     static void closeConstruire(GuiItem*);
     static void closeDetruire(GuiItem*);
 private:
-    bool m_lancer;
     bool m_hypothequer;
     bool m_deshypothequer;
     bool m_construire;
     bool m_detruire;
     PlateauGraph *m_plateau;
     Jeu *m_jeu;
+    MessageBox *m_message;
     GuiNode *m_sceneNode;
 	GuiTextItem* m_info, *m_infoCase;
 	GuiButtonItem *m_button_des;

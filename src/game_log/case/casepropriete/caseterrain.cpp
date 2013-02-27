@@ -52,17 +52,13 @@ bool CaseTerrain::peutConstruire() const
 }
 bool CaseTerrain::peutDetruire() const
 {
-    bool work = false;
+    int m_max = 0;
     for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
 	{
-		if(*it==this)
-			continue;
-		if (((m_nombre_maison-1) == (((CaseTerrain*)(*it))->maisons()-1) || (m_nombre_maison-1) == ((CaseTerrain*)(*it))->maisons())
-            && m_nombre_maison != 0)
-			work = true;
-
+		if (m_max < ((CaseTerrain*)(*it))->maisons())
+			m_max = ((CaseTerrain*)(*it))->maisons();
 	}
-    return work;
+    return (m_nombre_maison == m_max && m_nombre_maison > 0);
 }
 int CaseTerrain::maisons() const
 {
