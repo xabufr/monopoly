@@ -220,8 +220,6 @@ void Interface::update()
         if (m_case->peutDetruire())
             m_button_detruire->SetVisible(true);
     }
-
-    m_button_des->SetVisible(true);
 	Carte* carte = joueur->lastCarte();
 	joueur->setLastCarte(nullptr);
 
