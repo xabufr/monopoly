@@ -40,6 +40,7 @@ class SceneNodeItem
         void Show();
         void Hide();
         void SetVisible(bool);
+        bool IsVisible() const;
 
     protected:
         virtual void Draw(sf::RenderWindow* app)=0;

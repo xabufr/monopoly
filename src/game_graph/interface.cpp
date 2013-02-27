@@ -182,7 +182,7 @@ void Interface::update()
 
     for (CasePropriete *m_case : joueur->proprietes())
     {
-        if (m_case->proprietaire() == joueur && !m_case->estEnHypotheque())
+        if (!m_case->estEnHypotheque())
             m_button_hypothequer->SetVisible(true);
         if (m_case->estEnHypotheque())
             m_button_deshypothequer->SetVisible(true);
@@ -204,6 +204,7 @@ void Interface::update()
 
     if (m_hypothequer && !m_window_hypothequer->IsClosed())
     {
+        m_window_hypothequer->GetContener()->RemoveAllGuiItems();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -234,6 +235,7 @@ void Interface::update()
 
     if (m_deshypothequer && !m_window_deshypothequer->IsClosed())
     {
+        m_window_deshypothequer->GetContener()->RemoveAllGuiItems();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -264,6 +266,7 @@ void Interface::update()
 
     if (m_construire && !m_window_construire->IsClosed())
     {
+        m_window_construire->GetContener()->RemoveAllGuiItems();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -294,6 +297,7 @@ void Interface::update()
 
     if (m_detruire && !m_window_detruire->IsClosed())
     {
+        m_window_detruire->GetContener()->RemoveAllGuiItems();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
