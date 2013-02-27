@@ -25,7 +25,7 @@ JoueurGraph::~JoueurGraph()
 }
 void JoueurGraph::stat(float pos) const
 {
-    m_item_stat_joueur->SetText(m_joueur->nom()+"\n"+boost::lexical_cast<std::string>(m_joueur->argent())+" €");
+    m_item_stat_joueur->SetText("JOUEUR\nJOUEUR");
     m_item_stat_joueur->SetCharacterSize(12);
     m_sceneNode->AddItem(m_item_stat_joueur);
 
