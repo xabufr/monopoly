@@ -29,6 +29,7 @@ m_message(nullptr)
 	m_button_quitter->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_quitter->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_quitter->SetData("jeu", m_jeu);
+	m_button_quitter->SetData("this", this);
 	m_button_quitter->SetCallBack("clicked", Interface::quitter);
 
 	int x, y;
@@ -238,7 +239,7 @@ void Interface::update()
         m_window_hypothequer->SetRelativePosition(x, y);
         m_window_hypothequer->SetVisible(true);
     }
-	else if(!m_window_hypothequer) 
+    else if (!m_window_hypothequer)
     {
         m_window_hypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
         m_window_hypothequer->SetWindowTitle("Hypotéquer");
@@ -381,15 +382,49 @@ void Interface::hypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->hypothequer();
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (c->estEnHypotheque())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_hypothequer->Remove();
+        ((Interface*)g->GetData("this"))->m_window_hypothequer = nullptr;
+        ((Interface*)g->GetData("this"))->m_hypothequer = false;
+    }
 }
 void Interface::deshypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->deshypothequer();
+    Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (!c->estEnHypotheque())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_deshypothequer->Remove();
+        ((Interface*)g->GetData("this"))->m_window_deshypothequer = nullptr;
+        ((Interface*)g->GetData("this"))->m_deshypothequer = false;
+    }
 }
 void Interface::construire(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->acheter(joueur);
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (!c->peutConstruire())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_construire->Remove();
+        ((Interface*)g->GetData("this"))->m_window_construire = nullptr;
+        ((Interface*)g->GetData("this"))->m_construire = false;
+    }
 }
 void Interface::construction(GuiItem* g)
 {
@@ -399,6 +434,17 @@ void Interface::detruire(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->vendre(joueur);
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (!c->peutDetruire())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_detruire->Remove();
+        ((Interface*)g->GetData("this"))->m_window_detruire = nullptr;
+        ((Interface*)g->GetData("this"))->m_detruire = false;
+    }
 }
 void Interface::destruction(GuiItem* g)
 {
@@ -411,6 +457,14 @@ void Interface::liberer(GuiItem* g)
 }
 void Interface::quitter(GuiItem* g)
 {
+    if (((Interface*)g->GetData("this"))->m_window_hypothequer)
+        ((Interface*)g->GetData("this"))->m_window_hypothequer->Remove();
+    if (((Interface*)g->GetData("this"))->m_window_deshypothequer)
+        ((Interface*)g->GetData("this"))->m_window_deshypothequer->Remove();
+    if (((Interface*)g->GetData("this"))->m_window_construire)
+        ((Interface*)g->GetData("this"))->m_window_construire->Remove();
+    if (((Interface*)g->GetData("this"))->m_window_detruire)
+        ((Interface*)g->GetData("this"))->m_window_detruire->Remove();
     ((Jeu*)g->GetData("jeu"))->changeState(Jeu::state::main_menu);
 }
 void Interface::closeHypotheque(GuiItem* g)
