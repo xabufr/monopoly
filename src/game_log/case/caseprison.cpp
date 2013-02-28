@@ -15,17 +15,14 @@ void CasePrison::joueurArrive(Joueur* j)
 
 void CasePrison::joueurPart(Joueur* j)
 {
-    Case::joueurPart(j);
-    if (j->estEnPrison())
-    {
-        for(auto it=m_prisonnier.begin(); it!=m_prisonnier.end();++it)
-        {
-            if((*it)==j)
-            {
-                m_prisonnier.erase(it);
-                j->setPrison(false);
-                return;
-            }
-        }
-    }
+	Case::joueurPart(j);
+	for(auto it=m_prisonnier.begin(); it!=m_prisonnier.end();++it)
+	{
+		if((*it)==j)
+		{
+			m_prisonnier.erase(it);
+			j->setPrison(false);
+			return;
+		}
+	}
 }

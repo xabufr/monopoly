@@ -9,7 +9,7 @@
 #include "joueur.h"
 #include "messagebox.h"
 
-Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr), test(0)
+Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
 {
 	m_requ_change_state = true;
 	m_requ_state      = main_menu;
@@ -97,7 +97,6 @@ void Jeu::setupMainMenu()
 }
 void Jeu::setupPlayMenu()
 {
-	GuiManager *gui = m_engine->GetGuiManager();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode();
 	GuiContener *contener = m_sceneNode->AddContener();
 	GuiSliderNumberItem *slider = new GuiSliderNumberItem;
@@ -122,7 +121,6 @@ void Jeu::setupPlayMenu()
 }
 void Jeu::setupContinuePlayMenu()
 {
-	GuiManager *gui = m_engine->GetGuiManager();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode();
 	GuiContener *cont = m_sceneNode->AddContener();
 	for (size_t i = 0; i < m_nb_joueurs; ++i)

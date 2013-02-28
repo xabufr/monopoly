@@ -28,7 +28,6 @@ public:
 	};
 	void changeState(state);
 private:
-    int test;
 	bool m_requ_change_state;
 	state m_requ_state;
 	GraphicalEngine *m_engine;
