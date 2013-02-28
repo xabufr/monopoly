@@ -5,7 +5,6 @@ GuiWindowContener::GuiWindowContener(SceneManager *mng, SceneNode* parent): GuiC
 {
 
 }
-
 GuiWindowContener::~GuiWindowContener()
 {
     //dtor

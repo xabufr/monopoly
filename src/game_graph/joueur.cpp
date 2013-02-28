@@ -21,7 +21,7 @@ JoueurGraph::JoueurGraph(Joueur* j,SceneNode *nodeparent,PlateauGraph *plateau):
 }
 JoueurGraph::~JoueurGraph()
 {
-
+	m_sceneNode->Remove();
 }
 void JoueurGraph::stat(float pos) const
 {

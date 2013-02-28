@@ -66,13 +66,6 @@ m_message(nullptr)
         m_des[i]->SetVisible(false);
     }
 
-    m_window_hypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-	m_window_hypothequer->SetWindowTitle("Hypotéquer");
-	m_window_hypothequer->SetClosable(true);
-	m_window_hypothequer->CloseItem()->SetData("this", this);
-	m_window_hypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeHypotheque);
-    m_window_hypothequer->SetVisible(false);
-
     m_button_hypothequer = new GuiButtonItem;
 	m_button_hypothequer->SetText("Hypothéquer");
 	m_button_hypothequer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
@@ -84,13 +77,6 @@ m_message(nullptr)
     y = 10+m_button_des->GetSize().y;
 	m_button_hypothequer->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_hypothequer);
-
-    m_window_deshypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-    m_window_deshypothequer->SetWindowTitle("Deshypotéquer");
-    m_window_deshypothequer->SetClosable(true);
-    m_window_deshypothequer->CloseItem()->SetData("this", this);
-    m_window_deshypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeDeshypotheque);
-    m_window_deshypothequer->SetVisible(false);
 
 	m_button_deshypothequer = new GuiButtonItem;
 	m_button_deshypothequer->SetText("Deshypothéquer");
@@ -104,13 +90,6 @@ m_message(nullptr)
 	m_button_deshypothequer->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_deshypothequer);
 
-    m_window_construire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-    m_window_construire->SetWindowTitle("Construire");
-    m_window_construire->SetClosable(true);
-    m_window_construire->CloseItem()->SetData("this", this);
-    m_window_construire->CloseItem()->SetCallBack("onClosed", Interface::closeConstruire);
-    m_window_construire->SetVisible(false);
-
 	m_button_construire = new GuiButtonItem;
 	m_button_construire->SetText("Construire");
 	m_button_construire->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
@@ -122,13 +101,6 @@ m_message(nullptr)
     y = 20+m_button_des->GetSize().y+m_button_hypothequer->GetSize().y+m_button_deshypothequer->GetSize().y;
 	m_button_construire->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_construire);
-
-    m_window_detruire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
-    m_window_detruire->SetWindowTitle("Détruire");
-    m_window_detruire->SetClosable(true);
-    m_window_detruire->CloseItem()->SetData("this", this);
-    m_window_detruire->CloseItem()->SetCallBack("onClosed", Interface::closeDetruire);
-    m_window_detruire->SetVisible(false);
 
 	m_button_detruire = new GuiButtonItem;
 	m_button_detruire->SetText("Détruire");
@@ -183,10 +155,20 @@ m_message(nullptr)
 	m_infoCase->SetColor(sf::Color(255,255,255));
 	m_sceneNode->AddItem(m_infoCase);
 	m_infoCase->SetRelativePosition(200, 320);
+
+	m_window_detruire = m_window_construire = m_window_deshypothequer = m_window_hypothequer = nullptr;
 }
 Interface::~Interface()
 {
-
+	if(m_window_hypothequer)
+		m_window_hypothequer->Remove();
+	if(m_window_construire)
+		m_window_construire->Remove();
+	if(m_window_deshypothequer)
+		m_window_deshypothequer->Remove();
+	if(m_window_detruire)
+		m_window_detruire->Remove();
+	m_sceneNode->Remove();
 }
 void Interface::update()
 {
@@ -231,10 +213,9 @@ void Interface::update()
         new MessageBox("Carte "+carte->paquet()->nom(), carte->description(), m_plateau->getPlateau(), dynamic_cast<Payer_ou_tirer*>(carte), m_button_des);
         m_button_des->SetVisible(false);
     }
-
     if (m_hypothequer && m_window_hypothequer)
     {
-        m_window_hypothequer->GetContener()->RemoveAllGuiItems();
+        m_window_hypothequer->ResetContener();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -257,7 +238,7 @@ void Interface::update()
         m_window_hypothequer->SetRelativePosition(x, y);
         m_window_hypothequer->SetVisible(true);
     }
-    else
+	else if(!m_window_hypothequer) 
     {
         m_window_hypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
         m_window_hypothequer->SetWindowTitle("Hypotéquer");
@@ -266,10 +247,9 @@ void Interface::update()
         m_window_hypothequer->CloseItem()->SetCallBack("onClosed", Interface::closeHypotheque);
         m_window_hypothequer->SetVisible(false);
     }
-
     if (m_deshypothequer && m_window_deshypothequer)
     {
-        m_window_deshypothequer->GetContener()->RemoveAllGuiItems();
+        m_window_deshypothequer->ResetContener();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -292,7 +272,7 @@ void Interface::update()
         m_window_deshypothequer->SetRelativePosition(x, y);
         m_window_deshypothequer->SetVisible(true);
     }
-    else
+    else if(!m_window_deshypothequer)
     {
         m_window_deshypothequer = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
         m_window_deshypothequer->SetWindowTitle("Deshypotéquer");
@@ -304,7 +284,7 @@ void Interface::update()
 
     if (m_construire && m_window_construire)
     {
-        m_window_construire->GetContener()->RemoveAllGuiItems();
+        m_window_construire->ResetContener();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -327,7 +307,7 @@ void Interface::update()
         m_window_construire->SetRelativePosition(x, y);
         m_window_construire->SetVisible(true);
     }
-    else
+    else if(!m_window_construire)
     {
         m_window_construire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
         m_window_construire->SetWindowTitle("Construire");
@@ -339,7 +319,7 @@ void Interface::update()
 
     if (m_detruire && m_window_detruire)
     {
-        m_window_detruire->GetContener()->RemoveAllGuiItems();
+        m_window_detruire->ResetContener();
         int x=0;
         for (CasePropriete* m_case : joueur->proprietes())
         {
@@ -362,7 +342,7 @@ void Interface::update()
         m_window_detruire->SetRelativePosition(x, y);
         m_window_detruire->SetVisible(true);
     }
-    else
+    else if(!m_window_detruire)
     {
         m_window_detruire = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
         m_window_detruire->SetWindowTitle("Détruire");
@@ -406,35 +386,29 @@ void Interface::deshypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->deshypothequer();
 }
-
 void Interface::construire(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->acheter(joueur);
 }
-
 void Interface::construction(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_construire = true;
 }
-
 void Interface::detruire(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->vendre(joueur);
 }
-
 void Interface::destruction(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_detruire = true;
 }
-
 void Interface::liberer(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     joueur->cartesLiberte().back()->utiliser();
 }
-
 void Interface::quitter(GuiItem* g)
 {
     ((Jeu*)g->GetData("jeu"))->changeState(Jeu::state::main_menu);
@@ -444,19 +418,16 @@ void Interface::closeHypotheque(GuiItem* g)
     ((Interface*)g->GetData("this"))->m_window_hypothequer = nullptr;
     ((Interface*)g->GetData("this"))->m_hypothequer = false;
 }
-
 void Interface::closeDeshypotheque(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_window_deshypothequer = nullptr;
     ((Interface*)g->GetData("this"))->m_deshypothequer = false;
 }
-
 void Interface::closeConstruire(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_window_construire = nullptr;
     ((Interface*)g->GetData("this"))->m_construire = false;
 }
-
 void Interface::closeDetruire(GuiItem* g)
 {
     ((Interface*)g->GetData("this"))->m_window_detruire = nullptr;

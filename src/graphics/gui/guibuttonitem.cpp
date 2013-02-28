@@ -14,7 +14,6 @@ GuiButtonItem::GuiButtonItem()
 
 GuiButtonItem::~GuiButtonItem()
 {
-	CallCallBack("onClosed");
 }
 void GuiButtonItem::HandleEvent(const sf::Event& event)
 {

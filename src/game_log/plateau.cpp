@@ -33,6 +33,7 @@
 
 Plateau::Plateau()
 {
+	m_changer_joueur = false;
 	m_des = new Des;
 	m_index_current_joueur = 0;
 	std::ifstream file;
@@ -229,7 +230,7 @@ Plateau::Plateau()
 			m_case[id] = currCase;
 		}
 	}
-	delete buffer;
+	delete[] buffer;
 }
 Plateau::~Plateau()
 {
@@ -392,6 +393,7 @@ void Plateau::load(const std::string& filepath)
 		}
 	}
 	m_index_current_joueur = boost::lexical_cast<int>(root->first_node("joueurs")->first_attribute("current")->value());
+	delete[] buffer;
 }
 void Plateau::save(const std::string& file)
 {
