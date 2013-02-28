@@ -401,16 +401,50 @@ void Interface::hypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->hypothequer();
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (c->estEnHypotheque())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_hypothequer->Remove();
+        ((Interface*)g->GetData("this"))->m_window_hypothequer = nullptr;
+        ((Interface*)g->GetData("this"))->m_hypothequer = false;
+    }
 }
 void Interface::deshypothequer_propriete(GuiItem* g)
 {
     ((CasePropriete*)g->GetData("case"))->deshypothequer();
+    Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (!c->estEnHypotheque())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_deshypothequer->Remove();
+        ((Interface*)g->GetData("this"))->m_window_deshypothequer = nullptr;
+        ((Interface*)g->GetData("this"))->m_deshypothequer = false;
+    }
 }
 
 void Interface::construire(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->acheter(joueur);
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (!c->peutConstruire())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_construire->Remove();
+        ((Interface*)g->GetData("this"))->m_window_construire = nullptr;
+        ((Interface*)g->GetData("this"))->m_construire = false;
+    }
 }
 
 void Interface::construction(GuiItem* g)
@@ -422,6 +456,17 @@ void Interface::detruire(GuiItem* g)
 {
     Joueur *joueur = ((Interface*)g->GetData("this"))->m_plateau->getPlateau()->getJoueurTour();
     ((CaseTerrain*)g->GetData("case"))->vendre(joueur);
+    int cpt=0;
+    for (CasePropriete* c : joueur->proprietes())
+        if (!c->peutDetruire())
+            ++cpt;
+
+    if (cpt == joueur->proprietes().size())
+    {
+        ((Interface*)g->GetData("this"))->m_window_detruire->Remove();
+        ((Interface*)g->GetData("this"))->m_window_detruire = nullptr;
+        ((Interface*)g->GetData("this"))->m_detruire = false;
+    }
 }
 
 void Interface::destruction(GuiItem* g)

@@ -9,7 +9,7 @@
 #include "joueur.h"
 #include "messagebox.h"
 
-Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
+Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr), test(0)
 {
 	m_requ_change_state = true;
 	m_requ_state      = main_menu;

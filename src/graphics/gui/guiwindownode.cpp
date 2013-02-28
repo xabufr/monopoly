@@ -106,7 +106,6 @@ bool GuiWindowNode::IsClosed() const
 {
     return m_closed;
 }
-
 void GuiWindowNode::ClosableChanged()
 {
     if(m_closable&&!m_btnClose)
