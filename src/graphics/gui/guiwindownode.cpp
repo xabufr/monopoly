@@ -41,7 +41,7 @@ GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,
 }
 GuiWindowNode::~GuiWindowNode()
 {
-    std::cout << "coucou je suis detruit " << this  << std::endl;
+
 }
 void GuiWindowNode::HandleEvent(const sf::Event& event)
 {

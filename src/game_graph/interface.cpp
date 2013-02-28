@@ -40,6 +40,7 @@ m_message(nullptr)
 
 	m_button_des = new GuiButtonItem;
 	m_button_des->SetText("Lancer");
+	m_button_des->SetCharacterSize(12);
 	m_button_des->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_des->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_des->SetData("this", this);
@@ -75,6 +76,7 @@ m_message(nullptr)
     m_window_hypothequer->SetVisible(false);
 
     m_button_hypothequer = new GuiButtonItem;
+    m_button_hypothequer->SetCharacterSize(12);
 	m_button_hypothequer->SetText("Hypothéquer");
 	m_button_hypothequer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_hypothequer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
@@ -94,6 +96,7 @@ m_message(nullptr)
     m_window_deshypothequer->SetVisible(false);
 
 	m_button_deshypothequer = new GuiButtonItem;
+	m_button_deshypothequer->SetCharacterSize(12);
 	m_button_deshypothequer->SetText("Deshypothéquer");
 	m_button_deshypothequer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_deshypothequer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
@@ -114,6 +117,7 @@ m_message(nullptr)
 
 	m_button_construire = new GuiButtonItem;
 	m_button_construire->SetText("Construire");
+	m_button_construire->SetCharacterSize(12);
 	m_button_construire->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_construire->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_construire->SetData("this", this);
@@ -132,6 +136,7 @@ m_message(nullptr)
     m_window_detruire->SetVisible(false);
 
 	m_button_detruire = new GuiButtonItem;
+	m_button_detruire->SetCharacterSize(12);
 	m_button_detruire->SetText("Détruire");
 	m_button_detruire->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_detruire->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
@@ -146,6 +151,7 @@ m_message(nullptr)
 
 	m_button_achat = new GuiButtonItem;
 	m_button_achat->SetText("Acheter");
+	m_button_achat->SetCharacterSize(12);
 	m_button_achat->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_achat->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_achat->SetData("this", this);
@@ -160,6 +166,7 @@ m_message(nullptr)
 
 	m_button_liberer = new GuiButtonItem;
 	m_button_liberer->SetText("Liberer");
+	m_button_liberer->SetCharacterSize(12);
 	m_button_liberer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
 	m_button_liberer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
 	m_button_liberer->SetData("this", this);
@@ -168,26 +175,26 @@ m_message(nullptr)
     x = m_engine->GetRenderWindow()->getSize().x-(m_button_liberer->GetSize().x+5);
     y = 35+m_button_des->GetSize().y+m_button_hypothequer->GetSize().y+
             m_button_deshypothequer->GetSize().y+m_button_construire->GetSize().y+
-            m_button_detruire->GetSize().y+m_button_liberer->GetSize().y;
+            m_button_detruire->GetSize().y+m_button_achat->GetSize().y;
 	m_button_liberer->SetRelativePosition(x, y);
 	m_sceneNode->AddItem(m_button_liberer);
 
 	m_info = new GuiTextItem;
 	m_info->SetCharacterSize(12);
-	m_info->SetColor(sf::Color(255,255,255,255));
+	m_info->SetColor(sf::Color(0,0,0));
 	m_sceneNode->AddItem(m_info);
 	m_info->SetRelativePosition(200,100);
 	m_lastInfos = "Dernières infos";
 
 	m_infoCase = new GuiTextItem;
 	m_infoCase->SetCharacterSize(12);
-	m_infoCase->SetColor(sf::Color(255,255,255));
+	m_infoCase->SetColor(sf::Color(0,0,0));
 	m_sceneNode->AddItem(m_infoCase);
 	m_infoCase->SetRelativePosition(200, 320);
 }
 Interface::~Interface()
 {
-
+    m_sceneNode->Remove();
 }
 void Interface::update()
 {

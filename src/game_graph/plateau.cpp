@@ -7,6 +7,7 @@
 #include "joueur.h"
 #include "../game_log/joueur.h"
 #include "../game_log/case/case.h"
+#include <iostream>
 
 PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 {
@@ -45,6 +46,9 @@ PlateauGraph::PlateauGraph(Plateau *p): m_plateau(p)
 PlateauGraph::~PlateauGraph()
 {
 	m_engine->GetSceneManager()->RemoveNode(m_nodePlateau);
+	for(Joueur* j : m_plateau->GetJoueurs())
+        delete m_joueurs[j];
+	m_joueurs.clear();
 	delete m_plateau;
 }
 void PlateauGraph::update()
