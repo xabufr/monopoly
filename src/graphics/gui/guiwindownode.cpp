@@ -173,3 +173,11 @@ GuiItem* GuiWindowNode::CloseItem()
 {
 	return m_btnClose;
 }
+void GuiWindowNode::ResetContener()
+{
+	m_contener->Remove();
+    m_contener = new GuiWindowContener(m_manager, this);
+    AddSceneNode(m_contener);
+    m_contener->SetRelativePosition(0,101);
+	CalculerCoord();
+}

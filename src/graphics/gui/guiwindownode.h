@@ -26,6 +26,7 @@ class GuiWindowNode: public GuiNode
         GuiWindowContener* GetContener() const;
         void CalculerTaille();
 		GuiItem* CloseItem();
+		void ResetContener();
 
     protected:
         SceneNodeShapeItem *m_windowShape, *m_contenerShape;

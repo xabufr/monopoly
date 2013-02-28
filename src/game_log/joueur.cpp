@@ -4,7 +4,14 @@
 #include "case/casepropriete/casecompagnie.h"
 #include <algorithm>
 
-Joueur::Joueur(const std::string& nom): m_nom(nom), m_argent(0), m_prisonier(false), m_doubles_consecutifs(0)
+Joueur::Joueur(const std::string& nom): 
+m_nom(nom), 
+	m_argent(0), 
+	m_prisonier(false), 
+	m_doubles_consecutifs(0), 
+	m_tours_prison(0), 
+	m_dernier_lancer(0), 
+	m_CasePosition(nullptr)
 {
 	m_lastCarte=nullptr;
 }
@@ -96,7 +103,12 @@ void Joueur::addCarteLiberte(Carte_Libere* c)
 }
 void Joueur::delCarteLiberte(Carte_Libere* c)
 {
-	std::remove(m_cartes_liberte.begin(), m_cartes_liberte.end(), c);
+	for(auto it = m_cartes_liberte.begin();it!=m_cartes_liberte.end();++it)
+		if(*it==c)
+		{
+			m_cartes_liberte.erase(it);
+			return;
+		}
 }
 void Joueur::addPropriete(CasePropriete* p)
 {

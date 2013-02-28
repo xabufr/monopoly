@@ -28,13 +28,14 @@ public:
 	void load(const std::string&);
 	void save(const std::string&);
 	Joueur* gagnant() const;
-
 	int getTailleCase() const;
 	int getEspaceMaison() const;
 	int getTailleTraits() const;
+	void payerCaution(Joueur*);
 	Case* getCase(size_t) const;
 private:
 	int m_argent_depart;
+	int m_valeur_caution;
 	int m_taille_case, m_espace_maison, m_taille_traits;
 	std::vector<Joueur*> m_joueurs;
 	Case* m_case[40];

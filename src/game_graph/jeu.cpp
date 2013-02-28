@@ -9,7 +9,7 @@
 #include "joueur.h"
 #include "messagebox.h"
 
-Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr), test(0)
+Jeu::Jeu(): m_plateau(nullptr), m_plateauGraph(nullptr), m_interface(nullptr)
 {
 	m_requ_change_state = true;
 	m_requ_state      = main_menu;
@@ -78,8 +78,7 @@ void Jeu::setupMainMenu()
         m_plateauGraph = nullptr;
         m_plateau = nullptr;
     }
-	GuiManager *gui = m_engine->GetGuiManager();
-	m_sceneNode = gui->GetRootNode()->AddGuiNode();
+	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
 	m_nodeBg = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
 	m_camera = m_engine->GetCameraManager()->AddCamera();
 	GuiButtonItem *bQuitter = new GuiButtonItem;
@@ -118,7 +117,6 @@ void Jeu::setupMainMenu()
 }
 void Jeu::setupPlayMenu()
 {
-	GuiManager *gui = m_engine->GetGuiManager();
     m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
 	GuiSliderNumberItem *slider = new GuiSliderNumberItem;
 	GuiTextItem *texteNbJoueurs = new GuiTextItem;
@@ -170,7 +168,6 @@ void Jeu::setupPlayMenu()
 }
 void Jeu::setupContinuePlayMenu()
 {
-	GuiManager *gui = m_engine->GetGuiManager();
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
 	GuiContener *cont = m_sceneNode->AddContener();
 	cont->SetEspacement(sf::Vector2f(10, 30));

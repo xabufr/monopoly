@@ -122,8 +122,11 @@ void GuiContener::RemoveAllGuiItems()
 			{
 				((GuiNode*)el)->Remove();
 			}
+			else
+			{
+				RemoveItem((GuiItem*)el);
+			}
 		}
 	}
 	m_items.clear();
-	SceneNode::RemoveAllItems();
 }

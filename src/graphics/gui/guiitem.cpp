@@ -9,6 +9,7 @@ GuiItem::GuiItem()
 
 GuiItem::~GuiItem()
 {
+	CallCallBack("onClosed");
 }
 bool GuiItem::HasFocus()
 {

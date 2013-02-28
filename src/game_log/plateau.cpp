@@ -33,6 +33,7 @@
 
 Plateau::Plateau()
 {
+	m_changer_joueur = false;
 	m_des = new Des;
 	m_index_current_joueur = 0;
 	std::ifstream file;
@@ -79,12 +80,13 @@ Plateau::Plateau()
 	{
 		loyers_gare[i] = boost::lexical_cast<int>(nGare->first_attribute(("t"+boost::lexical_cast<std::string>(i)).c_str())->value());
 	}
-	hyp_gare    	= boost::lexical_cast<int>(nGare->first_attribute("hyp")->value());
-	credit_tour 	= boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
-	m_argent_depart = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
-	m_taille_case   = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_case")->value());
-	m_espace_maison = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("espace_maison")->value());
-	m_taille_traits = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_traits")->value());
+	hyp_gare    	 = boost::lexical_cast<int>(nGare->first_attribute("hyp")->value());
+	credit_tour 	 = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_tour")->value());
+	m_argent_depart  = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("argent_depart")->value());
+	m_valeur_caution = boost::lexical_cast<int>(root->first_node("joueur")->first_attribute("caution")->value());
+	m_taille_case    = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_case")->value());
+	m_espace_maison  = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("espace_maison")->value());
+	m_taille_traits  = boost::lexical_cast<int>(root->first_node("plateau")->first_attribute("taille_traits")->value());
 
 	std::list<std::pair<Carte*, int>> cacheLiensCarte; // Pour les cartes "argent tirer"
 	for(paquet=cartes->first_node("paquet");paquet;paquet=paquet->next_sibling("paquet"))
@@ -229,7 +231,7 @@ Plateau::Plateau()
 			m_case[id] = currCase;
 		}
 	}
-	delete buffer;
+	delete[] buffer;
 }
 Plateau::~Plateau()
 {
@@ -392,6 +394,7 @@ void Plateau::load(const std::string& filepath)
 		}
 	}
 	m_index_current_joueur = boost::lexical_cast<int>(root->first_node("joueurs")->first_attribute("current")->value());
+	delete[] buffer;
 }
 void Plateau::save(const std::string& file)
 {
@@ -519,4 +522,11 @@ Joueur* Plateau::gagnant() const
 			g=j;
 	}
 	return g;
+}
+void Plateau::payerCaution(Joueur* j)
+{
+	if(!j->estEnPrison() || j->argent() <= m_valeur_caution)
+		return;
+	j->payer(m_valeur_caution);
+	liberer(j);
 }
