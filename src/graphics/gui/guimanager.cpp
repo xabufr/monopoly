@@ -1,6 +1,7 @@
 #include "guimanager.h"
 #include "../../core/logger.h"
 #include "../graphicalengine.h"
+#include <iostream>
 
 GuiManager::GuiManager(): SceneManager()
 {
