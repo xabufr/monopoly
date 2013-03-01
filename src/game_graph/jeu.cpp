@@ -42,6 +42,8 @@ void Jeu::run()
         if (m_interface)
             m_interface->update();
 		m_engine->DrawScene();
+        if(m_plateau&&m_plateauGraph&&m_plateau->gagnant())
+            changeState(state::finished);
 	}
 }
 void Jeu::changeState()
@@ -63,10 +65,46 @@ void Jeu::changeState()
 		case continue_play_menu:
 			setupContinuePlayMenu();
 			break;
+        case finished:
+            setupGameFinished();
+            break;
 		case play:
 			setupPlay();
 			break;
 	}
+}
+void Jeu::setupGameFinished()
+{
+
+    m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
+    GuiTextItem *tSentence = new GuiTextItem;
+
+    std::string t;
+    t = "Felicitation, le joueur " + m_plateau->gagnant()->nom() + " a gagné !";
+	tSentence->SetText(t);
+
+	GuiContener *contener = m_sceneNode->AddContener();
+
+    GuiButtonItem *bQuitter = new GuiButtonItem;
+	GuiButtonItem *bJouer = new GuiButtonItem;
+	bQuitter->SetText("Quitter");
+	bQuitter->SetData("this", this);
+	bQuitter->SetCallBack("clicked", Jeu::quitter);
+	bJouer->SetText("Jouer");
+	bJouer->SetData("this", this);
+	bJouer->SetCallBack("clicked", Jeu::menu_jouer);
+	bJouer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	bJouer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+	bQuitter->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	bQuitter->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
+	contener->AjouterItem(tSentence, 0, 1);
+	contener->AjouterItem(bJouer, 0, 2);
+	contener->AjouterItem(bQuitter, 0, 3);
+    delete m_plateauGraph;
+    delete m_interface;
+    m_interface = nullptr;
+    m_plateauGraph = nullptr;
+    m_plateau = nullptr;
 }
 void Jeu::setupMainMenu()
 {
@@ -243,8 +281,13 @@ void Jeu::changeState(state s)
 }
 void Jeu::menu_jouer(GuiItem* i)
 {
+	Jeu* j_f = (Jeu*)i->GetData("this");
+	j_f->changeState(play_menu);
+}
+void Jeu::game_finished(GuiItem* i)
+{
 	Jeu* thi = (Jeu*)i->GetData("this");
-	thi->changeState(play_menu);
+	thi->changeState(finished);
 }
 void Jeu::menu(GuiItem* i)
 {

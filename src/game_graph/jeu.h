@@ -25,11 +25,13 @@ public:
 	static void update_nb_joueurs(GuiItem*);
 	static void continuer_jouer(GuiItem*);
 	static void start_play(GuiItem*);
+	static void game_finished(GuiItem*);
 	enum state{
 		main_menu,
 		play_menu,
 		continue_play_menu,
 		play,
+		finished,
 	};
 	void changeState(state);
 private:
@@ -39,6 +41,7 @@ private:
 	void changeState();
 	void setupMainMenu();
 	void setupPlayMenu();
+	void setupGameFinished();
 	void setupContinuePlayMenu();
 	void setupPlay();
 	GuiNode *m_sceneNode;
