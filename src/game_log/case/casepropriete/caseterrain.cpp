@@ -9,7 +9,7 @@ CaseTerrain::CaseTerrain(size_t id, const std::string& nom):CasePropriete(id, no
 }
 int CaseTerrain::loyer() const
 {
-    return m_loyer[m_nombre_maison] * (m_groupe->joueurMonopole()&&m_nombre_maison==0) ?2:1;
+    return m_loyer[m_nombre_maison] * ((int)(m_groupe->joueurMonopole()&&m_nombre_maison==0) ?2:1);
 }
 void CaseTerrain::setGroupe(GroupeTerrain* g)
 {
@@ -24,21 +24,41 @@ void CaseTerrain::acheter(Joueur* j)
         CasePropriete::setProprietaire(j);
 		j->addPropriete(this);
     }
-    else if ((CasePropriete::proprietaire() == j && peutConstruire()) && j->argent() >= (m_groupe->prix_construction()))
+    else if (CasePropriete::proprietaire() == j && peutConstruire() && j->argent() >= (m_groupe->prix_construction()))
+    {
         CasePropriete::proprietaire()->payer(m_groupe->prix_construction());
-
+        ++m_nombre_maison;
+    }
+}
+void CaseTerrain::vendre(Joueur*)
+{
+    if (peutDetruire())
+    {
+        CasePropriete::proprietaire()->crediter(m_groupe->prix_construction());
+        --m_nombre_maison;
+    }
 }
 bool CaseTerrain::peutConstruire() const
 {
-	bool work=true;
 	for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
 	{
-		if(*it==this) 
+		if(*it==this)
 			continue;
 		if (m_nombre_maison > ((CaseTerrain*)(*it))->maisons() || m_nombre_maison == 5)
 			return false;
+
 	}
-    return (CasePropriete::proprietaire() == m_groupe->joueurMonopole() && work);
+    return (CasePropriete::proprietaire() == m_groupe->joueurMonopole());
+}
+bool CaseTerrain::peutDetruire() const
+{
+    int m_max = 0;
+    for (auto it=m_groupe->getCasesTerrain().begin(); it!= m_groupe->getCasesTerrain().end(); ++it)
+	{
+		if (m_max < ((CaseTerrain*)(*it))->maisons())
+			m_max = ((CaseTerrain*)(*it))->maisons();
+	}
+    return (m_nombre_maison == m_max && m_nombre_maison > 0);
 }
 int CaseTerrain::maisons() const
 {
@@ -46,7 +66,7 @@ int CaseTerrain::maisons() const
 }
 int CaseTerrain::tarif() const
 {
-	return m_groupe->prix_construction();
+    return m_groupe->prix_construction();
 }
 void CaseTerrain::setLoyer(int index, int value)
 {
@@ -66,6 +86,7 @@ std::string CaseTerrain::description() const
 		desc += boost::lexical_cast<std::string>(i)+" maison(s) => " + boost::lexical_cast<std::string>(m_loyer[i]) + " €\n";
 	}
 	desc += "Hotel => " + boost::lexical_cast<std::string>(m_loyer[5]) + " €\n";
-	desc += "Prix d'une maison: " + boost::lexical_cast<std::string>(m_groupe->prix_construction()) + " €";
+	desc += "Prix d'une maison: " + boost::lexical_cast<std::string>(m_groupe->prix_construction()) + " €\n";
+	desc += "Prix => " + boost::lexical_cast<std::string>(prixAchat()) + " €";
 	return desc;
 }

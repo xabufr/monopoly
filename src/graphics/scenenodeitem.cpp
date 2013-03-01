@@ -110,3 +110,8 @@ void SceneNodeItem::SetVisible(bool vis)
     m_visible=vis;
 }
 
+bool SceneNodeItem::IsVisible() const
+{
+    return m_visible;
+}
+

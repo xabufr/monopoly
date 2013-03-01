@@ -1,6 +1,6 @@
 project(monopoly)
 include_directories(src/ rapidxml/)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -g")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x -g -Wall")
 file(GLOB_RECURSE
 		source_files
 		src/*)

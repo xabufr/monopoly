@@ -6,7 +6,6 @@ Payer_ou_tirer::Payer_ou_tirer(int val,const std::string& descr, PaquetCarte* pa
 : Carte_argent( val, descr, paquet_source)
 , m_paquet_cible (paquet_cible)
 {
-
 }
 
 PaquetCarte* Payer_ou_tirer::paquetAutre() const

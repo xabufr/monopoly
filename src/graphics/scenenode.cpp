@@ -243,6 +243,12 @@ void SceneNode::RemoveItem(SceneNodeItem* item)
         }
     }
 }
+void SceneNode::RemoveAllItems()
+{
+	for(SceneNodeItem *i : m_childItems)
+		delete i;
+	m_childItems.clear();
+}
 void SceneNode::Show()
 {
     SetVisible(true);

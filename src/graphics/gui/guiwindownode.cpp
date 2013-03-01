@@ -1,8 +1,9 @@
 #include "guiwindownode.h"
 #include "guiitem.h"
 #include "guimanager.h"
+#include <iostream>
 
-GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,parent)
+GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,parent), m_closed(false)
 {
     m_windowShape = new SceneNodeShapeItem;
     m_contenerShape = new SceneNodeShapeItem;
@@ -40,6 +41,7 @@ GuiWindowNode::GuiWindowNode(SceneManager* mng, SceneNode* parent): GuiNode(mng,
 }
 GuiWindowNode::~GuiWindowNode()
 {
+
 }
 void GuiWindowNode::HandleEvent(const sf::Event& event)
 {
@@ -102,6 +104,10 @@ bool GuiWindowNode::IsClosable() const
 {
     return m_closable;
 }
+bool GuiWindowNode::IsClosed() const
+{
+    return m_closed;
+}
 void GuiWindowNode::ClosableChanged()
 {
     if(m_closable&&!m_btnClose)
@@ -126,6 +132,7 @@ void GuiWindowNode::ClosableChanged()
 void GuiWindowNode::CloseWindowCallBack(GuiItem* item)
 {
     ((GuiWindowNode*)item->GetData("window"))->m_RemoveMeNextDraw();
+    ((GuiWindowNode*)item->GetData("window"))->m_closed = true;
 }
 void GuiWindowNode::SetWindowTitle(const std::string& title)
 {
@@ -161,4 +168,16 @@ void GuiWindowNode::CalculerTaille()
         if(m_closable)
             m_btnClose->SetRelativePosition(m_windowShape->GetGlobalBounds().width-m_btnClose->GetWidth()-3, 0);
     }
+}
+GuiItem* GuiWindowNode::CloseItem()
+{
+	return m_btnClose;
+}
+void GuiWindowNode::ResetContener()
+{
+	m_contener->Remove();
+    m_contener = new GuiWindowContener(m_manager, this);
+    AddSceneNode(m_contener);
+    m_contener->SetRelativePosition(0,101);
+	CalculerCoord();
 }

@@ -2,7 +2,8 @@
 #include "../../joueur.h"
 
 CasePropriete::CasePropriete(size_t id, const std::string& nom):Case(id, nom),
-m_proprietaire(nullptr)
+m_proprietaire(nullptr),
+m_en_hypotheque(false)
 {
 
 }
@@ -33,15 +34,17 @@ int CasePropriete::valeur_hypotheque() const
 }
 void CasePropriete::hypothequer(bool crediter)
 {
-	if(crediter)
+	if(crediter && !m_en_hypotheque)
+    {
 		m_proprietaire->crediter(m_hypotheque);
-    m_en_hypotheque = true;
+        m_en_hypotheque = true;
+    }
 }
 void CasePropriete::deshypothequer()
 {
     int value = (m_hypotheque*0.01f)+m_hypotheque;
 
-    if (m_proprietaire->argent() > value)
+    if (m_proprietaire->argent() > value && m_en_hypotheque)
     {
         m_proprietaire->payer(value);
         m_en_hypotheque = false;
@@ -83,4 +86,8 @@ void CasePropriete::joueurArrive(Joueur *j)
         j->payer(loyer());
 		proprietaire()->crediter(loyer());
 	}
+}
+bool CasePropriete::peutDetruire() const
+{
+    return false;
 }

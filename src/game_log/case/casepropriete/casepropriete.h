@@ -19,6 +19,7 @@ public:
     virtual bool estEnHypotheque() const;
     virtual int loyer() const;
     virtual bool peutConstruire() const;
+    virtual bool peutDetruire() const;
 
     void setPrix(int);
     void setHypotheque(int);

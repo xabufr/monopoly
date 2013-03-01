@@ -10,6 +10,7 @@ class GuiContener: public GuiNode, public GuiElement
     public:
         GuiContener(SceneManager* mng, SceneNode* parent);
         virtual void AjouterItem(GuiElement*, int, int);
+		void RemoveAllGuiItems();
         virtual sf::Vector2f GetSize() const;
         void SetMaxSize(const sf::Vector2f&);
         const sf::Vector2f & GetMaxSize();
