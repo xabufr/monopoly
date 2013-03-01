@@ -77,11 +77,21 @@ void Jeu::setupGameFinished()
 {
 
     m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
+    m_nodeBg = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
+    SceneNodeSpriteItem *bg = new SceneNodeSpriteItem;
+	bg->SetImage("data/background.jpeg");
+	sf::Vector2f sizeBg = bg->GetSize();
+	bg->SetRelativePosition(sf::Vector2f(-sizeBg.x*0.5, -sizeBg.y*0.5));
+	m_camera = m_engine->GetCameraManager()->AddCamera();
+	float ratio = m_engine->GetRenderWindow()->getSize().y/sizeBg.y;
+	m_nodeBg->SetAbsoluteScale(sf::Vector2f(ratio, ratio));
+	m_nodeBg->AddItem(bg);
     GuiTextItem *tSentence = new GuiTextItem;
 
     std::string t;
-    t = "Felicitation, le joueur " + m_plateau->gagnant()->nom() + " a gagné !";
+    t = "Felicitation, " + m_plateau->gagnant()->nom() + "  a gagné !";
 	tSentence->SetText(t);
+	tSentence->SetColor(sf::Color(0,0,0));
 
 	GuiContener *contener = m_sceneNode->AddContener();
 
@@ -90,16 +100,32 @@ void Jeu::setupGameFinished()
 	bQuitter->SetText("Quitter");
 	bQuitter->SetData("this", this);
 	bQuitter->SetCallBack("clicked", Jeu::quitter);
-	bJouer->SetText("Jouer");
+	bJouer->SetText("Nouvelle Partie");
 	bJouer->SetData("this", this);
 	bJouer->SetCallBack("clicked", Jeu::menu_jouer);
-	bJouer->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	bJouer->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
 	bJouer->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
-	bQuitter->SetNormalColor(sf::Color(255,255,255), sf::Color(0,0,0,0));
+	bQuitter->SetNormalColor(sf::Color(0,0,0), sf::Color(0,0,0,0));
 	bQuitter->SetMouseOverColor(sf::Color(255,0,0), sf::Color(0,0,0,0));
-	contener->AjouterItem(tSentence, 0, 1);
-	contener->AjouterItem(bJouer, 0, 2);
-	contener->AjouterItem(bQuitter, 0, 3);
+
+	int x, y;
+
+	x = m_engine->GetRenderWindow()->getSize().x - bQuitter->GetSize().x - 10;
+	y = m_engine->GetRenderWindow()->getSize().y - bQuitter->GetSize().y - 10;
+	bQuitter->SetRelativePosition(x, y);
+
+    x = (m_engine->GetRenderWindow()->getSize().x/2) - (m_engine->GetRenderWindow()->getSize().x/5);
+    y = (m_engine->GetRenderWindow()->getSize().y/14);
+    tSentence->SetRelativePosition(x, y);
+
+    x = (m_engine->GetRenderWindow()->getSize().x/2) - (m_engine->GetRenderWindow()->getSize().x/12);
+    y = (m_engine->GetRenderWindow()->getSize().y/5);
+    bJouer->SetRelativePosition(x, y);
+
+    m_sceneNode->AddItem(bJouer);
+    m_sceneNode->AddItem(bQuitter);
+    m_sceneNode->AddItem(tSentence);
+
     delete m_plateauGraph;
     delete m_interface;
     m_interface = nullptr;
@@ -117,6 +143,8 @@ void Jeu::setupMainMenu()
         m_plateau = nullptr;
     }
 	m_sceneNode = m_engine->GetGuiManager()->GetRootNode()->AddGuiNode();
+	/*if (m_nodeBg->GetChildItems().size() != 0)
+        m_nodeBg->RemoveAllItems();*/
 	m_nodeBg = m_engine->GetSceneManager()->GetRootNode()->AddSceneNode();
 	m_camera = m_engine->GetCameraManager()->AddCamera();
 	GuiButtonItem *bQuitter = new GuiButtonItem;
