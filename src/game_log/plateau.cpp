@@ -472,7 +472,7 @@ void Plateau::lancerDes()
 	{
 		m_changer_joueur = true;
 	}
-	else
+	else if(curj->argent()>0)
 	{
 		m_des->lancer();
 		curj->setDernierLancer(m_des->valeur());
@@ -509,6 +509,8 @@ void Plateau::lancerDes()
 				curj->resetDoubles();
 		}
 	}
+	else
+		m_changer_joueur = false;
 }
 Joueur* Plateau::gagnant() const
 {
