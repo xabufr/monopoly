@@ -123,7 +123,7 @@ void Jeu::setupPlayMenu()
 	texteNbJoueurs->SetText("2 joueurs");
 	texteNbJoueurs->SetColor(sf::Color(0, 0, 0));
 	slider->SetRange(2,8);
-	slider->SetColor(sf::Color(0,0,0));
+	slider->SetColor(sf::Color(255,0,0));
 	slider->SetBarColor(sf::Color(0,0,0));
 	slider->SetFocusColor(sf::Color(255,0,0));
 	slider->SetData("text", texteNbJoueurs);
