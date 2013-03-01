@@ -27,6 +27,7 @@
 #include "case/casecarte.h"
 //end include cases
 #include "../../rapidxml/rapidxml.hpp"
+#include "../../rapidxml/rapidxml_print.hpp"
 #include <fstream>
 #include <utility>
 #include <boost/lexical_cast.hpp>
@@ -396,7 +397,7 @@ void Plateau::load(const std::string& filepath)
 	m_index_current_joueur = boost::lexical_cast<int>(root->first_node("joueurs")->first_attribute("current")->value());
 	delete[] buffer;
 }
-void Plateau::save(const std::string& file)
+void Plateau::save(const std::string& filepath)
 {
 	rapidxml::xml_document<> document;
 	rapidxml::xml_node<> *root = document.allocate_node(rapidxml::node_type::node_element);
@@ -439,6 +440,10 @@ void Plateau::save(const std::string& file)
 			}
 		}
 	}
+	std::ofstream file;
+	file.open(filepath.c_str());
+	file << document;
+	file.close();
 }
 int Plateau::getTailleCase() const
 {
