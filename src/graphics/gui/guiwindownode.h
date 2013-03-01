@@ -7,6 +7,7 @@
 #include "guibuttonitem.h"
 #include "guitextitem.h"
 #include "guiwindowcontener.h"
+#include <SFML/Graphics/Color.hpp>
 /// @todo Documenter
 class GuiWindowNode: public GuiNode
 {
@@ -22,6 +23,12 @@ class GuiWindowNode: public GuiNode
         static void CloseWindowCallBack(GuiItem*);
 
         void SetWindowTitle(const std::string&);
+        void SetColorTitle(sf::Color);
+        void SetCharacterSizeTitle(int);
+        void SetColorShape(sf::Color);
+        void SetColorContener(sf::Color);
+        void SetColorOutlineShape(sf::Color);
+        void SetColorOutlineContener(sf::Color);
 
         GuiWindowContener* GetContener() const;
         void CalculerTaille();

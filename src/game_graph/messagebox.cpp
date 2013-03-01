@@ -14,9 +14,11 @@ MessageBox::MessageBox(const std::string& title, const std::string& description,
     m_engine = GraphicalEngine::GetInstance();
     m_window = m_engine->GetGuiManager()->GetRootNode()->AddWindow();
     m_window->SetWindowTitle(title);
+    m_window->SetCharacterSizeTitle(18);
     m_window->SetClosable(false);
 
     GuiTextItem *item = new GuiTextItem;
+    item->SetCharacterSize(14);
     item->SetText(description);
     m_window->GetContener()->AjouterItem(item, 0, 0);
     m_window->CalculerTaille();
