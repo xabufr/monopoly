@@ -139,6 +139,33 @@ void GuiWindowNode::SetWindowTitle(const std::string& title)
     m_windowTitle->SetText(title);
     CalculerCoord();
 }
+void GuiWindowNode::SetColorTitle(sf::Color c)
+{
+    m_windowTitle->SetColor(c);
+}
+
+void GuiWindowNode::SetCharacterSizeTitle(int v)
+{
+    m_windowTitle->SetCharacterSize(v);
+}
+void GuiWindowNode::SetColorShape(sf::Color c)
+{
+    m_windowShape->SetColor(c);
+}
+
+void GuiWindowNode::SetColorContener(sf::Color c)
+{
+    m_contenerShape->SetColor(c);
+}
+void GuiWindowNode::SetColorOutlineShape(sf::Color c)
+{
+    m_windowShape->SetOutlineColor(c);
+}
+
+void GuiWindowNode::SetColorOutlineContener(sf::Color c)
+{
+    m_contenerShape->SetOutlineColor(c);
+}
 void GuiWindowNode::CalculerCoord()
 {
     sf::Vector2f t(m_windowTitle->GetWidth(), m_windowTitle->GetHeigth());
@@ -162,11 +189,15 @@ void GuiWindowNode::CalculerTaille()
 {
     sf::Vector2f tailleContener(m_contener->GetSize());
     m_contenerShape->SetSize(tailleContener);
-    if(tailleContener.x>m_windowTitle->GetWidth())
+    if(tailleContener.x>m_windowShape->GetSize().x)
     {
         m_windowShape->SetSize(tailleContener.x, m_hauteurTitle);
         if(m_closable)
             m_btnClose->SetRelativePosition(m_windowShape->GetGlobalBounds().width-m_btnClose->GetWidth()-3, 0);
+    }
+    else
+    {
+        m_contenerShape->SetSize(m_windowShape->GetSize().x-2, m_contenerShape->GetSize().y);
     }
 }
 GuiItem* GuiWindowNode::CloseItem()
